@@ -68,3 +68,44 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+### `error:0308010C:digital envelope routines
+
+Intenta cambiar en tu package.json la siguiente línea:
+
+"start": "react-scripts start"
+
+por
+
+"start": "react-scripts --openssl-legacy-provider start"
+
+
+poner en tu package.json la siguiente línea:
+
+"engines": {
+"node": "16.13.0",
+"npm": ">=6.0.0" 
+},
+
+Recomiendo borrar la carpeta build y node_modules y luego correr el comando:
+
+npm install
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
