@@ -1,17 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { StiledMenu, StyledNav } from '../styles/NavBar';
 
 const NavBar = () => {
     return (
-        <nav>
+        <StyledNav>
             <ul>
-                <li>
+                <span>
                     <Link to="/home">Inicio</Link>
-                </li>
+                </span>
 
-                <li>
+                <span>
                     <Link to="/about">Servicios</Link>
-                    <ul>
+                    <StiledMenu>
                         <li>
                             <Link to="/servicios/gestion">Sistemas de Gestion</Link>
                         </li>
@@ -27,12 +28,12 @@ const NavBar = () => {
                         <li>
                             <Link to="/servicios/documentos">Documentos</Link>
                         </li>
-                    </ul>
-                </li>
+                    </StiledMenu>
+                </span>
 
-                <li>
+                <span>
                     <Link to="/about">Empresa</Link>
-                    <ul>
+                    <StiledMenu>
                         <li>
                             <Link to="/empresa/nosotros">Acerca de Nosotros</Link>
                         </li>
@@ -63,18 +64,18 @@ const NavBar = () => {
                         <li>
                             <Link to="/empresa/politicas">Politicas, Codigos y reglamentos</Link>
                         </li>
-                    </ul>
-                </li>
+                    </StiledMenu>
+                </span>
 
-                <li>
+                <span>
                     <Link to="/cotizacion">Cotizacion</Link>
-                </li>
+                </span>
 
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
+                <span>
+                    <Link to="/contact">Contacto</Link>
+                </span>
             </ul>
-        </nav>
+        </StyledNav>
     )
 }
 

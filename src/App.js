@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router,  Navigate, Route, Routes } from 'react-router-dom';
-// import About from './components/About';
+import GlobalStyles from "./styles/GlobalStyles";
 import Home from './components/Home';
 import Contact from './components/Contact';
 import Producto from './components/Producto';
@@ -25,6 +25,7 @@ import NavBar from './components/Navbar';
 function App() {
   return (
     <div className="App">
+      <GlobalStyles/>
       <Router>
         {/* <nav>
           <ul>
