@@ -1,38 +1,81 @@
-import React, { useState } from "react";
-import { StyledA, StyledLi, StyledNav, StyledSubmenu, StyledSubmenuItem } from "../styles/NavBar";
+import React from 'react'
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
-    const [showSubmenu, setShowSubmenu] = useState(true);
-    // console.log(showSubmenu)
-
     return (
-        <StyledNav>
+        <nav>
             <ul>
-                <StyledLi>
-                    <StyledA href="#">Home</StyledA>
-                </StyledLi>
-                <StyledLi>
-                    <StyledA href="#" showSubmenu={showSubmenu} onClick={() => setShowSubmenu(!showSubmenu)}>
-                        Products
-                    </StyledA>
+                <li>
+                    <Link to="/home">Inicio</Link>
+                </li>
+
+                <li>
+                    <Link to="/about">Servicios</Link>
                     <ul>
                         <li>
-                            <a href="#">Product 1</a>
+                            <Link to="/servicios/gestion">Sistemas de Gestion</Link>
                         </li>
                         <li>
-                            <a href="#">Product 2</a>
+                            <Link to="/servicios/producto">Certificacion de Producto</Link>
                         </li>
                         <li>
-                            <a href="#">Product 3</a>
+                            <Link to="/servicios/industrial">Servicios Industriales</Link>
+                        </li>
+                        <li>
+                            <Link to="/servicios/personas">Certificacion de Personas</Link>
+                        </li>
+                        <li>
+                            <Link to="/servicios/documentos">Documentos</Link>
                         </li>
                     </ul>
-                </StyledLi>
-                <StyledLi>
-                    <StyledA href="#">Contact</StyledA>
-                </StyledLi>
+                </li>
+
+                <li>
+                    <Link to="/about">Empresa</Link>
+                    <ul>
+                        <li>
+                            <Link to="/empresa/nosotros">Acerca de Nosotros</Link>
+                        </li>
+                        <li>
+                            <Link to="/empresa/pilares">Pilares</Link>
+                        </li>
+                        <li>
+                            <Link to="/empresa/mision">Mision</Link>
+                        </li>
+                        <li>
+                            <Link to="/empresa/vision">Vision</Link>
+                        </li>
+                        <li>
+                            <Link to="/empresa/acreditaciones">Acreditaciones</Link>
+                        </li>
+                        <li>
+                            <Link to="/empresa/certificaciones">Certificaciones</Link>
+                        </li>
+                        <li>
+                            <Link to="/empresa/equipo">Nuestro equipo</Link>
+                        </li>
+                        <li>
+                            <Link to="/empresa/clientes">Confiado en Nosotros</Link>
+                        </li>
+                        <li>
+                            <Link to="/empresa/proyectos">Proyectos</Link>
+                        </li>
+                        <li>
+                            <Link to="/empresa/politicas">Politicas, Codigos y reglamentos</Link>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <Link to="/cotizacion">Cotizacion</Link>
+                </li>
+
+                <li>
+                    <Link to="/contact">Contact</Link>
+                </li>
             </ul>
-        </StyledNav>
-    );
-};
+        </nav>
+    )
+}
 
 export default NavBar;

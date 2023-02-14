@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 export const StyledNav = styled.nav`
     display: flex;
+    justify-content: center;
     border: 1px solid red;
     ul {
         list-style: none;
@@ -18,7 +19,7 @@ export const StyledLi = styled.li`
         background-color: lightgray;
     }
     ul{
-        display: ${(props => (props.showSubmenu === true ? "block" : "none"))};
+        /* display: ${(props => (props.showSubmenu === true ? "block" : "none"))}; */
         position: absolute;
         background-color: lightgray;
         a {
