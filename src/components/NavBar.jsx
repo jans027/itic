@@ -1,38 +1,48 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
+import { data } from '../data/data';
 import { StiledMenu, StyledNav } from '../styles/NavBar';
+import Cotizacion from './Cotizacion';
+
+
+
+
 
 const NavBar = () => {
+
+    const [datos] = data
+    const { inicio, servicios, empresa, consulta, cotizacion, contacto } = datos;
+    const serviciosSub = Object.values(servicios.dropDownMenu)
+    // const menus2 = Object.values(servicios)
+    // const menus3 = Object.values(empresa)
+    console.log(serviciosSub)
+
+
+
+
     return (
         <StyledNav>
             <ul>
                 <span>
-                    <Link to="/home">Inicio</Link>
+                    <Link to={inicio.url}>{inicio.name}</Link>
                 </span>
 
                 <span>
-                    <Link to="/about">Servicios</Link>
-                    <StiledMenu>
-                        <li>
-                            <Link to="/servicios/gestion">Sistemas de Gestion</Link>
-                        </li>
-                        <li>
-                            <Link to="/servicios/producto">Certificacion de Producto</Link>
-                        </li>
-                        <li>
-                            <Link to="/servicios/industrial">Servicios Industriales</Link>
-                        </li>
-                        <li>
-                            <Link to="/servicios/personas">Certificacion de Personas</Link>
-                        </li>
-                        <li>
-                            <Link to="/servicios/documentos">Documentos</Link>
-                        </li>
-                    </StiledMenu>
+                    <Link>{servicios.name}</Link>
+                    {
+                        serviciosSub.map((item) =>
+                            <StiledMenu>
+                                <li>
+                                    <Link to={item.url}>{item.name}</Link>
+                                </li>
+                            </StiledMenu>
+                        )
+                    }
                 </span>
 
                 <span>
-                    <Link to="/about">Empresa</Link>
+                    <Link>{empresa.name}</Link>
+
                     <StiledMenu>
                         <li>
                             <Link to="/empresa/nosotros">Acerca de Nosotros</Link>
@@ -68,11 +78,15 @@ const NavBar = () => {
                 </span>
 
                 <span>
-                    <Link to="/cotizacion">Cotizacion</Link>
+                    <Link>{consulta.name}</Link>
                 </span>
 
                 <span>
-                    <Link to="/contact">Contacto</Link>
+                    <Link to={cotizacion.url}>{cotizacion.name}</Link>
+                </span>
+
+                <span>
+                    <Link to={contacto.url}>{contacto.name}</Link>
                 </span>
             </ul>
         </StyledNav>

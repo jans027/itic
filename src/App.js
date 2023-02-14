@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, createContext } from 'react';
 import { BrowserRouter as Router,  Navigate, Route, Routes } from 'react-router-dom';
 import GlobalStyles from "./styles/GlobalStyles";
 import Home from './components/Home';
@@ -21,90 +21,31 @@ import './index.css';
 import Clientes from './components/Clientes';
 import Cotizacion from './components/Cotizacion';
 import NavBar from './components/Navbar';
+import { data } from './data/data';
+
+
+const Context = createContext(data);
+
 
 function App() {
+
+  const globalData = Context
+  // const { home } = globalData
+  // console.log(home)
+
+
   return (
     <div className="App">
+      <Context.Provider value={ globalData }>
       <GlobalStyles/>
       <Router>
-        {/* <nav>
-          <ul>
-            <li>
-              <Link to="/home">Inicio</Link>
-            </li>
-
-            <li>
-              <Link to="/about">Servicios</Link>
-              <ul>
-                <li>
-                  <Link to="/servicios/gestion">Sistemas de Gestion</Link>
-                </li>
-                <li>
-                  <Link to="/servicios/producto">Certificacion de Producto</Link>
-                </li>
-                <li>
-                  <Link to="/servicios/industrial">Servicios Industriales</Link>
-                </li>
-                <li>
-                  <Link to="/servicios/personas">Certificacion de Personas</Link>
-                </li>
-                <li>
-                  <Link to="/servicios/documentos">Documentos</Link>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <Link to="/about">Empresa</Link>
-              <ul>
-                <li>
-                  <Link to="/empresa/nosotros">Acerca de Nosotros</Link>
-                </li>
-                <li>
-                  <Link to="/empresa/pilares">Pilares</Link>
-                </li>
-                <li>
-                  <Link to="/empresa/mision">Mision</Link>
-                </li>
-                <li>
-                  <Link to="/empresa/vision">Vision</Link>
-                </li>
-                <li>
-                  <Link to="/empresa/acreditaciones">Acreditaciones</Link>
-                </li>
-                <li>
-                  <Link to="/empresa/certificaciones">Certificaciones</Link>
-                </li>
-                <li>
-                  <Link to="/empresa/equipo">Nuestro equipo</Link>
-                </li>
-                <li>
-                  <Link to="/empresa/clientes">Confiado en Nosotros</Link>
-                </li>
-                <li>
-                  <Link to="/empresa/proyectos">Proyectos</Link>
-                </li>
-                <li>
-                  <Link to="/empresa/politicas">Politicas, Codigos y reglamentos</Link>
-                </li>
-              </ul>
-            </li>
-
-            <li>
-              <Link to="/cotizacion">Cotizacion</Link>
-            </li>
-
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </nav> */}
         <NavBar/>
 
         <Routes>
           <Route path="*" element={<Navigate to="/Home" />} />
           <Route exact path="/home" element={<Home />} />
-          <Route path="/contact" element={<Contact />} /> 
+          <Route path="/contacto" element={<Contact />} /> 
+          <Route path="/cotizacion" element={<Cotizacion />} />
 
           <Route path="/servicios/gestion" element={<Gestion />} />
           <Route path="/servicios/producto" element={<Producto />} />
@@ -123,9 +64,9 @@ function App() {
           <Route path="/empresa/clientes" element={<Clientes />} />
           <Route path="/empresa/proyectos" element={<Proyectos />} />
           <Route path="/empresa/politicas" element={<Politicas />} />
-          <Route path="/cotizacion" element={<Cotizacion />} />
         </Routes>
       </Router>
+      </Context.Provider>
     </div>
   );
 }
