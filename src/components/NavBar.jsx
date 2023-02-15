@@ -13,6 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import ArrowDropDownSharpIcon from '@mui/icons-material/ArrowDropDownSharp';
 import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import MenuIcon from '@mui/icons-material/Menu';
 // images
 import Logo from '../images/Logo-itic.svg';
 import ImgCol from '../images/Bandera-col.png';
@@ -26,15 +27,15 @@ const NavBar = () => {
     // get data
     const [datos] = data;
     // destructuring data
-    const { 
-        inicio, 
-        servicios, 
-        empresa, 
-        consulta, 
-        cotizacion, 
+    const {
+        inicio,
+        servicios,
+        empresa,
+        consulta,
+        cotizacion,
         contacto,
         countries
-        } = datos;
+    } = datos;
     const serviciosSub = Object.values(servicios.dropDownMenu);
     const empresasSub = Object.values(empresa.dropDownMenu);
     const countriesSub = Object.values(countries);
@@ -82,8 +83,10 @@ const NavBar = () => {
     return (
         <StyledNav>
             <div className="Address">
-                <span><PhoneAndroidOutlinedIcon /><h4>+57 601 746 0980</h4></span>
-                <span><EmailOutlinedIcon /><h4>contacto@iticco.com</h4></span>
+                <div>
+                    <span><PhoneAndroidOutlinedIcon /><h4>+57 601 746 0980</h4></span>
+                    <span><EmailOutlinedIcon /><h4>contacto@iticco.com</h4></span>
+                </div>
             </div>
 
             <div className="ContMenu">
@@ -213,6 +216,9 @@ const NavBar = () => {
                     </ul>
                 </span>
 
+                <MenuIcon className="menuHamburguer" />
+            </div>
+            <div>
             </div>
         </StyledNav>
     );
