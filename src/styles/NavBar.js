@@ -4,25 +4,29 @@ import styled from "styled-components";
 
 export const StyledNav = styled.nav`
     display: flex;
+    margin: auto;
     flex-direction: column;
     background-color: var(--color3);
     .Address{
         background-color: var(--color4);
         color: var(--color5);
-        justify-content: right;
-        /* padding-right: 8em; */
+        display: flex;
         height: 2.8em;
         div{
             display: flex;
             justify-content: flex-end;
-            width: 94%;
+            width: 90%;
             height: 2.8em;
-            width: clamp (370px 100% 95%);
+            margin: auto;
+            @media (max-width:600px) {
+                width: 85%;
+            }
             span{
             align-items: center;
             display: flex;
             margin-right:.5em;
             padding: 1em;
+            
             h4{
             margin-left: .3em;
             font-size: 1.2em;
@@ -33,30 +37,33 @@ export const StyledNav = styled.nav`
     }
     .ContMenu{
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
+        margin: auto;
         height: 6.2em;
+        width: 90%;
         @media (max-width:1101px) {
                 justify-content:space-between;
                 width: 90%;
-                margin: auto;
             }
         span{
             display: flex;
             justify-content: space-around;
             @media (max-width:1101px) {
                 display: none;
-                border: 1px solid red;//...............
+            }
+        }
+        .contMenuHamburguer{
+            display: none;
+            @media (max-width:1101px) {
+                display: block;
             }
         }
         .menuHamburguer{
             font-size:2.8em;
             cursor: pointer;
             transition:10ms;
-            display: none;
-            @media (max-width:1101px) {
-                display: block;
-            }
+            padding: 0!important;
             :active{
                 transform: scale(.97);
                 path{

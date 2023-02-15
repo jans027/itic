@@ -13,10 +13,10 @@ import MenuItem from '@mui/material/MenuItem';
 import ArrowDropDownSharpIcon from '@mui/icons-material/ArrowDropDownSharp';
 import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import MenuIcon from '@mui/icons-material/Menu';
 // images
 import Logo from '../images/Logo-itic.svg';
 import ImgCol from '../images/Bandera-col.png';
+import MenuMobile from "../components/MenuMobile";
 // import ImgPer from '../images/Bandera-per.png';
 
 
@@ -39,7 +39,7 @@ const NavBar = () => {
     const serviciosSub = Object.values(servicios.dropDownMenu);
     const empresasSub = Object.values(empresa.dropDownMenu);
     const countriesSub = Object.values(countries);
-    // const inicioSub = Object.values(inicio);
+    // const countriesSub = Object.values(inicio);
     // console.log(countriesSub)
 
     // menu 1
@@ -142,7 +142,7 @@ const NavBar = () => {
                             onClick={(event) => handleClick2(event)}
                             name='cotizacion'
                         >
-                            <Link>{cotizacion.name}<ArrowDropDownSharpIcon /></Link>
+                            <Link>{empresa.name}<ArrowDropDownSharpIcon /></Link>
                         </BtnBase>
                         <MenuDrop
                             // id="basic-menu"
@@ -216,7 +216,7 @@ const NavBar = () => {
                     </ul>
                 </span>
 
-                <MenuIcon className="menuHamburguer" />
+                <MenuMobile />
             </div>
             <div>
             </div>
