@@ -8,12 +8,13 @@ export const data = [{
         id: 'inicioNav',
         name: 'Inicio',
         url: '/home',
+        logoNav:'Logo-itic.svg',
     },
     servicios: {
         id: 'serviciosNav',
         name: 'Servicios',
         url: '',
-        dropDownMenu:{
+        dropDownMenu: {
             gestion: {
                 id: "gestion",
                 name: "Sistemas de Gestion",
@@ -25,7 +26,7 @@ export const data = [{
                         img: "",
                         text: "",
                     },
-    
+
                 },
             },
             producto: {
@@ -39,7 +40,7 @@ export const data = [{
                         img: '',
                         text: '',
                     },
-    
+
                 },
             },
             industriales: {
@@ -53,7 +54,7 @@ export const data = [{
                         img: '',
                         text: '',
                     },
-    
+
                 },
             },
             personas: {
@@ -67,21 +68,7 @@ export const data = [{
                         img: '',
                         text: '',
                     },
-    
-                },
-            },
-            documentos: {
-                id: "documentos",
-                name: "Documentos",
-                url: '/servicios/documentos',
-                banner1: '',
-                miniaturas: {
-                    tarjeta1: {
-                        id: '',
-                        img: '',
-                        text: '',
-                    },
-    
+
                 },
             },
         },
@@ -92,9 +79,10 @@ export const data = [{
         url: '',
         dropDownMenu:{
             nosotros: {
+                key:1,
                 id: "nosotros",
                 name: "Acerca de Nosotros",
-                url: '/servicios/nosotros',
+                url: '/empresa/nosotros',
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
@@ -105,9 +93,10 @@ export const data = [{
                 },
             },
             pilares: {
+                key:2,
                 id: "pilares",
                 name: "Pilares",
-                url: '/servicios/pilares',
+                url: '/empresa/pilares',
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
@@ -118,9 +107,10 @@ export const data = [{
                 },
             },
             mision: {
+                key:3,
                 id: "mision",
                 name: "Mision",
-                url: '/servicios/mision',
+                url: '/empresa/mision',
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
@@ -131,9 +121,10 @@ export const data = [{
                 },
             },
             vision: {
+                key:4,
                 id: "vision",
                 name: "Vision",
-                url: '/servicios/vision',
+                url: '/empresa/vision',
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
@@ -144,9 +135,10 @@ export const data = [{
                 },
             },
             acreditaciones: {
+                key:5,
                 id: "acreditaciones",
                 name: "Acreditaciones",
-                url: '/servicios/acreditaciones',
+                url: '/empresa/acreditaciones',
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
@@ -157,9 +149,10 @@ export const data = [{
                 },
             },
             certificaciones: {
+                key:6,
                 id: "certificaciones",
                 name: "Certificaciones",
-                url: '/servicios/certificaciones',
+                url: '/empresa/certificaciones',
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
@@ -170,9 +163,10 @@ export const data = [{
                 },
             },
             equipo: {
+                key:7,
                 id: "equipo",
                 name: "Nuestro equipo",
-                url: '/servicios/equipo',
+                url: '/empresa/equipo',
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
@@ -183,9 +177,10 @@ export const data = [{
                 },
             },
             clientes: {
+                key:8,
                 id: "clientes",
                 name: "Confiado en Nosotros",
-                url: '/servicios/clientes',
+                url: '/empresa/clientes',
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
@@ -196,9 +191,10 @@ export const data = [{
                 },
             },
             proyectos: {
+                key:9,
                 id: "proyectos",
                 name: "Proyectos",
-                url: '/servicios/proyectos',
+                url: '/empresa/proyectos',
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
@@ -209,9 +205,10 @@ export const data = [{
                 },
             },
             politicas: {
+                key:10,
                 id: "politicas",
                 name: "Politicas, Codigos y reglamentos",
-                url: '/servicios/politicas',
+                url: '/empresa/politicas',
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
@@ -222,6 +219,8 @@ export const data = [{
                 },
             },
         },
+
+
     },
     consulta: {
         id: 'consultaNav',
@@ -229,13 +228,25 @@ export const data = [{
         url: '',
     },
     cotizacion: {
-        id: 'cotizacionNav',
+    id: 'cotizacionNav',
         name: 'Solicita tu Cotizacion',
-        url: '/cotizacion',
+            url: '/cotizacion',
     },
     contacto: {
-        id: 'contactonNav',
+    id: 'contactonNav',
         name: 'Contacto',
-        url: '/contacto',
+            url: '/contacto',
     },
+    countries:{
+        colombia:{
+            id:'colombia',
+            name:'COL',
+            url:'https://www.iticco.com/',
+        },
+        peru:{
+            id:'peru',
+            name:'PER',
+            url:'https://www.iticpe.com/',
+        }
+    }
 }]
