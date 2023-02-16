@@ -84,8 +84,8 @@ const NavBar = () => {
         <StyledNav>
             <div className="Address">
                 <div>
-                    <span><PhoneAndroidOutlinedIcon /><h4>+57 601 746 0980</h4></span>
-                    <span><EmailOutlinedIcon /><h4>contacto@iticco.com</h4></span>
+                    <span><PhoneAndroidOutlinedIcon /><h4>{inicio.phone}</h4></span>
+                    <span><EmailOutlinedIcon /><h4>{inicio.email}</h4></span>
                 </div>
             </div>
 
@@ -102,36 +102,6 @@ const NavBar = () => {
                     >
                         <Link to={inicio.url}>{inicio.name}</Link>
                     </BtnBase>
-
-                    <ul>
-                        <BtnBase
-                            // id="basic-button"
-                            aria-controls={open1 ? 'basic-menu' : undefined}
-                            aria-haspopup="true"
-                            aria-expanded={open1 ? 'true' : undefined}
-                            onClick={(event) => handleClick1(event)}
-                            name='servicios'
-                        >
-                            <Link>{servicios.name}<ArrowDropDownSharpIcon /></Link>
-                        </BtnBase>
-                        <MenuDrop
-                            // id="basic-menu"
-                            anchorEl={menu1}
-                            open={open1}
-                            onClose={handleClose1}
-                            MenuListProps={{
-                                'aria-labelledby': 'basic-button',
-                            }}
-                        >
-                            {
-                                serviciosSub.map((item) =>
-                                    <MenuItem key={item.id} onClick={handleClose1}>
-                                        <Link to={item.url}>{item.name}</Link>
-                                    </MenuItem>
-                                )
-                            }
-                        </MenuDrop>
-                    </ul>
 
                     <ul>
                         <BtnBase
@@ -163,18 +133,48 @@ const NavBar = () => {
                         </MenuDrop>
                     </ul>
 
-                    <BtnBase
-                        id="inicio"
-                        className="inicio"
-                    >
-                        <Link>{consulta.name}</Link>
-                    </BtnBase>
+                    <ul>
+                        <BtnBase
+                            // id="basic-button"
+                            aria-controls={open1 ? 'basic-menu' : undefined}
+                            aria-haspopup="true"
+                            aria-expanded={open1 ? 'true' : undefined}
+                            onClick={(event) => handleClick1(event)}
+                            name='servicios'
+                        >
+                            <Link>{servicios.name}<ArrowDropDownSharpIcon /></Link>
+                        </BtnBase>
+                        <MenuDrop
+                            // id="basic-menu"
+                            anchorEl={menu1}
+                            open={open1}
+                            onClose={handleClose1}
+                            MenuListProps={{
+                                'aria-labelledby': 'basic-button',
+                            }}
+                        >
+                            {
+                                serviciosSub.map((item) =>
+                                    <MenuItem key={item.id} onClick={handleClose1}>
+                                        <Link to={item.url}>{item.name}</Link>
+                                    </MenuItem>
+                                )
+                            }
+                        </MenuDrop>
+                    </ul>
 
                     <BtnBase
                         id="inicio"
                         className="inicio"
                     >
                         <Link to={cotizacion.url}>{cotizacion.name}</Link>
+                    </BtnBase>
+
+                    <BtnBase
+                        id="inicio"
+                        className="inicio"
+                    >
+                        <Link>{consulta.name}</Link>
                     </BtnBase>
 
                     <BtnBase

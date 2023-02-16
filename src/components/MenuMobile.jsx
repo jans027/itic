@@ -114,7 +114,7 @@ export default function MenuMobile() {
     const list = (anchor) => (
         <Box
             className='SlideMenu'
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 280 }}
             role="presentation"
         // onClick={toggleDrawer(anchor, false)}
         // onKeyDown={toggleDrawer(anchor, false)}

@@ -26,11 +26,14 @@ export const StyledNav = styled.nav`
             display: flex;
             margin-right:.5em;
             padding: 1em;
-            
+            @media (max-width:456px) {
+                display:none;
+                }
             h4{
             margin-left: .3em;
-            font-size: 1.2em;
+            font-size: 1em;
             font-weight: 500;
+            
             }
         }
         }
