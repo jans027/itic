@@ -22,6 +22,7 @@ import Clientes from './pages/Clientes';
 import Cotizacion from './pages/Cotizacion';
 import NavBar from './pages/Navbar';
 import { data } from './data/data';
+import Footer from './components/Footer';
 
 
 const Context = createContext(data);
@@ -65,7 +66,10 @@ function App() {
           <Route path="/empresa/proyectos" element={<Proyectos />} />
           <Route path="/empresa/politicas" element={<Politicas />} />
         </Routes>
+
+        <Footer/>
       </Router>
+
       </Context.Provider>
     </div>
   );

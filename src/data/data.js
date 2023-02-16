@@ -11,6 +11,7 @@ export const data = [{
         logoNav:'Logo-itic.svg',
         email:'contacto@iticco.com',
         phone:'+57 601 746 0980',
+        address:'Of. Calle 108 #45-27 Ed. ITICCOL - Bogotá Colombia',
     },
     empresa: {
         id: 'empresaNav',
@@ -21,6 +22,7 @@ export const data = [{
                 key:1,
                 id: "nosotros",
                 name: "ACERCA DE NOSOTROS",
+                nameFooter:'Acerca de nosotros',
                 url: '/empresa/nosotros',
                 banner1: '',
                 miniaturas: {
@@ -35,6 +37,7 @@ export const data = [{
                 key:2,
                 id: "pilares",
                 name: "PILARES, MISIÓN, VISIÓN",
+                nameFooter:'Pilares, Misión, Visión',
                 url: '/empresa/pilares',
                 banner1: '',
                 miniaturas: {
@@ -49,6 +52,7 @@ export const data = [{
                 key:5,
                 id: "acreditaciones",
                 name: "ACREDITACIONES",
+                nameFooter:'Acreditaciones',
                 url: '/empresa/acreditaciones',
                 banner1: '',
                 miniaturas: {
@@ -63,6 +67,7 @@ export const data = [{
                 key:6,
                 id: "certificaciones",
                 name: "CERTIFICACIONES",
+                nameFooter:'Certificaciones',
                 url: '/empresa/certificaciones',
                 banner1: '',
                 miniaturas: {
@@ -77,6 +82,7 @@ export const data = [{
                 key:7,
                 id: "equipo",
                 name: "NUESTRO EQUIPO",
+                nameFooter:'Nuestro equipo',
                 url: '/empresa/equipo',
                 banner1: '',
                 miniaturas: {
@@ -91,6 +97,7 @@ export const data = [{
                 key:8,
                 id: "clientes",
                 name: "HAN CONFIADO EN NOSOTROS",
+                nameFooter:'Han confiado en nosotros',
                 url: '/empresa/clientes',
                 banner1: '',
                 miniaturas: {
@@ -105,6 +112,7 @@ export const data = [{
                 key:9,
                 id: "proyectos",
                 name: "PROYECTOS",
+                nameFooter:'Nuestras Experiencias',
                 url: '/empresa/proyectos',
                 banner1: '',
                 miniaturas: {
@@ -141,6 +149,7 @@ export const data = [{
             gestion: {
                 id: "gestion",
                 name: "SISTEMAS DE GESTIÓN",
+                nameFooter: "Sistemas de Gestión",
                 url: '/servicios/gestion',
                 banner1: '',
                 miniaturas: {
@@ -155,6 +164,7 @@ export const data = [{
             producto: {
                 id: "producto",
                 name: "CERTIFICACIÓN DE PRODUCTO",
+                nameFooter: "Certificación de producto",
                 url: '/servicios/producto',
                 banner1: '',
                 miniaturas: {
@@ -169,6 +179,7 @@ export const data = [{
             industriales: {
                 id: "industriales",
                 name: "SERVICIOS INDUSTRIALES",
+                nameFooter: "Servicios industriales",
                 url: '/servicios/industrial',
                 banner1: '',
                 miniaturas: {
@@ -183,6 +194,7 @@ export const data = [{
             personas: {
                 id: "personas",
                 name: "CERTIFICACIÓN DE PERSONAS",
+                nameFooter: "Certificación de personas",
                 url: '/servicios/personas',
                 banner1: '',
                 miniaturas: {
@@ -202,14 +214,15 @@ export const data = [{
         url: '',
     },
     cotizacion: {
-    id: 'cotizacionNav',
+        id: 'cotizacionNav',
         name: 'SOLICITA TU COTIZACIÓN',
-            url: '/cotizacion',
+        url: '/cotizacion',
     },
     contacto: {
-    id: 'contactonNav',
+        id: 'contactonNav',
         name: 'CONTACTO',
-            url: '/contacto',
+        nameFooter:'Formulario de contacto',
+        url: '/contacto',
     },
     countries:{
         colombia:{
@@ -290,5 +303,10 @@ export const data = [{
             text2:'CONOCE MÁS SOBRE NUESTROS SERVICIOS',
             textBtn:'COMUNÍCATE CON NUESTRO EQUIPO',
         }
+    },
+    politicas:{
+        id: 'politicas',
+        name: 'POLÍTICAS, CÓDIGOS Y REGLAMENTOS',
+        url: '',
     }
 }]
