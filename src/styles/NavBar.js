@@ -7,6 +7,10 @@ export const StyledNav = styled.nav`
     margin: auto;
     flex-direction: column;
     background-color: var(--color3);
+    position: fixed;
+    top:0;
+    width: 100%;
+    z-index: 999;
     .Address{
         background-color: var(--color4);
         color: var(--color5);
@@ -26,7 +30,7 @@ export const StyledNav = styled.nav`
             display: flex;
             margin-right:.5em;
             padding: 1em;
-            @media (max-width:456px) {
+            @media (max-width:510px) {
                 display:none;
                 }
             h4{

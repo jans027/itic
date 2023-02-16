@@ -11,7 +11,13 @@ export const data = [{
         logoNav:'Logo-itic.svg',
         email:'contacto@iticco.com',
         phone:'+57 601 746 0980',
-        address:'Of. Calle 108 #45-27 Ed. ITICCOL - Bogotá Colombia',
+        address:'Of. Calle 108 #45-27',
+        addressBuilding:'Ed. ITICCOL - Bogotá Colombia',
+        facebookUrl:'https://www.facebook.com/iticcolombia',
+        instagramUrl:'https://www.instagram.com/itic_colombia/',
+        twitterUrl:'https://twitter.com/ITICColombia',
+        linkedInUrl:'https://www.linkedin.com/company/itic-colombia/',
+
     },
     empresa: {
         id: 'empresaNav',
