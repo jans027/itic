@@ -10,7 +10,7 @@ export const StyledNav = styled.nav`
     position: fixed;
     top:0;
     width: 100%;
-    z-index: 999;
+    z-index: 100;
     .Address{
         background-color: var(--color4);
         color: var(--color5);

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 
 export const ContFooter = styled.div`
-    position:fixed;
+    /* position:fixed; */
     bottom: 0;
     width:100%;
     color: var(--color5);
@@ -49,13 +49,11 @@ export const BlockNav = styled.div`
         @media (max-width:998px) {
             width: 100%!important;
             display: flex;
-            /* flex-direction: column; */
         }
         @media (max-width:590px) {
                 display: flex;
                 flex-direction: column;
                 width: 100%!important;
-                border: 1px solid red;//............
                 }
         }
         h3{
@@ -114,7 +112,7 @@ export const Redes = styled.div`
 `
 export const LogoFooter = styled.div`
     width:90%;
-    padding: 1.5em;
+    padding: 1.5em 0;
     margin: 0 auto;
     div{
         width:clamp(150px, 15%, 215px);

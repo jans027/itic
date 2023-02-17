@@ -12,14 +12,13 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 //styles
 import { AddressFooter, BlockNav, ConsultasFooter, ContFooter, ContUlPoliticas, Copy, LinkConsulta1, LogoFooter, Redes } from '../styles/Footer';
-// Images
-import Logo from '../images/Logo-itic.svg';
 //Documents
 import confidencialidad from '../documents/ITIC-C-NA-DI-003-POLITICA-DE-IMPARCIALIDAD-INDEPENDENCIA-Y-CONFIDENCIALIDAD-V7.doc';
 import personas from '../documents/ITIC-C-NA-DI-009-POLITICA-DE-SEGURIDAD-PROCESO-DE-CERTIFICACION-DE-PERSONAS-V2.doc';
 import suspension from '../documents/ITIC-C-NA-DI-010-POLITICA-DE-SUSPENSION-RETIRO-O-REDUCCION-DEL-ALCANCE-DE-CERTIFICACION-PERSONAS-V2.doc';
 import calidad from '../documents/ITIC-C-NA-PL-001-POLITICA-Y-OBJETIVOS-DE-CALIDAD-002.doc';
-
+// Images
+import LogFooter from '../images/Logo-itic-blanco.svg';
 
 
 
@@ -50,7 +49,7 @@ const Footer = () => {
 
                 <LogoFooter>
                     <div>
-                        <img src={Logo} alt="" />
+                        <img src={LogFooter} alt="logoItic" />
                     </div>
                 </LogoFooter>
 
