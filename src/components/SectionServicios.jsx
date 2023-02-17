@@ -1,6 +1,7 @@
 import React from 'react'
 import { data } from '../data/data';
-import { ConSectionServicios } from '../styles/SectionServicios';
+import { CardServicios, ConSectionServicios, ContCardsServi, ContTextCard, EnlaceBtnS, EnlaceImg } from '../styles/SectionServicios';
+
 
 const SectionServicios = () => {
 
@@ -8,28 +9,40 @@ const SectionServicios = () => {
     const [datos] = data;
     // destructuring data
     const {
-        inicio,
         servicios,
-        empresa,
-        consulta,
-        cotizacion,
-        contacto,
-        politicas
     } = datos;
-    const serviciosSub = Object.values(servicios);
-    // const empresasSub = Object.values(empresa.dropDownMenu);
-    // console.log(servicios.name)
+    const serviciosSub = Object.values(servicios.dropDownMenu);
+    // console.log(serviciosSub)
+
 
 
     return (
         <>
-        <ConSectionServicios>
-            <h1>{servicios.name}</h1>
-            <div>
-                
-            </div>
-        </ConSectionServicios>
-            
+            <ConSectionServicios>
+                <h1>{servicios.name}</h1>
+
+                <ContCardsServi>
+                    {
+                        serviciosSub.map((item) =>
+                            <CardServicios key={item.id}>
+                                <div>
+                                    <EnlaceImg to={item.url}>
+                                        <img src={require(`../images/${item.cardImg}`)} alt={item.name} />
+                                    </EnlaceImg>
+                                    <ContTextCard>
+                                        <h4>{item.name}</h4>
+                                        <p>{item.cardText}</p>
+                                    </ContTextCard>
+                                </div>
+                                <div>
+                                    <EnlaceBtnS to={item.url}>VER MÁS</EnlaceBtnS>
+                                </div>
+                            </CardServicios>
+                        )
+                    }
+                </ContCardsServi>
+
+            </ConSectionServicios>
         </>
     )
 }

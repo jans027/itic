@@ -158,14 +158,9 @@ export const data = [{
                 nameFooter: "Sistemas de Gestión",
                 url: '/servicios/gestion',
                 banner1: '',
-                miniaturas: {
-                    tarjeta1: {
-                        id: '',
-                        img: "",
-                        text: "",
-                    },
-
-                },
+                cardImg:'GESTION.png',
+                cardText:'- Certificación - GAP Análisis - Auditoría Interna - Evaluación de Proveedores',
+                
             },
             producto: {
                 id: "producto",
@@ -173,14 +168,9 @@ export const data = [{
                 nameFooter: "Certificación de producto",
                 url: '/servicios/producto',
                 banner1: '',
-                miniaturas: {
-                    tarjeta1: {
-                        id: '',
-                        img: '',
-                        text: '',
-                    },
-
-                },
+                cardImg:'PRODUCTO.png',
+                cardText:'- TCA ENEL - Eficiencia energética - Gasodomésticos - Barras Corrugadas - Retilap - Retie - Pilas - RetiQ - Refrigeradores y congeladores',
+                
             },
             industriales: {
                 id: "industriales",
@@ -188,14 +178,8 @@ export const data = [{
                 nameFooter: "Servicios industriales",
                 url: '/servicios/industrial',
                 banner1: '',
-                miniaturas: {
-                    tarjeta1: {
-                        id: '',
-                        img: '',
-                        text: '',
-                    },
-
-                },
+                cardImg:'INDUSTRIALES.png',
+                cardText:'- Certificación Sistemas Retie/Retilap - Certificación Redes de Gas - Certificación Estaciones de servicio - Servicios de interventoría - Servicios deI nspección...',
             },
             personas: {
                 id: "personas",
@@ -203,14 +187,9 @@ export const data = [{
                 nameFooter: "Certificación de personas",
                 url: '/servicios/personas',
                 banner1: '',
-                miniaturas: {
-                    tarjeta1: {
-                        id: '',
-                        img: '',
-                        text: '',
-                    },
-
-                },
+                cardImg:'PERSONAS.png',
+                cardText:'- Gas Natural Residencial y Comercial - Gas Natural Comprimido Vehicular',
+                
             },
         },
     },
