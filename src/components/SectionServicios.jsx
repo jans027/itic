@@ -1,7 +1,8 @@
 import React from 'react'
 import { data } from '../data/data';
+import { ConSectionServicios } from '../styles/SectionServicios';
 
-const sectionServicios = () => {
+const SectionServicios = () => {
 
     // get data
     const [datos] = data;
@@ -15,15 +16,22 @@ const sectionServicios = () => {
         contacto,
         politicas
     } = datos;
-    const serviciosSub = Object.values(servicios.dropDownMenu);
+    const serviciosSub = Object.values(servicios);
     // const empresasSub = Object.values(empresa.dropDownMenu);
+    // console.log(servicios.name)
 
 
     return (
-        <div>
-            <h1>{serviciosSub.name}</h1>
-        </div>
+        <>
+        <ConSectionServicios>
+            <h1>{servicios.name}</h1>
+            <div>
+                
+            </div>
+        </ConSectionServicios>
+            
+        </>
     )
 }
 
-export default sectionServicios
+export default SectionServicios;

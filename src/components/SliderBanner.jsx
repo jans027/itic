@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 // import Slider from "react-slick";
 import banner1 from '../images/banner-ppal.png';
-import { BannerPrueba, ContImgCarousel } from "../styles/SliderBanner";
+import { ContImgCarousel } from "../styles/SliderBanner";
 
 
 export default class SimpleSlider extends Component {
@@ -12,21 +12,23 @@ export default class SimpleSlider extends Component {
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            speed: 1000,
+            autoplaySpeed: 3000,
+            speed: 1300,
             pauseOnHover: true,
             cssEase: "linear",
-            // appendDots: dots => (
-            //     <div
-            //         style={{
-            //             backgroundColor: "#1cbb61",
-            //             borderRadius: "10px",
-            //             padding: "10px",
-
-            //         }}
-            //     >
-            //         <ul style={{ marginTop: "20px", color:'black' }}> {dots} </ul>
-            //     </div>
-            // ),
+            appendDots: dots => (
+                <div
+                    style={{
+                        borderRadius: "10px",
+                        padding: "0px",
+                        top: "10px",
+                        height: "20px",
+                        // marginTop: "-30px",
+                    }}
+                >
+                    <ul style={{ marginTop: "0px" }}> {dots} </ul>
+                </div>
+            ),
         };
         return (
             <div>
@@ -34,25 +36,31 @@ export default class SimpleSlider extends Component {
                     <div>
                         <img src={banner1} alt="" />
                         <span>
-                            <h2>INSPECCION 1</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime hic architecto accusamus, illum quisquam officiis molestias vel quia praesentium quaerat deserunt, error excepturi aspernatur dolorem tenetur voluptatem numquam dignissimos facilis.</p>
-                            <a href="/">prueba</a>
+                            <h2>INSPECCIÓN</h2>
+                            <p>A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.</p>
+                            <br />
+                            <br />
+                            <p><a href="/">SOLICITAR INFORMACIÓN</a></p>
                         </span>
                     </div>
                     <div>
                         <img src={banner1} alt="" />
                         <span>
-                            <h2>INSPECCION 2</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime hic architecto accusamus, illum quisquam officiis molestias vel quia praesentium quaerat deserunt, error excepturi aspernatur dolorem tenetur voluptatem numquam dignissimos facilis.</p>
-                            <a href="/">prueba</a>
+                            <h2>INSPECCIÓN</h2>
+                            <p>A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.</p>
+                            <br />
+                            <br />
+                            <p><a href="/">SOLICITAR INFORMACIÓN</a></p>
                         </span>
                     </div>
                     <div>
                         <img src={banner1} alt="" />
                         <span>
-                            <h2>INSPECCION 3</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime hic architecto accusamus, illum quisquam officiis molestias vel quia praesentium quaerat deserunt, error excepturi aspernatur dolorem tenetur voluptatem numquam dignissimos facilis.</p>
-                            <a href="/">prueba</a>
+                            <h2>INSPECCIÓN</h2>
+                            <p>A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.</p>
+                            <br />
+                            <br />
+                            <p><a href="/">SOLICITAR INFORMACIÓN</a></p>
                         </span>
                     </div>
                 </ContImgCarousel>
