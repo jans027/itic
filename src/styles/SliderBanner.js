@@ -53,7 +53,7 @@ export const ContImgCarousel = styled(Slider)`
                 font-size: 1.5rem;
                 @media (min-width:1445px) {
                     font-size: 1vw;
-                    width: 150px;
+                    /* width: 150px; */
                 }
                 @media(max-width:650px){
                     display: none;
