@@ -63,11 +63,45 @@ export const data = [{
                 banner1: '',
                 miniaturas: {
                     tarjeta1: {
-                        id: '',
-                        img: "",
-                        text: "",
+                        id: 'fff',
+                        img: "hhhh",
+                        text: "eeee",
                     },
                 },
+                documentOnac:{
+                    title:'ACREDITACIONES',
+                    subTitle:'En iticcol contamos con acreditación ONAC, vigente a la fecha con código de acreditación:',
+                    cards:{
+                        document1:{
+                            id:'cardInspec',
+                            url:'https://onac.org.co/certificados/15-OIN-014.pdf',
+                            img:'ONAC_INSPECCION.png',
+                            name:'INSPECCION',
+                            textP:'15-OIN-014, bajo la norma \nISO/IEC 17020:2012 \npara la certificación de \ninspecciones',
+                        },
+                        document2:{
+                            id:'cardPers',
+                            url:'https://onac.org.co/certificados/14-OCP-006.pdf',
+                            img:'ONAC_PERSONAS.png',
+                            name:'PERSONAS',
+                            textP:'14-OCP-006, bajo la \nnorma ISO/IEC 17024:2012 \npara la certificación de \npersonas',
+                        },
+                        document3:{
+                            id:'cardProd',
+                            url:'https://onac.org.co/certificados/15-CPR-002.pdf',
+                            img:'ONAC_PRODUCTO.png',
+                            name:'PRODUCTOS',
+                            textP:'15-CPR-002, bajo la \nnorma ISO/IEC 17065:2012 \npara la certificación de \nproducto',
+                        },
+                        document4:{
+                            id:'card',
+                            url:'https://onac.org.co/certificados/12-CSG-001.pdf',
+                            img:'ONAC_GESTION.png',
+                            name:'SISTEMAS DE \nGESTIÓN',
+                            textP:'12-CSG-001, bajo la norma \nISO/IEC 17021-1:2015 \npara la certificación de \nsistemas de gestión',
+                        },
+                    }
+                }
             },
             certificaciones: {
                 key:6,
@@ -151,6 +185,7 @@ export const data = [{
         id: 'serviciosNav',
         name: 'SERVICIOS',
         url: '',
+        subTitle:'Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis dictumst porttitor: ',
         dropDownMenu: {
             gestion: {
                 id: "gestion",

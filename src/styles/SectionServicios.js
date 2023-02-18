@@ -9,11 +9,12 @@ export const ConSectionServicios = styled.div`
     margin: 2rem 0;
     height: max-content;
     padding: 2rem 0;
-    h1{
-        font-size: 47px;
-        font-weight: 900;
-        padding:1rem 0;
-    }
+    
+    /* p, span{
+        font-size: 2rem;
+        padding: 1rem 0 3rem 0;
+        font-weight: 300;
+    } */
 `
 export const ContCardsServi = styled.div`
     width: 90%;
@@ -21,6 +22,7 @@ export const ContCardsServi = styled.div`
     display: flex;
     flex-wrap: wrap;
     gap: 30px 0;
+    /* border: 1px solid red;//....................... */
 `
 export const CardServicios = styled.div`
     width: 25%;
@@ -34,25 +36,47 @@ export const CardServicios = styled.div`
     @media(max-width:800px){
         width: 50%;
     }
-    div{
-        img{
-            border-radius:50%;
-            border: 9px solid var(--color1);
-            width: 17vw;
-            min-width:140px;
-        }
+    img{
+        border-radius:50%;
+        border: 9px solid var(--color1);
+        width: 17vw;
+        min-width:140px;
+        
     }
 `
 export const EnlaceImg = styled(Link)`
+    border-radius:50%;
+    position: relative;
+    display: inline-block;
+    &::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius:50%;
+        background-color: var(--color1);
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 20ms;
+    }
+    &:hover::before{
+        opacity: 0.7; 
+        background-color: var(--color8);
+    }
     img{
         transition: 80ms;
-        &:hover{
-            transform: scale(1.1);
+        display: block;
+        max-width: 100%;
+        height: auto;
+        z-index: 2;
         }
         &:active{
             transform: scale(1);
-        }
     }
+    
 `
 export const ContTextCard =styled.div`
     width: 75%;
@@ -60,7 +84,8 @@ export const ContTextCard =styled.div`
     padding-bottom: 2em;
     /* border: 1px solid blue;//............ */
     h4{
-        font-size: 1.5em;
+        font-size: 1.5rem;
+
     }
     p{
         font-size: 1.2em;
@@ -78,7 +103,7 @@ export const ContTextCard =styled.div`
 
 export const EnlaceBtnS = styled(Link)`
             margin: 10px 0;
-            padding: .5rem 2rem;
+            padding: .5vw 2vw;
             font-size: 20px;
             top: 50px;
             text-decoration: none;
@@ -87,13 +112,15 @@ export const EnlaceBtnS = styled(Link)`
             background-color:var(--color4);
             border: 2px solid var(--color4);
             border-radius: 1rem;
+            @media(max-width:1200px){
+                    position: relative;
+                    top: 0px;
+            }
             &:hover{
                 color: var(--color1);
             }
             &:active{
-                font-size: 19px;
-            }
-            /* @media(max-width:850px){
-                font-size: 14px ;
-            } */
+            background-color: var(--color7);
+            
+        }
 `

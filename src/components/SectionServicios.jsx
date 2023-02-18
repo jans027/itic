@@ -1,5 +1,6 @@
 import React from 'react'
 import { data } from '../data/data';
+import { SubTitleSection, TitleSection } from '../styles/SecAcreditaciones';
 import { CardServicios, ConSectionServicios, ContCardsServi, ContTextCard, EnlaceBtnS, EnlaceImg } from '../styles/SectionServicios';
 
 
@@ -19,7 +20,8 @@ const SectionServicios = () => {
     return (
         <>
             <ConSectionServicios>
-                <h1>{servicios.name}</h1>
+                <TitleSection>{servicios.name}</TitleSection>
+                <SubTitleSection>{servicios.subTitle}</SubTitleSection>
 
                 <ContCardsServi>
                     {
@@ -27,7 +29,7 @@ const SectionServicios = () => {
                             <CardServicios key={item.id}>
                                 <div>
                                     <EnlaceImg to={item.url}>
-                                        <img src={require(`../images/${item.cardImg}`)} alt={item.name} />
+                                            <img src={require(`../images/${item.cardImg}`)} alt={item.name} />
                                     </EnlaceImg>
                                     <ContTextCard>
                                         <h4>{item.name}</h4>

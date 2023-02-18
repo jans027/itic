@@ -22,11 +22,11 @@ export default class SimpleSlider extends Component {
                         borderRadius: "10px",
                         padding: "0px",
                         top: "10px",
-                        height: "20px",
+                        height: "40px",
                         // marginTop: "-30px",
                     }}
                 >
-                    <ul style={{ marginTop: "0px" }}> {dots} </ul>
+                    <ul style={{ marginTop: "0px", background:"#ECECEC" }}> {dots} </ul>
                 </div>
             ),
         };

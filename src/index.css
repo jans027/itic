@@ -8,6 +8,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
+  background-color: var(--color2);
 }
 @media(min-width:1571px) and (max-width:2600px) {
   *{
@@ -42,6 +43,9 @@ body {
   --color4: #000000;
   --color5: #FFFFFF;
   --color6: transparent;
+  --color7: rgba(0, 0, 0, 0.900);
+  --color8: rgba(157, 255, 45, 0.363);
+
 
   --bold: font-weight:bold;
 }

@@ -1,12 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { data } from "../data/data";
-import {
-    BtnBase,
-    LogoNav,
-    MenuDrop,
-    StyledNav,
-} from "../styles/NavBar";
+import {BtnBase,LogoNav,MenuDrop,StyledNav} from "../styles/NavBar";
 // Menu
 import MenuItem from '@mui/material/MenuItem';
 // icons
@@ -65,7 +60,7 @@ const NavBar = () => {
         setMenu2(null);
     };
 
-    // menu 2
+    // menu 3
     const [menu3, setMenu3] = React.useState(null);
     const open3 = Boolean(menu3);
 
