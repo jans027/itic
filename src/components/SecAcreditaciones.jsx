@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { data } from '../data/data';
-import { CardAcred, ContCardAcred, ContSliderAcr, SubTitleSection, TitleSection } from '../styles/SecAcreditaciones';
+import { CardAcred,  ContSliderAcr, SubTitleSection, TitleSection } from '../styles/SecAcreditaciones';
 import { ConSectionServicios } from '../styles/SectionServicios';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import Slider from 'react-slick';

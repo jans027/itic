@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 
 export const CardAcred = styled.div`
+    /* border: 1px solid red;//................ */
+    margin: 1em 0;
     width: 20vw!important;
     min-width: 200px;
     height: auto;
@@ -88,7 +90,9 @@ export const SubTitleSection = styled.p`
 
 // stiles slider and arrow
 export const ContSliderAcr = styled.div`
+    /* border: 1px solid red;//................ */
     padding:1rem 0;
+    margin-bottom: 25px;
     .slick-slider{
         margin: auto;
     }
@@ -104,10 +108,16 @@ export const ContSliderAcr = styled.div`
     .slick-prev{
         left: -1px;
         z-index: 1;
+        @media(min-width:830px){
+            left: 25px;
+        }
     }
     .slick-next{
         right: 10px;
         z-index: 1;
+        @media(min-width:830px){
+            right: 31px;
+        }
     }
 `
 

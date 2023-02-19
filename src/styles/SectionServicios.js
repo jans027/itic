@@ -9,7 +9,7 @@ export const ConSectionServicios = styled.div`
     margin: 2rem 0;
     height: max-content;
     padding: 2rem 0;
-    
+    /* border: 1px solid red;//....................... */
     /* p, span{
         font-size: 2rem;
         padding: 1rem 0 3rem 0;
@@ -122,5 +122,6 @@ export const EnlaceBtnS = styled(Link)`
             &:active{
             background-color: var(--color7);
             
-        }
+            }
+            
 `

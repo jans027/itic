@@ -153,13 +153,63 @@ export const data = [{
                 id: "proyectos",
                 name: "PROYECTOS",
                 nameFooter:'Nuestras Experiencias',
+                nameSecction:'NUESTRA EXPERIENCIA',
                 url: '/empresa/proyectos',
                 banner1: '',
-                miniaturas: {
-                    tarjeta1: {
-                        id: '',
-                        img: "",
-                        text: "",
+                cards: {
+                    card1: {
+                        id: 'proyect1',
+                        img: "Proyecto1.png",
+                        title:'TÍTULO PROYECTO UNO',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card2: {
+                        id: 'proyect2',
+                        img: "Proyecto2.png",
+                        title:'TÍTULO PROYECTO DOS',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card3: {
+                        id: 'proyect3',
+                        img: "Proyecto3.png",
+                        title:'TÍTULO PROYECTO TRES',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card4: {
+                        id: 'proyect4',
+                        img: "Proyecto1.png",
+                        title:'TÍTULO PROYECTO CUATRO',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card5: {
+                        id: 'proyect5',
+                        img: "Proyecto2.png",
+                        title:'TÍTULO PROYECTO CINCO',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card6: {
+                        id: 'proyect6',
+                        img: "Proyecto3.png",
+                        title:'TÍTULO PROYECTO SEIS',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card7: {
+                        id: 'proyect7',
+                        img: "Proyecto1.png",
+                        title:'TÍTULO PROYECTO SIETE',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card8: {
+                        id: 'proyect8',
+                        img: "Proyecto2.png",
+                        title:'TÍTULO PROYECTO OCHO',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card9: {
+                        id: 'proyect9',
+                        img: "Proyecto3.png",
+                        title:'TÍTULO PROYECTO NUEVE',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
                     },
                 },
             },
