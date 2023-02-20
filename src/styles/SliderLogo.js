@@ -24,7 +24,7 @@ export const ContSlideLogo = styled.div`
         font-size: 10px!important;
     }
     .slick-prev::before, .slick-next::before{
-        color: var(--color7)!important;
+        color: var(--color2)!important;
         font-size: 50px!important;
         opacity: .5;
     }

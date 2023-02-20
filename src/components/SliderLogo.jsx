@@ -6,7 +6,7 @@ export default class SliderLogo extends Component {
     render() {
         const settings = {
             className: "center",
-            // dots: true,
+            dots: true,
             infinite: true,
             speed: 500,
             slidesToShow: 5,
