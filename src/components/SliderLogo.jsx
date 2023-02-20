@@ -1,17 +1,30 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import { CardLogo, ContSlideLogo } from "../styles/SliderLogo";
+import { data } from "../data/data";
+import { CardLogo, ContSlideLogo, LinkExperiencia } from "../styles/SliderLogo";
+
+
+const [datos] = data;
+    const { empresa: { dropDownMenu: { proyectos: {url } } } } = datos;
+    // const card = Object.values(cards);
+    // console.log(url )
+
 
 export default class SliderLogo extends Component {
+
+    
     render() {
         const settings = {
-            className: "center",
-            dots: true,
+            // className: "center",
+            // dots: true,
             infinite: true,
-            speed: 500,
             slidesToShow: 5,
-            slidesToScroll: 3,
-            // centerMode: true,
+            slidesToScroll: 1,
+            autoplay: true,
+            speed: 2000,
+            autoplaySpeed: 2000,
+            cssEase: "linear",
             responsive: [
                 {
                     breakpoint: 1024,
@@ -93,6 +106,9 @@ export default class SliderLogo extends Component {
                         </CardLogo>
                     </Slider>
                 </div>
+                <LinkExperiencia>
+                    <Link to={url}>CONOCE MÁS</Link>
+                </LinkExperiencia>
             </ContSlideLogo>
         );
     }

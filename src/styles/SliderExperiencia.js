@@ -1,61 +1,59 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
 
 
+
+
+
+export const CardExperi1 = styled.div`
+    margin: 1em 0;
+    width: 25vw!important;
+    height: auto;
+    border-radius: 30px;
+    padding-top: 1.3rem;
+    -webkit-box-shadow: 9px 16px 36px -1px rgba(0,0,0,0.6); 
+    box-shadow: 9px 16px 36px -1px rgba(0,0,0,0.6);
+    background-color: var(--color5);
+    @media (max-width:850px) {
+        width: 300px!important;
+        
+    }
+`
+
 export  const ConCardExperiencia = styled.div`
-    /* border: 1px solid red;//.................. */
     border-radius: 30px;
     height: 100%;
     margin-bottom: 1.5rem;
-    span{
+    div{
+        overflow: hidden;
+        margin-top: -1.5rem;
+        border-radius: 30px;
         img{
-            border-radius: 30px;
-            margin-top: -1.5rem;
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
         }
+        
     }
     .cardTitle{
         p{
             font-weight:900;
-            padding: 1em 0;
+            padding: 1em 0 0 0;
+            font-size: 1.6vw;
         }
     }
     .cardText{
         padding: 1em;
         p{
             font-weight:10px;
-            padding: 0 1em;
-            /* border: 1px solid red;//.................. */
+            font-size: 1.5em;
+            padding: 0 .6em;
         }
     }
 `
 
-export const LinkExperiencia = styled.span`
-        
-        a{
-        padding: .5vw 2vw;
-        font-size: 20px;
-        text-decoration: none;
-        font-weight: 600;
-        color: var(--color5);
-        background-color:var(--color4);
-        border: 2px solid var(--color4);
-        border-radius: 1rem;
-        /* @media(max-width:1200px){
-                position: relative;
-                top: 0px;
-        } */
-        &:hover{
-            color: var(--color1);
-        }
-        &:active{
-            background-color: var(--color7);
-            text-decoration: none;
-        }
-        }
 
-`
 
 
 

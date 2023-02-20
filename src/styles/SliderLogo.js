@@ -40,7 +40,6 @@ export const ContSlideLogo = styled.div`
     }
 `
 
-
 export const CardLogo = styled.div`
 
     H3{
@@ -59,8 +58,30 @@ export const CardLogo = styled.div`
     
 `
 
+export const LinkExperiencia = styled.div`
+        /* border: 1px solid red;//.............. */
+        width: 100%;
+        text-align: center;
+        margin: 4rem 0 3.5rem 0;
+        a{
+        padding: .5vw 2vw;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 600;
+        color: var(--color5);
+        background-color:var(--color4);
+        border: 2px solid var(--color4);
+        border-radius: 1rem;
+        &:hover{
+            color: var(--color1);
+        }
+        &:active{
+            background-color: var(--color7);
+            text-decoration: none;
+        }
+        }
 
-
+`
 
 
 

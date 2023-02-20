@@ -156,6 +156,7 @@ export const data = [{
                 nameSecction:'NUESTRA EXPERIENCIA',
                 url: '/empresa/proyectos',
                 banner1: '',
+                subTitle:'Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis dictumst porttitor: ',
                 cards: {
                     card1: {
                         id: 'proyect1',

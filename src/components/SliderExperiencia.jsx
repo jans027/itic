@@ -1,18 +1,16 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
 import { data } from '../data/data';
-import { CardAcred, ContSliderAcr, TitleSection } from '../styles/SecAcreditaciones';
+import {  ContSliderAcr, SubTitleSection, TitleSection } from '../styles/SecAcreditaciones';
 import { ConSectionServicios } from '../styles/SectionServicios';
-// import AddCircleIcon from '@mui/icons-material/AddCircle';
 import Slider from 'react-slick';
-import { ConCardExperiencia, LinkExperiencia } from '../styles/SliderExperiencia';
+import { CardExperi1, ConCardExperiencia } from '../styles/SliderExperiencia';
 
 
 const SecExperiencias = () => {
 
     // get data
     const [datos] = data;
-    const { empresa: { dropDownMenu: { proyectos: {url, nameSecction, cards } } } } = datos;
+    const { empresa: { dropDownMenu: { proyectos: { nameSecction, subTitle, cards } } } } = datos;
     const card = Object.values(cards);
     // console.log(card)
 
@@ -46,7 +44,7 @@ const SecExperiencias = () => {
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 670,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -59,17 +57,18 @@ const SecExperiencias = () => {
         <>
             <ConSectionServicios>
                 <TitleSection>{nameSecction}</TitleSection>
+                <SubTitleSection>{subTitle}</SubTitleSection>
 
                 <ContSliderAcr>
                     <Slider {...settings}>
 
                         {
                             card.map((item) =>
-                                <CardAcred key={item.id}>
-                                    <ConCardExperiencia>
-                                        <span>
+                                <CardExperi1 key={item.id}>
+                                    <ConCardExperiencia className='cardExperiencia'>
+                                        <div>
                                             <img src={require(`../images/${item.img}`)} alt={item.name} />
-                                        </span>
+                                        </div>
                                         <span className='cardTitle'>
                                             <p>{item.title}</p>
                                         </span>
@@ -77,15 +76,12 @@ const SecExperiencias = () => {
                                             <p>{item.text}</p>
                                         </span>
                                     </ConCardExperiencia>
-                                </CardAcred>
+                                </CardExperi1>
                             )
                         }
 
                     </Slider>
                 </ContSliderAcr>
-                <LinkExperiencia>
-                    <Link to={url}>CONOCE MÁS</Link>
-                </LinkExperiencia>
 
             </ConSectionServicios>
 

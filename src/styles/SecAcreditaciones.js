@@ -5,6 +5,9 @@ export const CardAcred = styled.div`
     /* border: 1px solid red;//................ */
     margin: 1em 0;
     width: 20vw!important;
+    .cardExperiencia{
+        width: 480px;
+    }
     min-width: 200px;
     height: auto;
     border-radius: 30px;
@@ -93,6 +96,8 @@ export const ContSliderAcr = styled.div`
     /* border: 1px solid red;//................ */
     padding:1rem 0;
     margin-bottom: 25px;
+    width: 90%;
+    margin: auto;
     .slick-slider{
         margin: auto;
     }
