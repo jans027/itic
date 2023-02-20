@@ -294,6 +294,10 @@ export const data = [{
         name: 'CONTACTO',
         nameFooter:'Formulario de contacto',
         url: '/contacto',
+        title:'¡CONTÁCTANOS!',
+        subTitle:'CONOCE MÁS SOBRE \nNUESTROS SERVICIOS',
+        btn:'COMUNÍCATE CON NUESTRO EQUIPO',
+        btnMovile:'COMUNÍCATE',
     },
     countries:{
         colombia:{
@@ -379,5 +383,30 @@ export const data = [{
         id: 'politicas',
         name: 'POLÍTICAS, CÓDIGOS Y REGLAMENTOS',
         url: '',
+    },
+    enfoque:{
+        id:'Enfoque',
+        title:'NUESTRO ENFOQUE',
+        subTitle:'SOLUCIONES APLICABLES \nA CUALQUIER INDUSTRIA',
+        img:'banner_2_desktop.png',
+        url: '/empresa/nosotros',
+        p:'Somos una empresa comprometida con la responsabilidad social y la sostenibilidad la integridad y la excelencia operacional nos permiten ofrecer servicios de alta calidad a nuestros clientes y contribuir al desarrollo del país. Contamos con experiencia en proyectos de gran envergadura a nivel nacional e internacional, lo que nos permite ofrecer confianza, agilidad y seguridad en servicios de Inspeccion, supervision, interventoria, certificacion, y ensayos. Además, ofrecemos el desarrollo de soluciones digitales a medida de nuestros clientes para agilizar la toma de decisiones y ahorrar recursos. Basamos nuestros procesos en estándares técnicos globales y contamos con profesionales con calificaciones técnicas internacionales.',
+        cards:{
+            card1:{
+                text1:'AÑOS',
+                text2:'EXPERIENCIA',
+                count:12,
+            },
+            card2:{
+                text1:'COLABORADORES',
+                text2:'CAPACIDAD LOCAL',
+                count:250,
+            },
+            card3:{
+                text1:'SOPORTE',
+                text2:'RED GLOBAL',
+                count:'',
+            }
+        }
     }
 }]

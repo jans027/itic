@@ -60,7 +60,7 @@ const SecExperiencias = () => {
                 <SubTitleSection>{subTitle}</SubTitleSection>
 
                 <ContSliderAcr>
-                    <Slider {...settings}>
+                    <Slider className='ContSlideSec' {...settings}>
 
                         {
                             card.map((item) =>

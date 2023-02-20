@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 
 export const CardAcred = styled.div`
-    /* border: 1px solid red;//................ */
-    margin: 1em 0;
+    margin: 4em 0;
     width: 20vw!important;
     .cardExperiencia{
         width: 480px;
@@ -93,10 +92,8 @@ export const SubTitleSection = styled.p`
 
 // stiles slider and arrow
 export const ContSliderAcr = styled.div`
-    /* border: 1px solid red;//................ */
-    padding:1rem 0;
-    margin-bottom: 25px;
-    width: 90%;
+    /* border: 1px solid red; */
+    width: 100%;
     margin: auto;
     .slick-slider{
         margin: auto;

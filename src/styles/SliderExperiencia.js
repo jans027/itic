@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 
 export const CardExperi1 = styled.div`
-    margin: 1em 0;
+    margin-bottom: 4em;
     width: 25vw!important;
     height: auto;
     border-radius: 30px;
@@ -22,9 +22,10 @@ export const CardExperi1 = styled.div`
 `
 
 export  const ConCardExperiencia = styled.div`
+
+
     border-radius: 30px;
     height: 100%;
-    margin-bottom: 1.5rem;
     div{
         overflow: hidden;
         margin-top: -1.5rem;
