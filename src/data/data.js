@@ -11,6 +11,8 @@ export const data = [{
         logoNav:'Logo-itic.svg',
         email:'contacto@iticco.com',
         phone:'+57 601 746 0980',
+        whatsappUrl:'https://api.whatsapp.com/send?phone=573163580663',
+        whatsappImg:'boton.png',
         address:'Of. Calle 108 #45-27',
         addressBuilding:'Ed. ITICCOL - Bogotá Colombia',
         facebookUrl:'https://www.facebook.com/iticcolombia',
@@ -304,11 +306,13 @@ export const data = [{
             id:'colombia',
             name:'COL',
             url:'https://www.iticco.com/',
+            img:'Bandera-col.png',
         },
         peru:{
             id:'peru',
             name:'PER',
             url:'https://www.iticpe.com/',
+            img:'Bandera-Per.png',
         }
     },
     home:{

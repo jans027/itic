@@ -23,6 +23,7 @@ import Cotizacion from './pages/Cotizacion';
 import NavBar from './pages/Navbar';
 import { data } from './data/data';
 import Footer from './components/Footer';
+import FloatingBtn from './components/FloatingBtn';
 
 
 const Context = createContext(data);
@@ -41,12 +42,14 @@ function App() {
       <GlobalStyles/>
       <Router>
         <NavBar/>
+        <FloatingBtn/>
 
         <Routes>
           <Route path="*" element={<Navigate to="/Home" />} />
           <Route exact path="/home" element={<Home />} />
           <Route path="/contacto" element={<Contact />} /> 
           <Route path="/cotizacion" element={<Cotizacion />} />
+          <Route path="https//api.whatsapp.com/send?phone=573186396096" element={<FloatingBtn />} />
 
           <Route path="/servicios/gestion" element={<Gestion />} />
           <Route path="/servicios/producto" element={<Producto />} />

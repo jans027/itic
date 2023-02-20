@@ -203,7 +203,7 @@ const NavBar = () => {
                             {
                                 countriesSub.map((item) =>
                                     <MenuItem key={item.id} onClick={handleClose3}>
-                                        <Link to={item.url}>{item.name}</Link>
+                                        <Link to={item.url}><img src={require(`../images/${item.img}`)} alt="" /> {item.name}</Link>
                                     </MenuItem>
                                 )
                             }
