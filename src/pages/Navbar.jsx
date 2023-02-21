@@ -12,6 +12,7 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import Logo from '../images/Logo-itic.svg';
 import ImgCol from '../images/Bandera-col.png';
 import MenuMobile from "../components/MenuMobile";
+import ModalForm from "../components/ModalForm";
 // import ImgPer from '../images/Bandera-per.png';
 
 
@@ -26,7 +27,6 @@ const NavBar = () => {
         inicio,
         servicios,
         empresa,
-        consulta,
         cotizacion,
         contacto,
         countries
@@ -169,7 +169,8 @@ const NavBar = () => {
                         id="inicio"
                         className="inicio"
                     >
-                        <Link>{consulta.name}</Link>
+                        {/* <Link>{consulta.name}</Link> */}
+                        <ModalForm/>
                     </BtnBase>
 
                     <BtnBase

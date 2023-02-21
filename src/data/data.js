@@ -285,6 +285,52 @@ export const data = [{
         id: 'consultaNav',
         name: 'CONSULTA TU CERTIFICADO',
         url: '',
+        img:'modal-certificado.jpg',
+        input:{
+            input1:{
+            id:'inputCertificado',
+            label:'Categoría del certificado',
+            placeHolder:'Categoría de servicio',
+            type:'select',
+            select:{
+                select1:'Sistemas de Gestión',
+                select2:'Certificación de Producto',
+                select3:'Servicios Industriales',
+                select4:'Certificación de Personas',
+                }
+            },
+            input2:{
+                id:'inputEmail',
+                label:'E-mail',
+                placeHolder:'usuario@correo.com',
+                invalidEmail:'Ingresa un correo valido',
+                incorrectData:'Datos incorrectos',
+                className:'classAlert',
+                type:'email',
+                name:'email',
+            },
+            input3:{
+                id:'inputEmailVerif',
+                label:'Verifica tu E-mail',
+                placeHolder:'usuario@correo.com',
+                invalidEmail:'Ingresa un correo valido',
+                incorrectData:'Datos incorrectos',
+                className:'classAlert',
+                type:'email',
+                name:'email',
+            },
+            input4:{
+                id:'certificateNumber',
+                label:'Digita tu número de certificado',
+                placeHolder:'0000000',
+                invalidNumber:'Ingresa el numero del certificado',
+                incorrectData:'Numero incorrecto',
+                className:'classAlert',
+                type:'tel',
+                name:'certificate',
+            },
+        }
+        
     },
     cotizacion: {
         id: 'cotizacionNav',
