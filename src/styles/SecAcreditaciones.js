@@ -6,6 +6,7 @@ export const CardAcred = styled.div`
     width: 20vw!important;
     .cardExperiencia{
         width: 480px;
+        
     }
     min-width: 200px;
     height: auto;
@@ -92,11 +93,11 @@ export const SubTitleSection = styled.p`
 
 // stiles slider and arrow
 export const ContSliderAcr = styled.div`
-    /* border: 1px solid red; */
-    width: 100%;
+    /* border: 1px solid red;//...................... */
+    width: 85%;
     margin: auto;
     .slick-slider{
-        margin: auto;
+        /* border: 1px solid red;//...................... */
     }
     .slick-prev, .slick-next{
         width: 40px!important;

@@ -5,13 +5,19 @@ import styled from "styled-components";
 export const ContModal = styled(Dialog)`
     .MuiPaper-root{
         max-width: 1000px !important;
-        min-width: 350px;
+        min-width: 320px;
         .cont_close{
             display: flex;
             justify-content: end;
+            background-color: var(--color3);
+            
+            border-radius: 50%;
+            position: absolute;
+            right: 10px;
+            top: 10px;
             span{
                 width: min-content;
-                color: variables.$terciario;
+                color: var(--color4);
                 cursor: pointer;
                 transition: 3ms;
                 padding: .8em .8em .3em;
@@ -23,7 +29,7 @@ export const ContModal = styled(Dialog)`
                     transform: scale(1.3);
                 }
                 &:active{
-                    color: variables.$primario20;
+                    color: var(--color3);
                 }
             }
         }
@@ -66,36 +72,31 @@ export const ContModal = styled(Dialog)`
                     padding: 1.5em;
                 .form_label{
                     font-size: 1.3em;
-                    color: variables.$primario;
+                    color: var(--color4);
                     padding: 0 0 .5em 0;
+                    span{
+                        color: red;
+                        font-size: 20px;
+                    }
                 }
-                .form_input{
+                .form_input, select{
                     margin-bottom: 1em;
                     height: 2.8em;
                     border-radius: .5em;
-                    border: 1px solid variables.$primario60;
+                    border: 1px solid var(--color3);
                     padding: 0 0 0 .5em;
-                    
+                    option:disabled{
+                        color: transparent;
+                    }
                     &::placeholder{
-                        color: variables.$primario;
+                        color: var(--color4);
                     }
                     &:focus {
-                        border: 2px solid variables.$terciario;
+                        border: 2px solid var(--color1);
                         outline: none;
                         &::placeholder{
-                            color: variables.$primario80;
+                            color: var(--color3);
                         }
-                    }
-                }
-                .form_btn{
-                    height: 2.8em;
-                    background-color: variables.$terciario;
-                    border-radius: .5em;
-                    border: 0;
-                    cursor: pointer;
-                    transition: 3ms;
-                    &:active{
-                        transform: scale(.97);
                     }
                 }
                 .class_1{
@@ -104,33 +105,16 @@ export const ContModal = styled(Dialog)`
                     border-radius: .5em;
                     border: 1px solid red;
                     padding: 0 0 0 .5em;
-                    input:invalid{
-                        animation: shake;
-                    }
                     &::placeholder{
                         color: rgba(255, 0, 0, 0.623);
                     }
-                    &:not(:placeholder-shown):valid {
-                        border: 1px solid variables.$primario60;
-                    }
                     &:focus {
-                        border: 2px solid variables.$terciario;
+                        border: 2px solid var(--color1);
                         outline: none;
                         &::placeholder{
                             color: white;
                         }
                         
-                    }
-                    @keyframes shake {
-                        25%{
-                            translate: 6px 0;
-                        }
-                        50%{
-                            translate: -6px 0;
-                        }
-                        75%{
-                            translate: -6px 0;
-                        }
                     }
                 }
             }
@@ -140,7 +124,31 @@ export const ContModal = styled(Dialog)`
     }
 `
 
+export const BtnModal = styled.button`
+    
+    cursor: pointer;
+    width: 8em;
+    padding: .4em;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius:.8em;
+    background-color: var(--color4);
+    border: none;
+    color:var(--color5);
+    position: absolute;
+    right: 10px;
+    bottom:20px;
 
+    &:nth-child(2){
+        background-color: var(--color1);
+        border: none;
+        color:var(--color4);
+        position: sticky;
+        bottom:20px;
+        left:150px;
+    }
+
+`
 
 
 

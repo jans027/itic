@@ -26,6 +26,7 @@ import { data } from '../data/data';
 // Image
 import ImgCol from '../images/Bandera-col.png';
 import SignalCellularAlt1BarIcon from '@mui/icons-material/SignalCellularAlt1Bar';
+import ModalForm from './ModalForm';
 
 
 const Accordion = styled((props) => (
@@ -176,7 +177,7 @@ export default function MenuMobile() {
 
             <LinkMenu>
                 <SignalCellularAlt1BarIcon />
-                <Link onClick={toggleDrawer(anchor, false)} to={consulta.url}>{consulta.name}</Link>
+                <Link onClick={toggleDrawer(anchor, false)} to={consulta.url}><ModalForm/></Link>
             </LinkMenu>
 
             <LinkMenu>

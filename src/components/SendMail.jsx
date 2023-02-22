@@ -1,114 +1,113 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { data } from '../data/data';
+import { Button, Modal } from 'antd';
+import { BtnModal } from '../styles/ModalForm';
 
 
 
 
-const SendMail = () => {
+const SendMail = (props) => {
 
     //import data
     const [datos] = data
     const { consulta: { input } } = datos
-    // console.log(input)
 
-    // dinamic class name
+    // ...dinamic class name
     const [classAlert, setClassAlert] = useState('form_input')
-    // dinamic placeholder
+    const [classAlert1, setClassAlert1] = useState('form_input')
+    const [classAlert2, setClassAlert2] = useState('form_input')
+
+
+    // ...dinamic placeholder
     const [placeholderText, setPlaceholderText] = useState(true)
     // console.log(placeholderText)
 
-    // avoid copy & paste action
+
+    // ...avoid copy & paste action
     const handleCutCopyPaste = (event) => {
         event.preventDefault();
     };
 
 
-
-    const [dataForm, setDataForm] = useState({
-        name: "",
-        email: "",
-        email2: "",
-        certificate: "",
-    })
-    // console.log(dataForm)
-
+    //...........................props
+    const handleClick = () => {
+         // Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
+        
+    };
+    const handleClick2 = () => {
+        props.cerrarModal()// Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
     
+    };
 
-    const handleChange = ({ target: { value, name } }) =>
-        setDataForm({ ...dataForm, [name]: value })
 
-    const form = useRef();
-    // console.log(form)
+
+    const formRef = useRef();
 
     const sendEmail = (event) => {
         event.preventDefault();
 
-        // regex input name
-        const nameRegex = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]+$/;
-        const isValidName = nameRegex.test(dataForm.name);
+        const formData = new FormData(formRef.current);
+        const dataForm = Object.fromEntries(formData.entries());
 
-        // regex input email
+        // ...regex input email
         const emailRegex = /^(([^<>() [\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         const isValidEmail = emailRegex.test(dataForm.email);
+        const isValidEmail2 = emailRegex.test(dataForm.email2);
 
-        // regex input phone
-        const phoneRegex = /^[0-9]+$/;
-        const isValidphone = phoneRegex.test(dataForm.phone)
-
+        // ...regex input numb
+        const numbRegex = /^[0-9]+$/;
+        const isValidnumb = numbRegex.test(dataForm.certificate)
 
         if (
-            dataForm.name.trim() === "" ||
-            dataForm.name === null ||
-            dataForm.name.length === 0 ||
-            isValidName !== true
+            dataForm.seleccion === undefined
         ) {
-            setClassAlert('class_1');
-            setPlaceholderText(false)
+            console.log(dataForm.seleccion)
+
         } else if (
             dataForm.email.trim() === "" ||
             dataForm.email === null ||
             dataForm.email.length === 0 ||
             isValidEmail !== true
         ) {
-            setClassAlert('class_1');
+            setClassAlert1('class_1');
 
         } else if (
             dataForm.email2.trim() === "" ||
             dataForm.email2 === null ||
             dataForm.email2.length === 0 ||
-            isValidEmail !== true ||
+            isValidEmail2 !== true ||
             dataForm.email2 !== dataForm.email
         ) {
-            setClassAlert('class_1');
+            setClassAlert1('class_1');
 
         } else if (
             dataForm.certificate.trim() === "" ||
             dataForm.certificate === null ||
             dataForm.certificate.length === 0 ||
-            isValidphone !== true
+            isValidnumb !== true
         ) {
-            setClassAlert('class_1');
+            setClassAlert2('class_1');
 
         } else {
             setClassAlert('form_input');
-            // console.log(event.target)
+        
+            // console.log(event.target.value)
             emailjs.sendForm(
-                process.env.REACT_APP_SERVICE_ID,
-                process.env.REACT_APP_TEMPLATE_ID,
-                form.current,
-                process.env.REACT_APP_PUBLIC_KEY
+                'service_niys5va',
+                'template_fqd3fne',
+                formRef.current,
+                'WJtijrAfr6hLGRh6P'
             )
                 .then((result) => {
                     console.log(result.text);
-                    // window.location.replace('');
-                    // window.location.reload(true);
                     alert('Mensaje enviado con exito...');
-                    alert.confirm(window.location.reload(true))
+                    handleClick(props.cerrarModal())
+
                 },
                     (error) => {
                         alert('Intenta mas tarde...');
-                        alert.confirm(window.location.reload(true))
+                        handleClick(props.cerrarModal())
                     });
         }
 
@@ -117,64 +116,68 @@ const SendMail = () => {
 
     return (
         <div className='cont_form_mail'>
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={formRef} onSubmit={sendEmail}>
 
-                <label className='form_label'>Nombre</label>
+
+                <label className='form_label'>Categoría del certificado <span>*</span></label>
+                <select name="seleccion" required>
+                    <option value="" hidden>Categoría de servicio</option>
+                    <option value="Sistemas de Gestión">Sistemas de Gestión</option>
+                    <option value="Certificación de Producto">Certificación de Producto</option>
+                    <option value="Servicios Industriales">Servicios Industriales</option>
+                    <option value="Certificación de Personas">Certificación de Personas</option>
+                </select>
+
+
+                <label className='form_label'>E-mail<span>*</span></label>
                 <input
-                    onChange={handleChange}
-                    className={classAlert}
-                    type="text"
-                    placeholder={placeholderText === true ? 'Ingresa tu Nombre' : 'Datos incorrectos'}
-                    name="name"
-                    id="name"
-                />
-
-
-                <label className='form_label'>Correo</label>
-                <input
-                    onCut={handleCutCopyPaste} 
-                    onCopy={handleCutCopyPaste} 
-                    onPaste={handleCutCopyPaste} 
+                    onCut={handleCutCopyPaste}
+                    onCopy={handleCutCopyPaste}
+                    onPaste={handleCutCopyPaste}
                     autocomplete="off"
-                    onChange={handleChange}
-                    className={classAlert}
+                    // onChange={handleChange}
+                    className={classAlert1}
                     type="email"
-                    placeholder={placeholderText === true ? 'Ingresa un correo valido' : 'Datos incorrectos'}
+                    placeholder={placeholderText === true ? 'usuario@correo.com' : 'Datos incorrectos'}
                     name="email"
                     id="email"
+                    required
                 />
 
-                <label className='form_label'>Correo</label>
+                <label className='form_label'>Verifica tu E-mail<span>*</span></label>
                 <input
-                    onCut={handleCutCopyPaste} 
-                    onCopy={handleCutCopyPaste} 
-                    onPaste={handleCutCopyPaste} 
+                    onCut={handleCutCopyPaste}
+                    onCopy={handleCutCopyPaste}
+                    onPaste={handleCutCopyPaste}
                     autocomplete="off"
-                    onChange={handleChange}
-                    className={classAlert}
+                    // onChange={handleChange}
+                    className={classAlert1}
                     type="email"
-                    placeholder={placeholderText === true ? 'Ingresa un correo valido' : 'Datos incorrectos'}
+                    placeholder={placeholderText === true ? 'usuario@correo.com' : 'Email Incorrecto'}
                     name="email2"
                     id="email2"
+                    required
                 />
 
 
-                <label className='form_label'>Numero del Certificado</label>
+                <label className='form_label'>Digita tu número de certificado<span>*</span></label>
                 <input
-                    onChange={handleChange}
-                    className={classAlert}
+                    // onChange={handleChange}
+                    className={classAlert2}
                     type="tel"
                     placeholder={placeholderText === true ? 'Ingresa el numero del certificado' : 'Datos incorrectos'}
                     name="certificate"
                     id="certificate"
+                    required
                 />
-
-                <input
-                    className='form_btn'
+                <BtnModal
                     type="submit"
                     value="Enviar"
-                />
+                    onClick={handleClick}
+                >Enviar</BtnModal>
             </form>
+            
+
         </div>
     );
 }

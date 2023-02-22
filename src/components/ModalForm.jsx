@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import  React from 'react';
+import React from 'react';
 import Slide from '@mui/material/Slide';
 import CloseIcon from '@mui/icons-material/Close';
 import SendMail from './SendMail';
 import { data } from '../data/data';
-import { ContModal } from '../styles/ModalForm';
+import { BtnModal, ContModal } from '../styles/ModalForm';
+import { Button } from '@mui/material';
 
 
 
@@ -16,7 +17,7 @@ const ModalForm = (props) => {
 
     //import data
     const [datos] = data
-    const { consulta :{name, img}} = datos
+    const { consulta: { name, img } } = datos
     // console.log(name)
 
     const [open, setOpen] = React.useState(false);
@@ -28,14 +29,19 @@ const ModalForm = (props) => {
     const handleClose = () => {
         setOpen(false);
     };
-    
+
+
+    //...send props to children .....
+    const cerrarModal = () => {
+        setOpen(false);
+    };
 
 
 
     return (
         <div>
             <a className='enlace' variant="outlined" onClick={handleClickOpen}>
-                {name} 
+                {name}
             </a>
             <ContModal
                 open={open}
@@ -44,7 +50,7 @@ const ModalForm = (props) => {
                 className='cont_modal'
             >
                 <div className='cont_close'>
-                    <span onClick={handleClose}> <CloseIcon/> </span>
+                    <span onClick={handleClose}> <CloseIcon /> </span>
                 </div>
                 <div className='cont_information'>
                     <div className='cont_image'>
@@ -55,8 +61,11 @@ const ModalForm = (props) => {
                         />
                     </div>
                     <div className='cont_form'>
-                        <SendMail />
+                        <SendMail cerrarModal={cerrarModal}/> 
+                        <BtnModal className='btnGreen'  onClick={handleClose}>CANCELAR</BtnModal>
+                        
                     </div>
+                    
                 </div>
             </ContModal>
         </div>

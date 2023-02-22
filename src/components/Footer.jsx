@@ -19,6 +19,7 @@ import suspension from '../documents/ITIC-C-NA-DI-010-POLITICA-DE-SUSPENSION-RET
 import calidad from '../documents/ITIC-C-NA-PL-001-POLITICA-Y-OBJETIVOS-DE-CALIDAD-002.doc';
 // Images
 import LogFooter from '../images/Logo-itic-blanco.svg';
+import ModalForm from './ModalForm';
 
 
 
@@ -121,7 +122,7 @@ const Footer = () => {
 
                         <ConsultasFooter>
                             <LinkConsulta1>
-                                <Link to={consulta.url}><h3>{consulta.name}</h3></Link>
+                                <Link to={consulta.url}><h3><ModalForm/></h3></Link>
                                 <Link to={cotizacion.url}><h3>{cotizacion.name}</h3></Link>
                             </LinkConsulta1>
                             <AddressFooter>
