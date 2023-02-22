@@ -13,6 +13,7 @@ export const data = [{
         phone:'+57 601 746 0980',
         whatsappUrl:'https://api.whatsapp.com/send?phone=573163580663',
         whatsappImg:'boton.png',
+        addressItic:'Of. Calle 108 #45-27 \nEd. ITICCOL - Bogotá Colombia',
         address:'Of. Calle 108 #45-27',
         addressBuilding:'Ed. ITICCOL - Bogotá Colombia',
         facebookUrl:'https://www.facebook.com/iticcolombia',
@@ -346,6 +347,25 @@ export const data = [{
         subTitle:'CONOCE MÁS SOBRE \nNUESTROS SERVICIOS',
         btn:'COMUNÍCATE CON NUESTRO EQUIPO',
         btnMovile:'COMUNÍCATE',
+        contactanos:{
+            id:'page_contacto',
+            title:'¡CONTÁCTANOS!',
+            subTitle:'CONOCE MÁS SOBRE NUESTROS SERVICIOS \nLLEVA TU EMPRESA AL SIGUIENTE NIVEL',
+            labelName:'Nombre Completo',
+            labelDocument:'Cédula',
+            labelPhone:'Teléfono o Celular',
+            labelEmail:'E-mail',
+            labelSolic:'Solicitud',
+            placeholder_solic:'Selecciona tu solicitud',
+            solicitud:{
+                0:'Felicitación',
+                1:'Solititud',
+                2:'Apelación',
+                3:'Queja o Reclamo',
+                4:'Otro',
+            },
+            checkbox:'Al dar click al check, nos autoriza al tratamiento de sus datos personales. Con el fin de dar cumplimiento a lo establecido en la Ley 1581 de 2012 y de su Decreto reglamentario 1377 de 2013, INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S.A.S., identificada con NIT 900424702-7, con domicilio principal en la Calle 108 # 45-27 Bogotá D.C, portal Web www.iticco.com número de teléfono 601 3900757 y correo electrónico quejasreclamosapelaciones@iticco.com'
+        }
     },
     countries:{
         colombia:{

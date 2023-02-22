@@ -91,6 +91,7 @@ const SendMail = (props) => {
 
         } else {
             setClassAlert('form_input');
+            // console.log(dataForm)
         
             // console.log(event.target.value)
             emailjs.sendForm(

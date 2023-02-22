@@ -96,10 +96,15 @@ npm install
 
 
 
-
-
-
-
+### `email de pruebas
+nombre: itic_certificado
+apellido: col
+nombre de usuario : iticcertificadocol@gmail.com
+contrasena: swZ9Qesxwbhng2T
+### `emailJs
+name: itic_certificado
+email: iticcertificadocol@gmail.com
+password: Kjdme5nmf6g0(vb#
 
 
 
