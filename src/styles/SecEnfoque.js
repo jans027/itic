@@ -5,13 +5,14 @@ import styled from "styled-components";
 export const ContEnfoque = styled.div`
     width: 100%;
     height: 700px;
+    /* max-height: 600px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow: hidden; */
+    overflow: hidden;
     /* border:2px solid red;//.................. */
     img{
-        position: absolute;
+        /* position: absolute; */
         width: 100%;
 
         object-fit: cover;
