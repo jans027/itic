@@ -8,10 +8,18 @@ export const ContEnfoque = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    border:2px solid red;//..................
     img{
         position: absolute;
-        width: 100%;
-        height: 700px;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        border:2px solid red;//..................
+        @media (max-width:960px) {
+            object-position: 320px 10%;
+            
+        }
     }
     .contEnfoque1{
         position:absolute;

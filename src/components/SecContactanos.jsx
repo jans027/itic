@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { data } from '../data/data';
-import ImgBannerPc from '../images/shutterstock_150293498---copia.png'
+import ImgBannerPc from '../images/Banner_contacto.png'
 import ImgBannerMobile from '../images/Banner_contacto_mobile.png'
 import { ContContacto } from '../styles/secContactanos';
 
