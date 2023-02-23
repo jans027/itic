@@ -8,18 +8,22 @@ export const ContEnfoque = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    border:2px solid red;//..................
+    /* overflow: hidden; */
+    /* border:2px solid red;//.................. */
     img{
         position: absolute;
-        height: 100%;
+        width: 100%;
+
         object-fit: cover;
         object-position: center center;
-        border:2px solid red;//..................
-        @media (max-width:960px) {
-            object-position: 320px 10%;
-            
+        /* border:2px solid red;//.................. */
+        /* @media (min-width:1700px) {
+            width: 100%;
         }
+        @media (max-width:960px) {
+            object-position: -150px 10%;
+            
+        } */
     }
     .contEnfoque1{
         position:absolute;
@@ -27,6 +31,7 @@ export const ContEnfoque = styled.div`
         margin:0 auto;
         height: auto;
         display: flex;
+        /* border:2px solid red;//.................. */
         .contEnfoque2{
             /* border:2px solid red;//.................. */
             width: 33%;

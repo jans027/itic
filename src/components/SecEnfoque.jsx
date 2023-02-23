@@ -22,7 +22,7 @@ const SecEnfoque = () => {
         <>
             <ContEnfoque>
                 <img src={ImgBanner} alt={id} />
-                {/* <div className='contEnfoque1'>
+                <div className='contEnfoque1'>
                     <div className='contEnfoque2'>
                         <p className='title'>{title}</p>
                         <p className='subTitle'>
@@ -70,7 +70,7 @@ const SecEnfoque = () => {
 
                         </div>
                     </div>
-                </div> */}
+                </div>
             </ContEnfoque>
         </>
     )
