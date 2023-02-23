@@ -3,7 +3,7 @@ import Address from '../components/Address';
 import ContactForm from '../components/ContactForm';
 import SecMap from '../components/SecMap';
 import { data } from '../data/data';
-import ImgBannerPc from '../images/Banner_contacto.png'
+import ImgBannerPc from '../images/shutterstock_150293498---copia.png'
 import ImgBannerMobile from '../images/Banner_contacto_mobile.png'
 import { ContContact } from '../styles/Contact';
 
