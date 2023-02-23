@@ -63,7 +63,7 @@ const SecEnfoque = () => {
                                             }
 
                                         <p className={item.text1 !== 'SOPORTE' ? 'cardText1': 'cardText3'}>{item.text1}</p>
-                                        <p className='cardText2'>{item.text2}</p>
+                                        <Link className='cardText2' to={item.url}>{item.text2}</Link>
                                     </div>
                                 )
                             }

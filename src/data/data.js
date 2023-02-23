@@ -82,13 +82,6 @@ export const data = [{
                             name:'INSPECCION',
                             textP:'15-OIN-014, bajo la norma \nISO/IEC 17020:2012 \npara la certificación de \ninspecciones',
                         },
-                        document2:{
-                            id:'cardPers',
-                            url:'https://onac.org.co/certificados/14-OCP-006.pdf',
-                            img:'ONAC_PERSONAS.png',
-                            name:'PERSONAS',
-                            textP:'14-OCP-006, bajo la \nnorma ISO/IEC 17024:2012 \npara la certificación de \npersonas',
-                        },
                         document3:{
                             id:'cardProd',
                             url:'https://onac.org.co/certificados/15-CPR-002.pdf',
@@ -97,11 +90,18 @@ export const data = [{
                             textP:'15-CPR-002, bajo la \nnorma ISO/IEC 17065:2012 \npara la certificación de \nproducto',
                         },
                         document4:{
-                            id:'card',
+                            id:'cardGest',
                             url:'https://onac.org.co/certificados/12-CSG-001.pdf',
                             img:'ONAC_GESTION.png',
                             name:'SISTEMAS DE \nGESTIÓN',
                             textP:'12-CSG-001, bajo la norma \nISO/IEC 17021-1:2015 \npara la certificación de \nsistemas de gestión',
+                        },
+                        document2:{
+                            id:'cardPers',
+                            url:'https://onac.org.co/certificados/14-OCP-006.pdf',
+                            img:'ONAC_PERSONAS.png',
+                            name:'PERSONAS',
+                            textP:'14-OCP-006, bajo la \nnorma ISO/IEC 17024:2012 \npara la certificación de \npersonas',
                         },
                     }
                 }
@@ -241,15 +241,14 @@ export const data = [{
         url: '',
         subTitle:'Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis dictumst porttitor: ',
         dropDownMenu: {
-            gestion: {
-                id: "gestion",
-                name: "SISTEMAS DE GESTIÓN",
-                nameFooter: "Sistemas de Gestión",
-                url: '/servicios/gestion',
+            industriales: {
+                id: "industriales",
+                name: "SERVICIOS INDUSTRIALES",
+                nameFooter: "Servicios industriales",
+                url: '/servicios/industrial',
                 banner1: '',
-                cardImg:'GESTION.png',
-                cardText:'- Certificación - GAP Análisis - Auditoría Interna - Evaluación de Proveedores',
-                
+                cardImg:'INDUSTRIALES.png',
+                cardText:'- Certificación Sistemas Retie/Retilap - Certificación Redes de Gas - Certificación Estaciones de servicio - Servicios de interventoría - Servicios deI nspección...',
             },
             producto: {
                 id: "producto",
@@ -261,14 +260,15 @@ export const data = [{
                 cardText:'- TCA ENEL - Eficiencia energética - Gasodomésticos - Barras Corrugadas - Retilap - Retie - Pilas - RetiQ - Refrigeradores y congeladores',
                 
             },
-            industriales: {
-                id: "industriales",
-                name: "SERVICIOS INDUSTRIALES",
-                nameFooter: "Servicios industriales",
-                url: '/servicios/industrial',
+            gestion: {
+                id: "gestion",
+                name: "SISTEMAS DE GESTIÓN",
+                nameFooter: "Sistemas de Gestión",
+                url: '/servicios/gestion',
                 banner1: '',
-                cardImg:'INDUSTRIALES.png',
-                cardText:'- Certificación Sistemas Retie/Retilap - Certificación Redes de Gas - Certificación Estaciones de servicio - Servicios de interventoría - Servicios deI nspección...',
+                cardImg:'GESTION.png',
+                cardText:'- Certificación - GAP Análisis - Auditoría Interna - Evaluación de Proveedores',
+                
             },
             personas: {
                 id: "personas",
@@ -467,16 +467,19 @@ export const data = [{
                 text1:'AÑOS',
                 text2:'EXPERIENCIA',
                 count:12,
+                url:'/empresa/proyectos',
             },
             card2:{
                 text1:'COLABORADORES',
                 text2:'CAPACIDAD LOCAL',
                 count:250,
+                url:'/empresa/equipo',
             },
             card3:{
                 text1:'SOPORTE',
                 text2:'RED GLOBAL',
                 count:'',
+                url:'/contacto',
             }
         }
     }

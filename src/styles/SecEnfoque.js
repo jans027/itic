@@ -98,6 +98,12 @@ export const ContEnfoque = styled.div`
                         padding: .2em .5em;
                         border-radius: 13px;
                         border: 2px solid var(--color4);
+                        /* border:2px solid red;//.................. */
+                        color: var(--color4);
+                        text-decoration: none;
+                        &:hover{
+                            background-color:var(--color1);
+                        }
                     }
                     .cardText3{
                         font-size: 3em;
