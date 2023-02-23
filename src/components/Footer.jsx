@@ -11,7 +11,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 //styles
-import { AddressFooter, BlockNav, ConsultasFooter, ContFooter, ContUlPoliticas, Copy, LinkConsulta1, LogoFooter, Redes } from '../styles/Footer';
+import { AddressFooter, BlockNav, BtnFooter, ConsultasFooter, ContFooter, ContUlPoliticas, Copy, LinkConsulta1, LogoFooter, Redes } from '../styles/Footer';
 //Documents
 import confidencialidad from '../documents/ITIC-C-NA-DI-003-POLITICA-DE-IMPARCIALIDAD-INDEPENDENCIA-Y-CONFIDENCIALIDAD-V7.doc';
 import personas from '../documents/ITIC-C-NA-DI-009-POLITICA-DE-SEGURIDAD-PROCESO-DE-CERTIFICACION-DE-PERSONAS-V2.doc';
@@ -39,6 +39,7 @@ const Footer = () => {
     } = datos;
     const serviciosSub = Object.values(servicios.dropDownMenu);
     const empresasSub = Object.values(empresa.dropDownMenu);
+    // console.log(politicas)
 
 
 
@@ -118,6 +119,7 @@ const Footer = () => {
                                     </a>
                                 </li>
                             </ContUlPoliticas>
+                                    <BtnFooter href={politicas.url}>{politicas.btn}</BtnFooter>
                         </div>
 
                         <ConsultasFooter>

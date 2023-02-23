@@ -10,7 +10,7 @@ const Address = () => {
 
     // get data
     const [datos] = data;
-    const { inicio: { email, phone, address, addressBuilding, addressItic } } = datos;
+    const { inicio: { email, phone, addressItic } } = datos;
 
     return (
         <>

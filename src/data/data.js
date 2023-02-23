@@ -452,7 +452,8 @@ export const data = [{
     politicas:{
         id: 'politicas',
         name: 'POLÍTICAS, CÓDIGOS Y REGLAMENTOS',
-        url: '',
+        url: '/empresa/politicas',
+        btn:'CONOCE TODAS NUESTRAS POLÍTICAS',
     },
     enfoque:{
         id:'Enfoque',

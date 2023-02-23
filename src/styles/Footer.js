@@ -162,10 +162,21 @@ export const ConsultasFooter = styled.div`
 `
 export const ContUlPoliticas = styled.ul`
     width: 90%;
+    margin-bottom: 2em;
 `
 export const LinkConsulta1 = styled.span`
         h3{
             margin-bottom:1em;
         }
 `
-
+export const BtnFooter = styled.a`
+    padding: .8em 4.4em;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 700;
+    background-color:var(--color1);
+    color: var(--color4)!important;
+    &:active{
+    background-color:var(--color8);
+    }
+`

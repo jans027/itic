@@ -42,10 +42,13 @@ const ContactForm = (props) => {
         // Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
 
     };
-    const handleClick2 = () => {
-        props.cerrarModal()// Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
+    // const handleClick2 = () => {
+    //     props.cerrarModal()// Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
 
-    };
+    // };
+
+    //  Estate form Ok
+    // const [formOk setFormOk] = useState(false)
 
 
 
@@ -115,12 +118,12 @@ const ContactForm = (props) => {
                 .then((result) => {
                     console.log(result.text);
                     alert('Mensaje enviado con exito...');
-                    handleClick(props.cerrarModal())
+                    // setFormOk(true)
 
                 },
                     (error) => {
                         alert('Intenta mas tarde...');
-                        handleClick(props.cerrarModal())
+                        // handleClick(props.cerrarModal())
                     });
         }
 
@@ -228,6 +231,7 @@ const ContactForm = (props) => {
                                 type="submit"
                                 value="Enviar"
                                 onClick={handleClick}
+                                // {formOk !== true ? '' : onClick={() => formularioRef.current.reset()}}
                             >Enviar
                             </button>
                         </span>
