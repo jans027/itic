@@ -24,7 +24,7 @@ import NavBar from './pages/Navbar';
 import { data } from './data/data';
 import Footer from './components/Footer';
 import FloatingBtn from './components/FloatingBtn';
-// import ScrollToTop from './components/ScrollToTop';
+import ScrollToTop from './components/ScrollToTop';
 
 
 const Context = createContext(data);
@@ -42,7 +42,7 @@ function App() {
       <Context.Provider value={ globalData }>
       <GlobalStyles/>
       <Router>
-        {/* <ScrollToTop /> */}
+        <ScrollToTop />
         <NavBar/>
         <FloatingBtn/>
 
