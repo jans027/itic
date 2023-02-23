@@ -1,51 +1,57 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { data } from '../data/data';
-import { Button, Modal } from 'antd';
 import { BtnModal } from '../styles/ModalForm';
-
+import styled from "styled-components";
 
 
 
 const SendMail = (props) => {
 
-    //import data
+    //...import data
     const [datos] = data
     const { consulta: { input } } = datos
 
     // ...dinamic class name
-    const [classAlert, setClassAlert] = useState('form_input')
     const [classAlert1, setClassAlert1] = useState('form_input')
     const [classAlert2, setClassAlert2] = useState('form_input')
-
-
-    // ...dinamic placeholder
-    const [placeholderText, setPlaceholderText] = useState(true)
-    // console.log(placeholderText)
-
 
     // ...avoid copy & paste action
     const handleCutCopyPaste = (event) => {
         event.preventDefault();
     };
 
-
     //...........................props
     const handleClick = () => {
-         // Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
-        
-    };
-    const handleClick2 = () => {
-        props.cerrarModal()// Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
-    
+        // Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
     };
 
+    // errors in input
+    const [isErrorMail, setErrorMail] = useState(false)
+    const [isErrorNumber, setErrorNumber] = useState(false)
+    console.log(isErrorMail, isErrorNumber)
+
+    const LabelMail = styled.label`
+    color: ${isErrorMail === true ? 'red' : 'black'};
+`;
+    const LabelNumber = styled.label`
+    color: ${isErrorNumber === true ? 'red' : 'black'};
+`;
+
+    const handleFocus = () => {
+        setClassAlert1('form_input')
+        setClassAlert2('form_input')
+        setErrorMail(false)
+        setErrorNumber(false)
+    };
+//.......................................
 
 
     const formRef = useRef();
 
     const sendEmail = (event) => {
         event.preventDefault();
+
 
         const formData = new FormData(formRef.current);
         const dataForm = Object.fromEntries(formData.entries());
@@ -62,7 +68,7 @@ const SendMail = (props) => {
         if (
             dataForm.seleccion === undefined
         ) {
-            console.log(dataForm.seleccion)
+            // console.log(dataForm.seleccion)
 
         } else if (
             dataForm.email.trim() === "" ||
@@ -71,6 +77,7 @@ const SendMail = (props) => {
             isValidEmail !== true
         ) {
             setClassAlert1('class_1');
+            setErrorMail(true)
 
         } else if (
             dataForm.email2.trim() === "" ||
@@ -80,6 +87,7 @@ const SendMail = (props) => {
             dataForm.email2 !== dataForm.email
         ) {
             setClassAlert1('class_1');
+            setErrorMail(true)
 
         } else if (
             dataForm.certificate.trim() === "" ||
@@ -88,11 +96,10 @@ const SendMail = (props) => {
             isValidnumb !== true
         ) {
             setClassAlert2('class_1');
+            setErrorNumber(true)
 
         } else {
-            setClassAlert('form_input');
             // console.log(dataForm)
-        
             // console.log(event.target.value)
             emailjs.sendForm(
                 'service_niys5va',
@@ -130,43 +137,40 @@ const SendMail = (props) => {
                 </select>
 
 
-                <label className='form_label'>E-mail<span>*</span></label>
+                <LabelMail className='form_label'>{isErrorMail === true ? 'E-mail No Coincide' : 'E-mail'}<span>*</span></LabelMail>
                 <input
                     onCut={handleCutCopyPaste}
                     onCopy={handleCutCopyPaste}
                     onPaste={handleCutCopyPaste}
                     autocomplete="off"
-                    // onChange={handleChange}
                     className={classAlert1}
                     type="email"
-                    placeholder={placeholderText === true ? 'usuario@correo.com' : 'Datos incorrectos'}
+                    placeholder='usuario@correo.com'
                     name="email"
                     id="email"
                     required
                 />
 
-                <label className='form_label'>Verifica tu E-mail<span>*</span></label>
+                <LabelMail className='form_label'>{isErrorMail === true ? 'E-mail No Coincide' : 'Verifica tu E-mail'}<span>*</span></LabelMail>
                 <input
                     onCut={handleCutCopyPaste}
                     onCopy={handleCutCopyPaste}
                     onPaste={handleCutCopyPaste}
                     autocomplete="off"
-                    // onChange={handleChange}
                     className={classAlert1}
                     type="email"
-                    placeholder={placeholderText === true ? 'usuario@correo.com' : 'Email Incorrecto'}
+                    placeholder='usuario@correo.com'
                     name="email2"
                     id="email2"
                     required
                 />
 
 
-                <label className='form_label'>Digita tu número de certificado<span>*</span></label>
+                <LabelNumber className='form_label'>{isErrorNumber === true ? 'Digita un número' : 'Digita tu número de certificado'}<span>*</span></LabelNumber>
                 <input
-                    // onChange={handleChange}
                     className={classAlert2}
                     type="tel"
-                    placeholder={placeholderText === true ? 'Ingresa el numero del certificado' : 'Datos incorrectos'}
+                    placeholder='Ingresa el numero del certificado'
                     name="certificate"
                     id="certificate"
                     required
@@ -174,11 +178,9 @@ const SendMail = (props) => {
                 <BtnModal
                     type="submit"
                     value="Enviar"
-                    onClick={handleClick}
+                    onFocus={handleFocus}
                 >Enviar</BtnModal>
             </form>
-            
-
         </div>
     );
 }

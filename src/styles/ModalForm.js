@@ -72,12 +72,13 @@ export const ContModal = styled(Dialog)`
                     padding: 1.5em;
                 .form_label{
                     font-size: 1.3em;
-                    color: var(--color4);
+                    /* color: var(--color4); */
                     padding: 0 0 .5em 0;
                     span{
                         color: red;
                         font-size: 20px;
                     }
+                    
                 }
                 .form_input, select{
                     margin-bottom: 1em;
@@ -105,9 +106,11 @@ export const ContModal = styled(Dialog)`
                     border-radius: .5em;
                     border: 1px solid red;
                     padding: 0 0 0 .5em;
+                    
                     &::placeholder{
                         color: rgba(255, 0, 0, 0.623);
                     }
+                    
                     &:focus {
                         border: 2px solid var(--color1);
                         outline: none;
