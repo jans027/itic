@@ -109,7 +109,7 @@ export const FormContact = styled.div `
       }
       .form_label {
         font-size: 1.6em;
-        color: var(--color4);
+        /* color: var(--color4); */
         padding: 0 0 0.5em 0;
         font-weight: 600;
         span {
@@ -124,6 +124,9 @@ export const FormContact = styled.div `
         border-radius: 1em;
         border: 1px solid var(--color3);
         padding: 0 0 0 0.5em;
+        &:invalid {
+          /* border: 1px solid red; */
+        }
         option:disabled {
           color: transparent;
         }

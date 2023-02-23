@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { data } from '../data/data';
+import styled from "styled-components";
 import { CheckboxInput, CheckboxLabel, FormContact, TextArea } from '../styles/Contact';
 
 
@@ -21,31 +22,50 @@ const ContactForm = (props) => {
         solicitud } } } = datos;
 
     // ...dinamic class name
-    const [classAlert, setClassAlert] = useState('form_input')
+    const [classAlert0, setClassAlert0] = useState('form_input')
     const [classAlert1, setClassAlert1] = useState('form_input')
     const [classAlert2, setClassAlert2] = useState('form_input')
-
-
-    // ...dinamic placeholder
-    const [placeholderText, setPlaceholderText] = useState(true)
-    // console.log(placeholderText)
-
+    const [classAlert3, setClassAlert3] = useState('form_input')
 
     // ...avoid copy & paste action
     const handleCutCopyPaste = (event) => {
         event.preventDefault();
     };
 
-
-    //...........................props
-    // const handleClick = () => {
-    //     // Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
-    // };
-    
-
-
     //...clean form after send form
     const formRef = useRef();
+
+    // errors in input
+    const [isErrorName, setErrorName] = useState(false)
+    const [isErrorCedula, setErrorCedula] = useState(false)
+    const [isErrorPhone, setErrorPhone] = useState(false)
+    const [isErrorMail, setErrorMail] = useState(false)
+    // console.log(isErrorName)
+
+    const LabelName = styled.label`
+        color: ${isErrorName === true ? 'red' : 'black'};
+    `;
+    const LabelCedula = styled.label`
+        color: ${isErrorCedula === true ? 'red' : 'black'};
+    `;
+    const LabelPhone = styled.label`
+    color: ${isErrorPhone === true ? 'red' : 'black'};
+    `;
+    const LabelMail = styled.label`
+    color: ${isErrorMail === true ? 'red' : 'black'};
+    `;
+
+    const handleFocus = () => {
+        setClassAlert0('form_input')
+        setClassAlert1('form_input')
+        setClassAlert2('form_input')
+        setClassAlert3('form_input')
+        setErrorName(false)
+        setErrorCedula(false)
+        setErrorPhone(false)
+        setErrorMail(false)
+    };
+    //.......................................
 
     const sendEmail = (event) => {
         event.preventDefault();
@@ -64,6 +84,7 @@ const ContactForm = (props) => {
         // ...regex input numb
         const numbRegex = /^[0-9]+$/;
         const isValidnumb = numbRegex.test(dataForm.cedula)
+        const isValidnumb2 = numbRegex.test(dataForm.phone)
 
         if ( //Nombre completo............
             dataForm.name.trim() === "" ||
@@ -71,7 +92,9 @@ const ContactForm = (props) => {
             dataForm.name.length === 0 ||
             isValidName !== true
         ) {
-            setClassAlert('class_1');
+            setClassAlert0('class_1');
+            setErrorName(true)
+            console.log('error......')
 
         } else if (// cedula..............
             dataForm.cedula.trim() === "" ||
@@ -79,14 +102,16 @@ const ContactForm = (props) => {
             dataForm.cedula.length === 0 ||
             isValidnumb !== true
         ) {
-            setClassAlert2('class_1');
+            setClassAlert1('class_1');
+            setErrorCedula(true)
 
         } else if (// telefono..............
             dataForm.phone.trim() === "" ||
             dataForm.phone === null ||
             dataForm.phone.length === 0 ||
-            isValidnumb !== true
+            isValidnumb2 !== true
         ) {
+            setErrorPhone(true)
             setClassAlert2('class_1');
 
         } else if (// e mail..............
@@ -95,11 +120,10 @@ const ContactForm = (props) => {
             dataForm.email.length === 0 ||
             isValidEmail !== true
         ) {
-            setClassAlert1('class_1');
+            setErrorMail(true)
+            setClassAlert3('class_1');
 
         } else {
-            setClassAlert('form_input');
-
             // console.log(event.target.value)
             // console.log(dataForm)
             emailjs.sendForm(
@@ -131,16 +155,16 @@ const ContactForm = (props) => {
 
                     <div className='firstBlock'>
                         <div>
-                            <label className='form_label'>{labelName}<span>*</span></label>
+                            <LabelName className='form_label'>{isErrorName === true ? 'Nombre No Valido' : 'Nombre Completo'}<span>*</span></LabelName>
                             <input
                                 onCut={handleCutCopyPaste}
                                 onCopy={handleCutCopyPaste}
                                 onPaste={handleCutCopyPaste}
                                 autocomplete="off"
                                 // onChange={handleChange}
-                                className={classAlert1}
+                                className={classAlert0}
                                 type="text"
-                                placeholder={placeholderText === true ? 'Nombre' : 'Datos incorrectos'}
+                                placeholder='Nombre'
                                 name="name"
                                 id="name"
                                 required
@@ -148,12 +172,12 @@ const ContactForm = (props) => {
                         </div>
 
                         <div>
-                            <label className='form_label'>{labelDocument}<span>*</span></label>
+                            <LabelCedula className='form_label'>{isErrorCedula === true ? 'Numero No Valido' : 'Cedula'}<span>*</span></LabelCedula>
                             <input
                                 // onChange={handleChange}
-                                className={classAlert2}
+                                className={classAlert1}
                                 type="number"
-                                placeholder={placeholderText === true ? '00000000000' : 'Datos incorrectos'}
+                                placeholder='00000000000'
                                 name="cedula"
                                 id="cedula"
                                 required
@@ -164,28 +188,28 @@ const ContactForm = (props) => {
 
                     <div className='firstBlock'>
                         <div>
-                            <label className='form_label'>{labelPhone}<span>*</span></label>
+                            <LabelPhone className='form_label'>{isErrorPhone === true ? 'Numero No Valido' : 'Teléfono o Celular'}<span>*</span></LabelPhone>
                             <input
                                 // onChange={handleChange}
                                 className={classAlert2}
                                 type="tel"
-                                placeholder={placeholderText === true ? '00000000000' : 'Datos incorrectos'}
+                                placeholder='00000000000'
                                 name="phone"
                                 id="phone"
                                 required
                             />
                         </div>
                         <div>
-                            <label className='form_label'>{labelEmail}<span>*</span></label>
+                            <LabelMail className='form_label'>{isErrorMail === true ? 'E-mail Invalido' : 'E-mail'}<span>*</span></LabelMail>
                             <input
                                 onCut={handleCutCopyPaste}
                                 onCopy={handleCutCopyPaste}
                                 onPaste={handleCutCopyPaste}
                                 autocomplete="off"
                                 // onChange={handleChange}
-                                className={classAlert1}
+                                className={classAlert3}
                                 type="email"
-                                placeholder={placeholderText === true ? 'usuario@correo.com' : 'Datos incorrectos'}
+                                placeholder='usuario@correo.com'
                                 name="email"
                                 id="email"
                                 required
@@ -224,6 +248,7 @@ const ContactForm = (props) => {
                             <button
                                 type="submit"
                                 value="Enviar"
+                                onFocus={handleFocus}
                             >Enviar
                             </button>
                         </span>
