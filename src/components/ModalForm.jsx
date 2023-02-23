@@ -6,6 +6,7 @@ import SendMail from './SendMail';
 import { data } from '../data/data';
 import { BtnModal, ContModal } from '../styles/ModalForm';
 import { Button } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 
 
@@ -39,10 +40,10 @@ const ModalForm = (props) => {
 
 
     return (
-        <div>
-            <a className='enlace' variant="outlined" onClick={handleClickOpen}>
+        <>
+            <Link className='enlace' variant="outlined" onClick={handleClickOpen}>
                 {name}
-            </a>
+            </Link>
             <ContModal
                 open={open}
                 onClose={handleClose}
@@ -68,7 +69,7 @@ const ModalForm = (props) => {
                     
                 </div>
             </ContModal>
-        </div>
+        </>
     );
 }
 export default ModalForm
