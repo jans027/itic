@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { data } from '../data/data';
-// import ImgBannerPc from '../images/shutterstock_150293498---copia.png'
-// import ImgBannerMobile from '../images/Banner_contacto_mobile.png'
+import ImgBannerPc from '../images/shutterstock_150293498---copia.png'
+import ImgBannerMobile from '../images/Banner_contacto_mobile.png'
 import { ContContacto } from '../styles/secContactanos';
 
 
@@ -59,7 +59,7 @@ export default class SecContactanos extends Component {
                             </div>
                         </div>
                     </div>
-                    {/* <img src={screenWidth < 768 ? ImgBannerMobile : ImgBannerPc} alt={id} /> */}
+                    <img src={screenWidth < 768 ? ImgBannerMobile : ImgBannerPc} alt={id} />
                 </ContContacto>
             </>
         )
