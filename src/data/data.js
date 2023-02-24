@@ -144,7 +144,7 @@ export const data = [{
             proyectos: {
                 key:6,
                 id: "proyectos",
-                name: "PROYECTOS",
+                name: "NUESTRA EXPERIENCIA",
                 nameNav2:'Nuestra Experiencia',
                 nameFooter:'Nuestras Experiencias',
                 nameSecction:'NUESTRA EXPERIENCIA',
