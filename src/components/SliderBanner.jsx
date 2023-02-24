@@ -7,6 +7,8 @@ import { ContImgCarousel } from "../styles/SliderBanner";
 
 export default class SimpleSlider extends Component {
 
+
+    // change image according to screen width
     constructor(props) {
         super(props);
 

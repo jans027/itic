@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import VisibilitySensor from 'react-visibility-sensor';
 import { data } from '../data/data';
 import ImgBanner from '../images/banner_2_desktop.png'
-import { ContEnfoque } from '../styles/SecEnfoque';
+import { BtnEnfoque1, BtnEnfoque2, ContEnfoque, ContEnfoque3 } from '../styles/SecEnfoque';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 
 
@@ -35,14 +35,13 @@ const SecEnfoque = () => {
                                 )
                             })}
                         </p>
-                        <div>
-                            <Link to={url} >CONOCE MÁS</Link>
-                        </div>
+                        <BtnEnfoque1>
+                            <Link className='Btn1' to={url} >CONOCE MÁS</Link>
+                        </BtnEnfoque1>
                     </div>
-                    <div className='contEnfoque3'>
-                        <p>{p}</p>
+                    <ContEnfoque3>
+                        <p className='ContParr'>{p}</p>
                         <div className='contEnfoque5'>
-
                             {
                                 card.map((item) =>
                                     <div className='cardsEnfoque' key={item.text1}>
@@ -61,15 +60,16 @@ const SecEnfoque = () => {
                                                     :
                                                     <HeadsetMicIcon />
                                             }
-
                                         <p className={item.text1 !== 'SOPORTE' ? 'cardText1': 'cardText3'}>{item.text1}</p>
                                         <Link className='cardText2' to={item.url}>{item.text2}</Link>
                                     </div>
                                 )
                             }
-
                         </div>
-                    </div>
+                    </ContEnfoque3>
+                    <BtnEnfoque2>
+                            <Link className='Btn1' to={url} >CONOCE MÁS</Link>
+                    </BtnEnfoque2>
                 </div>
             </ContEnfoque>
         </>

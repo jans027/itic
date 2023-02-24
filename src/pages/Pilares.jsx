@@ -1,8 +1,19 @@
 import React from 'react'
+import BannerEmpresa from '../components/BannerEmpresa'
+import NavEmpresa from '../components/NavEmpresa'
+import { ContPagesEmpresa } from '../styles/NavEmpresa'
 
 const Pilares = () => {
   return (
-    <div>Pilares</div>
+    <>
+      <BannerEmpresa />
+      <ContPagesEmpresa>
+        <div className='ContSectionEm'>
+          <NavEmpresa />
+          Pilares
+        </div>
+      </ContPagesEmpresa>
+    </>
   )
 }
 
