@@ -1,7 +1,6 @@
 import React, { Component, createContext } from "react";
 import {
   BrowserRouter as Router,
-  Switch,
   Navigate,
   Route,
   Routes,
@@ -29,7 +28,6 @@ import { data } from "./data/data";
 import Footer from "./components/Footer";
 import FloatingBtn from "./components/FloatingBtn";
 import ScrollToTop from "./components/ScrollToTop";
-import NavEmpresa from "./components/NavEmpresa";
 
 const Context = createContext(data);
 
@@ -72,6 +70,9 @@ function App() {
           <Route path="/empresa/Nuestras-Experiencias" element={<Clientes />} />
           <Route path="/empresa/proyectos" element={<Proyectos />} />
           <Route path="/empresa/politicas" element={<Politicas />} />
+
+
+          
           </Routes>
           <Footer />
         </Router>

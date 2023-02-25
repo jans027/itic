@@ -2,28 +2,29 @@ import styled from "styled-components";
 
 export const BannerPath = styled.div`
     /* border: 1px solid red;//......................... */
-    height: 340px;
+    height: 15rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 8.7rem;
     img{
         width: 100%;
         object-fit: cover;
         object-position: center center;
     }
     h2{
+        /* border: 1px solid red;//................... */
         width: 90%;
         font-size: 5rem;
         font-weight: 900;
         margin:0 auto;
         height: auto;
         position:absolute;
-        margin-top: 1.7em;
+        margin-top: 10px;
         @media (max-width:500px) {
             font-size: 12vw;
         }
-        /* border: 1px solid red;//................... */
     }
 `
 export const ContNavEmpresa = styled.div`
@@ -56,12 +57,13 @@ export const ContNavEmpresa = styled.div`
 `
 export const ContPagesEmpresa = styled.div`
     /* border: 1px solid blue;//......................... */
-    margin-top: 4em;
+    background-color: var(--color5);
+    padding-top: 4em;
     .ContSectionEm{
         display: flex;
         width: 90%;
         margin: auto;
-        border: 1px solid blue;//.........................
+        /* border: 1px solid blue;//......................... */
     }
 `
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { data } from '../data/data';
-import largeImage from '../images/banner-ppal.png';
+import largeImage from '../images/banner-empresa.png';
 import smallImage from '../images/banner_ppa_mobile.png'
 import { BannerPath } from '../styles/NavEmpresa'
 
@@ -8,7 +8,9 @@ const BannerEmpresa = () => {
 
     //get data
     const [datos] = data
-    const { empresa: { name } } = datos;
+    const { empresa: { name} } = datos;
+
+    // console.log(dropArray)
 
     //change image according to screen width
     const [imagen, setImagen] = useState("");
@@ -17,7 +19,7 @@ const BannerEmpresa = () => {
         function actualizarImagen() {
             if (window.innerWidth <= 800) {
                 setImagen(smallImage);
-            }  else {
+            } else {
                 setImagen(largeImage);
             }
         }
@@ -36,7 +38,8 @@ const BannerEmpresa = () => {
                 <h2>{name}</h2>
             </BannerPath>
         </>
-    )
+    );
+
 }
 
 export default BannerEmpresa

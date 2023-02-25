@@ -34,12 +34,35 @@ export const data = [{
                 nameNav2:'Acerca de nosotros',
                 nameFooter:'Acerca de nosotros',
                 url: '/empresa/nosotros',
-                banner1: '',
-                miniaturas: {
-                    tarjeta1: {
-                        id: '',
-                        img: "",
-                        text: "",
+                img:'PRODUCTO.png',
+                paragraph1:'Somos una empresa con Orientación social, buscamos profesionales comprometidos con nuestros valores empresariales en búsqueda de EXCELENCIA OPERACIONAL E INTEGRIDAD en nuestros servicios.',
+                paragraph2:'Nacimos hace 12 años como empresa de filial de un grupo alemán y el 2023 como empresa nacional con presencia en varios países de Suramérica y Centroamérica.',
+                paragraph3:'Nuestra experiencia en proyectos de gran envergadura a nivel nacional e internacional nos permite ofrecer confianza, agilidad, integridad y seguridad en servicios de Inspección, certificación y Ensayos, basamos nuestros conceptos en estándares técnicos nacionales e internacionales, contamos con profesionales con calificaciones técnicas internacionales, ofrecemos el desarrollo de soluciones digitales a la medida de nuestros clientes agilizando la toma acertada de decisiones y ahorro de recursos .',
+                titleSeccion:'¿POR QUÉ NOSOTROS?',
+                cards: {
+                    card0: {
+                        id: 'card0',
+                        img: "img-empresa-prueba.png",
+                        title:'TRANSFORMACIÓN DIGITAL',
+                        paragraph: "Construimos soluciones digitales personalizadas para mejorar la eficiencia de los procesos, con el fin de ahorrar recursos y facilitar la toma de decisiones, basadas en datos.",
+                    },
+                    card1: {
+                        id: 'card1',
+                        img: "img-empresa-prueba.png",
+                        title:'INTEGRIDAD',
+                        paragraph: "La excelencia operacional, el desarrollo de soluciones a la medida y el ahorro de recursos son clave para el éxito. Estamos constantemente buscando maneras de mejorar y optimizar nuestros procesos con el fin de superar continuamente nuestras metas.",
+                    },
+                    card2: {
+                        id: 'card2',
+                        img: "img-empresa-prueba.png",
+                        title:'EXCELENCIA OPERACIONAL',
+                        paragraph: "La excelencia operacional, el desarrollo de soluciones a la medida y el ahorro de recursos son clave para el éxito. Estamos constantemente buscando maneras de mejorar y optimizar nuestros procesos con el fin de superar continuamente nuestras metas.",
+                    },
+                    card3: {
+                        id: 'card3',
+                        img: "img-empresa-prueba.png",
+                        title:'EXPERIENCIA TÉCNICA',
+                        paragraph: "Nacimos hace 12 años como empresa filial de un grupo Alemán, en el 2023 como empresa nacional contamos con un equipo altamente calificado y experimentado, con presencia en varios países de Latinoamérica.",
                     },
                 },
             },
@@ -50,12 +73,46 @@ export const data = [{
                 nameNav2:'Pilares, Misión, Visión',
                 nameFooter:'Pilares, Misión, Visión',
                 url: '/empresa/pilares',
+                title:'NUESTROS PILARES',
                 banner1: '',
-                miniaturas: {
-                    tarjeta1: {
-                        id: '',
-                        img: "",
-                        text: "",
+                cards0: {
+                    card0: {
+                        id: 'card0',
+                        img: "GESTION.png",
+                        title:'INTEGRIDAD',
+                        text: "Es nuestro compromiso con la ética y la moralidad en todas nuestras acciones. Trabajamos siempre de manera transparente y cumplimos con todas las normas y regulaciones. La integridad es un valor fundamental en nuestra empresa y nos esforzamos por mantenerlo en todo momento",
+                    },
+                    card1: {
+                        id: 'card1',
+                        img: "GESTION.png",
+                        title:'EXCELENCIA',
+                        text: "En nuestra empresa valoramos la transformación digital como una herramienta clave para alcanzar nuestros objetivos. Esta nos permite ser más eficientes, innovadores y competitivos en un mundo cada vez más conectado. A través de la automatización de procesos, la implementación de tecnologías avanzadas y la utilización de datos, estamos mejorando la experiencia de nuestros clientes y aumentando nuestra capacidad para tomar decisiones",
+                    },
+                    card2: {
+                        id: 'card2',
+                        img: "GESTION.png",
+                        title:'TRANSFORMACION DIGITAL',
+                        text: "Nos esforzamos por ser líderes en nuestro campo y ofrecer productos y servicios de la más alta calidad. Nuestro equipo de especialistas se esfuerza constantemente por mejorar y mantenerse actualizado en las últimas tecnologías y tendencias en nuestro campo. La excelencia técnica nos permite ser innovadores y estar siempre un paso adelante en la competencia",
+                    },
+                    card3: {
+                        id: 'card3',
+                        img: "GESTION.png",
+                        title:'COMPROMISO',
+                        text: "En nuestra empresa, el compromiso es un valor fundamental. Nos aseguramos de proporcionar un servicio excepcional a nuestros clientes, y a trabajar incansablemente para alcanzar nuestros objetivos como empresa.",
+                    },
+                },
+                cards1: {
+                    card0: {
+                        id: 'card1-0',
+                        img: "modal-certificado.jpg",
+                        title:'MISIÓN',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    },
+                    card1: {
+                        id: 'card1-1',
+                        img: "modal-certificado.jpg",
+                        title:'VISIÓN',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
                     },
                 },
             },
@@ -339,6 +396,7 @@ export const data = [{
         subTitle:'CONOCE MÁS SOBRE \nNUESTROS SERVICIOS',
         btn:'COMUNÍCATE CON NUESTRO EQUIPO',
         btnMovile:'COMUNÍCATE',
+        textBarraContac:'CONOCE MÁS SOBRE NUESTROS SERVICIOS Y LLEVA TU EMPRESA AL SIGUIENTE NIVEL',
         contactanos:{
             id:'page_contacto',
             title:'¡CONTÁCTANOS!',
