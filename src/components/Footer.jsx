@@ -124,8 +124,8 @@ const Footer = () => {
 
                         <ConsultasFooter>
                             <LinkConsulta1>
-                                <Link to={consulta.url}><h3><ModalForm/></h3></Link>
-                                <Link to={cotizacion.url}><h3>{cotizacion.name}</h3></Link>
+                                <Link to={consulta.url}><ModalForm/></Link>
+                                <Link to={cotizacion.url}>{cotizacion.name}</Link>
                             </LinkConsulta1>
                             <AddressFooter>
                                 <h3>{contacto.name}</h3>

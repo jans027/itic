@@ -16,14 +16,12 @@ export default class SliderLogo extends Component {
     
     render() {
         const settings = {
-            // className: "center",
-            // dots: true,
             infinite: true,
-            slidesToShow: 5,
+            slidesToShow: 7,
             slidesToScroll: 1,
             autoplay: true,
-            speed: 2000,
-            autoplaySpeed: 2000,
+            speed: 500,
+            autoplaySpeed: 500,
             cssEase: "linear",
             responsive: [
                 {

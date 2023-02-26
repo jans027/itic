@@ -3,18 +3,13 @@ import styled from "styled-components";
 
 
 export const ConSectionServicios = styled.div` 
+    /* border: 1px solid red;//....................... */
     margin-top: 2rem;
     background-color: var(--color2);
     text-align: center;
     margin: 2rem 0;
     height: max-content;
     padding: 2rem 0;
-    /* border: 1px solid red;//....................... */
-    /* p, span{
-        font-size: 2rem;
-        padding: 1rem 0 3rem 0;
-        font-weight: 300;
-    } */
 `
 export const ContCardsServi = styled.div`
     width: 90%;

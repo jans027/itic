@@ -12,9 +12,9 @@ export const CardExperi1 = styled.div`
     height: auto;
     border-radius: 30px;
     padding-top: 1.3rem;
-    -webkit-box-shadow: 9px 16px 36px -1px rgba(0,0,0,0.6); 
-    box-shadow: 9px 16px 36px -1px rgba(0,0,0,0.6);
     background-color: var(--color5);
+    -webkit-box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6); 
+    box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6);
     @media (max-width:850px) {
         width: 300px!important;
         

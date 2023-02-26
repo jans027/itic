@@ -8,12 +8,12 @@ import styled from "styled-components";
 export const ContImgCarousel = styled(Slider)`
     top: 100px;
     width: 100%;
-    height: 500px;
+    height: 38rem;
     /* min-height: 150px; */
     margin-bottom: 10rem;
     div{
         width: 100%;
-        height: 500px;
+        height:38rem;
         overflow: hidden;
         position: static;
         /* border: 1px solid red;//............... */
@@ -30,11 +30,15 @@ export const ContImgCarousel = styled(Slider)`
         }
         }
         span{
+            /* border: 1px solid blue;//............ */
             position: fixed;
-            height: 200px;
+            width: 34rem;
+            height: 26rem;
             top :20%;
             margin-left: .5%;
-            width: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             @media (min-width:1440px) {
                 top :15%;
             }
@@ -43,17 +47,20 @@ export const ContImgCarousel = styled(Slider)`
                     
             }
             h2{
-                font-size: 65px;
+                font-size: 5.1rem;
+                font-weight: 900;
                 @media(max-width:650px){
                     font-size: 45px;
                 }
             }
             .textCarrousel{
+                width: 537px;
+                /* height: 500px; */
+                /* border: 1px solid red;//............ */
                 transition: 3s;
-                font-size: 1.5rem;
+                font-size: 1.8rem;
                 @media (min-width:1445px) {
                     font-size: 1vw;
-                    /* width: 150px; */
                 }
                 @media(max-width:650px){
                     display: none;
@@ -62,27 +69,31 @@ export const ContImgCarousel = styled(Slider)`
                 
             }
             a{
+                text-decoration:none;
+                div{
                     margin-top: 100px;
-                    padding:  10px 85px;
+                    height: 4.6rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                     background-color:var(--color4);
                     border-radius: .7em;
                     color: var(--color5);
-                    font-size: 20px;
+                    font-size: 1.9rem;
                     font-weight: 700;
-                    text-decoration:none;
                     border: 1px solid var(--color4);
                     @media(max-width:650px){
                         font-size: 15px;
-                        padding:  10px 40px;
+                        /* padding:  10px 40px; */
                     }
                     &:hover{
                         color: var(--color1);
                     }
                     &:active{
-                        transform:scale(.95);
-                        border: none;
+                        background-color: var(--color7);
                     }
                 }
+            }
         }
     }
 `

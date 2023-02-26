@@ -165,9 +165,13 @@ export const ContUlPoliticas = styled.ul`
     margin-bottom: 2em;
 `
 export const LinkConsulta1 = styled.span`
-        h3{
-            margin-bottom:1em;
-        }
+    a{
+        font-size: 1rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+    }
+
 `
 export const BtnFooter = styled.a`
     padding: .8em 4.4em;
