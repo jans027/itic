@@ -11,7 +11,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 //styles
-import { AddressFooter, BlockNav, BtnFooter, ConsultasFooter, ContFooter, ContUlPoliticas, Copy, LinkConsulta1, LogoFooter, Redes } from '../styles/Footer';
+import { AddressFooter, BlockNav, BtnFooter, ConEmprFooter, ConServFooter, ConsultasFooter, ContFooter, ContUlPoliticas, Copy, LinkConsulta1, LogoFooter, Redes } from '../styles/Footer';
 //Documents
 import confidencialidad from '../documents/ITIC-C-NA-DI-003-POLITICA-DE-IMPARCIALIDAD-INDEPENDENCIA-Y-CONFIDENCIALIDAD-V7.doc';
 import personas from '../documents/ITIC-C-NA-DI-009-POLITICA-DE-SEGURIDAD-PROCESO-DE-CERTIFICACION-DE-PERSONAS-V2.doc';
@@ -56,87 +56,84 @@ const Footer = () => {
                 </LogoFooter>
 
                 <BlockNav>
-                    <div className='contInfoFoo1'>
-                        <div>
-                            <h3>{empresa.name}</h3>
-                            {
-                                empresasSub.map((item) =>
-                                    <ul
-                                        id="droppin"
-                                        key={item.id}
+
+                    <ConEmprFooter>
+                        <h3>{empresa.name}</h3>
+                        {
+                            empresasSub.map((item) =>
+                                <ul
+                                    id="droppin"
+                                    key={item.id}
+                                >
+                                    <li
+                                        key={item.nameFooter}
+                                        // onClick={(e) => handleClick(e)}
+                                        id={item.nameFooter}
                                     >
-                                        <li
-                                            key={item.nameFooter}
-                                            // onClick={(e) => handleClick(e)}
-                                            id={item.nameFooter}
-                                        >
-                                            <Link to={item.url}>{item.nameFooter}</Link>
-                                        </li>
-                                    </ul>
-                                )
-                            }
-                        </div>
+                                        <Link to={item.url}>{item.nameFooter}</Link>
+                                    </li>
+                                </ul>
+                            )
+                        }
+                    </ConEmprFooter>
 
-                        <div>
-                            <h3>{servicios.name}</h3>
-                            {
-                                serviciosSub.map((item) =>
-                                    <ul
-                                        id="droppin"
-                                        key={item.id}
-                                    >
-                                        <li key={item.nameFooter} id={item.nameFooter}>
-                                            <Link to={item.url}>{item.nameFooter}</Link>
-                                        </li>
-                                    </ul>
-                                )
-                            }
-                        </div>
-                    </div>
+                    <ConServFooter>
+                        <h3>{servicios.name}</h3>
+                        {
+                            serviciosSub.map((item) =>
+                                <ul
+                                    id="droppin"
+                                    key={item.id}
+                                >
+                                    <li key={item.nameFooter} id={item.nameFooter}>
+                                        <Link to={item.url}>{item.nameFooter}</Link>
+                                    </li>
+                                </ul>
+                            )
+                        }
+                    </ConServFooter>
 
-                    <div className='contInfoFoo2'>
-                        <div>
-                            <h3>{politicas.name}</h3>
-                            <ContUlPoliticas>
-                                <li>
-                                    <a href={confidencialidad} rel="noreferrer">
-                                        Política de imparcialidad, independencia y confidencialidad
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href={personas} rel="noreferrer">
-                                        Política de seguridad proceso de certificación de personas
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href={suspension} rel="noreferrer">
-                                        Política de suspensión, retiro o reducción del alcance de certificación de personas
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href={calidad} rel="noreferrer">
-                                        Política de la calidad (servicios industriales)
-                                    </a>
-                                </li>
-                            </ContUlPoliticas>
-                                    <BtnFooter href={politicas.url}>{politicas.btn}</BtnFooter>
-                        </div>
+                    <ContUlPoliticas>
+                        <h3>{politicas.name}</h3>
+                        <li>
+                            <a href={confidencialidad} rel="noreferrer">
+                                Política de imparcialidad, independencia y confidencialidad
+                            </a>
+                        </li>
+                        <li>
+                            <a href={personas} rel="noreferrer">
+                                Política de seguridad proceso de <br/> certificación de personas
+                            </a>
+                        </li>
+                        <li>
+                            <a href={suspension} rel="noreferrer">
+                                Política de suspensión, retiro o reducción <br/> del alcance de certificación de personas
+                            </a>
+                        </li>
+                        <li>
+                            <a href={calidad} rel="noreferrer">
+                                Política de la calidad (servicios industriales)
+                            </a>
+                        </li>
+                        <br />
+                        <br />
+                        <BtnFooter href={politicas.url}>{politicas.btn}</BtnFooter>
+                    </ContUlPoliticas>
 
-                        <ConsultasFooter>
-                            <LinkConsulta1>
-                                <Link to={consulta.url}><ModalForm/></Link>
-                                <Link to={cotizacion.url}>{cotizacion.name}</Link>
-                            </LinkConsulta1>
-                            <AddressFooter>
-                                <h3>{contacto.name}</h3>
-                                <Link to={contacto.url}><PersonOutlineOutlinedIcon />{contacto.nameFooter}</Link>
-                                <span><PhoneAndroidOutlinedIcon />{inicio.phone}</span>
-                                <span><EmailOutlinedIcon />{inicio.email}</span>
-                                <span className='address'><LocationOnOutlinedIcon />{inicio.address}</span>
-                                <span className='building'>{inicio.addressBuilding}</span>
-                            </AddressFooter>
-                        </ConsultasFooter>
-                    </div>
+                    <ConsultasFooter>
+                        <LinkConsulta1>
+                            <Link to={consulta.url}><ModalForm /></Link>
+                            <Link to={cotizacion.url}>{cotizacion.name}</Link>
+                        </LinkConsulta1>
+                        <AddressFooter>
+                            <p>{contacto.name}</p>
+                            <Link to={contacto.url}><PersonOutlineOutlinedIcon />{contacto.nameFooter}</Link>
+                            <span><EmailOutlinedIcon />{inicio.email}</span>
+                            <span><PhoneAndroidOutlinedIcon />{inicio.phone}</span>
+                            <span className='address'><LocationOnOutlinedIcon />{inicio.address}</span>
+                            <span className='building'>{inicio.addressBuilding}</span>
+                        </AddressFooter>
+                    </ConsultasFooter>
                 </BlockNav>
 
                 <Redes>

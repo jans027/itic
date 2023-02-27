@@ -503,7 +503,7 @@ export const data = [{
             placeholder_solic:'Selecciona tu solicitud',
             solicitud:{
                 0:'Felicitación',
-                1:'Solititud',
+                1:'Solicitud',
                 2:'Apelación',
                 3:'Queja o Reclamo',
                 4:'Otro',

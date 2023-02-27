@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 export const ContFooter = styled.div`
     /* position:fixed; */
+    height: 43.7rem!important;
     bottom: 0;
     width:100%;
     color: var(--color5);
@@ -13,57 +14,17 @@ export const ContFooter = styled.div`
     }
 `
 export const BlockNav = styled.div`
+    /* border: 1px solid red;//................ */
     width: 90%;
+    height: 23rem;
     margin: 0 auto;
     display: flex;
     flex-wrap:wrap;
-    ul{
-        li{
-            list-style: none;
-            padding: .5em 0;
-            transition: 3ms;
-            border-bottom: var(--color1) ;
-            a{
-                text-decoration:none;
-                &:hover{
-                    color: var(--color1);
-                }
-                &:active{
-                    border-bottom: 1px solid var(--color1);
-                    
-                }
-            }
-        }
-    } 
     h3{
-            font-size: 1.4vw;
+        /* border: 1px solid white;//................ */
+        font-size: 1.7rem;
+        padding: 0 0 23px 0;
     }
-    .contInfoFoo1{
-        width: 40%;
-    }
-    .contInfoFoo2{
-        width: 60%;
-    }
-    .contInfoFoo1, .contInfoFoo2{
-        display: flex;
-        @media (max-width:998px) {
-            width: 100%!important;
-            display: flex;
-        }
-        @media (max-width:590px) {
-                display: flex;
-                flex-direction: column;
-                width: 100%!important;
-                }
-        }
-        h3{
-        font-size: 16px!important;
-        }
-        div{
-        width: 50%;
-        
-    }
-
 `
 export const Copy = styled.div`
     display: flex;
@@ -82,15 +43,18 @@ export const Copy = styled.div`
     }
 `
 export const Redes = styled.div`
+    /* border: 1px solid red;//................. */
     width: 90%;
     margin: 0 auto;
-    min-height: 50px;
+    height: 10rem;
+    min-height: 3.1rem;
     padding-bottom: 2.3em;
     h3{
-        font-size: 1.4vw;
+        font-size: 1.7rem;
+        padding-bottom: 1.3rem;
     }
     svg{
-        width: 2vw;
+        width: 2.5vw;
         height: max-content;
         margin-right:.5em;
         transition: 3ms;
@@ -110,12 +74,61 @@ export const Redes = styled.div`
         }
     }
 `
+export const ConEmprFooter = styled.div`
+        width: 21.4rem;
+    ul{
+        li{
+            list-style: none;
+            padding: .5em 0;
+            transition: 3ms;
+            border-bottom: var(--color1) ;
+            a{
+                text-decoration:none;
+                font-size: 1.1rem;
+                font-weight: 500;
+                line-height: 1.8rem;
+                &:hover{
+                    color: var(--color1);
+                }
+                &:active{
+                    border-bottom: 1px solid var(--color1);
+                    
+                }
+            }
+        }
+    } 
+`
+export const ConServFooter = styled.div`
+        width: 22.5rem;
+    ul{
+        li{
+            list-style: none;
+            padding: .5em 0;
+            transition: 3ms;
+            border-bottom: var(--color1) ;
+            a{
+                text-decoration:none;
+                font-size: 1.1rem;
+                font-weight: 500;
+                line-height: 1.8rem;
+                &:hover{
+                    color: var(--color1);
+                }
+                &:active{
+                    border-bottom: 1px solid var(--color1);
+                    
+                }
+            }
+        }
+    } 
+`
 export const LogoFooter = styled.div`
+    /* border: 1px solid red;//............. */
     width:90%;
-    padding: 1.5em 0;
+    padding: 3.5rem 0;
     margin: 0 auto;
     div{
-        width:clamp(150px, 15%, 215px);
+        width:clamp(150px, 15%, 250px);
     }
 `
 export const AddressFooter = styled.span`
@@ -148,9 +161,16 @@ export const AddressFooter = styled.span`
         }
 `
 export const ConsultasFooter = styled.div`
+        /* border: 1px solid white;//............ */
+        width: 25.9rem;
+        p{
+            font-size: 1.7rem;
+            font-weight: 600;
+            padding: 1rem 0;
+        }
         a{
-            padding: .7em 0;
             text-decoration:none;
+            font-size: 1.1rem;
             &:hover{
                 color: var(--color1);
             }
@@ -159,23 +179,47 @@ export const ConsultasFooter = styled.div`
                 
             }
         }
+        span{
+            font-size: 1.1rem;
+            padding: .1rem 0;
+        }
 `
 export const ContUlPoliticas = styled.ul`
-    width: 90%;
+    width: 31.5rem;
     margin-bottom: 2em;
+    li{
+        list-style: none;
+        padding: .5em 0;
+        transition: 3ms;
+        border-bottom: var(--color1) ;
+        padding: .6rem 0;
+        a{
+            text-decoration:none;
+            font-size:1.1rem;
+            font-weight: 400;
+            &:hover{
+                color: var(--color1);
+            }
+            &:active{
+                border-bottom: 1px solid var(--color1);
+                
+            }
+        }
+    }
 `
 export const LinkConsulta1 = styled.span`
     a{
-        font-size: 1rem;
+        font-size: 1.7rem;
         font-weight: 600;
         display: flex;
         flex-direction: column;
+        padding-bottom: 1.1rem;
     }
 
 `
 export const BtnFooter = styled.a`
     padding: .8em 4.4em;
-    border-radius: 25px;
+    border-radius: 1.5rem;
     text-decoration: none;
     font-weight: 700;
     background-color:var(--color1);
