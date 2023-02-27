@@ -19,7 +19,7 @@ const SecExperiencias = () => {
     const settings = {
         dots: true,
         infinite: true,
-        autoplay: true,
+        // autoplay: true,
         slidesToShow: 3,
         slidesToScroll: 2,
         initialSlide: 0,

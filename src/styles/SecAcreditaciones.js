@@ -99,26 +99,30 @@ export const ContSliderAcr = styled.div`
         /* border: 1px solid red;//...................... */
     }
     .slick-prev, .slick-next{
-        width: 40px!important;
-        height: 100%;
-        font-size: 10px!important;
+        width: 30px!important;
+
     }
     .slick-prev::before, .slick-next::before{
         color: var(--color1)!important;
         font-size: 50px!important;
+        /* border: 1px solid red;//............. */
+        opacity: 1!important;
+        background-color: white;
+        border-radius: 50%;
     }
+
     .slick-prev{
         left: -1px;
         z-index: 1;
         @media(min-width:830px){
-            left: 25px;
+            left: -20px;
         }
     }
     .slick-next{
         right: 10px;
         z-index: 1;
         @media(min-width:830px){
-            right: 31px;
+            right: -10px;
         }
     }
 `

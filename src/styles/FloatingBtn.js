@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const ConBtnFloat = styled.div`
     /* width: 100%; */
     position:fixed;
-    right: 1px;
+    right: 0;
     bottom: 20vw;
     cursor: pointer;
     transition: 30ms;

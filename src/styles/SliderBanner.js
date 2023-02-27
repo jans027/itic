@@ -6,11 +6,15 @@ import styled from "styled-components";
 
 
 export const ContImgCarousel = styled(Slider)`
+    /* border: 1px solid red;//................. */
     top: 100px;
     width: 100%;
     height: 38rem;
-    /* min-height: 150px; */
     margin-bottom: 10rem;
+    .slick-arrow{
+        border: 1px solid red;
+        display: none!important;
+    }
     div{
         width: 100%;
         height:38rem;

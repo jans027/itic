@@ -24,21 +24,16 @@ import "./index.css";
 import Clientes from "./pages/Clientes";
 import Cotizacion from "./pages/Cotizacion";
 import NavBar from "./pages/Navbar";
-import { data } from "./data/data";
 import Footer from "./components/Footer";
 import FloatingBtn from "./components/FloatingBtn";
 import ScrollToTop from "./components/ScrollToTop";
 
-const Context = createContext(data);
 
 function App() {
-  const globalData = Context;
-  // const { home } = globalData
-  // console.log(home)
+
 
   return (
-    <div className="App">
-      <Context.Provider value={globalData}>
+    <div>
         <GlobalStyles />
         <Router>
           <ScrollToTop />
@@ -74,9 +69,9 @@ function App() {
 
           
           </Routes>
+
           <Footer />
         </Router>
-      </Context.Provider>
     </div>
   );
 }

@@ -1,11 +1,5 @@
 import styled from "styled-components";
 
-
-
-
-
-
-
 export const CardExperi1 = styled.div`
     margin-bottom: 4em;
     width: 25vw!important;
@@ -20,10 +14,7 @@ export const CardExperi1 = styled.div`
         
     }
 `
-
 export  const ConCardExperiencia = styled.div`
-
-
     border-radius: 30px;
     height: 100%;
     div{
