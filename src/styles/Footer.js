@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
@@ -15,11 +16,12 @@ export const ContFooter = styled.div`
 `
 export const BlockNav = styled.div`
     /* border: 1px solid red;//................ */
-    width: 90%;
+    width: 88%;
     height: 23rem;
     margin: 0 auto;
     display: flex;
     flex-wrap:wrap;
+    justify-content: space-between;
     h3{
         /* border: 1px solid white;//................ */
         font-size: 1.7rem;
@@ -75,7 +77,7 @@ export const Redes = styled.div`
     }
 `
 export const ConEmprFooter = styled.div`
-        width: 21.4rem;
+        width: 22%;
     ul{
         li{
             list-style: none;
@@ -99,7 +101,7 @@ export const ConEmprFooter = styled.div`
     } 
 `
 export const ConServFooter = styled.div`
-        width: 22.5rem;
+        width: 23%;
     ul{
         li{
             list-style: none;
@@ -162,7 +164,7 @@ export const AddressFooter = styled.span`
 `
 export const ConsultasFooter = styled.div`
         /* border: 1px solid white;//............ */
-        width: 25.9rem;
+        width: 26.5%;
         p{
             font-size: 1.7rem;
             font-weight: 600;
@@ -174,10 +176,6 @@ export const ConsultasFooter = styled.div`
             &:hover{
                 color: var(--color1);
             }
-            &:active{
-                border-bottom: 1px solid var(--color1);
-                
-            }
         }
         span{
             font-size: 1.1rem;
@@ -185,7 +183,8 @@ export const ConsultasFooter = styled.div`
         }
 `
 export const ContUlPoliticas = styled.ul`
-    width: 31.5rem;
+    /* border: 1px solid green;//................... */
+    width: 28%;
     margin-bottom: 2em;
     li{
         list-style: none;
@@ -217,14 +216,20 @@ export const LinkConsulta1 = styled.span`
     }
 
 `
-export const BtnFooter = styled.a`
-    padding: .8em 4.4em;
-    border-radius: 1.5rem;
+export const BtnFooter = styled(Link)`
     text-decoration: none;
-    font-weight: 700;
-    background-color:var(--color1);
-    color: var(--color4)!important;
-    &:active{
-    background-color:var(--color8);
+    div{
+        width: 90%;
+        height: 2.7vw;
+        background-color:var(--color1);
+        color: var(--color4)!important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        border-radius: 1.5rem;
+        &:active{
+        background-color:var(--color8);
+        }
     }
 `

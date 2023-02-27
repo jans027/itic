@@ -1,12 +1,19 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { data } from "../data/data";
 // import Slider from "react-slick";
 import largeImage from '../images/banner-ppal.png';
 import smallImage from '../images/banner_ppa_mobile.png'
-import { ContImgCarousel } from "../styles/SliderBanner";
+import { ContImgCarousel, ContTextBanner } from "../styles/SliderBanner";
 
+// get data
+const [datos] = data;
+const { inicio: { banners } } = datos;
+const card = Object.values(banners)
 
 export default class SimpleSlider extends Component {
+
+
 
 
     // change image according to screen width
@@ -64,36 +71,20 @@ export default class SimpleSlider extends Component {
         return (
             <div>
                 <ContImgCarousel {...settings}>
-                    <div>
-                        <img src={screenWidth < 768 ? smallImage : largeImage} alt="Imagen" />
-                        <span className="ConTexBanner1">
-                            <h2>INSPECCIÓN</h2>
-                            <p className="textCarrousel">A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.</p>
-                            <br />
-                            <br />
-                            <Link to="/"><div>SOLICITAR INFORMACIÓN</div></Link>
-                        </span>
-                    </div>
-                    <div>
-                        <img src={screenWidth < 768 ? smallImage : largeImage} alt="Imagen" />
-                        <span className="ConTexBanner1">
-                            <h2>INSPECCIÓN</h2>
-                            <p className="textCarrousel">A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.</p>
-                            <br />
-                            <br />
-                            <Link to="/"><div>SOLICITAR INFORMACIÓN</div></Link>
-                        </span>
-                    </div>
-                    <div>
-                        <img src={screenWidth < 768 ? smallImage : largeImage} alt="Imagen" />
-                        <span className="ConTexBanner1">
-                            <h2>INSPECCIÓN</h2>
-                            <p className="textCarrousel">A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.</p>
-                            <br />
-                            <br />
-                            <Link to="/"><div>SOLICITAR INFORMACIÓN</div></Link>
-                        </span>
-                    </div>
+
+                    {
+                        card.map((item) =>
+                            <div key={item.id}>
+                                <img src={screenWidth < 768 ? smallImage : largeImage} alt="Imagen" />
+                                <ContTextBanner className="ConTexBanner1">
+                                    <h2>{item.title}</h2>
+                                    <p className="textCarrousel">{item.paragraph}</p>
+                                    <Link to="/"><div className="Btn-Banner1">{item.btn}</div></Link>
+                                </ContTextBanner >
+                            </div>
+                        )
+                    }
+
                 </ContImgCarousel>
             </div>
         );

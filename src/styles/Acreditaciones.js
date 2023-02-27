@@ -23,7 +23,7 @@ export const CardAcredt = styled.div`
     width: 23.5rem!important;
     margin: 3.2rem;
     min-width: 200px;
-    height: 31rem;
+    /* height: 31rem; */
     border-radius: 30px;
     padding-top: 1.3rem;
     background-color: var(--color5);

@@ -15,11 +15,11 @@ export const ContPilares1 = styled.div`
 `
 export const Cards01 = styled.div`
     /* border: 1px solid red;//..................... */
-    width: 35rem;
+    width: 30rem;
     height: 34rem;
-    border-radius: 1.8rem;
+    border-radius: 1.5rem;
     text-align: center;
-    padding: 1.8rem 2.5rem 0 2.5rem;
+    padding: 1.8rem 2.2rem 0 2.2rem;
     -webkit-box-shadow: 2px 2px 7px 3px rgba(0,0,0,0.33); 
     box-shadow: 2px 2px 7px 3px rgba(0,0,0,0.33);
     background-color: var(--color5);
@@ -35,13 +35,16 @@ export const Cards01 = styled.div`
         margin: 1rem 0;
     }
     .paragraph_p01{
-        font-size: 1.2rem;
+        /* border: 1px solid red;//.................. */
+        font-size: 1.1rem;
         text-align: left;
     }
 `
 export const Contcards1 = styled.div`
+    /* border: 1px solid red;//................. */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     background-color: var(--color2);
 `

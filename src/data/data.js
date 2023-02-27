@@ -20,6 +20,26 @@ export const data = [{
         instagramUrl:'https://www.instagram.com/itic_colombia/',
         twitterUrl:'https://twitter.com/ITICColombia',
         linkedInUrl:'https://www.linkedin.com/company/itic-colombia/',
+        banners:{
+            card0:{
+                id:'card-Banner1',
+                title:'INSPECCIÓN',
+                paragraph:'A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.',
+                btn:'SOLICITAR INFORMACIÓN',
+            },
+            card1:{
+                id:'card-Banner2',
+                title:'INSPECCIÓN',
+                paragraph:'A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.',
+                btn:'SOLICITAR INFORMACIÓN',
+            },
+            card2:{
+                id:'card-Banner3',
+                title:'INSPECCIÓN',
+                paragraph:'A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.',
+                btn:'SOLICITAR INFORMACIÓN',
+            },
+        }
 
     },
     empresa: {

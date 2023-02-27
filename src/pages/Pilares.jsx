@@ -40,7 +40,6 @@ const Pilares = () => {
                   )
                 }
               </Contcards1>
-
             </ContPilares1>
 
             <ContCards2>

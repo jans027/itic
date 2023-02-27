@@ -93,7 +93,7 @@ export const SubTitleSection = styled.p`
 // stiles slider and arrow
 export const ContSliderAcr = styled.div`
     /* border: 1px solid red;//...................... */
-    width: 85%;
+    width: 92%;
     margin: auto;
     .slick-slider{
         /* border: 1px solid red;//...................... */

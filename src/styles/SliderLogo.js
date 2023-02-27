@@ -8,8 +8,8 @@ export const ContSlideLogo = styled.div`
     margin: 50px 0;
     .slideCont2{
         /* border: 1px solid red;//.................. */
-        width: 80%;
-        height: 200px;
+        width: 90%;
+        height: 140px;
         margin: 0 auto;
     }
     padding:1rem 0;

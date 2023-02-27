@@ -20,9 +20,10 @@ export default class SliderLogo extends Component {
             slidesToShow: 7,
             slidesToScroll: 1,
             autoplay: true,
-            speed: 500,
-            autoplaySpeed: 500,
-            cssEase: "linear",
+            speed: 2000,
+            autoplaySpeed: 2000,
+            centerMode: true,
+            // cssEase: "linear",
             responsive: [
                 {
                     breakpoint: 1024,

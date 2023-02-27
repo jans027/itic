@@ -33,7 +33,7 @@ export const ContInfoCeo = styled.div`
         font-weight: 700;
     }
     .paragraph{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         margin: 1.5rem 0;
         font-weight: 500;
         /* line-height: 30px; */

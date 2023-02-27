@@ -117,7 +117,7 @@ const Footer = () => {
                         </li>
                         <br />
                         <br />
-                        <BtnFooter href={politicas.url}>{politicas.btn}</BtnFooter>
+                        <BtnFooter to={politicas.url}><div>{politicas.btn}</div></BtnFooter>
                     </ContUlPoliticas>
 
                     <ConsultasFooter>

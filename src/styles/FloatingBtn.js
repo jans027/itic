@@ -14,12 +14,13 @@ export const ConBtnFloat = styled.div`
         bottom: 30vw;
     } */
     a{
-        padding: .7em 4em .5em .7em;
+        padding: .6em 2.5em .5em .6em;
         border-radius: 5em 0 0 5em;
         background-color: var(--color4);
         float: right;
     }
     img{
+        width: 4.5em;
         &:hover{
         transform: scale(1.1);
         
