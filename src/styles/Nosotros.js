@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 export const ConNosotros = styled.div`
     /* border: 2px solid green;//.................... */
-    width: 70%;
+    width: 72%;
     background-color: var(--color2);
     margin-bottom: 4.1rem;
 `

@@ -13,6 +13,7 @@ export const ContAddress = styled.address `
         font-weight:500;
         height: min-content;
         /* border: 1px solid red;//............. */
+        font-style: normal;
         margin-right: 1.5em;
         svg{
             font-size: 1.8vw;

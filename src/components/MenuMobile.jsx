@@ -139,6 +139,22 @@ export default function MenuMobile() {
                 <Link onClick={toggleDrawer(anchor, false)} to={inicio.url}>{inicio.name}</Link>
             </LinkMenu>
 
+            <Prueba expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+                <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+                    <Typography>{empresa.name}</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                    {
+                        empresasSub.map((item) =>
+                            <LinkAccordion key={item.id}>
+                                <Link
+                                    onClick={toggleDrawer(anchor, false)}
+                                    to={item.url}>{item.name}</Link>
+                            </LinkAccordion>
+                        )
+                    }
+                </AccordionDetails>
+            </Prueba>
 
             <Prueba  expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
@@ -158,32 +174,16 @@ export default function MenuMobile() {
                 </AccordionDetails>
             </Prueba>
 
-            <Prueba expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-                <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                    <Typography>{empresa.name}</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                    {
-                        empresasSub.map((item) =>
-                            <LinkAccordion key={item.id}>
-                                <Link
-                                    onClick={toggleDrawer(anchor, false)}
-                                    to={item.url}>{item.name}</Link>
-                            </LinkAccordion>
-                        )
-                    }
-                </AccordionDetails>
-            </Prueba>
-
+            <LinkMenu>
+                <SignalCellularAlt1BarIcon />
+                <Link onClick={toggleDrawer(anchor, false)} to={cotizacion.url}>{cotizacion.name}</Link>
+            </LinkMenu>
+            
             <LinkMenu>
                 <SignalCellularAlt1BarIcon />
                 <Link onClick={toggleDrawer(anchor, false)} to={consulta.url}><ModalForm/></Link>
             </LinkMenu>
 
-            <LinkMenu>
-                <SignalCellularAlt1BarIcon />
-                <Link onClick={toggleDrawer(anchor, false)} to={cotizacion.url}>{cotizacion.name}</Link>
-            </LinkMenu>
 
             <LinkMenu>
                 <SignalCellularAlt1BarIcon />

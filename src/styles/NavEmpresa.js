@@ -29,7 +29,7 @@ export const BannerPath = styled.div`
 `
 export const ContNavEmpresa = styled.div`
     /* border: 1px solid red;//......................... */
-    width: 400px;
+    width: 29rem;
     height: 50vw;
     a{
         list-style: none;
@@ -39,7 +39,7 @@ export const ContNavEmpresa = styled.div`
         div{
             
             color: var(--color4);
-            width: 320px;
+            width: 24.8rem;
             height: 67px;
             display: flex;
             align-items: center;
@@ -49,7 +49,7 @@ export const ContNavEmpresa = styled.div`
                 border: 2px solid var(--color1);
             }
             p{
-                font-size: 1.3em;
+                font-size: 1.5em;
                 font-weight: 600;
             }
         }

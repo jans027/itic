@@ -43,7 +43,7 @@ export const LinkAccordion = styled(Typography)`
 export const Prueba = styled(Accordion)`
         &{
             /* border: 1px solid red;//............... */
-            background-color: var(--color3);
+            background-color: var(--color3)!important;
         }
 `
 

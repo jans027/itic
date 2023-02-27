@@ -107,7 +107,7 @@ export const ContSliderAcr = styled.div`
         font-size: 50px!important;
         /* border: 1px solid red;//............. */
         opacity: 1!important;
-        background-color: white;
+        /* background-color: white; */
         border-radius: 50%;
     }
 
@@ -115,7 +115,7 @@ export const ContSliderAcr = styled.div`
         left: -1px;
         z-index: 1;
         @media(min-width:830px){
-            left: -20px;
+            left: -30px;
         }
     }
     .slick-next{

@@ -43,6 +43,7 @@ export const StyledNav = styled.nav`
         }
     }
     .ContMenu{
+        /* border: 1px solid red;//..................... */
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -54,8 +55,10 @@ export const StyledNav = styled.nav`
                 width: 90%;
             }
         span{
+            /* border: 1px solid red;//..................... */
             display: flex;
             justify-content: space-around;
+            align-items: center;
             @media (max-width:1101px) {
                 display: none;
             }
