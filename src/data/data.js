@@ -378,6 +378,70 @@ export const data = [{
                         text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
                     },
                 },
+                testimonios:{
+                    card1: {
+                        id: 'testimonios1',
+                        img: '',
+                        title:'Nombre Testimonio 1',
+                        subTitle:'empresa',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    },
+                    card2: {
+                        id: 'testimonios2',
+                        img: '',
+                        title:'Nombre Testimonio 2',
+                        subTitle:'empresa',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    },
+                    card3: {
+                        id: 'testimonios3',
+                        img: '',
+                        title:'Nombre Testimonio 3',
+                        subTitle:'empresa',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    },
+                    card4: {
+                        id: 'testimonios4',
+                        img: '',
+                        title:'Nombre Testimonio 4',
+                        subTitle:'empresa',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    },
+                    card5: {
+                        id: 'testimonios5',
+                        img: '',
+                        title:'Nombre Testimonio 5',
+                        subTitle:'empresa',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    },
+                    card6: {
+                        id: 'testimonios6',
+                        img: '',
+                        title:'Nombre Testimonio 6',
+                        subTitle:'empresa',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    },
+                },
+                proyecto:{
+                    card0: {
+                        id: 'proyectos0',
+                        img: "",
+                        title:'TÍTULO PROYECTO 1',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    },
+                    card1: {
+                        id: 'proyectos1',
+                        img: "",
+                        title:'TÍTULO PROYECTO 2',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    },
+                    card2: {
+                        id: 'proyectos2',
+                        img: "",
+                        title:'TÍTULO PROYECTO 3',
+                        text: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+                    },
+                },
             },
             politicas: {
                 key:7,
@@ -386,11 +450,51 @@ export const data = [{
                 nameNav2:'Políticas, códigos \ny reglamentos',
                 url: '/empresa/politicas',
                 banner1: '',
-                miniaturas: {
-                    tarjeta1: {
-                        id: '',
+                cards: {
+                    card0: {
+                        id: 'politicas-card0',
                         img: "",
-                        text: "",
+                        text: "POLÍTICA DE IMPARCIALIDAD, \nINDEPENDENCIA Y \nCONFIDENCIALIDAD",
+                    },
+                    card1: {
+                        id: 'politicas-card1',
+                        img: "",
+                        text: "POLÍTICA DE IMPARCIALIDAD, \nINDEPENDENCIA Y \nCONFIDENCIALIDAD",
+                    },
+                    card2: {
+                        id: 'politicas-card2',
+                        img: "",
+                        text: "POLÍTICA DE IMPARCIALIDAD, \nINDEPENDENCIA Y \nCONFIDENCIALIDAD",
+                    },
+                    card3: {
+                        id: 'politicas-card3',
+                        img: "",
+                        text: "POLÍTICA DE IMPARCIALIDAD, \nINDEPENDENCIA Y \nCONFIDENCIALIDAD",
+                    },
+                    card4: {
+                        id: 'politicas-card4',
+                        img: "",
+                        text: "POLÍTICA DE IMPARCIALIDAD, \nINDEPENDENCIA Y \nCONFIDENCIALIDAD",
+                    },
+                    card5: {
+                        id: 'politicas-card5',
+                        img: "",
+                        text: "POLÍTICA DE IMPARCIALIDAD, \nINDEPENDENCIA Y \nCONFIDENCIALIDAD",
+                    },
+                    card6: {
+                        id: 'politicas-card6',
+                        img: "",
+                        text: "POLÍTICA DE IMPARCIALIDAD, \nINDEPENDENCIA Y \nCONFIDENCIALIDAD",
+                    },
+                    card7: {
+                        id: 'politicas-card7',
+                        img: "",
+                        text: "POLÍTICA DE IMPARCIALIDAD, \nINDEPENDENCIA Y \nCONFIDENCIALIDAD",
+                    },
+                    card8: {
+                        id: 'politicas-card8',
+                        img: "",
+                        text: "POLÍTICA DE IMPARCIALIDAD, \nINDEPENDENCIA Y \nCONFIDENCIALIDAD",
                     },
                 },
             },
