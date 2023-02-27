@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { data } from "../data/data";
-import { CardLogo, ContSlideLogo, LinkExperiencia } from "../styles/SliderLogo";
+import { CardLogo, ConSlider, ContSlideLogo, LinkExperiencia } from "../styles/SliderLogo";
 
 
 const [datos] = data;
@@ -11,13 +11,13 @@ const [datos] = data;
     // console.log(url )
 
 
-export default class SliderLogo extends Component {
+export default class SliderLogoExperiencia extends Component {
 
     
     render() {
         const settings = {
             infinite: true,
-            slidesToShow: 7,
+            slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: true,
             speed: 2000,
@@ -105,9 +105,6 @@ export default class SliderLogo extends Component {
                         </CardLogo>
                     </Slider>
                 </div>
-                <LinkExperiencia>
-                    <Link to={url}>CONOCE MÁS</Link>
-                </LinkExperiencia>
             </ContSlideLogo>
         );
     }

@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 
-
-
 export const ContSlideLogo = styled.div`
     /* border: 1px solid red;//.................. */
     margin: 50px 0;
     .slideCont2{
         /* border: 1px solid red;//.................. */
+        
         width: 90%;
-        height: 140px;
+        height: auto;
         margin: 0 auto;
     }
     padding:1rem 0;
@@ -28,29 +27,30 @@ export const ContSlideLogo = styled.div`
         opacity: .5;
     }
     .slick-prev{
-        left: -60px;
+        left: -50px;
         z-index: 1;
         
     }
     .slick-next{
-        right: -30px;
+        right: -40px;
         z-index: 1;
         
     }
 `
 
 export const CardLogo = styled.div`
-
-    H3{
         /* border: 1px solid red;//.................. */
-        width:10rem;
-        height:10rem;
+        text-align: center;
+        width:150px!important;
+        height:150px!important;
+        padding: 1rem;
+        margin-left: 1rem;
         border-radius: 50%;
-        text-align:center;
-        text-justify:distribute;
+        background-color: var(--color3);
+
+    p{
         padding-top: 65px;
         font-size: 1.5rem;
-        background-color: var(--color3);
         color: var(--color4);
         opacity: .5;
     }
