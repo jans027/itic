@@ -7,8 +7,8 @@ export const CardExperi1 = styled.div`
     border-radius: 30px;
     padding-top: 1.3rem;
     background-color: var(--color5);
-    -webkit-box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6); 
-    box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2); 
+    box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2);
     @media (max-width:850px) {
         width: 300px!important;
         

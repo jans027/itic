@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 
 export const ContImgCarousel = styled(Slider)`
-    /* border: 1px solid red;//................. */
+    /* border: 2px solid red;//................. */
     top: 100px;
     width: 100%;
     height: 38rem;

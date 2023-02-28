@@ -1,3 +1,4 @@
+import { Accordion, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -5,7 +6,7 @@ import styled from "styled-components";
 
 export const ContFooter = styled.div`
     /* position:fixed; */
-    height: 43.7rem!important;
+    /* height: 43.7rem!important; */
     bottom: 0;
     width:100%;
     color: var(--color5);
@@ -17,11 +18,15 @@ export const ContFooter = styled.div`
 export const BlockNav = styled.div`
     /* border: 1px solid red;//................ */
     width: 88%;
-    height: 23rem;
+    height:auto;
     margin: 0 auto;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-between;
+    @media (min-width:601px) and (max-width:1070px) {
+        flex-wrap:unset;
+        justify-content: space-around;
+    }
     h3{
         /* border: 1px solid white;//................ */
         font-size: 1.7rem;
@@ -33,6 +38,7 @@ export const Copy = styled.div`
     justify-content: center;
     align-items: center;
     height: 3vw;
+    min-height: 47px;
     font-weight: 300;
     background-color: var(--color1);
     color: var(--color4);
@@ -46,11 +52,14 @@ export const Copy = styled.div`
 `
 export const Redes = styled.div`
     /* border: 1px solid red;//................. */
-    width: 90%;
+    width: 88%;
     margin: 0 auto;
-    height: 10rem;
-    min-height: 3.1rem;
+    /* height: 10rem; */
+    /* min-height: 3.1rem; */
     padding-bottom: 2.3em;
+    @media (max-width:768px) {
+        padding-bottom: .5em;
+    }
     h3{
         font-size: 1.7rem;
         padding-bottom: 1.3rem;
@@ -78,6 +87,9 @@ export const Redes = styled.div`
 `
 export const ConEmprFooter = styled.div`
         width: 22%;
+        @media (max-width:1070px) {
+        display: none;
+        }
     ul{
         li{
             list-style: none;
@@ -102,6 +114,9 @@ export const ConEmprFooter = styled.div`
 `
 export const ConServFooter = styled.div`
         width: 23%;
+        @media (max-width:1070px) {
+        display: none;
+        }
     ul{
         li{
             list-style: none;
@@ -130,26 +145,30 @@ export const LogoFooter = styled.div`
     padding: 3.5rem 0;
     margin: 0 auto;
     div{
-        width:clamp(150px, 15%, 250px);
+        width:clamp(213px, 15%, 250px);
     }
 `
 export const AddressFooter = styled.span`
+        /* border: 1px solid white;//................... */
         display: flex;
         flex-direction: column;
-        @media (max-width:550px) {
-            display: none;
-        }
+        
         a{
             display: flex;
             align-items: center;
+            @media (max-width:768px) {
+                padding-bottom:.7em;
+            }
             svg{
                 margin-right: 1em;
             }
         }
         span{
-            margin-bottom: 1em;
+            /* border: 1px solid white;//................... */
             display: flex;
             align-items: center;
+            font-size: 18px;
+            
             svg{
                 margin-right: 1em;
             }
@@ -157,18 +176,41 @@ export const AddressFooter = styled.span`
         .address{
             width: 100%;
             margin-bottom: 0;
+            font-size: 18px;
+            @media (max-width:768px) {
+                padding-bottom:.7em;
+                font-size: 16px;
+                &:nth-child(5){
+                    padding-bottom:0em;
+                }
+            }
         }
         .building{
             padding-left:3em;
+            font-size: 18px;
+            @media (max-width:768px) {
+                font-size: 15px;
+                padding-bottom:.7em;
+            }
         }
 `
 export const ConsultasFooter = styled.div`
-        /* border: 1px solid white;//............ */
+        /* border: 1px solid green;//............ */
         width: 26.5%;
+        @media (max-width:768px) {
+            width: 90%;
+            height: auto!important;
+        }
+        @media (min-width:767px) and (max-width:1069px) {
+            width: max-content;
+        }
         p{
             font-size: 1.7rem;
             font-weight: 600;
             padding: 1rem 0;
+            @media (max-width:768px) {
+                font-size: 18px;
+            }
         }
         a{
             text-decoration:none;
@@ -178,7 +220,7 @@ export const ConsultasFooter = styled.div`
             }
         }
         span{
-            font-size: 1.1rem;
+            font-size: .1rem;
             padding: .1rem 0;
         }
 `
@@ -186,6 +228,10 @@ export const ContUlPoliticas = styled.ul`
     /* border: 1px solid green;//................... */
     width: 28%;
     margin-bottom: 2em;
+    /* display: block; */
+    @media (max-width:1070px) {
+        display: none;
+    }
     li{
         list-style: none;
         padding: .5em 0;
@@ -213,11 +259,16 @@ export const LinkConsulta1 = styled.span`
         display: flex;
         flex-direction: column;
         padding-bottom: 1.1rem;
+        @media (max-width:1070px) {
+            font-size: 17.5px;
+            padding-bottom: .5em;
+        }
     }
 
 `
 export const BtnFooter = styled(Link)`
     text-decoration: none;
+    
     div{
         width: 90%;
         height: 2.7vw;
@@ -228,8 +279,54 @@ export const BtnFooter = styled(Link)`
         align-items: center;
         font-weight: 700;
         border-radius: 1.5rem;
+        text-align: center;
+        @media (max-width:1490px) {
+            height: 3.3vw;
+        }
         &:active{
         background-color:var(--color8);
         }
     }
+`
+// Accordion..........................
+export const ConAccordion = styled.div`
+    padding-bottom: 1em;
+    .MuiButtonBase-root{
+        padding: 0!important;
+        justify-content: flex-start;
+    }
+    .MuiAccordionSummary-content{
+        /* border: 1px solid white;//.................. */
+        max-width: 210px;
+        min-width: 100px;
+        flex-grow: unset;
+        font: var(--Font)!important;
+    }
+`
+export const AccordionFooter = styled(Accordion)`
+    /* border: 1px solid white;//.................. */
+    max-width: 350px!important;
+    display: none;
+    background-color: black!important;
+    color: white!important;
+    padding: 0!important;
+    svg{
+        color: white;
+    }
+    @media (max-width:1070px) {
+        display: block;
+        
+    }
+`
+export const EnlaceDesplegable = styled(Typography)`
+    li{
+        list-style: none;
+        margin-bottom: 1em;
+        a{
+            text-decoration: none;
+        }
+    }
+`
+export const TitleAccor = styled(Typography)`
+    /* border: 1px solid white;//.................. */
 `

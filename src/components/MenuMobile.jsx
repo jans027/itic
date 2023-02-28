@@ -6,10 +6,10 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
+// import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
+// import InboxIcon from '@mui/icons-material/MoveToInbox';
+// import MailIcon from '@mui/icons-material/Mail';
 // hamburguer menu
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseSharpIcon from '@mui/icons-material/CloseSharp';
@@ -71,7 +71,6 @@ export default function MenuMobile() {
     const [datos] = data;
     //destructuring data
     const {
-        inicio,
         servicios,
         empresa,
         consulta,
@@ -82,8 +81,6 @@ export default function MenuMobile() {
     const serviciosSub = Object.values(servicios.dropDownMenu);
     const empresasSub = Object.values(empresa.dropDownMenu);
     const countriesSub = Object.values(countries);
-    // const inicioSub = Object.values(inicio);
-    // console.log(inicioSub)
 
     const [state, setState] = React.useState({
         right: false,
@@ -134,10 +131,10 @@ export default function MenuMobile() {
             </List>
             <Divider />
 
-            <LinkMenu>
+            {/* <LinkMenu>
                 <SignalCellularAlt1BarIcon />
                 <Link onClick={toggleDrawer(anchor, false)} to={inicio.url}>{inicio.name}</Link>
-            </LinkMenu>
+            </LinkMenu> */}
 
             <Prueba expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                 <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
