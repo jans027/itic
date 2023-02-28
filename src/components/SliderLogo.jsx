@@ -18,34 +18,30 @@ export default class SliderLogo extends Component {
         const settings = {
             infinite: true,
             slidesToShow: 7,
-            slidesToScroll: 1,
+            // slidesToScroll: 1,
             autoplay: true,
             speed: 2000,
             autoplaySpeed: 2000,
-            // centerMode: true,
-            // cssEase: "linear",
+            centerMode: true,
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 1379,
                     settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 2,
-                        infinite: true,
-                        // dots: true
+                        slidesToShow: 6,
+                        slidesToScroll: 1,
                     }
                 },
                 {
-                    breakpoint: 800,
+                    breakpoint: 1025,
                     settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                        initialSlide: 2
+                        slidesToShow: 4,
+                        infinite: true,
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 1,
+                        slidesToShow: 4,
                         slidesToScroll: 1
                     }
                 }

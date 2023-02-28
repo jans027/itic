@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 
 export const ContSlideLogo = styled.div`
-    border: 1px solid red;//..................
+    /* border: 1px solid red;//.................. */
     margin: 50px 0;
     .slideCont2{
-        /* border: 1px solid red;//.................. */
+        border: 1px solid red;//..................
         width: 90%;
         height: auto;
         margin: 0 auto;
@@ -17,7 +17,7 @@ export const ContSlideLogo = styled.div`
         /* border: 1px solid red;//.................. */
     }
     .slick-prev, .slick-next{
-        border: 1px solid red;//..................
+        /* border: 1px solid red;//.................. */
         width: 40px!important;
         height: 100%;
         font-size: 10px!important;
@@ -49,12 +49,22 @@ export const CardLogo = styled.div`
         margin-left: 1rem;
         border-radius: 50%;
         background-color: var(--color3);
+        @media (max-width:800px) {
+            width:11vmax!important;
+            height:11vmax!important;
+            margin-left: 15%;
+        }
 
     p{
         padding-top: 65px;
         font-size: 1.5rem;
         color: var(--color4);
         opacity: .5;
+        @media (max-width:800px) {
+            padding-top: 6px;
+        font-size: .7em;
+
+        }
     }
     
 `
