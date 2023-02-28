@@ -2,11 +2,10 @@ import styled from "styled-components";
 
 
 export const ContSlideLogo = styled.div`
-    /* border: 1px solid red;//.................. */
+    border: 1px solid red;//..................
     margin: 50px 0;
     .slideCont2{
         /* border: 1px solid red;//.................. */
-        
         width: 90%;
         height: auto;
         margin: 0 auto;
@@ -15,11 +14,14 @@ export const ContSlideLogo = styled.div`
     margin-bottom: 25px;
     .slick-slider{
         margin: auto;
+        /* border: 1px solid red;//.................. */
     }
     .slick-prev, .slick-next{
+        border: 1px solid red;//..................
         width: 40px!important;
         height: 100%;
         font-size: 10px!important;
+        display: none!important;
     }
     .slick-prev::before, .slick-next::before{
         color: var(--color2)!important;
@@ -27,12 +29,12 @@ export const ContSlideLogo = styled.div`
         opacity: .5;
     }
     .slick-prev{
-        left: -50px;
+        left: -20px;
         z-index: 1;
         
     }
     .slick-next{
-        right: -40px;
+        right: -20px;
         z-index: 1;
         
     }

@@ -27,7 +27,7 @@ export const CloseImg = styled(ListItemIcon)`
 `
 export const ContMenuMobile = styled(SwipeableDrawer)`
     .SlideMenu{
-        /* border: 1px solid red;//............... */
+        border: 1px solid red;//...............
         background-color: var(--color3);
         height: 100vmax;
         a{

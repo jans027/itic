@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledNav = styled.nav`
+    /* border: 1px solid red;//........................... */
     display: flex;
     margin: auto;
     flex-direction: column;
@@ -63,17 +64,21 @@ export const StyledNav = styled.nav`
                 display: none;
             }
         }
-        .contMenuHamburguer{
+        .MuiButtonBase-root{
+            /* border: 1px solid red;//........................ */
             display: none;
+            padding: 0!important;
             @media (max-width:1101px) {
                 display: block;
             }
         }
         .menuHamburguer{
+            /* border: 1px solid red;//........................ */
             font-size:2.8em;
             cursor: pointer;
             transition:10ms;
             padding: 0!important;
+            margin: 0!important;
             :active{
                 transform: scale(.97);
                 path{

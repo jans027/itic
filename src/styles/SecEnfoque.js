@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 
 export const ContEnfoque = styled.div`
+    border:2px solid red;//..................
     width: 100%;
     height: 45vw;
     /* min-height: 600px; */
@@ -10,7 +11,6 @@ export const ContEnfoque = styled.div`
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    /* border:2px solid red;//.................. */
     @media (max-width:890px) {
         height: 85vh;
     }
