@@ -5,7 +5,7 @@ export const ContSlideLogo = styled.div`
     /* border: 1px solid red;//.................. */
     margin: 50px 0;
     .slideCont2{
-        border: 1px solid red;//..................
+        /* border: 1px solid red;//.................. */
         width: 90%;
         height: auto;
         margin: 0 auto;
