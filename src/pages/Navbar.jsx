@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { data } from "../data/data";
-import {BtnBase,LogoNav,MenuDrop,StyledNav} from "../styles/NavBar";
+import {BtnBase,LogoNav,MenuDrop,MenuPcLaptop,StyledNav} from "../styles/NavBar";
 // Menu
 import MenuItem from '@mui/material/MenuItem';
 // icons
@@ -90,7 +90,7 @@ const NavBar = () => {
                     <img src={Logo} alt={inicio.id} />
                 </LogoNav>
 
-                <span>
+                <MenuPcLaptop>
                     <BtnBase
                         id="inicio"
                         className="inicio"
@@ -210,7 +210,7 @@ const NavBar = () => {
                             }
                         </MenuDrop>
                     </ul>
-                </span>
+                </MenuPcLaptop>
 
                 <MenuMobile />
             </div>

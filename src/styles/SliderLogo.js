@@ -3,21 +3,21 @@ import styled from "styled-components";
 
 export const ContSlideLogo = styled.div`
     /* border: 1px solid red;//.................. */
-    margin: 50px 0;
+    /* margin: 50px 0; */
     .slideCont2{
-        /* border: 1px solid red;//.................. */
+        /* border: 1px solid red;//...............*/
         width: 90%;
         height: auto;
         margin: 0 auto;
     }
     padding:1rem 0;
-    margin-bottom: 25px;
+    /* margin-bottom: 25px; */
     .slick-slider{
         margin: auto;
-        /* border: 1px solid red;//.................. */
+        /* border: 1px solid red;//...............*/
     }
     .slick-prev, .slick-next{
-        /* border: 1px solid red;//.................. */
+        /* border: 1px solid red;//...............*/
         width: 40px!important;
         height: 100%;
         font-size: 10px!important;
@@ -73,7 +73,7 @@ export const LinkExperiencia = styled.div`
         /* border: 1px solid red;//.............. */
         width: 100%;
         text-align: center;
-        margin: 4rem 0 3.5rem 0;
+        margin: 4rem 0 1em 0;
         a{
         padding: .5vw 2vw;
         font-size: 20px;

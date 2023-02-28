@@ -1,9 +1,10 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 
 
 export const ContEnfoque = styled.div`
-    border:2px solid red;//..................
+    /* border:2px solid red;//.................. */
     width: 100%;
     height: 45vw;
     /* min-height: 600px; */
@@ -34,12 +35,12 @@ export const ContEnfoque = styled.div`
         } */
     }
     .contEnfoque1{
+        /* border:2px solid red;//.................. */
         position:absolute;
         width: 90%;
         margin:0 auto;
         height: auto;
         display: flex;
-        /* border:2px solid red;//.................. */
         @media (max-width:1160px) {
             flex-direction:column;
         }
@@ -52,11 +53,11 @@ export const ContEnfoque = styled.div`
                 text-align: center;
             }
             .title{
-                font-size: 4vw;
+                font-size:clamp(34px, 4vw, 78px);
                 font-weight: 900;
             }
             .subTitle{
-                font-size:2.7vw;
+                font-size:clamp(18px, 2.7vw, 50px);
                 font-weight: 900;
                 margin: 3rem 0;
             }
@@ -64,33 +65,36 @@ export const ContEnfoque = styled.div`
         
     }
 `
-export const BtnEnfoque1 = styled.div`
-    padding: 1rem 0;
-    @media (max-width:1160px) {
-        display: none;
-    }
-    a{
-        text-decoration: none;
-        padding: 1rem 6rem;
+export const BtnEnfoque1 = styled(Link)`
+    text-decoration: none;
+    /* padding: 1rem 6rem; */
+    font-size: 33px;
+    font-weight: 900;
+    color:var(--color5);
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        height: 60px;
+        border-radius: 15px;
         background-color: var(--color4);
-        font-size: 26px;
-        font-weight: 900;
-        color:var(--color5);
-        border-radius: .7em;
-        &:hover{
-        color: var(--color1);
-        }
-        &:active{
-        background-color: var(--color7);
-        }
+        border: 1px solid black;
+    }
+    &:hover{
+    color: var(--color1);
+    }
+    &:active{
+    background-color: var(--color7);
     }
 `
 export const BtnEnfoque2 = styled(BtnEnfoque1)`
+    /* border: 1px solid red;//...................... */
     text-align: center;
     display: none;
     @media (max-width:1160px) {
         display: block;
-        padding:2em 0;
+        /* padding:2em 0; */
     }
 `
 export const ContEnfoque3 = styled.div`
@@ -100,7 +104,7 @@ export const ContEnfoque3 = styled.div`
                 width: 100%;
             }
             .ContParr{
-                font-size: 1.5rem;
+                font-size: clamp(19px, 1.5vw, 25px);
                 line-height: 1.4em;
                 @media (max-width:1160px) {
                     display:none;
@@ -125,18 +129,18 @@ export const ContEnfoque3 = styled.div`
                         justify-content: flex-start;
                     }
                     span{
-                        font-size: 6vw;
+                        font-size:clamp(88px, 6vw, 150px);
                         font-weight: 900;
                     }
                     svg{
-                        font-size: 6vw;
+                        font-size:clamp(88px, 6vw, 150px);
                     }
                     .cardText1{
-                        font-size: 2em;
+                        font-size:clamp(23px, 1.6vw, 32px);
                         font-weight: 900;
                     }
                     .cardText2{
-                        font-size: 2em;
+                        font-size:clamp(23px, 1.6vw, 32px);
                         font-weight: 700;
                         padding: .2em .5em;
                         border-radius: 13px;
@@ -149,7 +153,7 @@ export const ContEnfoque3 = styled.div`
                         }
                     }
                     .cardText3{
-                        font-size: 3em;
+                        font-size:clamp(42px, 2.5vw, 48px);
                         font-weight: 900;
                     }
                 }

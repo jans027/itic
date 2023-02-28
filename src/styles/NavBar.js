@@ -55,16 +55,8 @@ export const StyledNav = styled.nav`
                 justify-content:space-between;
                 width: 90%;
             }
-        span{
-            /* border: 1px solid red;//..................... */
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            @media (max-width:1101px) {
-                display: none;
-            }
-        }
-        .MuiButtonBase-root{
+        
+        .contMenuHamburguer{
             /* border: 1px solid red;//........................ */
             display: none;
             padding: 0!important;
@@ -79,6 +71,7 @@ export const StyledNav = styled.nav`
             transition:10ms;
             padding: 0!important;
             margin: 0!important;
+            
             :active{
                 transform: scale(.97);
                 path{
@@ -93,6 +86,15 @@ export const StyledNav = styled.nav`
         }
     }
 `;
+export const MenuPcLaptop = styled.span`
+    /* border: 1px solid blue;//......................... */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @media (max-width:1101px) {
+        display: none;
+    }
+`
 
 export const BtnBase = styled(Button)`
         &&{
@@ -108,7 +110,7 @@ export const BtnBase = styled(Button)`
                 font-weight:600;
                 display: flex;
                 align-items: center;
-                font-size: 1em;
+                font-size: clamp(11px, 1vmax, 22px);
             }
             &:hover{
                 background-color: var(--color10);

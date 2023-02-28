@@ -35,8 +35,8 @@ const SecEnfoque = () => {
                                 )
                             })}
                         </p>
-                        <BtnEnfoque1>
-                            <Link className='Btn1' to={url} >CONOCE MÁS</Link>
+                        <BtnEnfoque1 className='Btn1' to={url} >
+                            <div>CONOCE MÁS</div>
                         </BtnEnfoque1>
                     </div>
                     <ContEnfoque3>
@@ -67,8 +67,8 @@ const SecEnfoque = () => {
                             }
                         </div>
                     </ContEnfoque3>
-                    <BtnEnfoque2>
-                            <Link className='Btn1' to={url} >CONOCE MÁS</Link>
+                    <BtnEnfoque2 className='Btn1' to={url} >
+                            <div>CONOCE MÁS</div>
                     </BtnEnfoque2>
                 </div>
             </ContEnfoque>

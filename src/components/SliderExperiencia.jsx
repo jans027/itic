@@ -3,7 +3,7 @@ import { data } from '../data/data';
 import {  ContSliderAcr, SubTitleSection, TitleSection } from '../styles/SecAcreditaciones';
 import { ConSectionServicios } from '../styles/SectionServicios';
 import Slider from 'react-slick';
-import { CardExperi1, ConCardExperiencia } from '../styles/SliderExperiencia';
+import { CardExperi1, ConCardExperiencia, ConSliderExp } from '../styles/SliderExperiencia';
 
 
 const SecExperiencias = () => {
@@ -60,11 +60,11 @@ const SecExperiencias = () => {
                 <SubTitleSection>{subTitle}</SubTitleSection>
 
                 <ContSliderAcr>
-                    <Slider className='ContSlideSec' {...settings}>
+                    <ConSliderExp className='ContSlideSec' {...settings}>
 
                         {
                             card.map((item) =>
-                                <CardExperi1 key={item.id}>
+                                <CardExperi1 className='global-card-slider' key={item.id}>
                                     <ConCardExperiencia className='cardExperiencia'>
                                         <div>
                                             <img src={require(`../images/${item.img}`)} alt={item.name} />
@@ -80,7 +80,7 @@ const SecExperiencias = () => {
                             )
                         }
 
-                    </Slider>
+                    </ConSliderExp>
                 </ContSliderAcr>
 
             </ConSectionServicios>

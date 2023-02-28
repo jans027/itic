@@ -1,8 +1,14 @@
+import Slider from "react-slick";
 import styled from "styled-components";
 
+export const ConSliderExp = styled(Slider)`
+    .global-card-slider{
+        width: clamp(275px, 25vw, 25vw)!important;
+    }
+`
 export const CardExperi1 = styled.div`
+    /* border: 1px solid red;//...................... */
     margin-bottom: 4em;
-    width: 25vw!important;
     height: auto;
     border-radius: 30px;
     padding-top: 1.3rem;
@@ -16,8 +22,10 @@ export const CardExperi1 = styled.div`
 `
 export  const ConCardExperiencia = styled.div`
     border-radius: 30px;
+    width: 100%!important;
     height: 100%;
     div{
+        /* border: 1px solid red;//...................... */
         overflow: hidden;
         margin-top: -1.5rem;
         border-radius: 30px;
@@ -32,14 +40,14 @@ export  const ConCardExperiencia = styled.div`
         p{
             font-weight:900;
             padding: 1em 0 0 0;
-            font-size: 1.6vw;
+            font-size: clamp(16px, 1.6vw, 1.6vw);
         }
     }
     .cardText{
         padding: 1em;
         p{
             font-weight:10px;
-            font-size: 1.5em;
+            font-size: clamp(14px, 1.6vw, 25px);
             padding: 0 .6em;
         }
     }

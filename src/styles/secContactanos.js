@@ -3,34 +3,35 @@ import styled from "styled-components";
 
 
 export const ContContacto = styled.div`
+    /* border:2px solid red;//....................... */
     width: 100%;
-    height: 36vw;
+    height: clamp(auto, 60vh, 680px);
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    /* border:2px solid red;//.................. */
     @media(max-width:768px){
-        margin-top: 15rem;
-        height: max-content!important;
+        /* margin: 0 auto; */
         align-items: flex-start;
+        flex-direction: column;
     }
-    
-    img{
+    .ConImgContactanos{
+        overflow: hidden;
+        /* border:2px solid red;//.................. */
+        width: 100%;
+        height: clamp(310px, 50vh, 680px);
+        img{
         /* width: 100%; */
-        height: 100%;
+        height: 125%;
         object-fit: cover;
         object-position: center center;
-        /* border:2px solid red;//.................. */
-        @media(max-width:732px){
-            width: auto;
-            height: 100%;
-            object-position: right center;
+        @media(max-width:769px){
+            width: 100%;
+            /* object-position: right center; */
         }
         @media(max-width:550px){
-            width: 100%;
-            height: auto;
-            object-position: right center;
+            /* height: 100%; */
+            /* object-position: -70px center; */
+        }
         }
     }
     .contEnfoque1{
@@ -38,8 +39,10 @@ export const ContContacto = styled.div`
             margin:0 auto;
             height: auto;
             position:absolute;
-        @media (max-width:743px) {
-            margin-top: 10em;
+        @media (max-width:770px) {
+            /* margin-top: 10em; */
+            position:unset;
+            padding-left: 1em;
         }
         @media (max-width:550px) {
             margin-top: 0;
@@ -51,40 +54,43 @@ export const ContContacto = styled.div`
                 font-weight: 900;
                 @media (max-width:600px) {
                     font-size: 30px;
-                    
                 }
             }
             .subTitle{
                 font-size:3vw;
                 font-weight: 600;
                 margin: 3.5rem 0;
-                @media (max-width:600px) {
+                @media (max-width:769px) {
                     margin: 2rem 0;
-                    
+                    font-size:1.3em;
                 }
             }
-            div{
-                padding: 1rem 0;
-                a{
-                    text-decoration: none;
-                    padding: 1.5rem 6.5rem;
+            a{
+                
+                text-decoration: none;
+                font-size: 2rem;
+                font-weight: 600;
+                border-radius: .7em;
+                div{
+                    width:fit-content;
                     background-color: var(--color4);
-                    font-size: 2rem;
-                    font-weight: 600;
                     color:var(--color5);
-                    border-radius: .7em;
-                    @media(max-width:766px){
-                        padding: 1.5rem 3vw;
-                        font-size: 3.4vw;
-                        font-weight: 100;
-                    }
+                    padding: .5em;
+                    border-radius: 1em;
+                    font-weight: 600;
                     &:hover{
                     color: var(--color1);
-                    }
+                    };
                     &:active{
                     background-color: var(--color7);
-                    }
+                    };
                 }
+                @media(max-width:769px){
+                    font-size: 3.4vw;
+                    font-weight: 100;
+                }
+                
+                
             }
         }
     }

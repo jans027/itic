@@ -54,12 +54,14 @@ export default class SecContactanos extends Component {
                                     )
                                 })}
                             </p>
-                            <div>
-                                <Link to={url} >{btn}</Link>
-                            </div>
+
+                            <Link to={url} ><div>{btn}</div></Link>
+
                         </div>
                     </div>
-                    <img src={screenWidth < 768 ? ImgBannerMobile : ImgBannerPc} alt={id} />
+                    <div className='ConImgContactanos'>
+                        <img src={screenWidth < 769 ? ImgBannerMobile : ImgBannerPc} alt={id} />
+                    </div>
                 </ContContacto>
             </>
         )
