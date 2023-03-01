@@ -1,4 +1,4 @@
-import { Accordion, AccordionSummary, ListItemIcon, SwipeableDrawer, Typography } from "@mui/material";
+import { Accordion,  ListItemIcon, SwipeableDrawer, Typography } from "@mui/material";
 import styled from "styled-components";
 
 

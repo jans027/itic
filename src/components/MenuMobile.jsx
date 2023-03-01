@@ -134,11 +134,6 @@ export default function MenuMobile() {
 
             {/* <Divider /> */}
 
-            {/* <LinkMenu>
-                <SignalCellularAlt1BarIcon />
-                <Link onClick={toggleDrawer(anchor, false)} to={inicio.url}>{inicio.name}</Link>
-            </LinkMenu> */}
-
             <Prueba expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                 <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
                     <Typography sx={{ fontWeight:700 }}>{empresa.name}</Typography>
@@ -175,18 +170,15 @@ export default function MenuMobile() {
             </Prueba>
 
             <LinkMenu>
-                {/* <SignalCellularAlt1BarIcon /> */}
                 <Link onClick={toggleDrawer(anchor, false)} to={cotizacion.url}>{cotizacion.name}</Link>
             </LinkMenu>
             
             <LinkMenu>
-                {/* <SignalCellularAlt1BarIcon /> */}
                 <Link onClick={toggleDrawer(anchor, false)} to={consulta.url}><ModalForm/></Link>
             </LinkMenu>
 
 
             <LinkMenu>
-                {/* <SignalCellularAlt1BarIcon /> */}
                 <Link onClick={toggleDrawer(anchor, false)} to={contacto.url}>{contacto.name}</Link>
             </LinkMenu>
 

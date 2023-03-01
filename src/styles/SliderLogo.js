@@ -50,8 +50,8 @@ export const CardLogo = styled.div`
         border-radius: 50%;
         background-color: var(--color3);
         @media (max-width:800px) {
-            width:11vmax!important;
-            height:11vmax!important;
+            width:10vmax!important;
+            height:10vmax!important;
             margin-left: 15%;
         }
 
