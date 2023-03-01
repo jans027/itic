@@ -2,25 +2,27 @@ import styled from "styled-components";
 
 
 export const ConBtnFloat = styled.div`
-    /* width: 100%; */
+/* border: 1px solid red;//....................... */
     position:fixed;
+    width:8vw;
+    min-width: 3.5em;
     right: 0;
+    border-radius: 5em 0 0 5em;
     bottom: 20vw;
     cursor: pointer;
     transition: 30ms;
     z-index: 1000;
-    /* @media (max-width:850px) {
-        right: 100px;
-        bottom: 30vw;
-    } */
+    display: flex;
+    overflow: hidden;
+    background-color: var(--color4);
+    
     a{
-        padding: .6em 2.5em .5em .6em;
-        border-radius: 5em 0 0 5em;
-        background-color: var(--color4);
+        padding: .5vw;
         float: right;
     }
     img{
-        width: 4.5em;
+        width: 4.5vw;
+        min-width: 38px;
         &:hover{
         transform: scale(1.1);
         
@@ -31,12 +33,3 @@ export const ConBtnFloat = styled.div`
     }
     
 `
-
-
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-import { Accordion, ListItemIcon, SwipeableDrawer, Typography } from "@mui/material";
+import { Accordion, AccordionSummary, ListItemIcon, SwipeableDrawer, Typography } from "@mui/material";
 import styled from "styled-components";
 
 
@@ -9,10 +9,11 @@ export const CloseImg = styled(ListItemIcon)`
     display: flex;
     justify-content: flex-end;
     .closeBtn{
-        font-size: 2.4em;
+        font-size: 1em;
         font-weight: 900;
         transition:10ms;
-        width:30px;
+        width:40px;
+        height:40px;
         border-radius: 50%;
         background-color: var(--color4);
         color: var(--color5);
@@ -20,16 +21,16 @@ export const CloseImg = styled(ListItemIcon)`
                 transform: scale(.97);
                 path{
                 color: var(--color1);
-                
                 }
             }
     }
 `
 export const ContMenuMobile = styled(SwipeableDrawer)`
     .SlideMenu{
-        border: 1px solid red;//...............
+        /* border: 1px solid red;//............... */
         background-color: var(--color3);
-        height: 100vmax;
+        width: 310px;
+        height: 150vh;
         a{
             /* border: 1px solid red;//............... */
             text-decoration: none;
@@ -41,9 +42,12 @@ export const ContMenuMobile = styled(SwipeableDrawer)`
     }
 `
 export const LinkMenu =styled(Typography)`
-    /* border: 1px solid red; */
+    /* border: 1px solid red;//...................... */
     width: 100%;
     padding: 16px;
+    a{
+        font-weight:600;
+    }
 `
 export const LinkAccordion = styled(Typography)`
     /* border: 1px solid red; */
@@ -54,6 +58,8 @@ export const Prueba = styled(Accordion)`
         &{
             /* border: 1px solid red;//............... */
             background-color: var(--color3)!important;
+            box-shadow: none!important;
+            
         }
 `
 

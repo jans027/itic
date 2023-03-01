@@ -16,29 +16,36 @@ export const StyledNav = styled.nav`
         background-color: var(--color4);
         color: var(--color5);
         display: flex;
-        height: 2.8em;
+        /* height: 2.8vw; */
         div{
             display: flex;
             justify-content: flex-end;
+            align-items: center;
             width: 90%;
-            height: 2.8em;
+            height: 2.8vw;
+            min-height: 27px;
             margin: auto;
-            @media (max-width:600px) {
-                width: 85%;
+            @media (max-width:900px) {
+                justify-content: center;
             }
             span{
             align-items: center;
             display: flex;
             margin-right:.5em;
             padding: 1em;
-            @media (max-width:510px) {
-                display:none;
+            svg{
+                @media (max-width:900px) {
+                    font-size: 14px;
                 }
-            h4{
+            }
+            p{
             margin-left: .3em;
             font-size: 1em;
             font-weight: 500;
-            
+            @media (max-width:900px) {
+                font-size: 12px;
+                font-weight: 300;
+                }
             }
         }
         }
@@ -54,6 +61,7 @@ export const StyledNav = styled.nav`
         @media (max-width:1101px) {
                 justify-content:space-between;
                 width: 90%;
+                height: 3.7em;
             }
         
         .contMenuHamburguer{
@@ -80,7 +88,7 @@ export const StyledNav = styled.nav`
                 }
             }
             path{
-                color: var(--color4);
+                color: var(--color9);
                 
             }
         }

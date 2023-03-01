@@ -12,9 +12,9 @@ export const CardExperi1 = styled.div`
     height: auto;
     border-radius: 30px;
     padding-top: 1.3rem;
-    background-color: var(--color5);
-    -webkit-box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2); 
-    box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2);
+    /* background-color: var(--color5); */
+    /* -webkit-box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2); 
+    box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2); */
     @media (max-width:850px) {
         width: 300px!important;
         
@@ -28,7 +28,7 @@ export  const ConCardExperiencia = styled.div`
         /* border: 1px solid red;//...................... */
         overflow: hidden;
         margin-top: -1.5rem;
-        border-radius: 30px;
+        border-radius: 30px 30px 0 0;
         img{
             width: 100%;
             object-fit: cover;

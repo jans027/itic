@@ -10,7 +10,14 @@ export const ContImgCarousel = styled(Slider)`
     top: 100px;
     width: 100%;
     height: 38rem;
-    margin-bottom: 10rem;
+    margin-bottom: 8em;
+    @media (max-width:1160px) {
+        margin-bottom: 68px;
+    }
+    @media (max-width:600px) {
+        height: 400px;
+    }
+    
     .slick-arrow{
         border: 1px solid red;
         display: none!important;
@@ -24,6 +31,9 @@ export const ContImgCarousel = styled(Slider)`
         @media(max-width:768px){
             height: 500px;
         }
+        @media (max-width:600px) {
+        height: 360px;
+        }
         img{
             width: 100%;
             height: max-content;
@@ -31,7 +41,7 @@ export const ContImgCarousel = styled(Slider)`
             object-position: center center;
             @media(max-width:768px){
             height: 500px;
-        }
+            }
         }
         
     }
@@ -49,15 +59,11 @@ export const ContTextBanner = styled.span`
     @media (min-width:1440px) {
         top :15%;
     }
-    @media(max-width:650px){
-        top :35%;
-            
-    }
     h2{
-        font-size: 5.1rem;
+        font-size: 4.6vw;
         font-weight: 900;
         @media(max-width:650px){
-            font-size: 45px;
+            font-size: 35px;
         }
     }
     .textCarrousel{
@@ -66,7 +72,8 @@ export const ContTextBanner = styled.span`
         font-size: 1.5rem;
         margin: 1rem 0;
         @media(max-width:650px){
-            display: none;
+            font-size: 13.7px;
+            width:250px;
             
         }
         
@@ -86,8 +93,11 @@ export const ContTextBanner = styled.span`
             font-size: 1.9rem;
             font-weight: 700;
             border: 1px solid var(--color4);
-            @media(max-width:650px){
+            @media(max-width:850px){
                 font-size: 15px;
+                width: 100%;
+                height: 1.8rem;
+                border-radius: 1em;
             }
             &:hover{
                 color: var(--color1);

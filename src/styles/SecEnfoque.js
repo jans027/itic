@@ -125,14 +125,12 @@ export const ContEnfoque3 = styled.div`
 
 export const BtnEnfoque1 = styled(Link)`
     text-decoration: none;
-    /* padding: 1rem 6rem; */
     font-size: 33px;
     font-weight: 900;
     color:var(--color5);
     display: block;
     @media (max-width:1166px) {
         display: none;
-        /* padding:2em 0; */
     }
     div{
         /* border:2px solid blue;//.................. */

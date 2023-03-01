@@ -69,7 +69,7 @@ export default class SimpleSlider extends Component {
             ),
         };
         return (
-            <div>
+            <>
                 <ContImgCarousel {...settings}>
 
                     {
@@ -86,7 +86,7 @@ export default class SimpleSlider extends Component {
                     }
 
                 </ContImgCarousel>
-            </div>
+            </>
         );
     }
 }

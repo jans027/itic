@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 import { data } from "../data/data";
-import {BtnBase,LogoNav,MenuDrop,MenuPcLaptop,StyledNav} from "../styles/NavBar";
+import { BtnBase, LogoNav, MenuDrop, MenuPcLaptop, StyledNav } from "../styles/NavBar";
 // Menu
 import MenuItem from '@mui/material/MenuItem';
 // icons
@@ -79,8 +79,8 @@ const NavBar = () => {
         <StyledNav>
             <div className="Address">
                 <div>
-                    <span><PhoneAndroidOutlinedIcon /><h4>{inicio.phone}</h4></span>
-                    <span><EmailOutlinedIcon /><h4>{inicio.email}</h4></span>
+                    <span><PhoneAndroidOutlinedIcon /><p>{inicio.phone}</p></span>
+                    <span><EmailOutlinedIcon /><p>{inicio.email}</p></span>
                 </div>
             </div>
 
@@ -170,7 +170,7 @@ const NavBar = () => {
                         className="inicio"
                     >
                         {/* <Link>{consulta.name}</Link> */}
-                        <ModalForm/>
+                        <ModalForm />
                     </BtnBase>
 
                     <BtnBase

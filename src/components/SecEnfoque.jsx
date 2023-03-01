@@ -23,7 +23,6 @@ const SecEnfoque = () => {
     return (
         <>
             <ContEnfoque>
-                {/* <img src={ImgBanner} alt={id} /> */}
                 <ContTextEnfoque className='contEnfoque1'>
                     <div className='contEnfoque2'>
                         <p className='title'>

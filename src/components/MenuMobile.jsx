@@ -13,7 +13,7 @@ import ListItemText from '@mui/material/ListItemText';
 // hamburguer menu
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseSharpIcon from '@mui/icons-material/CloseSharp';
-import { CloseImg, ContMenuMobile, LinkAccordion, LinkMenu, Prueba } from '../styles/MenuMobile';
+import { CloseImg, ContMenuMobile, LinkAccordion, LinkMenu, MenuAccordion, Prueba } from '../styles/MenuMobile';
 // Accordion
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
@@ -25,13 +25,16 @@ import { styled } from '@mui/material/styles';
 import { data } from '../data/data';
 // Image
 import ImgCol from '../images/Bandera-col.png';
-import SignalCellularAlt1BarIcon from '@mui/icons-material/SignalCellularAlt1Bar';
+// import SignalCellularAlt1BarIcon from '@mui/icons-material/SignalCellularAlt1Bar';
 import ModalForm from './ModalForm';
+//Icons
+// import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 
 const Accordion = styled((props) => (
     <MuiAccordion disableGutters elevation={0} square {...props} />
-))(({ theme }) => ({
+    ))
+    (({ theme }) => ({
     border: `1px solid ${theme.palette.divider}`,
     '&:not(:last-child)': {
         borderBottom: 0,
@@ -42,27 +45,26 @@ const Accordion = styled((props) => (
 }));
 
 const AccordionSummary = styled((props) => (
-    <MuiAccordionSummary
-        expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}
-        {...props}
-    />
-))(({ theme }) => ({
+    <MuiAccordionSummary expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem' }} />}{...props}/>
+    ))
+    (({ theme }) => ({
     backgroundColor:
         theme.palette.mode === 'dark'
             ? 'rgba(255, 255, 255, .05)'
-            : 'rgba(0, 0, 0, .03)',
-    flexDirection: 'row-reverse',
+            : 'rgba(0, 0, 0, .00)',
+    flexDirection: 'row',
     '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
         transform: 'rotate(90deg)',
     },
     '& .MuiAccordionSummary-content': {
-        marginLeft: theme.spacing(1),
+        marginLeft: theme.spacing(0),
     },
 }));
 
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
     padding: theme.spacing(2),
-    borderTop: '1px solid rgba(0, 0, 0, .125)',
+
+    // borderTop: '1px solid rgba(0, 0, 0, .125)',
 }));
 
 export default function MenuMobile() {
@@ -112,7 +114,7 @@ export default function MenuMobile() {
     const list = (anchor) => (
         <Box
             className='SlideMenu'
-            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 280 }}
+            sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 300 }}
             role="presentation"
         // onClick={toggleDrawer(anchor, false)}
         // onKeyDown={toggleDrawer(anchor, false)}
@@ -129,7 +131,8 @@ export default function MenuMobile() {
                     </ListItem>
                 ))}
             </List>
-            <Divider />
+
+            {/* <Divider /> */}
 
             {/* <LinkMenu>
                 <SignalCellularAlt1BarIcon />
@@ -138,7 +141,7 @@ export default function MenuMobile() {
 
             <Prueba expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
                 <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-                    <Typography>{empresa.name}</Typography>
+                    <Typography sx={{ fontWeight:700 }}>{empresa.name}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     {
@@ -155,7 +158,7 @@ export default function MenuMobile() {
 
             <Prueba  expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
                 <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-                    <Typography>{servicios.name}</Typography>
+                    <Typography sx={{ fontWeight:700 }}>{servicios.name}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     {
@@ -172,25 +175,25 @@ export default function MenuMobile() {
             </Prueba>
 
             <LinkMenu>
-                <SignalCellularAlt1BarIcon />
+                {/* <SignalCellularAlt1BarIcon /> */}
                 <Link onClick={toggleDrawer(anchor, false)} to={cotizacion.url}>{cotizacion.name}</Link>
             </LinkMenu>
             
             <LinkMenu>
-                <SignalCellularAlt1BarIcon />
+                {/* <SignalCellularAlt1BarIcon /> */}
                 <Link onClick={toggleDrawer(anchor, false)} to={consulta.url}><ModalForm/></Link>
             </LinkMenu>
 
 
             <LinkMenu>
-                <SignalCellularAlt1BarIcon />
+                {/* <SignalCellularAlt1BarIcon /> */}
                 <Link onClick={toggleDrawer(anchor, false)} to={contacto.url}>{contacto.name}</Link>
             </LinkMenu>
 
             <Prueba expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                 <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
                     <img src={ImgCol} alt="" />
-                    <Typography>Col</Typography>
+                    <Typography sx={{ fontWeight:700, width:'auto' }}>Col</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     {
