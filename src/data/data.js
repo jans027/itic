@@ -691,8 +691,8 @@ export const data = [{
             }
         },
         enfoque:{
-            text1:'NUESTRO ENFOQUE',
-            text2:'SOLUCIONES APLICABLES A CUALQUIER INDUSTRIA',
+            text1:'NUESTRO \nENFOQUE',
+            text2:'SOLUCIONES APLICABLES A \nCUALQUIER INDUSTRIA',
             textBtn:'CONOCE MÁS',
             parrafo:'Somos una empresa comprometida con la responsabilidad social y la sostenibilidad la integridad y la excelencia operacional nos permiten ofrecer servicios de alta calidad a nuestros clientes y contribuir al desarrollo del país. Contamos con experiencia en proyectos de gran envergadura a nivel nacional e internacional, lo que nos permite ofrecer confianza, agilidad y seguridad en servicios de Inspeccion, supervision, interventoria, certificacion, y ensayos. Además, ofrecemos el desarrollo de soluciones digitales a medida de nuestros clientes para agilizar la toma de decisiones y ahorrar recursos. Basamos nuestros procesos en estándares técnicos globales y contamos con profesionales con calificaciones técnicas internacionales.',
             cards:{
@@ -725,8 +725,8 @@ export const data = [{
     },
     enfoque:{
         id:'Enfoque',
-        title:'NUESTRO ENFOQUE',
-        subTitle:'SOLUCIONES APLICABLES \nA CUALQUIER INDUSTRIA',
+        title:'NUESTRO \nENFOQUE',
+        subTitle:'SOLUCIONES APLICABLES A \nCUALQUIER INDUSTRIA',
         img:'banner_2_desktop.png',
         url: '/empresa/nosotros',
         p:'Somos una empresa comprometida con la responsabilidad social y la sostenibilidad la integridad y la excelencia operacional nos permiten ofrecer servicios de alta calidad a nuestros clientes y contribuir al desarrollo del país. Contamos con experiencia en proyectos de gran envergadura a nivel nacional e internacional, lo que nos permite ofrecer confianza, agilidad y seguridad en servicios de Inspeccion, supervision, interventoria, certificacion, y ensayos. Además, ofrecemos el desarrollo de soluciones digitales a medida de nuestros clientes para agilizar la toma de decisiones y ahorrar recursos. Basamos nuestros procesos en estándares técnicos globales y contamos con profesionales con calificaciones técnicas internacionales.',

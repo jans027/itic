@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
 import VisibilitySensor from 'react-visibility-sensor';
 import { data } from '../data/data';
 import ImgBanner from '../images/banner_2_desktop.png'
-import { BtnEnfoque1, BtnEnfoque2, ContEnfoque, ContEnfoque3 } from '../styles/SecEnfoque';
+import { BtnEnfoque1, BtnEnfoque2, ContEnfoque, ContEnfoque3, ContTextEnfoque } from '../styles/SecEnfoque';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 
 
@@ -17,14 +17,25 @@ const SecEnfoque = () => {
     const card = Object.values(cards);
     // console.log(card)
 
+    //.............................
+
 
     return (
         <>
             <ContEnfoque>
-                <img src={ImgBanner} alt={id} />
-                <div className='contEnfoque1'>
+                {/* <img src={ImgBanner} alt={id} /> */}
+                <ContTextEnfoque className='contEnfoque1'>
                     <div className='contEnfoque2'>
-                        <p className='title'>{title}</p>
+                        <p className='title'>
+                        {title.split('\n').map((line, i) => {
+                                return (
+                                    <React.Fragment key={i}>
+                                        {line}
+                                        <br />
+                                    </React.Fragment>
+                                )
+                            })}
+                        </p>
                         <p className='subTitle'>
                             {subTitle.split('\n').map((line, i) => {
                                 return (
@@ -39,7 +50,7 @@ const SecEnfoque = () => {
                             <div>CONOCE MÁS</div>
                         </BtnEnfoque1>
                     </div>
-                    <ContEnfoque3>
+                    <ContEnfoque3 >
                         <p className='ContParr'>{p}</p>
                         <div className='contEnfoque5'>
                             {
@@ -70,7 +81,7 @@ const SecEnfoque = () => {
                     <BtnEnfoque2 className='Btn1' to={url} >
                             <div>CONOCE MÁS</div>
                     </BtnEnfoque2>
-                </div>
+                </ContTextEnfoque>
             </ContEnfoque>
         </>
     )

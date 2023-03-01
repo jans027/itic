@@ -1,77 +1,141 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import ImgBanner from '../images/banner_2_desktop.png'
+
 
 
 
 export const ContEnfoque = styled.div`
     /* border:2px solid red;//.................. */
     width: 100%;
-    height: 45vw;
-    /* min-height: 600px; */
+    height:auto;
+    background-image: url(${ImgBanner});
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    @media (max-width:890px) {
-        height: 85vh;
-    }
-    img{
-        /* position: absolute; */
-        width: 100%;
-        /* height: 100%; */
-        object-fit: cover;
-        object-position: center center;
-        @media (max-width:890px) {
-            height: 100%;
-            object-position: 0px center;
-        }
-        /* border:2px solid red;//.................. */
-        /* @media (min-width:1700px) {
-            width: 100%;
-        }
-        @media (max-width:960px) {
-            object-position: -150px 10%;
-            
-        } */
-    }
-    .contEnfoque1{
-        /* border:2px solid red;//.................. */
-        position:absolute;
-        width: 90%;
-        margin:0 auto;
-        height: auto;
-        display: flex;
-        @media (max-width:1160px) {
-            flex-direction:column;
-        }
-        .contEnfoque2{
-            /* border:2px solid blue;//.................. */
-            width: 33%;
-            @media (max-width:1160px) {
-                /* display: flex; */
-                width: 100%;
-                text-align: center;
-            }
-            .title{
-                font-size:clamp(34px, 4vw, 78px);
-                font-weight: 900;
-            }
-            .subTitle{
-                font-size:clamp(18px, 2.7vw, 50px);
-                font-weight: 900;
-                margin: 3rem 0;
-            }
-        }
+    @media (max-width:1166px) {
+        background-position: -22vh;
         
     }
 `
+export const ContTextEnfoque = styled.div`
+        /* border:2px solid red;//.................. */
+        width: 90%;
+        height:auto;
+        margin: clamp(36px, 3.3vw, 60px);
+        display: flex;
+        /* flex-grow: 1; */
+
+        @media (max-width:1166px) {
+            flex-direction:column;
+            width: 95%;
+        }
+        .contEnfoque2{
+            /* border:2px solid blue;//.................. */
+            width: 35%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @media (max-width:1166px) {
+                width: 100%;
+                justify-content: space-evenly;
+                .title{
+                    margin-bottom: .7em;
+                }
+            }
+            .title{
+                font-size:clamp(40px, 4vw, 78px);
+                font-weight: 900;
+            }
+            .subTitle{
+                font-size:clamp(18px, 3vw, 52px);
+                font-weight: 900;
+                /* margin: 3rem 0; */
+            }
+        }
+`
+export const ContEnfoque3 = styled.div`
+    width: 66%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    @media (max-width:1160px) {
+        width: 100%;
+    }
+    .ContParr{
+        font-size: clamp(14px, 1.5vw, 30px);
+        @media (max-width:1160px) {
+            margin: 1em 0;
+        }
+    }
+    
+    .contEnfoque5{
+        /* border:2px solid red;//.................. */
+        display: flex;  
+        justify-content: space-between;
+        @media (max-width:890px) {
+            flex-direction: column;
+        }
+        .cardsEnfoque{
+            /* border:2px solid red;//.................. */
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            align-items:center;
+            height: 16vw;
+            @media (max-width:1160px) {
+                justify-content: flex-start;
+                height: auto;
+                margin-bottom: 1.4em;
+            }
+            span{
+                font-size:clamp(80px, 6vw, 150px);
+                font-weight: 900;
+            }
+            svg{
+                font-size:clamp(88px, 6vw, 150px);
+            }
+            .cardText1{
+                
+                font-size:clamp(23px, 1.6vw, 32px);
+                font-weight: 900;
+            }
+            .cardText2{
+                font-size:clamp(20px, 1.5vw, 32px);
+                font-weight: 600;
+                padding: .2em .5em;
+                border-radius: 13px;
+                border: 2px solid var(--color4);
+                color: var(--color4);
+                text-decoration: none;
+                &:hover{
+                    background-color:var(--color1);
+                }
+            }
+            .cardText3{
+                /* border:2px solid red;//.................. */
+                font-size:clamp(42px, 2.5vw, 48px);
+                font-weight: 900;
+            }
+        }
+    }
+`
+
 export const BtnEnfoque1 = styled(Link)`
     text-decoration: none;
     /* padding: 1rem 6rem; */
     font-size: 33px;
     font-weight: 900;
     color:var(--color5);
+    display: block;
+    @media (max-width:1166px) {
+        display: none;
+        /* padding:2em 0; */
+    }
     div{
+        /* border:2px solid blue;//.................. */
         display: flex;
         justify-content: center;
         align-items: center;
@@ -88,76 +152,33 @@ export const BtnEnfoque1 = styled(Link)`
     background-color: var(--color7);
     }
 `
-export const BtnEnfoque2 = styled(BtnEnfoque1)`
+export const BtnEnfoque2 = styled(Link)`
     /* border: 1px solid red;//...................... */
-    text-align: center;
     display: none;
-    @media (max-width:1160px) {
-        display: block;
-        /* padding:2em 0; */
+    margin: auto;
+    text-decoration: none;
+    margin-top: 1em;
+    border-radius: 15px;
+    background-color: var(--color4);
+    div{
+        width: 226pt;
+        height: 32pt;
+        font-size: 15pt;
+        font-weight: 900;
+        color: var(--color5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            color:var(--color1);
+        }
+        &:active{
+            color: var(--color7);
+        }
     }
-`
-export const ContEnfoque3 = styled.div`
-            width: 66%;
-            /* border:2px solid green;//.................. */
-            @media (max-width:1160px) {
-                width: 100%;
-            }
-            .ContParr{
-                font-size: clamp(19px, 1.5vw, 25px);
-                line-height: 1.4em;
-                @media (max-width:1160px) {
-                    display:none;
-                }
-            }
-            
-            .contEnfoque5{
-                /* border:2px solid red;//.................. */
-                display: flex;  
-                justify-content: space-between;
-                @media (max-width:890px) {
-                    flex-direction: column;
-                }
-                .cardsEnfoque{
-                    /* border:2px solid red;//.................. */
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: end;
-                    align-items:center;
-                    height: 16vw;
-                    @media (max-width:1160px) {
-                        justify-content: flex-start;
-                    }
-                    span{
-                        font-size:clamp(88px, 6vw, 150px);
-                        font-weight: 900;
-                    }
-                    svg{
-                        font-size:clamp(88px, 6vw, 150px);
-                    }
-                    .cardText1{
-                        font-size:clamp(23px, 1.6vw, 32px);
-                        font-weight: 900;
-                    }
-                    .cardText2{
-                        font-size:clamp(23px, 1.6vw, 32px);
-                        font-weight: 700;
-                        padding: .2em .5em;
-                        border-radius: 13px;
-                        border: 2px solid var(--color4);
-                        /* border:2px solid red;//.................. */
-                        color: var(--color4);
-                        text-decoration: none;
-                        &:hover{
-                            background-color:var(--color1);
-                        }
-                    }
-                    .cardText3{
-                        font-size:clamp(42px, 2.5vw, 48px);
-                        font-weight: 900;
-                    }
-                }
-            }
+    @media (max-width:1166px) {
+        display: block;
+    }
 `
 
 
