@@ -12,9 +12,10 @@ export const ContImgCarousel = styled(Slider)`
     height: 38rem;
     margin-bottom: 8em;
     @media (max-width:1160px) {
+        top: 80px;
         margin-bottom: 68px;
     }
-    @media (max-width:600px) {
+    @media (max-width:641px) {
         height: 400px;
     }
     
@@ -31,7 +32,7 @@ export const ContImgCarousel = styled(Slider)`
         @media(max-width:768px){
             height: 500px;
         }
-        @media (max-width:600px) {
+        @media (max-width:641px) {
         height: 360px;
         }
         img{
