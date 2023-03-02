@@ -4,7 +4,7 @@ import Slide from '@mui/material/Slide';
 import CloseIcon from '@mui/icons-material/Close';
 import SendMail from './SendMail';
 import { data } from '../data/data';
-import { BtnModal, ContModal } from '../styles/ModalForm';
+import { BtnModal, ConImgModal, ContFormModal, ContInformationModal, ContModal } from '../styles/ModalForm';
 import { Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
@@ -53,21 +53,18 @@ const ModalForm = (props) => {
                 <div className='cont_close'>
                     <span onClick={handleClose}> <CloseIcon /> </span>
                 </div>
-                <div className='cont_information'>
-                    <div className='cont_image'>
-                        <img
-                            className='imgBanner'
-                            src={require(`../images/${img}`)}
-                            alt={img}
-                        />
-                    </div>
-                    <div className='cont_form'>
+                <ContInformationModal>
+
+                    <ConImgModal>
+                        <img className='imgBanner'src={require(`../images/${img}`)}alt={img}/>
+                    </ConImgModal>
+
+                    <ContFormModal className='cont_form'>
                         <SendMail cerrarModal={cerrarModal}/> 
                         <BtnModal className='btnGreen'  onClick={handleClose}>CANCELAR</BtnModal>
-                        
-                    </div>
+                    </ContFormModal>
                     
-                </div>
+                </ContInformationModal>
             </ContModal>
         </>
     );

@@ -61,13 +61,12 @@ export const CardAcred = styled.div`
         }
     }
 `
-
 export const TitleSection = styled.h1`
         font-size: 4.3rem;
         font-weight: 900;
         padding:1rem 0 1rem 0;
-        @media(max-width:490px){
-            font-size: 9vw;
+        @media(max-width:710px){
+            font-size: 8vw;
             width: 90%;
             margin: auto;
         }
