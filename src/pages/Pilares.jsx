@@ -92,15 +92,15 @@ const Pilares = () => {
               {
                 card2.map((item) =>
                   <Cards02>
-                    <ConImgP>
-                      <img src={require(`../images/${item.img}`)} alt={item.id} />
-                    </ConImgP>
                     <ConParagraphP>
                       <p
                         className='title_p02'>{item.title}</p>
                       <p
                         className='paragraph_p02'>{item.text}</p>
                     </ConParagraphP>
+                    <ConImgP>
+                      <img src={require(`../images/${item.img}`)} alt={item.id} />
+                    </ConImgP>
                   </Cards02>
                 )
               }

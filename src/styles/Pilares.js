@@ -69,14 +69,32 @@ export const Contcards1 = styled.div`
 export const ContCards2 = styled.div`
     /* border: 1px solid red;//.................... */
     background-color: var(--color2);
+    @media (max-width:740px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2em;
+    }
 `
 export const Cards02 = styled.div`
     /* border: 1px solid blue;//.................... */
     display: flex;
     background-color: var(--color2);
     margin: 3rem 0;
+    @media (max-width:740px) {
+        margin:0;
+        width: 390px;
+        height: 482px;
+        flex-direction: column;
+    }
+    @media (max-width:450px) {
+        width: 100%;
+    }
     &:nth-child(odd){
         flex-direction: row-reverse;
+        @media (max-width:740px) {
+        flex-direction: column;
+        }
     }
 `
 export const ConImgP = styled.div`
@@ -84,6 +102,10 @@ export const ConImgP = styled.div`
     width: 39rem;
     height: 25rem;
     overflow: hidden;
+    @media (max-width:740px) {
+            width: 100%;
+            height: 50%;
+        }
     img{
         /* width: 100%; */
         height: 100%;
@@ -95,14 +117,22 @@ export const ConParagraphP =styled.div`
     width: 37rem;
     height: 25rem;
     text-align: justify;
-    padding: 3.1rem;
-
+    padding: 2.7vw;
+    @media (max-width:740px) {
+            width: 100%;
+            height: 50%;
+    }
+    @media (max-width:450px) {
+        padding: 1.5em;
+        text-align: center;
+    }
     .title_p02{
-        font-size: 3.5rem;
+        font-size: clamp(30px, 2.5vw, 57px);
         font-weight:900;
     }
     .paragraph_p02{
-        font-size: 1.4rem;
+        font-size: clamp(14px, 2.5vw, 23px);
+        text-align: left;
 
     }
 `
