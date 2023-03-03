@@ -102,11 +102,10 @@ export const ContSliderAcr = styled.div`
 
     }
     .slick-prev::before, .slick-next::before{
+        /* border: 1px solid red;//............. */
         color: var(--color1)!important;
         font-size: 50px!important;
-        /* border: 1px solid red;//............. */
         opacity: 1!important;
-        /* background-color: white; */
         border-radius: 50%;
     }
 

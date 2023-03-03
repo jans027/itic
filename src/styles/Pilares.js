@@ -4,8 +4,18 @@ export const ContPilares1 = styled.div`
     /* border: 1px solid blue;//..................... */
     padding: 1.8rem;
     background-color: var(--color2);
+    @media (max-width:1270px) {
+        width: 80%;
+        margin: auto;
+    }
+    @media (max-width:990px) {
+        width: 100%;
+    }
+    @media (max-width:550px) {
+        padding: 0;
+    }
     .titleP{
-        font-size: 3.5rem;
+        font-size: clamp(25px, 3.3vw, 57px);
         font-weight: 900;
         height: 110px;
         display: flex;
@@ -15,28 +25,36 @@ export const ContPilares1 = styled.div`
 `
 export const Cards01 = styled.div`
     /* border: 1px solid red;//..................... */
-    width: 30rem;
-    height: 34rem;
+    width: clamp(312px, 25vw, 500px);
+    height: auto;
     border-radius: 1.5rem;
     text-align: center;
-    padding: 1.8rem 2.2rem 0 2.2rem;
+    padding: 1.3em;
     -webkit-box-shadow: 2px 2px 7px 3px rgba(0,0,0,0.33); 
     box-shadow: 2px 2px 7px 3px rgba(0,0,0,0.33);
     background-color: var(--color5);
+    @media (max-width:990px) {
+        display: none;
+    }
+    @media (max-width:1685px) {
+        /* width: 95%!important; */
+        /* height: 484px; */
+        margin: 20px;
+    }
     img{
         border-radius: 50%;
-        width: 12.5rem;
+        width: clamp(150px, 11vw, 200px);
         height: auto;
         border: 10px solid var(--color1);
     }
     .title_p01{
-        font-size: 1.5rem;
+        font-size: 1.5em;
         font-weight: 900;
         margin: 1rem 0;
     }
     .paragraph_p01{
         /* border: 1px solid red;//.................. */
-        font-size: 1.1rem;
+        font-size: clamp(14px, 1.1vw, 20px);
         text-align: left;
     }
 `

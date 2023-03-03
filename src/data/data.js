@@ -446,7 +446,7 @@ export const data = [{
             politicas: {
                 key:7,
                 id: "politicas",
-                name: "POLÍTICAS, CÓDIGOS Y REGLAMENTOS",
+                name: "POLÍTICAS, CÓDIGOS \nY REGLAMENTOS",
                 nameNav2:'Políticas, códigos \ny reglamentos',
                 url: '/empresa/politicas',
                 banner1: '',

@@ -6,13 +6,11 @@ import styled from "styled-components";
 
 
 
-
 const Button = styled(Link)`
     div{
-        background-color: ${(props) => (props.isActive ? '#9cff2d' : "#f8f9fa")};
+        background-color: ${(props) => (props.isActive ? '#9cff2d' : "#ffffff")};
     }
 `;
-
 
 const NavEmpresa = () => {
 
@@ -48,8 +46,6 @@ const NavEmpresa = () => {
     const handleButtonClick = (key) => {
         setActiveKey(key);
     };
-
-
 
     return (
         <>

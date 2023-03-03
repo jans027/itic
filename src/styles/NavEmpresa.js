@@ -17,7 +17,7 @@ export const BannerPath = styled.div`
     h2{
         /* border: 1px solid red;//................... */
         width: 90%;
-        font-size: 5rem;
+        font-size: clamp(26px, 4.8vw, 80px);
         font-weight: 900;
         margin:0 auto;
         height: auto;
@@ -31,14 +31,16 @@ export const BannerPath = styled.div`
 export const ContNavEmpresa = styled.div`
     /* border: 1px solid red;//......................... */
     width: 29rem;
-    height: 50vw;
+    height: fit-content;
+    @media (max-width:1270px) {
+        display: none;
+    }
     a{
         list-style: none;
         text-decoration: none;
         margin: 2em 0;
         vertical-align: middle;
         div{
-            
             color: var(--color4);
             width: 24.8rem;
             height: 67px;
@@ -60,11 +62,16 @@ export const ContPagesEmpresa = styled.div`
     /* border: 1px solid blue;//......................... */
     background-color: var(--color5);
     padding-top: 4em;
+    @media (max-width:1270px) {
+        padding-top: 0;
+    }
     .ContSectionEm{
         display: flex;
         width: 90%;
         margin: auto;
-        /* border: 1px solid blue;//......................... */
+        @media (max-width:1270px) {
+            width: 100%;
+        }
     }
 `
 
