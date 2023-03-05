@@ -11,7 +11,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 //styles
-import { AccordionFooter, AddressFooter, BlockNav, BtnFooter, ConAccordion, ConEmprFooter, ConServFooter, ConsultasFooter, ContFooter, ContUlPoliticas, Copy, EnlaceDesplegable, LinkConsulta1, LogoFooter, Redes, TitleAccor } from '../styles/Footer';
+import { AccordionFooter, AddressFooter, BlockNav, BtnFooter, ConAccordion, ConEmprFooter, ConServFooter, ConsultasFooter, ContFooter, ContUlPoliticas, Copy, EnlaceDesplegable, LinkConsulta1, LinkConsultaMovile, LogoFooter, Redes, TitleAccor } from '../styles/Footer';
 //Documents
 import confidencialidad from '../documents/ITIC-C-NA-DI-003-POLITICA-DE-IMPARCIALIDAD-INDEPENDENCIA-Y-CONFIDENCIALIDAD-V7.doc';
 import personas from '../documents/ITIC-C-NA-DI-009-POLITICA-DE-SEGURIDAD-PROCESO-DE-CERTIFICACION-DE-PERSONAS-V2.doc';
@@ -108,12 +108,12 @@ const Footer = () => {
                         </li>
                         <li>
                             <a href={personas} rel="noreferrer">
-                                Política de seguridad proceso de <br/> certificación de personas
+                                Política de seguridad proceso de <br /> certificación de personas
                             </a>
                         </li>
                         <li>
                             <a href={suspension} rel="noreferrer">
-                                Política de suspensión, retiro o reducción <br/> del alcance de certificación de personas
+                                Política de suspensión, retiro o reducción <br /> del alcance de certificación de personas
                             </a>
                         </li>
                         <li>
@@ -215,17 +215,25 @@ const Footer = () => {
                                             Política de la calidad (servicios industriales)
                                         </a>
                                     </li>
+                                    <li>
+                                        <BtnFooter to={politicas.url}><div>{politicas.btn}</div></BtnFooter>
+                                    </li>
                                 </EnlaceDesplegable>
                             </AccordionDetails>
                         </AccordionFooter>
+                        
+                        <LinkConsultaMovile>
+                            <div><Link to={consulta.url}><ModalForm /></Link></div>
+                            <div><Link to={cotizacion.url}>{cotizacion.name}</Link></div>
+                        </LinkConsultaMovile>
                     </ConAccordion>
 
                     {/* .................................................................... */}
 
                     <ConsultasFooter>
                         <LinkConsulta1>
-                            <Link to={consulta.url}><ModalForm /></Link>
-                            <Link to={cotizacion.url}>{cotizacion.name}</Link>
+                            <div><Link to={consulta.url}><ModalForm /></Link></div>
+                            <div><Link to={cotizacion.url}>{cotizacion.name}</Link></div>
                         </LinkConsulta1>
                         <AddressFooter>
                             <p>{contacto.name}</p>

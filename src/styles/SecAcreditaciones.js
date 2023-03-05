@@ -72,21 +72,17 @@ export const TitleSection = styled.h1`
         }
 ` 
 export const SubTitleSection = styled.p`
-    font-size: 2rem;
+    /* border: 1px solid red;//........................ */
+    width: 90%;
+    margin: auto;
+    font-size: clamp(14px, 1.6vw, 30px);
     padding: 1rem 0 3rem 0;
     font-weight: 300;
     span{
-        font-size: 2.2rem;
-    }
-    @media(max-width:1130px){
-        width: 90%;
-        margin: auto;
+        font-size: clamp(16px, 1.6vw, 32px);
     }
     @media(max-width:600px){
-        font-size: 16px;
-        span{
-            font-size: 1.5rem;
-        }
+        padding-bottom: 0px;
     }
 `
 // stiles slider and arrow

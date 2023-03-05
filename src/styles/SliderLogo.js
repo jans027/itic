@@ -39,7 +39,6 @@ export const ContSlideLogo = styled.div`
         
     }
 `
-
 export const CardLogo = styled.div`
         /* border: 1px solid red;//.................. */
         text-align: center;
@@ -47,28 +46,30 @@ export const CardLogo = styled.div`
         height:150px!important;
         padding: 1rem;
         margin-left: 1rem;
-        border-radius: 50%;
-        background-color: var(--color3);
         @media (max-width:800px) {
             width:10vmax!important;
             height:10vmax!important;
             margin-left: 15%;
         }
 
-    p{
-        padding-top: 65px;
-        font-size: 1.5rem;
-        color: var(--color4);
-        opacity: .5;
-        @media (max-width:800px) {
-            padding-top: 6px;
-        font-size: .7em;
-
-        }
-    }
-    
 `
-
+export const CardCarouselLogo = styled.div`
+    /* border: 1px solid red;//..................... */
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    border-radius:50%;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+`
 export const LinkExperiencia = styled.div`
         /* border: 1px solid red;//.............. */
         width: 100%;

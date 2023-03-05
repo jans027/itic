@@ -2,18 +2,18 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { data } from "../data/data";
-import { CardLogo, ContSlideLogo, LinkExperiencia } from "../styles/SliderLogo";
+import { CardCarouselLogo, CardLogo, ContSlideLogo, LinkExperiencia } from "../styles/SliderLogo";
 
-
+// Get Data
 const [datos] = data;
-    const { empresa: { dropDownMenu: { proyectos: {url } } } } = datos;
-    // const card = Object.values(cards);
-    // console.log(url )
+const { logos, empresa: { dropDownMenu: { proyectos: { url } } } } = datos;
+const card = Object.values(logos.cards);
+// console.log( card )
 
 
 export default class SliderLogo extends Component {
 
-    
+
     render() {
         const settings = {
             infinite: true,
@@ -52,54 +52,15 @@ export default class SliderLogo extends Component {
             <ContSlideLogo>
                 <div className="slideCont2">
                     <Slider {...settings}>
-                        <CardLogo>
-                            <p>LOGO 1</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 2</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 3</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 4</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 5</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 6</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 7</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 8</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 9</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 3</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 4</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 5</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 6</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 7</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 8</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 9</p>
-                        </CardLogo>
+                        {
+                            card.map((item) =>
+                                <CardLogo>
+                                    <CardCarouselLogo>
+                                        <img src={require(`../images/${item.img}`)} alt={item.id} />
+                                    </CardCarouselLogo>
+                                </CardLogo>
+                            )
+                        }
                     </Slider>
                 </div>
                 <LinkExperiencia>

@@ -153,7 +153,7 @@ export const data = [{
                 },
                 documentOnac:{
                     title:'ACREDITACIONES',
-                    subTitle:'En iticcol contamos con acreditación ONAC, vigente a la fecha con código de acreditación:',
+                    subTitle:'Nuestros reconocimientos son el resultado del compromiso con la excelencia y los altos estándares técnicos que nos impulsan a ofrecer lo mejor. En ITICCOL contamos con acreditación ONAC, vigente a la fecha con código de acreditación:',
                     cards:{
                         document1:{
                             id:'cardInspec',
@@ -321,60 +321,90 @@ export const data = [{
                 nameSecction:'NUESTRA EXPERIENCIA',
                 url: '/empresa/proyectos',
                 banner1: '',
-                subTitle:'Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis dictumst porttitor: ',
+                subTitle:'Con orgullo presentamos nuestros proyectos y procesos más importantes, los cuales han dejado huella en nuestros clientes y han contribuido a nuestro crecimiento y reconocimiento en el mercado.',
                 cards: {
                     card1: {
                         id: 'proyect1',
                         img: "Proyecto1.png",
-                        title:'TÍTULO PROYECTO UNO',
-                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                        title:'ALCANOS',
+                        text: 'Prestamos el servicio de interventoría en construcción de redes de construcciones de distribución de gas natural, servicios asociados ...',
                     },
                     card2: {
                         id: 'proyect2',
                         img: "Proyecto2.png",
-                        title:'TÍTULO PROYECTO DOS',
-                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                        title:'CELSIA',
+                        text: "Prestación de servicios de Ingeniería para el proyecto solar fotovoltaico Espinal. Servicios de verificación de cumplimiento ...",
                     },
                     card3: {
                         id: 'proyect3',
                         img: "Proyecto3.png",
-                        title:'TÍTULO PROYECTO TRES',
-                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                        title:'FENOSA',
+                        text: "Prestamos servicios de Inspección y Certificación de Instalaciones Internas en los predios de los ...",
                     },
                     card4: {
                         id: 'proyect4',
                         img: "Proyecto1.png",
-                        title:'TÍTULO PROYECTO CUATRO',
-                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                        title:'FONDO TIC',
+                        text: "Interventoría integral al proyecto nacional de fibra óptica, incluyendo los aspectos técnicos, jurídicos, financieros, contables, administrativos, ambientales y sociales",
                     },
                     card5: {
                         id: 'proyect5',
                         img: "Proyecto2.png",
-                        title:'TÍTULO PROYECTO CINCO',
-                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                        title:'GASES DEL ORIENTE',
+                        text: "Servicio de Interventoría a obras Civiles y Mecánicas para la construcción de 3600 m de red primaria y facilidades en el tramo de Patillales – Cerrito del Municipio de Cúcuta.",
                     },
                     card6: {
                         id: 'proyect6',
                         img: "Proyecto3.png",
-                        title:'TÍTULO PROYECTO SEIS',
-                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                        title:'SURTIGAS',
+                        text: "Inspección y/o certificación de las instalaciones internas de gas (revisiones previas, revisiones periódicas e inspección de instalaciones reformadas) ...",
                     },
                     card7: {
                         id: 'proyect7',
-                        img: "Proyecto1.png",
-                        title:'TÍTULO PROYECTO SIETE',
-                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                        img: "Proyecto_gensa.png",
+                        title:'GENSA INIRIDA',
+                        text: "ITICCOL Supervisó la construcción de la mayor planta fotovoltaica de las zonas no conectadas",
                     },
                     card8: {
                         id: 'proyect8',
-                        img: "Proyecto2.png",
-                        title:'TÍTULO PROYECTO OCHO',
-                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                        img: "Proyecto_celsia.png",
+                        title:'CELSIA SOLAR ESPINAL',
+                        text: "ITICCOL Supervisó la construcción de la Planta PV CSE",
                     },
                     card9: {
                         id: 'proyect9',
+                        img: "Proyecto_Planeta_Rica.png",
+                        title:'Planeta Rica- Pétalos de Córdoba - línea de evacuación',
+                        text: "interventoría de la línea de medía tensión y servicio de termografía",
+                    },
+                    card10: {
+                        id: 'proyect10',
                         img: "Proyecto3.png",
-                        title:'TÍTULO PROYECTO NUEVE',
+                        title:'UPTC',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card11: {
+                        id: 'proyect11',
+                        img: "Proyecto3.png",
+                        title:'EPSA',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card12: {
+                        id: 'proyect12',
+                        img: "Proyecto3.png",
+                        title:'AMCOR',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card13: {
+                        id: 'proyect13',
+                        img: "Proyecto3.png",
+                        title:'ALCANOS',
+                        text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
+                    },
+                    card14: {
+                        id: 'proyect14',
+                        img: "Proyecto3.png",
+                        title:'LLANOGAS',
                         text: "Lorem ipsum dolor sit amet consectetur adipiscing elit non vestibulum, dis libero leo aliquet viverra justo interdum.",
                     },
                 },
@@ -506,7 +536,7 @@ export const data = [{
         id: 'serviciosNav',
         name: 'SERVICIOS',
         url: '',
-        subTitle:'Lorem ipsum dolor sit amet consectetur adipiscing elit venenatis dictumst porttitor: ',
+        subTitle:'Nuestra experiencia en proyectos de gran envergadura a nivel nacional e internacional nos permite ofrecer confianza, agilidad, integridad y seguridad en servicios de INSPECCIÓN, CERTIFICACIÓN Y ENSAYOS.',
         dropDownMenu: {
             industriales: {
                 id: "industriales",
@@ -514,8 +544,9 @@ export const data = [{
                 nameFooter: "Servicios industriales",
                 url: '/servicios/industrial',
                 banner1: '',
+                nameBtn:'MÁS SERVICIOS',
                 cardImg:'INDUSTRIALES.png',
-                cardText:'- Certificación Sistemas Retie/Retilap - Certificación Redes de Gas - Certificación Estaciones de servicio - Servicios de interventoría - Servicios deI nspección...',
+                cardText:'- Servicios de Interventoría. \n- Evaluación de Integridad. \n- Servicios de Inspección. \n- Ensayos No Destructivos NDT. \n- Certificación Instalaciones RETIE/RETILAP',
             },
             producto: {
                 id: "producto",
@@ -523,8 +554,9 @@ export const data = [{
                 nameFooter: "Certificación de producto",
                 url: '/servicios/producto',
                 banner1: '',
+                nameBtn:'MÁS SERVICIOS',
                 cardImg:'PRODUCTO.png',
-                cardText:'- TCA ENEL - Eficiencia energética - Gasodomésticos - Barras Corrugadas - Retilap - Retie - Pilas - RetiQ - Refrigeradores y congeladores',
+                cardText:'- Certificación RETIE/RETILAP/RETIQ. \n- Certificación de Pilas. \n- Certificación de Gasodomésticos. \n- Certificación Autopartes. \n- TCA ENEL',
                 
             },
             gestion: {
@@ -533,8 +565,9 @@ export const data = [{
                 nameFooter: "Sistemas de Gestión",
                 url: '/servicios/gestion',
                 banner1: '',
+                nameBtn:'VER MÁS',
                 cardImg:'GESTION.png',
-                cardText:'- Certificación - GAP Análisis - Auditoría Interna - Evaluación de Proveedores',
+                cardText:'- Certificación Sistemas de Gestión. \n- GAP Análisis. \n- Auditoria Interna. \n- Evaluación de Proveedores.',
                 
             },
             personas: {
@@ -543,8 +576,9 @@ export const data = [{
                 nameFooter: "Certificación de personas",
                 url: '/servicios/personas',
                 banner1: '',
+                nameBtn:'VER MÁS',
                 cardImg:'PERSONAS.png',
-                cardText:'- Gas Natural Residencial y Comercial - Gas Natural Comprimido Vehicular',
+                cardText:'- Certificación Instalador / Inspector / Reparador. \nGas Natural Residencial y Comercial. \n- Certificación Suministro / Mantenimiento / Instalador.\nGas Natural Comprimido Vehicular.',
                 
             },
         },
@@ -691,10 +725,10 @@ export const data = [{
             }
         },
         enfoque:{
-            text1:'NUESTRO \nENFOQUE',
-            text2:'SOLUCIONES APLICABLES A \nCUALQUIER INDUSTRIA',
+            text1:'NUESTRO \nADN',
+            text2:'MÁS SOBRE \nNOSOTROS',
             textBtn:'CONOCE MÁS',
-            parrafo:'Somos una empresa comprometida con la responsabilidad social y la sostenibilidad la integridad y la excelencia operacional nos permiten ofrecer servicios de alta calidad a nuestros clientes y contribuir al desarrollo del país. Contamos con experiencia en proyectos de gran envergadura a nivel nacional e internacional, lo que nos permite ofrecer confianza, agilidad y seguridad en servicios de Inspeccion, supervision, interventoria, certificacion, y ensayos. Además, ofrecemos el desarrollo de soluciones digitales a medida de nuestros clientes para agilizar la toma de decisiones y ahorrar recursos. Basamos nuestros procesos en estándares técnicos globales y contamos con profesionales con calificaciones técnicas internacionales.',
+            parrafo:'Somos una empresa comprometida con la responsabilidad social, la sostenibilidad, la integridad y la excelencia operacional. Esto nos permite ofrecer servicios de alta calidad y contribuir al desarrollo del país. Contamos con experiencia en proyectos de gran envergadura, entregando siempre confianza, agilidad y seguridad en servicios de Inspección, Supervisión, Interventoría, Certificación y Ensayos. Además, ofrecemos soluciones digitales a la medida de nuestros clientes para agilizar la toma de decisiones y ahorrar recursos. Basamos nuestros procesos en estándares técnicos globales y contamos con profesionales con las calificaciones técnicas.',
             cards:{
                 card1:{
                     text1:'AÑOS',
@@ -725,16 +759,17 @@ export const data = [{
     },
     enfoque:{
         id:'Enfoque',
-        title:'NUESTRO \nENFOQUE',
+        title:'NUESTRO \nADN',
         subTitle:'SOLUCIONES APLICABLES A \nCUALQUIER INDUSTRIA',
         img:'banner_2_desktop.png',
         url: '/empresa/nosotros',
-        p:'Somos una empresa comprometida con la responsabilidad social y la sostenibilidad la integridad y la excelencia operacional nos permiten ofrecer servicios de alta calidad a nuestros clientes y contribuir al desarrollo del país. Contamos con experiencia en proyectos de gran envergadura a nivel nacional e internacional, lo que nos permite ofrecer confianza, agilidad y seguridad en servicios de Inspeccion, supervision, interventoria, certificacion, y ensayos. Además, ofrecemos el desarrollo de soluciones digitales a medida de nuestros clientes para agilizar la toma de decisiones y ahorrar recursos. Basamos nuestros procesos en estándares técnicos globales y contamos con profesionales con calificaciones técnicas internacionales.',
+        textBtn:'MÁS SOBRE NOSOTROS',
+        paragraph:'Somos una empresa comprometida con la responsabilidad social, la sostenibilidad, la integridad y excelencia operacional. Esto nos permite ofrecer servicios de alta calidad y contribuir al desarrollo del país. Contamos con experiencia en proyectos de gran envergadura, entregando siempre confianza, agilidad y seguridad en servicios de Inspección, Supervisión, Interventoría, Certificación y Ensayos. Además, ofrecemos soluciones digitales a la medida de nuestros clientes para agilizar la toma de decisiones y ahorrar recursos. Basamos nuestros procesos en estándares técnicos globales y contamos con profesionales con las mas altas calificaciones técnicas.',
         cards:{
             card1:{
                 text1:'AÑOS',
                 text2:'EXPERIENCIA',
-                count:12,
+                count:13,
                 url:'/empresa/proyectos',
             },
             card2:{
@@ -750,5 +785,62 @@ export const data = [{
                 url:'/contacto',
             }
         }
-    }
+    },
+    logos:{
+        id:'Slider_Logos',
+        cards:{
+            card1:{
+                id:'card_logo_1',
+                img:'Logos_Clientes/Logo_Celsia-100.jpg',
+            },
+            card2:{
+                id:'card_logo_2',
+                img:'Logos_Clientes/Logo_Ecopetrol-100.jpg',
+            },
+            card3:{
+                id:'card_logo_3',
+                img:'Logos_Clientes/Logo_Enel-100.jpg',
+            },
+            card4:{
+                id:'card_logo_4',
+                img:'Logos_Clientes/Logo_Falabella-100.jpg',
+            },
+            card5:{
+                id:'card_logo_5',
+                img:'Logos_Clientes/Logo_Legrand-100.jpg',
+            },
+            card6:{
+                id:'card_logo_6',
+                img:'Logos_Clientes/Logo_LG-100.jpg',
+            },
+            card7:{
+                id:'card_logo_7',
+                img:'Logos_Clientes/Logo_Primax-100.jpg',
+            },
+            card8:{
+                id:'card_logo_8',
+                img:'Logos_Clientes/Logo_Samsung-100.jpg',
+            },
+            card10:{
+                id:'card_logo_10',
+                img:'Logos_Clientes/Logo_Siemens-100.jpg',
+            },
+            card11:{
+                id:'card_logo_11',
+                img:'Logos_Clientes/Logo_Sierra-100.jpg',
+            },
+            card12:{
+                id:'card_logo_12',
+                img:'Logos_Clientes/Logo_Homecenter-100.jpg',
+            },
+            card13:{
+                id:'card_logo_13',
+                img:'Logos_Clientes/Logo_TGI-100.jpg',
+            },
+            card14:{
+                id:'card_logo_14',
+                img:'Logos_Clientes/Logo_TrinaSolar-100.jpg',
+            },
+        }
+    },
 }]

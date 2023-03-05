@@ -47,8 +47,9 @@ export  const ConCardExperiencia = styled.div`
         padding: 1em;
         p{
             font-weight:10px;
-            font-size: clamp(14px, 1.6vw, 25px);
+            font-size: clamp(14px, 1.6vw, 20px);
             padding: 0 .6em;
+            /* text-align: justify; */
         }
     }
 `

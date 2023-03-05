@@ -54,7 +54,6 @@ export const CardCarousel = styled.div`
     display: flex!important;
     justify-content: center!important;
     align-items: center!important;
-
 `
 export const Cards03 = styled.div`
     /* border: 1px solid red;//..................... */

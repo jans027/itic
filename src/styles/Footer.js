@@ -60,6 +60,7 @@ export const Redes = styled.div`
     @media (max-width:768px) {
         padding-bottom: .5em;
     }
+    
     h3{
         font-size: 1.7rem;
         padding-bottom: 1.3rem;
@@ -149,10 +150,13 @@ export const LogoFooter = styled.div`
     }
 `
 export const AddressFooter = styled.span`
-        /* border: 1px solid white;//................... */
         display: flex;
         flex-direction: column;
-        
+        @media (max-width:1070px) {
+            border-bottom: 1px solid white;//...................
+            border-bottom: 1px solid white;
+            margin-bottom: 4px;
+        }
         a{
             display: flex;
             align-items: center;
@@ -190,7 +194,7 @@ export const AddressFooter = styled.span`
             font-size: 18px;
             @media (max-width:768px) {
                 font-size: 15px;
-                padding-bottom:.7em;
+                padding-bottom:21PX;
             }
         }
 `
@@ -253,6 +257,14 @@ export const ContUlPoliticas = styled.ul`
     }
 `
 export const LinkConsulta1 = styled.span`
+div{
+    @media (max-width:1070px) {
+        border-bottom: 1px solid white;
+        display: none;
+        &:nth-child(even){
+            padding: 12px 0 6px 0;
+        }
+    }
     a{
         font-size: 1.7rem;
         font-weight: 600;
@@ -264,11 +276,37 @@ export const LinkConsulta1 = styled.span`
             padding-bottom: .5em;
         }
     }
-
+}
+`
+export const LinkConsultaMovile = styled.div`
+    display: block;
+    div{
+        border-bottom: 1px solid white;
+        margin: 16px 0;
+        width: 100%;
+    @media (min-width:1070px) {
+        display:none;
+    }
+    @media (max-width:600px) {
+        width: 90%;
+    }
+    a{
+        text-decoration: none;
+        font-size: 1.7rem;
+        font-weight: 600;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.1rem;
+        @media (max-width:1070px) {
+            font-size: 17.5px;
+            padding-bottom: .5em;
+        }
+    }
+}
 `
 export const BtnFooter = styled(Link)`
     text-decoration: none;
-    
+    /* margin: 26px 0!important; */
     div{
         width: 90%;
         height: 2.7vw;
@@ -281,7 +319,11 @@ export const BtnFooter = styled(Link)`
         border-radius: 1.5rem;
         text-align: center;
         @media (max-width:1490px) {
-            height: 3.3vw;
+            height: 40px;
+            font-size: 14px;
+            font-weight: 400;
+            width: 100%;
+            margin: 10px 0;
         }
         &:active{
         background-color:var(--color8);
@@ -290,6 +332,8 @@ export const BtnFooter = styled(Link)`
 `
 // Accordion..........................
 export const ConAccordion = styled.div`
+    max-width: 350px;
+    /* border: 1px solid red;//........................ */
     padding-bottom: 1em;
     .MuiButtonBase-root{
         padding: 0!important;
@@ -304,19 +348,26 @@ export const ConAccordion = styled.div`
     }
 `
 export const AccordionFooter = styled(Accordion)`
-    /* border: 1px solid white;//.................. */
-    max-width: 350px!important;
+    border-bottom: 1px solid white;//..................
+    /* max-width: 350px!important; */
     display: none;
     background-color: black!important;
     color: white!important;
     padding: 0!important;
+    p{
+        font-weight: 700!important;
+        font-family: var(--Font)!important;
+    }
     svg{
         color: white;
     }
     @media (max-width:1070px) {
         display: block;
-        
     }
+    @media (max-width:600px) {
+        width: 90%;
+    }
+
 `
 export const EnlaceDesplegable = styled(Typography)`
     li{

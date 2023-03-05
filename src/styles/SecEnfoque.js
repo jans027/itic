@@ -107,6 +107,7 @@ export const ContEnfoque3 = styled.div`
                 font-weight: 600;
                 padding: .2em .5em;
                 border-radius: 13px;
+                margin-top: 1em;
                 border: 2px solid var(--color4);
                 color: var(--color4);
                 text-decoration: none;
@@ -116,7 +117,7 @@ export const ContEnfoque3 = styled.div`
             }
             .cardText3{
                 /* border:2px solid red;//.................. */
-                font-size:clamp(42px, 2.5vw, 48px);
+                font-size:clamp(20px, 1.5vw, 32px);
                 font-weight: 900;
             }
         }
@@ -125,8 +126,8 @@ export const ContEnfoque3 = styled.div`
 
 export const BtnEnfoque1 = styled(Link)`
     text-decoration: none;
-    font-size: 33px;
-    font-weight: 900;
+    font-size: clamp(20px, 1.4vw, 35px);
+    font-weight: 700;
     color:var(--color5);
     display: block;
     @media (max-width:1166px) {

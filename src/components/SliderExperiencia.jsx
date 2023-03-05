@@ -23,8 +23,8 @@ const SecExperiencias = () => {
         slidesToShow: 3,
         slidesToScroll: 2,
         initialSlide: 0,
-        speed: 2000,
-        autoplaySpeed: 2000,
+        speed: 2500,
+        autoplaySpeed: 3500,
         responsive: [
             {
                 breakpoint: 1024,
