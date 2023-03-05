@@ -4,13 +4,14 @@ import BannerEmpresa from '../components/BannerEmpresa'
 import ContacBar from '../components/ContacBar'
 import NavEmpresa from '../components/NavEmpresa'
 import { data } from '../data/data'
-import { CardAcredt, ContCardsAcred, ConTitleAcred, TitleAcred } from '../styles/Acreditaciones'
+import { CardAcredMobile, CardAcredt, ContCardsAcred, ContCardsAcredMobile, ConTitleAcred, TitleAcred } from '../styles/Acreditaciones'
 import { ContPagesEmpresa } from '../styles/NavEmpresa'
 import { ConNosotros, MenuMobileNos, MobileTitle } from '../styles/Nosotros'
 import { SubTitleSection } from '../styles/SecAcreditaciones'
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import Slider from 'react-slick'
 
 
 
@@ -24,7 +25,7 @@ const Contact = () => {
     // console.log(name)
 
     // search word 
-    const boldtWord = "iticcol";
+    const boldtWord = "ITICCOL";
     const parts = subTitle.split(boldtWord);
 
     //.......................................................
@@ -41,6 +42,34 @@ const Contact = () => {
     const itemsUrlDown = Object.values(itemsFind1)
     // console.log(itemsUrl)
     //.......................................................
+
+    // silder......
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        initialSlide: 0,
+        responsive: [
+            {
+                breakpoint: 850,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
 
 
 
@@ -68,7 +97,7 @@ const Contact = () => {
                                         <br />
                                     </React.Fragment>
                                 )
-                            })}</p><ArrowDropDownIcon />
+                            })}<ArrowDropDownIcon /></p>
                         </MobileTitle>
 
                         <ConTitleAcred>
@@ -113,6 +142,46 @@ const Contact = () => {
                                 )
                             }
                         </ContCardsAcred>
+                        <ContCardsAcredMobile>
+                            <Slider {...settings}>
+
+                                {
+                                    card.map((item) =>
+                                        <div className='cont_card_mobile_acred'>
+                                            <CardAcredMobile key={item.id}>
+                                                <span>
+                                                    <p>{item.textP.split('\n').map((line, i) => {
+                                                        return (
+                                                            <React.Fragment key={i}>
+                                                                {line}
+                                                                <br />
+                                                            </React.Fragment>
+                                                        )
+                                                    })}</p>
+                                                </span>
+
+                                                <span>
+                                                    <img src={require(`../images/${item.img}`)} alt={item.name} />
+                                                </span>
+
+                                                <Link to={item.url} target='_blank' >
+                                                    {item.name.split('\n').map((line, i) => {
+                                                        return (
+                                                            <React.Fragment key={i}>
+                                                                {line}
+                                                                <br />
+                                                            </React.Fragment>
+                                                        )
+                                                    })}
+                                                    <AddCircleIcon />
+                                                </Link>
+                                            </CardAcredMobile>
+                                        </div>
+                                    )
+                                }
+
+                            </Slider>
+                        </ContCardsAcredMobile>
 
                         <MenuMobileNos>
                             {

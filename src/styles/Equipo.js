@@ -1,39 +1,49 @@
 import styled from "styled-components";
 
 export const ContCardCEO = styled.div`
-    /* border: 1px solid red;//................. */
+    border: 1px solid red;//.................
     width: 100%;
     height: 42.9rem;
     background-color:var(--color1);
-    padding: 2.5rem 5.8rem 2.5rem 8.1rem;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
     .ContainerCardC{
+        border: 1px solid red;//.................
         display: flex;
         flex-direction:row;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        @media (max-width:1610px) {
+            justify-content: space-between;
+        }
     }
 `
 export const ContImgCeo = styled.div`
-    /* border: 1px solid red;//................. */
-    width: 24.1rem;
-    height:36.9rem;
+    border: 1px solid red;//.................
+    width: clamp(164px, 19vw, 380px);
+    height:clamp(198px, 30vw, 590px);
     border-radius: 3rem;
     background-color: white;
-    margin-right: 1.5rem;
+    /* margin-right: 1.5rem; */
 
 `
 export const ContInfoCeo = styled.div`
-    /* border: 1px solid red;//................. */
-    width: 36rem;
-    height: 39rem;
+    border: 1px solid blue;//.................
+    width: clamp(164px, 32vw, 576px);
+    height:clamp(198px, 30vw, 590px);
     .title_ceo{
-        font-size: 3.5rem;
+        font-size: clamp(25px, 3.1vw, 55px);
         font-weight: 700;
     }
     .sub_title_ceo{
-        font-size: 1.6rem;
+        font-size: clamp(20px, 1.1vw, 25px);
         font-weight: 700;
     }
     .paragraph{
-        font-size: 1.3rem;
+        font-size: clamp(13px, 1.2vw, 23px);
         margin: 1.5rem 0;
         font-weight: 500;
         /* line-height: 30px; */

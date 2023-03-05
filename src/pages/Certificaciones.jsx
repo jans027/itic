@@ -5,11 +5,12 @@ import ContacBar from '../components/ContacBar'
 import NavEmpresa from '../components/NavEmpresa'
 import { data } from '../data/data'
 import { ContCardsAcred } from '../styles/Acreditaciones'
-import { CardCertif, TitleCertf } from '../styles/Certificaciones'
+import { CardCertif, CardCertificaciones, CardCertifMobile, ContCardsCertiMobile, TitleCertf } from '../styles/Certificaciones'
 import { ContPagesEmpresa } from '../styles/NavEmpresa'
 import { ConNosotros, MenuMobileNos, MobileTitle } from '../styles/Nosotros'
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import Slider from 'react-slick'
 
 
 
@@ -34,6 +35,33 @@ const Certificaciones = () => {
   const itemsUrlDown = Object.values(itemsFind1)
   // console.log(itemsUrl)
   //.......................................................
+
+  // silder......
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+        {
+            breakpoint: 850,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2
+            }
+        },
+        {
+            breakpoint: 640,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+};
 
 
 
@@ -61,21 +89,83 @@ const Certificaciones = () => {
                     <br />
                   </React.Fragment>
                 )
-              })}</p><ArrowDropDownIcon />
+              })}<ArrowDropDownIcon /></p>
             </MobileTitle>
 
-            <TitleCertf>
-              {name}
-            </TitleCertf>
-            <ContCardsAcred>
-              {
-                card.map((item) =>
-                  <CardCertif key={item.id}>
+            <TitleCertf>{name}</TitleCertf>
 
-                  </CardCertif>
-                )
-              }
-            </ContCardsAcred>
+            <ContCardsAcred>
+                            {
+                                card.map((item) =>
+                                    <CardCertificaciones key={item.id}>
+                                        <span>
+                                            <p>{item.textP.split('\n').map((line, i) => {
+                                                return (
+                                                    <React.Fragment key={i}>
+                                                        {line}
+                                                        <br />
+                                                    </React.Fragment>
+                                                )
+                                            })}</p>
+                                        </span>
+
+                                        <span>
+                                            <img src={require(`../images/${item.img}`)} alt={item.name} />
+                                        </span>
+
+                                        <Link to={item.url} target='_blank' >
+                                            {item.name.split('\n').map((line, i) => {
+                                                return (
+                                                    <React.Fragment key={i}>
+                                                        {line}
+                                                        <br />
+                                                    </React.Fragment>
+                                                )
+                                            })}
+                                        </Link>
+                                    </CardCertificaciones>
+                                )
+                            }
+                        </ContCardsAcred>
+                        <ContCardsCertiMobile>
+                            <Slider {...settings}>
+
+                                {
+                                    card.map((item) =>
+                                        <div className='cont_card_mobile_acred'>
+                                            <CardCertifMobile key={item.id}>
+                                                <span>
+                                                    <p>{item.textP.split('\n').map((line, i) => {
+                                                        return (
+                                                            <React.Fragment key={i}>
+                                                                {line}
+                                                                <br />
+                                                            </React.Fragment>
+                                                        )
+                                                    })}</p>
+                                                </span>
+
+                                                <span>
+                                                    <img src={require(`../images/${item.img}`)} alt={item.name} />
+                                                </span>
+
+                                                <Link to={item.url} target='_blank' >
+                                                    {item.name.split('\n').map((line, i) => {
+                                                        return (
+                                                            <React.Fragment key={i}>
+                                                                {line}
+                                                                <br />
+                                                            </React.Fragment>
+                                                        )
+                                                    })}
+                                                </Link>
+                                            </CardCertifMobile>
+                                        </div>
+                                    )
+                                }
+
+                            </Slider>
+                        </ContCardsCertiMobile>
 
             <MenuMobileNos>
               {

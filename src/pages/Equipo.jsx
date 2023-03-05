@@ -63,7 +63,7 @@ const Equipo = () => {
                     <br />
                   </React.Fragment>
                 )
-              })}</p><ArrowDropDownIcon />
+              })}<ArrowDropDownIcon /></p>
             </MobileTitle>
 
             <ContCardCEO>
@@ -72,7 +72,6 @@ const Equipo = () => {
                   <div className='ContainerCardC' key={item.id}>
 
                     <ContImgCeo><img src="" alt="img_CEO" /></ContImgCeo>
-
                     <ContInfoCeo>
                       <p className='title_ceo'>{item.title}</p>
                       <p className='sub_title_ceo'>{item.subTitle}</p>

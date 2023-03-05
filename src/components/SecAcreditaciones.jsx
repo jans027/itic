@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { data } from '../data/data';
-import { CardAcred,  ContSliderAcr, SubTitleSection, TitleSection } from '../styles/SecAcreditaciones';
+import { CardAcred, ContSliderAcr, SubTitleSection, TitleSection } from '../styles/SecAcreditaciones';
 import { ConSectionServicios } from '../styles/SectionServicios';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import Slider from 'react-slick';
@@ -68,34 +68,34 @@ const SecAcreditaciones = () => {
 
                         {
                             card.map((item) =>
-                                <CardAcred key={item.id}>
-                                    <span>
-                                        <p>{item.textP.split('\n').map((line, i) => {
-                                            return (
-                                                <React.Fragment key={i}>
-                                                    {line}
-                                                    <br />
-                                                </React.Fragment>
-                                            )
-                                        })}</p>
-                                    </span>
+                                    <CardAcred key={item.id}>
+                                        <span>
+                                            <p>{item.textP.split('\n').map((line, i) => {
+                                                return (
+                                                    <React.Fragment key={i}>
+                                                        {line}
+                                                        <br />
+                                                    </React.Fragment>
+                                                )
+                                            })}</p>
+                                        </span>
 
-                                    <span>
-                                        <img src={require(`../images/${item.img}`)} alt={item.name} />
-                                    </span>
+                                        <span>
+                                            <img src={require(`../images/${item.img}`)} alt={item.name} />
+                                        </span>
 
-                                    <Link to={item.url} target='_blank' >
-                                        {item.name.split('\n').map((line, i) => {
-                                            return (
-                                                <React.Fragment key={i}>
-                                                    {line}
-                                                    <br />
-                                                </React.Fragment>
-                                            )
-                                        })}
-                                        <AddCircleIcon />
-                                    </Link>
-                                </CardAcred>
+                                        <Link to={item.url} target='_blank' >
+                                            {item.name.split('\n').map((line, i) => {
+                                                return (
+                                                    <React.Fragment key={i}>
+                                                        {line}
+                                                        <br />
+                                                    </React.Fragment>
+                                                )
+                                            })}
+                                            <AddCircleIcon />
+                                        </Link>
+                                    </CardAcred>
                             )
                         }
 
