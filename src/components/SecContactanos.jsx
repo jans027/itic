@@ -1,10 +1,9 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 import { data } from '../data/data';
-import ImgBannerPc from '../images/Banner_contacto.png'
-import ImgBannerMobile from '../images/Banner_contacto_mobile.png'
+import ImgBannerPc from '../images/Contacto_desktop.png';
+import ImgBannerMobile from '../images/contacto_mobile.png';
 import { ContContacto } from '../styles/secContactanos';
-
 
 // get data
 const [datos] = data;

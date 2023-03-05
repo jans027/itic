@@ -28,11 +28,19 @@ export const StyledNav = styled.nav`
             @media (max-width:900px) {
                 justify-content: center;
             }
+            .redes_barra_nav{
+                @media (max-width:600px) {
+                    display: none;
+                }
+            }
             span{
             align-items: center;
             display: flex;
             margin-right:.5em;
             padding: 1em;
+            a{
+                color: var(--color5);
+            }
             svg{
                 @media (max-width:900px) {
                     font-size: 14px;

@@ -5,15 +5,18 @@ import { BtnBase, LogoNav, MenuDrop, MenuPcLaptop, StyledNav } from "../styles/N
 // Menu
 import MenuItem from '@mui/material/MenuItem';
 // icons
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TwitterIcon from '@mui/icons-material/Twitter';
 import ArrowDropDownSharpIcon from '@mui/icons-material/ArrowDropDownSharp';
 import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
-import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 // images
 import Logo from '../images/Logo-itic.svg';
 import ImgCol from '../images/Bandera-col.png';
 import MenuMobile from "../components/MenuMobile";
 import ModalForm from "../components/ModalForm";
-// import ImgPer from '../images/Bandera-per.png';
 
 
 
@@ -34,7 +37,6 @@ const NavBar = () => {
     const serviciosSub = Object.values(servicios.dropDownMenu);
     const empresasSub = Object.values(empresa.dropDownMenu);
     const countriesSub = Object.values(countries);
-    // const countriesSub = Object.values(inicio);
     // console.log(countriesSub)
 
     // menu 1
@@ -79,6 +81,10 @@ const NavBar = () => {
         <StyledNav>
             <div className="Address">
                 <div>
+                    <span className="redes_barra_nav"><Link target="_blank" to={inicio.instagramUrl}><InstagramIcon /></Link></span>
+                    <span className="redes_barra_nav"><Link target="_blank" to={inicio.facebookUrl}><FacebookIcon /></Link></span>
+                    <span className="redes_barra_nav"><Link target="_blank" to={inicio.twitterUrl}><TwitterIcon /></Link></span>
+                    <span className="redes_barra_nav"><Link target="_blank" to={inicio.linkedInUrl}><LinkedInIcon /> </Link></span>
                     <span><PhoneAndroidOutlinedIcon /><p>{inicio.phone}</p></span>
                     <span><EmailOutlinedIcon /><p>{inicio.email}</p></span>
                 </div>

@@ -2,16 +2,17 @@ import styled from "styled-components";
 
 
 export const CardAcred = styled.div`
-    margin: 4em 0;
+    /* border: 1px solid red;//.................... */
+    margin: 1em 0;
     width: 20vw!important;
-    .cardExperiencia{
-        width: 480px;
-        
-    }
     min-width: 200px;
     height: auto;
     border-radius: 30px;
     padding-top: 1.3rem;
+    .cardExperiencia{
+        width: 480px;
+        
+    }
     -webkit-box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2); 
     box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2);
     background-color: var(--color5);
@@ -62,7 +63,7 @@ export const CardAcred = styled.div`
     }
 `
 export const TitleSection = styled.h1`
-        font-size: 4.3rem;
+        font-size: clamp(28px, 3.8vw, 70px);
         font-weight: 900;
         padding:1rem 0 1rem 0;
         @media(max-width:710px){
@@ -82,7 +83,7 @@ export const SubTitleSection = styled.p`
         font-size: clamp(16px, 1.6vw, 32px);
     }
     @media(max-width:600px){
-        padding-bottom: 0px;
+        /* padding-bottom: 0px; */
     }
 `
 // stiles slider and arrow
@@ -90,6 +91,7 @@ export const ContSliderAcr = styled.div`
     /* border: 1px solid red;//...................... */
     width: 92%;
     margin: auto;
+    height: auto;
     .slick-slider{
         /* border: 1px solid red;//...................... */
     }

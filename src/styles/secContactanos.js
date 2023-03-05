@@ -20,13 +20,12 @@ export const ContContacto = styled.div`
         width: 100%;
         height: clamp(310px, 50vh, 680px);
         img{
-        /* width: 100%; */
-        height: 125%;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         object-position: center center;
         @media(max-width:769px){
-            width: 100%;
-            /* object-position: right center; */
+            /* width: 100%; */
         }
         @media(max-width:550px){
             /* height: 100%; */
