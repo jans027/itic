@@ -11,6 +11,7 @@ import { ConNosotros, MenuMobileNos, MobileTitle } from '../styles/Nosotros'
 import { CardProyect, ContCardProyect, TitleSectionPro } from '../styles/Proyectos'
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import SliderExperiencias from '../components/SliderExperiencia'
 
 
 
@@ -63,7 +64,7 @@ const Proyectos = () => {
                     <br />
                   </React.Fragment>
                 )
-              })}</p><ArrowDropDownIcon />
+              })}<ArrowDropDownIcon /></p>
             </MobileTitle>
 
             <TitleSectionPro><p>{nameSecction}</p></TitleSectionPro>
@@ -76,16 +77,19 @@ const Proyectos = () => {
               {
                 cardProyecto.map((item) =>
                   <CardProyect key={item.id}>
-                    <div className='ConImgCardP'>
-                      {/* <img src="" alt="" /> */}
-                    </div>
-                    <div className='ContTextP'>
-                      <p>{item.title}</p>
-                      <p>{item.text}</p>
+                    <div className='Cont_card_Proyecto'>
+                      <div className='ConImgCardP'>
+                        {/* <img src="" alt="" /> */}
+                      </div>
+                      <div className='ContTextP'>
+                        <p className='text_card_1'>{item.title}</p>
+                        <p className='text_card_2'>{item.text}</p>
+                      </div>
                     </div>
                   </CardProyect>
                 )
               }
+              <span className='Cont_slider_proyects'><SliderExperiencias /></span>
             </ContCardProyect>
 
             <MenuMobileNos>

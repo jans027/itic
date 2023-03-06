@@ -1,14 +1,16 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import { data } from "../data/data";
-import { CardLogo, ConSlider, ContSlideLogo, LinkExperiencia } from "../styles/SliderLogo";
+// import { CardCarouselLogoExp, CardLogoExp } from "../styles/Proyectos";
+// import {  ContSlideLogo } from "../styles/SliderLogo";
+import { CardCarouselLogoExp, CardLogoExp, ContSlideLogoExp } from "../styles/SliderLogoExperiencia";
 
 
+// Get Data
 const [datos] = data;
-    const { empresa: { dropDownMenu: { proyectos: {url } } } } = datos;
-    // const card = Object.values(cards);
-    // console.log(url )
+const { logos } = datos;
+const card = Object.values(logos.cards);
+// console.log( card )
 
 
 export default class SliderLogoExperiencia extends Component {
@@ -22,90 +24,31 @@ export default class SliderLogoExperiencia extends Component {
             autoplay: true,
             speed: 2000,
             autoplaySpeed: 2000,
-            // centerMode: true,
-            // cssEase: "linear",
             responsive: [
                 {
                     breakpoint: 1024,
                     settings: {
                         slidesToShow: 3,
-                        slidesToScroll: 2,
-                        infinite: true,
-                        // dots: true
-                    }
-                },
-                {
-                    breakpoint: 800,
-                    settings: {
-                        slidesToShow: 2,
                         slidesToScroll: 1,
-                        initialSlide: 2
+                        infinite: true,
                     }
                 },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
             ]
         };
         return (
-            <ContSlideLogo>
-                <div className="slideCont2">
-                    <Slider {...settings}>
-                        <CardLogo>
-                            <p>LOGO 1</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 2</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 3</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 4</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 5</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 6</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 7</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 8</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 9</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 3</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 4</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 5</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 6</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 7</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 8</p>
-                        </CardLogo>
-                        <CardLogo>
-                            <p>LOGO 9</p>
-                        </CardLogo>
+            <ContSlideLogoExp>
+                <Slider {...settings}>
+                        {
+                            card.map((item) =>
+                                <CardLogoExp>
+                                    <CardCarouselLogoExp>
+                                        <img src={require(`../images/${item.img}`)} alt={item.id} />
+                                    </CardCarouselLogoExp>
+                                </CardLogoExp>
+                            )
+                        }
                     </Slider>
-                </div>
-            </ContSlideLogo>
+            </ContSlideLogoExp>
         );
     }
 }

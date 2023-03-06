@@ -1,16 +1,14 @@
 import React from 'react'
 import { data } from '../data/data';
-import {  ContSliderAcr, SubTitleSection, TitleSection } from '../styles/SecAcreditaciones';
-import { ConSectionServicios } from '../styles/SectionServicios';
-import Slider from 'react-slick';
-import { CardExperi1, ConCardExperiencia, ConSliderExp } from '../styles/SliderExperiencia';
+import { ContSliderAcr } from '../styles/SecAcreditaciones';
+import { CardExperiencia2, ConSliderExp2, ContCardExperiencia2 } from '../styles/SliderExperiencia';
 
 
-const SecExperiencias = () => {
+const SliderExperiencias = () => {
 
     // get data
     const [datos] = data;
-    const { empresa: { dropDownMenu: { proyectos: { nameSecction, subTitle, cards } } } } = datos;
+    const { empresa: { dropDownMenu: { proyectos: { cards } } } } = datos;
     const card = Object.values(cards);
     // console.log(card)
 
@@ -20,21 +18,12 @@ const SecExperiencias = () => {
         dots: true,
         infinite: true,
         autoplay: true,
-        slidesToShow: 3,
+        slidesToShow: 2,
         slidesToScroll: 2,
         initialSlide: 0,
         speed: 3500,
         autoplaySpeed: 4500,
         responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
             {
                 breakpoint: 850,
                 settings: {
@@ -55,17 +44,14 @@ const SecExperiencias = () => {
 
     return (
         <>
-            <ConSectionServicios>
-                <TitleSection>{nameSecction}</TitleSection>
-                <SubTitleSection>{subTitle}</SubTitleSection>
+            <ContSliderAcr>
+                <ConSliderExp2 {...settings}>
 
-                <ContSliderAcr>
-                    <ConSliderExp className='ContSlideSec' {...settings}>
-
-                        {
-                            card.map((item) =>
-                                <CardExperi1 className='global-card-slider' key={item.id}>
-                                    <ConCardExperiencia className='cardExperiencia'>
+                    {
+                        card.map((item) =>
+                            <div className='sub_cont_card2'>
+                                <ContCardExperiencia2 className='global-card-slider' key={item.id}>
+                                    <CardExperiencia2 className='cardExperiencia'>
                                         <div>
                                             <img src={require(`../images/${item.img}`)} alt={item.name} />
                                         </div>
@@ -75,19 +61,18 @@ const SecExperiencias = () => {
                                         <span className='cardText'>
                                             <p>{item.text}</p>
                                         </span>
-                                    </ConCardExperiencia>
-                                </CardExperi1>
-                            )
-                        }
+                                    </CardExperiencia2>
+                                </ContCardExperiencia2>
+                            </div>
+                        )
+                    }
 
-                    </ConSliderExp>
-                </ContSliderAcr>
-
-            </ConSectionServicios>
+                </ConSliderExp2>
+            </ContSliderAcr>
 
 
         </>
     )
 }
 
-export default SecExperiencias;
+export default SliderExperiencias;

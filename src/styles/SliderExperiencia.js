@@ -1,31 +1,55 @@
 import Slider from "react-slick";
 import styled from "styled-components";
 
-export const ConSliderExp = styled(Slider)`
+export const ConSliderExp2 = styled(Slider)`
     .global-card-slider{
         width: clamp(275px, 25vw, 25vw)!important;
     }
-`
-export const CardExperi1 = styled.div`
-    /* border: 1px solid red;//...................... */
-    margin-bottom: 4em;
-    height: auto;
-    border-radius: 30px;
-    padding-top: 1.3rem;
-    /* background-color: var(--color5); */
-    /* -webkit-box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2); 
-    box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2); */
-    @media (max-width:850px) {
-        width: 300px!important;
+    .sub_cont_card2{
+        /* border: 1px solid red;//...................... */
+        display: flex!important;
+        justify-content: center;
+    }
+    .slick-slider{
+        margin: auto;
+        /* border: 1px solid red;//...............*/
+    }
+    .slick-prev, .slick-next{
+        /* border: 1px solid red;//............... */
+        width: 40px!important;
+        height: 100%;
+        font-size: 10px!important;
+    }
+    .slick-prev::before, .slick-next::before{
+        color: var(--color1)!important;
+        font-size: 40px!important;
+    }
+    .slick-prev{
+        left: -20px;
+        z-index: 1;
+        
+    }
+    .slick-next{
+        right: -20px;
+        z-index: 1;
         
     }
 `
-export  const ConCardExperiencia = styled.div`
+export const ContCardExperiencia2 = styled.div`
+    /* border: 1px solid red;//...................... */
+    margin-bottom: 4em;
+    width: 100%!important;
+    height: auto;
+    border-radius: 30px;
+    padding-top: 1.3rem;
+
+`
+export  const CardExperiencia2 = styled.div`
+    /* border: 1px solid red;//...................... */
     border-radius: 30px;
     width: 100%!important;
     height: 100%;
     div{
-        /* border: 1px solid red;//...................... */
         overflow: hidden;
         margin-top: -1.5rem;
         border-radius: 30px 30px 0 0;
@@ -39,7 +63,7 @@ export  const ConCardExperiencia = styled.div`
     .cardTitle{
         p{
             font-weight:900;
-            padding: 1em 0 0 0;
+            padding: 1em 0 0 1em;
             font-size: clamp(16px, 1.6vw, 1.6vw);
         }
     }
@@ -53,6 +77,8 @@ export  const ConCardExperiencia = styled.div`
         }
     }
 `
+
+
 
 
 

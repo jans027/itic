@@ -1,10 +1,9 @@
 import React from 'react'
 import { data } from '../data/data';
-import { ContSliderAcr, SubTitleSection, TitleSection } from '../styles/SecAcreditaciones';
+import { ContSliderAcr } from '../styles/SecAcreditaciones';
 import { ConSectionServicios } from '../styles/SectionServicios';
-import Slider from 'react-slick';
-import { CardExperi1, ConCardExperiencia } from '../styles/SliderExperiencia';
-import { CardsTestimonio, ConSliderExp, SliderTestimonioCards } from '../styles/Proyectos';
+import { CardsTestimonio, ConSliderExp, ContCardTestimonio } from '../styles/SliderTestimonio';
+
 
 
 const SliderTestimonio1 = () => {
@@ -37,20 +36,13 @@ const SliderTestimonio1 = () => {
                 }
             },
             {
-                breakpoint: 850,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 670,
+                breakpoint: 790,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    initialSlide: 1
                 }
-            }
+            },
         ]
     };
 
@@ -62,7 +54,7 @@ const SliderTestimonio1 = () => {
                     <ConSliderExp {...settings}>
                         {
                             card.map((item) =>
-                                <div>
+                                <ContCardTestimonio>
                                     <CardsTestimonio>
                                         <div className='ContCarExp1'>
                                             <div className='ConImgCard'>
@@ -77,7 +69,7 @@ const SliderTestimonio1 = () => {
                                             <p>{item.text}</p>
                                         </div>
                                     </CardsTestimonio>
-                                </div>
+                                </ContCardTestimonio>
                             )
                         }
                     </ConSliderExp>
