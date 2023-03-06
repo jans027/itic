@@ -1,5 +1,5 @@
 import React from 'react'
-import { ContMap } from '../styles/AddressContact';
+import { ContMap } from '../styles/Address';
 
 
 const SecMap = (props) => {

@@ -1,54 +1,53 @@
 import styled from "styled-components";
 
 export const ContContact = styled.div `
-  width: 100%;
-  height: 65vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  margin-top: 65px;
   /* border:2px solid red;//.................. */
-  @media (max-width: 768px) {
-    margin-top: 15rem;
-    height: max-content !important;
-    align-items: flex-start;
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 8.5em;
+  @media (max-width:1270px) {
+    margin-top: 90px;
+    margin-bottom: 50px;
   }
-
-  img {
-    /* width: 100%; */
-    height: 100%;
-    object-fit: cover;
-    object-position: 35em 10%;
-    /* border:2px solid red;//.................. */
-    @media (max-width: 732px) {
-      width: auto;
+`
+export const ContImgComtact = styled.div`
+  /* border: 1px solid red;//.......................... */
+  width: 50%;
+  @media (max-width:1200px) {
+      display: none;
+  }
+  overflow: hidden;
+    img{
       height: 100%;
-      object-position: right center;
-    }
-    @media (max-width: 550px) {
-      width: 100%;
-      height: auto;
-      object-position: right center;
-    }
-  }
-  .contContact1 {
+      object-fit: cover;
+      object-position: -13vw center;
+      @media (min-width:1300px) {
+          object-position: center center;
+        }
+      }
+`
+export const ContContactForm = styled.div`
+    /* border: 1px solid red;//....................... */
     width: 50%;
     margin: 0 auto;
     height: auto;
-    position: absolute;
-    right: 120px;
-    @media (max-width: 743px) {
-      margin-top: 10em;
+    @media (max-width:1200px) {
+      width: 70%;
     }
-    @media (max-width: 550px) {
-      margin-top: 0;
+    @media (max-width:1000px) {
+      width: 90%;
+    }
+    @media (max-width:600px) {
+      width: 100%;
     }
     .contContact2 {
       /* border: 2px solid red; //.................. */
-      margin-top: 80px;
+      margin-top: 2.1em;
       .title {
-        font-size: 4.5vw;
+        font-size: clamp(28px, 3.8vw, 70px);
         font-weight: 900;
         padding-left: 0.2em;
         @media (max-width: 600px) {
@@ -56,16 +55,16 @@ export const ContContact = styled.div `
         }
       }
       .subTitle {
-        font-size: 1.8vw;
+        font-size: clamp(14px, 1.6vw, 30px);
         font-weight: 600;
-        margin: 3.5rem 0 0 0;
+        margin: 1em 0 0 0;
         padding-left: 0.2em;
         @media (max-width: 600px) {
           margin: 2rem 0;
         }
       }
       div {
-        padding: 1rem 0;
+        padding-top: .5em;
         a {
           text-decoration: none;
           padding: 1.5rem 6.5rem;
@@ -88,9 +87,7 @@ export const ContContact = styled.div `
         }
       }
     }
-  }
-`;
-
+`
 export const FormContact = styled.div `
   /* border:2px solid blue;//.................. */
   .cont_form_mail {
@@ -100,15 +97,21 @@ export const FormContact = styled.div `
       /* padding: 1.5em; */
       .firstBlock {
         display: flex;
+        @media (max-width:700px) {
+          flex-direction: column;
+        }
         div {
           width: 50%;
           display: flex;
           flex-direction: column;
           padding: 0 1rem;
+          @media (max-width:700px) {
+            width: 100%;
+          }
         }
       }
       .form_label {
-        font-size: 1.6em;
+        font-size: clamp(16px, 1.5vw, 26px);
         /* color: var(--color4); */
         padding: 0 0 0.5em 0;
         font-weight: 600;
@@ -119,7 +122,7 @@ export const FormContact = styled.div `
       }
       .form_input,
       select{
-        margin-bottom: 1em;
+        /* margin-bottom: 1em; */
         height: 2.8em;
         border-radius: 1em;
         border: 1px solid var(--color3);
@@ -182,38 +185,14 @@ export const FormContact = styled.div `
       }
     }
     .secondForm {
-      border: 1px solid red;//......................
+      /* border: 1px solid red;//...................... */
       display: flex;
       flex-direction: column;
       width: 96%;
       margin: auto;
-      .btnFormContact {
-        /* border: 1px solid red; //................ */
-        width: 100%;
-        text-align: center;
-        padding: 0.5em 0;
-        button {
-          background-color: var(--color4);
-          border: none;
-          color: var(--color5);
-          padding: 0.5em 1em;
-          width: 20%;
-          border-radius: 25px;
-          cursor: pointer;
-          font-size: 25px;
-          font-weight: 900;
-          &:hover {
-            color: var(--color1);
-          }
-        }
-        &:active {
-          background-color: var(--color6);
-        }
-      }
     }
   }
-`;
-
+`
 export const TextArea = styled.textarea `
   margin-bottom: 1em;
   /* height: 2.8em; */
@@ -234,17 +213,16 @@ export const TextArea = styled.textarea `
     }
   }
 `
-
 export const CheckboxLabel = styled.label `
   display: flex;
   justify-content: space-around;
   /* border: 1px solid red;//................... */
-  padding: 1em 0;
+  /* padding: 1em 0; */
   span {
     width: 90%;
+    font-size: 12px;
   }
-`;
-
+`
 export const CheckboxInput = styled.input `
   appearance: none;
   width: 30px;
@@ -263,7 +241,7 @@ export const CheckboxInput = styled.input `
   &:checked::after {
     content: "\\2714";
     font-size: 14px;
-    color: #fff;
+    color: var(--color5);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -273,4 +251,31 @@ export const CheckboxInput = styled.input `
   &:hover {
     cursor: pointer;
   }
-`;
+`
+export const BtnFormContact = styled.div`
+  /* border: 1px solid red;//...................... */
+  width: 100%;
+  text-align: center;
+  padding: .5em 0;
+  button {
+    background-color: var(--color4);
+    border: none;
+    color: var(--color5);
+    padding: .2em 1em;
+    width: 25%;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 900;
+    @media (max-width:700px) {
+            width: 80%;
+        }
+    &:hover {
+      color: var(--color1);
+    }
+  }
+  &:active {
+    background-color: var(--color6);
+  }
+`
+

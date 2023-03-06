@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import { data } from '../data/data';
 import styled from "styled-components";
-import { CheckboxInput, CheckboxLabel, FormContact, TextArea } from '../styles/Contact';
+import { BtnFormContact, CheckboxInput, CheckboxLabel, FormContact, TextArea } from '../styles/Contact';
 
 
 
@@ -229,7 +229,7 @@ const ContactForm = (props) => {
                         </select>
 
                         <TextArea
-                            rows="7"
+                            rows="5"
                             placeholder='Escribe aqui tu mensaje'
                             required
                             name="comentario">
@@ -244,14 +244,14 @@ const ContactForm = (props) => {
                             <span>{checkbox}</span>
                         </CheckboxLabel>
 
-                        <span className='btnFormContact'>
+                        <BtnFormContact>
                             <button
                                 type="submit"
                                 value="Enviar"
                                 onFocus={handleFocus}
                             >Enviar
                             </button>
-                        </span>
+                        </BtnFormContact>
                     </div>
 
                 </form>

@@ -4,7 +4,7 @@ import { data } from '../data/data';
 import PhoneAndroidOutlinedIcon from '@mui/icons-material/PhoneAndroidOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
-import { ContAddress } from '../styles/AddressContact';
+import { ContAddress } from '../styles/Address';
 
 const Address = () => {
 

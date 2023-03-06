@@ -5,7 +5,7 @@ import SecMap from '../components/SecMap';
 import { data } from '../data/data';
 import ImgBannerPc from '../images/shutterstock_150293498---copia.png';
 import ImgBannerMobile from '../images/contacto_mobile.png';
-import { ContContact } from '../styles/Contact';
+import { ContContact, ContContactForm, ContImgComtact } from '../styles/Contact';
 
 
 // get data
@@ -47,9 +47,11 @@ export default class SecContactanos extends Component {
         return (
             <>
                 <ContContact>
-                    <img src={screenWidth < 768 ? ImgBannerMobile : ImgBannerPc} alt={id} />
+                    <ContImgComtact>
+                        <img src={screenWidth < 768 ? ImgBannerMobile : ImgBannerPc} alt={id} />
+                    </ContImgComtact>
 
-                    <div className='contContact1'>
+                    <ContContactForm >
                         <div className='contContact2'>
                             <p className='title'>{title}</p>
                             <p className='subTitle'>
@@ -64,7 +66,7 @@ export default class SecContactanos extends Component {
                             </p>
                             <ContactForm/>
                         </div>
-                    </div>
+                    </ContContactForm>
                 </ContContact>
                 <Address/>
                 <SecMap/>

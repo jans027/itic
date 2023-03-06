@@ -94,7 +94,6 @@ export const ContTextCard =styled.div`
         }
     }
 `
-
 export const EnlaceBtnS = styled(Link)`
             margin: 10px 0;
             padding: .5vw 2vw;
