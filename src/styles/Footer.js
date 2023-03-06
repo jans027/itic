@@ -17,7 +17,7 @@ export const ContFooter = styled.div`
 `
 export const BlockNav = styled.div`
     /* border: 1px solid red;//................ */
-    width: 88%;
+    width: 90%;
     height:auto;
     margin: 0 auto;
     display: flex;
@@ -29,7 +29,7 @@ export const BlockNav = styled.div`
     }
     h3{
         /* border: 1px solid white;//................ */
-        font-size: 1.7rem;
+        font-size: clamp(22px, 1.5vw, 29px);
         padding: 0 0 23px 0;
     }
 `
@@ -87,7 +87,7 @@ export const Redes = styled.div`
     }
 `
 export const ConEmprFooter = styled.div`
-        width: 22%;
+        width: 20%;
         @media (max-width:1070px) {
         display: none;
         }
@@ -114,7 +114,7 @@ export const ConEmprFooter = styled.div`
     } 
 `
 export const ConServFooter = styled.div`
-        width: 23%;
+        width: 21%;
         @media (max-width:1070px) {
         display: none;
         }
@@ -209,7 +209,7 @@ export const ConsultasFooter = styled.div`
             width: max-content;
         }
         p{
-            font-size: 1.7rem;
+            font-size: 1.1em;
             font-weight: 600;
             padding: 1rem 0;
             @media (max-width:768px) {
@@ -218,13 +218,14 @@ export const ConsultasFooter = styled.div`
         }
         a{
             text-decoration:none;
-            font-size: 1.1rem;
+            font-size: clamp(22px, 1.1vw, 30px);
+            /* border: 1px solid red;//............... */
             &:hover{
                 color: var(--color1);
             }
         }
         span{
-            font-size: .1rem;
+            font-size: clamp(22px, 1.8vw, 32px);
             padding: .1rem 0;
         }
 `
@@ -266,7 +267,7 @@ div{
         }
     }
     a{
-        font-size: 1.7rem;
+        font-size: clamp(22px, 1vw, 10px);
         font-weight: 600;
         display: flex;
         flex-direction: column;
@@ -308,6 +309,7 @@ export const BtnFooter = styled(Link)`
     text-decoration: none;
     /* margin: 26px 0!important; */
     div{
+        /* border: 1px solid red;//.......................... */
         width: 90%;
         height: 2.7vw;
         background-color:var(--color1);
@@ -315,7 +317,8 @@ export const BtnFooter = styled(Link)`
         display: flex;
         justify-content: center;
         align-items: center;
-        font-weight: 700;
+        font-size: 14px;
+        font-weight: 700!important;
         border-radius: 1.5rem;
         text-align: center;
         @media (max-width:1490px) {

@@ -95,7 +95,7 @@ export const Cards = styled.div`
         width: 318px;
     }
     &:nth-child(even){
-        /* flex-direction: row-reverse; */
+        flex-direction: row-reverse;
         background-color: var(--color1);
     }
     

@@ -246,7 +246,6 @@ const Footer = () => {
                     </ConsultasFooter>
                 </BlockNav>
 
-
                 <Redes>
                     <h3>SÍGUENOS</h3>
                     <Link target="_blank" to={inicio.facebookUrl}><FacebookIcon /></Link>

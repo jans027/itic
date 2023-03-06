@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const ContContacto = styled.div`
     /* border:2px solid red;//....................... */
     width: 100%;
-    height: clamp(auto, 60vh, 680px);
+    height: clamp(400px, 60vh, 680px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +18,8 @@ export const ContContacto = styled.div`
         overflow: hidden;
         /* border:2px solid red;//.................. */
         width: 100%;
-        height: clamp(310px, 50vh, 680px);
+        height: 100%;
+        /* height: clamp(310px, 50vh, 680px); */
         img{
         width: 100%;
         height: 100%;

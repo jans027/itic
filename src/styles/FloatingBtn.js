@@ -7,12 +7,13 @@ export const ConBtnFloat = styled.div`
     width:8vw;
     min-width: 3.5em;
     right: 0;
-    border-radius: 5em 0 0 5em;
+    border-radius: 4em 0 0 4em;
     bottom: 20vw;
     cursor: pointer;
     transition: 30ms;
     z-index: 1000;
     display: flex;
+    padding-top:.1em;
     overflow: hidden;
     background-color: var(--color4);
     

@@ -17,6 +17,7 @@ export const ContCardsAcred = styled.div`
     /* border: 1px solid red;//....................... */
     width: clamp(700px, 47vw, 870px);
     margin: auto;
+    margin-bottom: 4em;
     display: flex;
     flex-wrap:wrap;
     padding: 10px 0;

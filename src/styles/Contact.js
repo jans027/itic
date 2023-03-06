@@ -182,13 +182,14 @@ export const FormContact = styled.div `
       }
     }
     .secondForm {
+      border: 1px solid red;//......................
       display: flex;
       flex-direction: column;
       width: 96%;
       margin: auto;
       .btnFormContact {
-        width: 100%;
         /* border: 1px solid red; //................ */
+        width: 100%;
         text-align: center;
         padding: 0.5em 0;
         button {
@@ -215,23 +216,23 @@ export const FormContact = styled.div `
 
 export const TextArea = styled.textarea `
   margin-bottom: 1em;
-        /* height: 2.8em; */
-        border-radius: 1em;
-        border: 1px solid var(--color3);
-        padding: 1em;
-        option:disabled {
-          color: transparent;
-        }
-        &::placeholder {
-          color: var(--color4);
-        }
-        &:focus {
-          border: 2px solid var(--color1);
-          outline: none;
-          &::placeholder {
-            color: var(--color3);
-          }
-        }
+  /* height: 2.8em; */
+  border-radius: 1em;
+  border: 1px solid var(--color3);
+  padding: 1em;
+  option:disabled {
+    color: transparent;
+  }
+  &::placeholder {
+    color: var(--color4);
+  }
+  &:focus {
+    border: 2px solid var(--color1);
+    outline: none;
+    &::placeholder {
+      color: var(--color3);
+    }
+  }
 `
 
 export const CheckboxLabel = styled.label `

@@ -23,13 +23,13 @@ const SendMail = (props) => {
 
     //...........................props
     const handleClick = () => {
-        // Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
+        props.cerrarModal()// Llama a la función cerrarModal para cerrar la ventana modal en el componente padre
     };
 
     // errors in input
     const [isErrorMail, setErrorMail] = useState(false)
     const [isErrorNumber, setErrorNumber] = useState(false)
-    console.log(isErrorMail, isErrorNumber)
+    // console.log(isErrorMail, isErrorNumber)
 
     const LabelMail = styled.label`
     color: ${isErrorMail === true ? 'red' : 'black'};
@@ -175,11 +175,10 @@ const SendMail = (props) => {
                     id="certificate"
                     required
                 />
-                <BtnModal
-                    type="submit"
-                    value="Enviar"
-                    onFocus={handleFocus}
-                >Enviar</BtnModal>
+                <div className='Cont_btn_modal'>
+                    <BtnModal type='reset' onClick={handleClick}>Cancelar</BtnModal>
+                    <BtnModal type="submit" value="Enviar" onFocus={handleFocus}>Enviar</BtnModal>
+                </div>
             </form>
         </div>
     );

@@ -6,7 +6,7 @@ export const ContModal = styled(Dialog)`
     
     .MuiPaper-root{
         /* border: 1px solid red;//....................... */
-        height: auto;
+        height: auto!important;
         @media (max-width:400px) {
             width: 100%!important;
             margin: 0;
@@ -64,7 +64,7 @@ export const ContFormModal = styled.div`
             display: flex;
             padding: 1.5em;
         .form_label{
-            font-size: 1.1em;
+            font-size: 1em;
             font-weight:600;
             /* color: var(--color4); */
             padding: 0 0 .5em 0;
@@ -76,7 +76,7 @@ export const ContFormModal = styled.div`
         }
         .form_input, select{
             margin-bottom: 1em;
-            height: 2.8em;
+            height: 2.5em;
             border-radius: .5em;
             border: 1px solid var(--color3);
             padding: 0 0 0 .5em;
@@ -114,12 +114,17 @@ export const ContFormModal = styled.div`
             }
         }
     }
+    .Cont_btn_modal{
+        /* border: 1px solid red;//..................... */
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 `
 export const ConImgModal =styled.div`
     /* border:1px solid red;//.................... */
-    width: 100%;
-    height: clamp(100px, 15vw, 281px);
+    width:100%;
+    height: clamp(90px, 14vw, 281px);
     overflow: hidden;
     img{
         width: 100%;
@@ -129,36 +134,23 @@ export const ConImgModal =styled.div`
     }
 `
 export const BtnModal = styled.button`
+    /* border: 1px solid red;//....................... */
     cursor: pointer;
     width: 8em;
     padding: .4em;
     font-size: 20px;
     font-weight: 600;
     border-radius:.8em;
-    background-color: var(--color4);
+    background-color: var(--color1);
     border: none;
-    color:var(--color5);
-    position: absolute;
-    right: 10px;
-    bottom:20px;
-    @media (max-width:500px) {
-        width: 7em;
-        }
+    color:var(--color4);
+    margin-right: 10px;
     &:nth-child(2){
-        background-color: var(--color1);
+        background-color: var(--color4);
         border: none;
-        color:var(--color4);
-        position: sticky;
-        bottom:20px;
-        left:11.5vw;
-        @media (min-width:1930px) {
-            left:10vw;
-        }
-        @media (max-width:1270px) {
-            left:10px;
-        }
+        margin-right: 0px;
+        color:var(--color5);
     }
-
 `
 
 

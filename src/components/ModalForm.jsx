@@ -61,7 +61,7 @@ const ModalForm = (props) => {
 
                     <ContFormModal className='cont_form'>
                         <SendMail cerrarModal={cerrarModal}/> 
-                        <BtnModal className='btnGreen'  onClick={handleClose}>CANCELAR</BtnModal>
+                        {/* <BtnModal className='btnGreen'  onClick={handleClose}>CANCELAR</BtnModal> */}
                     </ContFormModal>
                     
                 </ContInformationModal>

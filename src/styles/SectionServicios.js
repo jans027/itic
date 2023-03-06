@@ -82,8 +82,8 @@ export const ContTextCard =styled.div`
 
     }
     p{
-        font-size: 1.2em;
-        line-height: 26px;
+        font-size: clamp(14px, 1.1vw, 18px);
+        line-height: 24px;
     }
     @media (max-width:1200px) {
         p{
