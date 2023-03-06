@@ -62,7 +62,7 @@ const Politicas = () => {
                     <br />
                   </React.Fragment>
                 )
-              })}</p><ArrowDropDownIcon />
+              })}<ArrowDropDownIcon /></p>
             </MobileTitle>
 
             <TitleSectionPro><p>{name}</p></TitleSectionPro>
@@ -71,12 +71,12 @@ const Politicas = () => {
               {
                 card.map((item) =>
                   <CardPol key={item.id}>
-                    <div>
+                    <div className='text_img_poli'>
                       <FileOpenOutlinedIcon />
                       {/* <img src="" alt="" /> */}
                     </div>
                     <div>
-                      <span>
+                      <div className='text_card_poli'>
                         <p>{item.text.split('\n').map((line, i) => {
                           return (
                             <React.Fragment key={i}>
@@ -85,7 +85,7 @@ const Politicas = () => {
                             </React.Fragment>
                           )
                         })}</p>
-                      </span>
+                      </div>
                     </div>
                   </CardPol>
                 )
