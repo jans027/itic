@@ -88,32 +88,32 @@ const Equipo = () => {
             <ContCardEmployes>
               <p className='tilte_equipo'>{name}</p>
               <div className='ConCardsEm'>
-                {
-                  cardCol.map((item) =>
-                    <CardEmployeeE key={item.id}>
-                      <div className='ConImgEmp'><img src="" alt="" /></div>
-                      <div className='contInfo_0'>
-                        <div className='contInfo_1'>
-                          <p className='name_Empl'>{item.name}</p>
-                          <span>
-                            <p className='cargo_empl'>{item.cargo.split('\n').map((line, i) => {
-                              return (
-                                <React.Fragment key={i}>
-                                  {line}
-                                  <br />
-                                </React.Fragment>
-                              )
-                            })}</p>
-                          </span>
+                  {
+                    cardCol.map((item) =>
+                      <CardEmployeeE key={item.id}>
+                        <div className='ConImgEmp'><img src="" alt="" /></div>
+                        <div className='contInfo_0'>
+                          <div className='contInfo_1'>
+                            <p className='name_Empl'>{item.name}</p>
+                            <span>
+                              <p className='cargo_empl'>{item.cargo.split('\n').map((line, i) => {
+                                return (
+                                  <React.Fragment key={i}>
+                                    {line}
+                                    <br />
+                                  </React.Fragment>
+                                )
+                              })}</p>
+                            </span>
+                          </div>
+                          <div className='contInfo_2'>
+                            <Link> <LinkedInIcon /> </Link>
+                            <p className='mail_empl'>{item.email}</p>
+                          </div>
                         </div>
-                        <div className='contInfo_2'>
-                          <Link> <LinkedInIcon /> </Link>
-                          <p className='mail_empl'>{item.email}</p>
-                        </div>
-                      </div>
-                    </CardEmployeeE>
-                  )
-                }
+                      </CardEmployeeE>
+                    )
+                  }
               </div>
             </ContCardEmployes>
 

@@ -71,7 +71,9 @@ export const ContInfoCeo = styled.div`
     }
 `
 export const ContCardEmployes = styled.div`
-    border: 1px solid red;//.......................
+    /* border: 1px solid red;//....................... */
+    background: rgb(208,208,208);
+    background: linear-gradient(0deg, rgba(208,208,208,1) 87%, rgba(156,255,45,1) 58%);
     .tilte_equipo{
         /* border: 1px solid red;//....................... */
         text-align: center;
@@ -83,36 +85,47 @@ export const ContCardEmployes = styled.div`
     .ConCardsEm{
         /* border: 1px solid red;//....................... */
         padding: 1.5rem 0 3.6rem 0;
+        /* border: 1px solid red;//....................... */
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
-        gap: 40px 20px;
         justify-content: center;
-        background: rgb(208,208,208);
-        background: linear-gradient(0deg, rgba(208,208,208,1) 87%, rgba(156,255,45,1) 58%);
+        gap: 2.5em 1.2em;
+        @media (max-width:1270px) {
+            width:60%;
+            margin: auto;
+        }
+        @media (max-width:950px) {
+            width:80%;
+        }
+        @media (max-width:766px) {
+            width:100%;
+        }
     }
 
 `
 export const CardEmployeeE = styled.div`
     /* border: 1px solid red;//....................... */
     width: clamp(141px, 16vw, 300px);
-    height: auto;
+    height: clamp(256px, 25vw, 458px);
     background-color: var(--color5);
     border-radius: 2.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.5em 0 2.5em 0;
+    padding: 1.5em 0 1em 0;
     -webkit-box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6); 
     box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6);
 
     .ConImgEmp{
-        width: clamp(117px, 13vw, 249px);
-        height: clamp(131px, 10vw, 277px);
+        width: 80%;
+        height: 85%;
         background-color: var(--color3);
     }
     .contInfo_0{
         /* border: 1px solid blue;//....................... */
         width: 82%;
+        height: 30%;
         text-align: center;
         margin: 7px 0;
         display: flex;
@@ -120,7 +133,7 @@ export const CardEmployeeE = styled.div`
         justify-content: space-between;
         .contInfo_1{
             /* border: 1px solid red;//....................... */
-            height: 5rem;
+            height: 5em;
             .name_Empl{
                 font-size:clamp(8px, 1vw, 20px);
                 font-weight: 800;
@@ -133,7 +146,7 @@ export const CardEmployeeE = styled.div`
         .contInfo_2{
             /* border: 1px solid red;//....................... */
             svg{
-                font-size: 35px;
+                font-size: 2.1em;
                 color: var(--color4);
             }
             .mail_empl{
