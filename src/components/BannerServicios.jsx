@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { data } from '../data/data';
 import largeImage from '../images/banner-empresa.png';
 import smallImage from '../images/banner_ppa_mobile.png'
-import { BannerPath } from '../styles/NavEmpresa'
+import { BannerPathServicios } from '../styles/NavServicios';
 
 const BannerServicios = () => {
 
@@ -32,10 +32,10 @@ const BannerServicios = () => {
 
     return (
         <>
-            <BannerPath>
+            <BannerPathServicios>
                 <img src={imagen} alt="Imagen-Empresa" />
                 <h2>{name}</h2>
-            </BannerPath>
+            </BannerPathServicios>
         </>
     );
 

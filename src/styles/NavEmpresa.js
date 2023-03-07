@@ -1,13 +1,16 @@
 import styled from "styled-components";
 
-export const BannerPath = styled.div`
+export const BannerPathEmpresa = styled.div`
     /* border: 1px solid red;//......................... */
     height: 15rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8.7rem;
+    margin-top: 130px;
+    @media (max-width:1100px) {
+        margin-top:88px;
+    }
     img{
         width: 100%;
         height: 100%;

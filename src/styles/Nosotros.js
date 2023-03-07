@@ -27,8 +27,8 @@ export const ContNumber1 = styled.div`
     }
     div{
     /* border: 2px solid green;//.................... */
-    width: clamp(225px, 20vw, 384px);
-    height: clamp(225px, 20vw, 384px);
+    width: clamp(225px, 17vw, 384px);
+    height: clamp(225px, 17vw, 384px);
     overflow: hidden;
     margin: 0 1.8em 0 1.4em;
     float: right;

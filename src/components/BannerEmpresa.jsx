@@ -2,14 +2,13 @@ import React, { useEffect, useState } from 'react'
 import { data } from '../data/data';
 import largeImage from '../images/banner-empresa.png';
 import smallImage from '../images/banner_ppa_mobile.png'
-import { BannerPath } from '../styles/NavEmpresa'
+import { BannerPathEmpresa } from '../styles/NavEmpresa'
 
 const BannerEmpresa = () => {
 
     //get data
     const [datos] = data
     const { empresa: { name} } = datos;
-
     // console.log(dropArray)
 
     //change image according to screen width
@@ -33,10 +32,10 @@ const BannerEmpresa = () => {
 
     return (
         <>
-            <BannerPath>
+            <BannerPathEmpresa>
                 <img src={imagen} alt="Imagen-Empresa" />
                 <h2>{name}</h2>
-            </BannerPath>
+            </BannerPathEmpresa>
         </>
     );
 

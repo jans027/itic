@@ -28,7 +28,6 @@ const NavServicios = () => {
     useEffect(() => {
         const handleLocationChange = () => {
             setUrlPath(window.location.pathname);
-
         };
         window.addEventListener("popstate", handleLocationChange);
 
