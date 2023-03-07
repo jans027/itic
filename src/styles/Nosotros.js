@@ -40,7 +40,9 @@ export const ContNumber1 = styled.div`
         object-fit: cover;
         object-position: center center;
         border-radius: 50%;
+        
         }
+
     }
     .title_section{
         font-size: 3.7vw;
@@ -55,6 +57,9 @@ export const ContNumber1 = styled.div`
         width:100%;
         font-size: clamp(14px, 1.3vw, 25px);
         margin-bottom: .8em;
+        @media (max-width:800px) {
+                margin-top: 16px;
+            }
     }
 `
 export const TitleSection = styled.div`

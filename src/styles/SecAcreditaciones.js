@@ -76,14 +76,16 @@ export const SubTitleSection = styled.p`
     /* border: 1px solid red;//........................ */
     width: 90%;
     margin: auto;
-    font-size: clamp(14px, 1.6vw, 30px);
+    font-size: clamp(16px, 1.6vw, 30px);
     padding: 1rem 0 3rem 0;
     font-weight: 300;
     span{
         font-size: clamp(16px, 1.6vw, 32px);
     }
     @media(max-width:600px){
-        /* padding-bottom: 0px; */
+        padding:0 0 20px 0;
+        width: 100%;
+        height: auto;
     }
 `
 // stiles slider and arrow

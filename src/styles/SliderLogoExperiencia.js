@@ -19,19 +19,20 @@ export const ContSlideLogoExp = styled(Slider)`
         /* border: 1px solid red;//...............*/
     }
     .slick-prev, .slick-next{
-        /* border: 1px solid red;//...............*/
+        border: 1px solid red;//...............
         width: 40px!important;
         height: 100%;
         font-size: 10px!important;
         display: none!important;
     }
     .slick-prev::before, .slick-next::before{
+        /* border: 1px solid red;//............... */
         color: var(--color2)!important;
-        font-size: 50px!important;
+        font-size: 40px!important;
         opacity: .5;
     }
     .slick-prev{
-        left: -20px;
+        left: -15px;
         z-index: 1;
         
     }

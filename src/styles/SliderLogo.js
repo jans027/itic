@@ -3,18 +3,16 @@ import styled from "styled-components";
 
 export const ContSlideLogo = styled.div`
     /* border: 1px solid red;//.................. */
-    /* margin: 50px 0; */
+    padding:1rem 0;
     .slideCont2{
-        /* border: 1px solid red;//...............*/
+        /* border: 1px solid red;//............... */
         width: 90%;
         height: auto;
         margin: 0 auto;
     }
-    padding:1rem 0;
-    /* margin-bottom: 25px; */
     .slick-slider{
-        margin: auto;
         /* border: 1px solid red;//...............*/
+        margin: auto;
     }
     .slick-prev, .slick-next{
         /* border: 1px solid red;//...............*/
@@ -31,38 +29,37 @@ export const ContSlideLogo = styled.div`
     .slick-prev{
         left: -20px;
         z-index: 1;
-        
     }
     .slick-next{
         right: -20px;
         z-index: 1;
-        
     }
 `
 export const CardLogo = styled.div`
-        /* border: 1px solid red;//.................. */
+        /* border: 1px solid blue;//.................. */
         text-align: center;
-        width:150px!important;
         height:150px!important;
-        padding: 1rem;
-        margin-left: 1rem;
+        display: flex!important;
+        justify-content: center!important;
+        align-items: center!important;
         @media (max-width:800px) {
-            width:10vmax!important;
-            height:10vmax!important;
-            margin-left: 15%;
+            height:12vmax!important;
         }
 
 `
 export const CardCarouselLogo = styled.div`
     /* border: 1px solid red;//..................... */
-    width: 100%;
+    width: 150px;
     height: auto;
-    margin: 1em 0;
     display: flex!important;
     justify-content: center!important;
     align-items: center!important;
     border-radius:50%;
     overflow: hidden;
+    @media (max-width:800px) {
+            width:12vmax!important;
+            height:12vmax!important;
+        }
     img{
         width: 100%;
         height: 100%;
@@ -90,7 +87,7 @@ export const LinkExperiencia = styled.div`
         &:active{
             background-color: var(--color7);
             text-decoration: none;
-        }
+            }
         }
 
 `

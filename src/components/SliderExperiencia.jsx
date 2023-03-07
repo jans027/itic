@@ -15,7 +15,7 @@ const SliderExperiencias = () => {
 
     // silder......
     const settings = {
-        dots: true,
+        // dots: true,
         infinite: true,
         autoplay: true,
         slidesToShow: 2,

@@ -89,6 +89,7 @@ export const Cards02 = styled.div`
     }
     @media (max-width:450px) {
         width: 100%;
+        margin-bottom: 16px;
     }
     &:nth-child(odd){
         flex-direction: row-reverse;
@@ -125,6 +126,7 @@ export const ConParagraphP =styled.div`
     @media (max-width:450px) {
         padding: 1.5em;
         text-align: center;
+        height: auto;
     }
     .title_p02{
         font-size: clamp(30px, 2.5vw, 57px);
