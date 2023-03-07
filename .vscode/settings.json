@@ -1,4 +1,6 @@
 {
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.wordWrap": "on",
     "workbench.colorCustomizations": {
         "activityBar.background": "#1D3301",
         "titleBar.activeBackground": "#294802",

@@ -8,6 +8,7 @@ import { Cards, ConCards, ConImg, ConNosotros, ContNumber1, MenuMobileNos, Mobil
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import NavServicios from '../components/NavServicios'
 import BannerServicios from '../components/BannerServicios'
+import { ContGestionNumber1 } from '../styles/Gestion'
 
 const Gestion = () => {
   //Get data
@@ -60,7 +61,7 @@ const Gestion = () => {
               })}<ArrowDropDownIcon /></p>
             </MobileTitle>
 
-            <ContNumber1>
+            <ContGestionNumber1>
               <div>
                 <img src={require(`../images/${img}`)} alt={img} />
               </div>
@@ -68,23 +69,8 @@ const Gestion = () => {
               <p className='paragraph_section'>{paragraph1}</p>
               <p className='paragraph_section'>{paragraph2}</p>
               <p className='paragraph_section'>{paragraph3}</p>
-            </ContNumber1>
-            <TitleSection><p>{titleSeccion}</p></TitleSection>
-            <ConCards>
-              {
-                card.map((item) =>
-                  <Cards key={item.id}>
-                    <Paragraph>
-                      <p className='title_card'>{item.title}</p>
-                      <p className='p_card'>{item.paragraph}</p>
-                    </Paragraph>
-                    <ConImg>
-                      <img src={require(`../images/${item.img}`)} alt={item.id} />
-                    </ConImg>
-                  </Cards >
-                )
-              }
-            </ConCards>
+            </ContGestionNumber1>
+
 
             <MenuMobileNos>
               {
