@@ -6,7 +6,7 @@ export const ConSectionServicios = styled.div`
     /* border: 1px solid red;//....................... */
     background-color: var(--color2);
     text-align: center;
-    margin: 2rem 0;
+    /* margin: 2rem 0; */
     height: max-content;
     padding: 2rem 0;
 `

@@ -5,7 +5,7 @@ import styled from "styled-components";
 export const ContContacto = styled.div`
     /* border:2px solid red;//....................... */
     width: 100%;
-    height: clamp(400px, 60vh, 680px);
+    height: clamp(570px, 60vh, 680px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,6 +49,10 @@ export const ContContacto = styled.div`
         }
         .contEnfoque2{
             /* border:2px solid red;//.................. */
+            @media (max-width:600px) {
+                padding: 1em 0;
+                margin-top: 1em;
+            }
             .title{
                 font-size: 5vw;
                 font-weight: 900;

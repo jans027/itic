@@ -54,11 +54,9 @@ export const Redes = styled.div`
     /* border: 1px solid red;//................. */
     width: 88%;
     margin: 0 auto;
-    /* height: 10rem; */
-    /* min-height: 3.1rem; */
     padding-bottom: 2.3em;
     @media (max-width:768px) {
-        padding-bottom: .5em;
+        padding: .7em 0;
     }
     
     h3{
@@ -213,6 +211,7 @@ export const ConsultasFooter = styled.div`
             font-weight: 600;
             padding: 1rem 0;
             @media (max-width:768px) {
+                padding-top: 0;
                 font-size: 18px;
             }
         }
@@ -335,9 +334,9 @@ export const BtnFooter = styled(Link)`
 `
 // Accordion..........................
 export const ConAccordion = styled.div`
-    max-width: 350px;
     /* border: 1px solid red;//........................ */
-    padding-bottom: 1em;
+    max-width: 350px;
+    /* padding-bottom: 1em; */
     .MuiButtonBase-root{
         padding: 0!important;
         justify-content: flex-start;

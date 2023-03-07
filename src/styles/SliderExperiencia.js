@@ -2,6 +2,8 @@ import Slider from "react-slick";
 import styled from "styled-components";
 
 export const ConSliderExp2 = styled(Slider)`
+    /* border: 1px solid red;//...................... */
+    height: auto;
     .global-card-slider{
         width: clamp(275px, 25vw, 25vw)!important;
     }

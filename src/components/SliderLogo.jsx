@@ -41,7 +41,7 @@ export default class SliderLogo extends Component {
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 3,
                         centerMode: false,
                         slidesToScroll: 1
                     }

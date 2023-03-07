@@ -69,8 +69,6 @@ const SliderExperiencias = () => {
 
                 </ConSliderExp2>
             </ContSliderAcr>
-
-
         </>
     )
 }
