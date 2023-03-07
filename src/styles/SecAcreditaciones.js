@@ -84,7 +84,7 @@ export const SubTitleSection = styled.p`
     }
     @media(max-width:600px){
         padding:0 0 20px 0;
-        width: 100%;
+        width: 88%;
         height: auto;
     }
 `
