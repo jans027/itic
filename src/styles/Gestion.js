@@ -1,60 +1,82 @@
 import styled from "styled-components";
 
-
-export const ContGestionNumber1 = styled.div`
-    /* border: 2px solid green;//.................... */
-    background-color: var(--color2);
-    height: max-content;
-    padding: 5em;
-    @media (max-width:800px) {
-        padding: 1em;
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
+export const ContCard1 = styled.div`
+  /* border: 2px solid blue; //.................... */
+  background-color: var(--color2);
+  height: 400px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  @media (max-width: 1270px) {
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+  }
+  @media (max-width: 636px){
+    height: auto;
+  }
+`;
+export const ContCard2 = styled.div`
+  /* border: 2px solid red; //.................... */
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (max-width: 800px){
+  width: 90%;
+  }
+`;
+export const ContImg1 = styled.div`
+  /* border: 2px solid green; //.................... */
+  width: clamp(225px, 17vw, 330px);
+  height: clamp(225px, 17vw, 330px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  float: left;
+  @media (max-width: 800px) {
+      float: none;
+      padding: 16px 0;
+      
     }
-    div{
-    /* border: 2px solid green;//.................... */
-    width: clamp(225px, 17vw, 384px);
-    height: clamp(225px, 17vw, 384px);
-    overflow: hidden;
-    margin: 0 1.8em 0 1.4em;
-    float: right;
-    @media (max-width:800px) {
-        float: none;
+    img {
+    border: 10px solid var(--color1);
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 50%;
     }
-    img{
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        border-radius: 50%;
-        
-        }
-
+`;
+export const ContText1 = styled.div`
+    /* border: 2px solid green; //.................... */
+    width: 60%;
+    padding-left: 20px;
+    @media (max-width: 1270px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
-    .title_section{
-        font-size: 3.7vw;
-        font-weight: 900;
-        line-height: 1.1em;
-        margin-bottom: .5em;
-        @media (max-width:1270px) {
-            display: none;
-        }
+    @media (max-width: 636px) {
+      text-align: center;
+      padding-bottom: 16px;
+      width: 100%;
+      padding-left: 0px;
     }
-    .paragraph_section{
-        width:100%;
-        font-size: clamp(14px, 1.3vw, 25px);
-        margin-bottom: .8em;
-        @media (max-width:800px) {
-                margin-top: 16px;
-            }
+    .title_section {
+    font-size: clamp(25px, 2.5vw, 45px);
+    font-weight: 900;
+    line-height: 1.1em;
+    margin-bottom: 0.5em;
+    
     }
-`
-
-
-
-
-
-
-
-
+    .paragraph_section {
+    width: 100%;
+    font-size: clamp(16px, 1.5vw, 27px);
+    margin-bottom: 0.8em;
+    @media (max-width: 800px) {
+        margin-top: 16px;
+    }
+}
+`;

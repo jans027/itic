@@ -19,7 +19,7 @@ const Personas = () => {
 
   //.......................................................
   // extract values of dropDownMenu
-  const items = Object.values(datos.empresa.dropDownMenu);
+  const items = Object.values(datos.servicios.dropDownMenu);
   // go through the array and divide it in two
   const indice = items.findIndex((item) => item.name === name)
 

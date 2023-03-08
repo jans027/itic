@@ -1,26 +1,31 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import ContacBar from '../components/ContacBar'
 import { data } from '../data/data'
 import { ContPagesEmpresa } from '../styles/NavEmpresa'
-import { Cards, ConCards, ConImg, ConNosotros, ContNumber1, MenuMobileNos, MobileTitle, Paragraph, TitleSection } from '../styles/Nosotros'
+import {  ConNosotros,  MenuMobileNos, MobileTitle } from '../styles/Nosotros'
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import NavServicios from '../components/NavServicios'
 import BannerServicios from '../components/BannerServicios'
-import { ContGestionNumber1 } from '../styles/Gestion'
+import {  ContCard1, ContCard2, ContImg1, ContText1 } from '../styles/Gestion'
+import AddCircleIcon from '@mui/icons-material/AddCircle';
+import { CardServicios, ContCardServicios, ContImage, ContLink } from '../styles/CardsServicios'
+
 
 const Gestion = () => {
+
+
   //Get data
   const [datos] = data;
-  const { empresa: { dropDownMenu: { nosotros: { name, paragraph1, paragraph2, paragraph3, img, titleSeccion, cards } } } } = datos
+  const { servicios: { dropDownMenu: { gestion: { name, cardImg, subTitle2, cards } } } } = datos
 
   // extract values of cards
   const card = Object.values(cards);
 
   //.......................................................
   // extract values of dropDownMenu
-  const items = Object.values(datos.empresa.dropDownMenu);
+  const items = Object.values(datos.servicios.dropDownMenu);
   // go through the array and divide it in two
   const indice = items.findIndex((item) => item.name === name)
 
@@ -61,16 +66,46 @@ const Gestion = () => {
               })}<ArrowDropDownIcon /></p>
             </MobileTitle>
 
-            <ContGestionNumber1>
-              <div>
-                <img src={require(`../images/${img}`)} alt={img} />
-              </div>
-              <p className='title_section'>{name}</p>
-              <p className='paragraph_section'>{paragraph1}</p>
-              <p className='paragraph_section'>{paragraph2}</p>
-              <p className='paragraph_section'>{paragraph3}</p>
-            </ContGestionNumber1>
+            <ContCard1>
+              <ContCard2>
+                <ContImg1>
+                  <img src={require(`../images/${cardImg}`)} alt={cardImg} />
+                </ContImg1>
+                <ContText1>
+                  <p className='title_section'>{name}</p>
+                  <p className='paragraph_section'>{subTitle2}</p>
+                </ContText1>
+              </ContCard2>
+            </ContCard1>
 
+            <ContCardServicios>
+              {
+                card.map((item) =>
+                  <CardServicios key={item.id}>
+
+                    <ContImage>
+                      <img src={require(`../images/${item.img}`)} alt={item.text1} />
+                    </ContImage>
+
+                    <ContLink to={item.id}>
+                      <div>
+                        <p>
+                          {item.text1.split('\n').map((line, i) => {
+                            return (
+                              <React.Fragment key={i}>
+                                {line}
+                                <br />
+                              </React.Fragment>
+                            )
+                          })}
+                        </p>
+                      <AddCircleIcon />
+                      </div>
+                    </ContLink>
+                  </CardServicios>
+                )
+              }
+            </ContCardServicios>
 
             <MenuMobileNos>
               {

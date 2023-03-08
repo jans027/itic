@@ -579,8 +579,8 @@ export const data = [
             "- Certificación Sistemas de Gestión. \n- GAP Análisis. \n- Auditoria Interna. \n- Evaluación de Proveedores.",
           cards: {
             card0: {
-              id: "card_n0",
-              img: "",
+              id: "certificacion",
+              img: "Proyecto2.png",
               text1: "CERTIFICACIÓN",
               text2: "CERTIFICACIÓN",
               paragraph1:
@@ -588,8 +588,8 @@ export const data = [
               btn1: "REGRESAR",
             },
             card1: {
-              id: "card_n1",
-              img: "",
+              id: "gap-analisis",
+              img: "Proyecto2.png",
               text1: "GAP ANÁLISIS",
               text2: "GAP ANÁLISIS",
               paragraph1:
@@ -597,8 +597,8 @@ export const data = [
               btn1: "REGRESAR",
             },
             card2: {
-              id: "card_n2",
-              img: "",
+              id: "auditoria-interna",
+              img: "Proyecto2.png",
               text1: "AUDITORÍA INTERNA",
               text2: "AUDITORÍA INTERNA",
               paragraph1:
@@ -606,8 +606,8 @@ export const data = [
               btn1: "REGRESAR",
             },
             card3: {
-              id: "card_n3",
-              img: "",
+              id: "evaluacion-de-proveedores",
+              img: "Proyecto2.png",
               text1: "EVALUACIÓN DE \nPROVEEDORES",
               text2: "EVALUACIÓN DE PROVEEDORES",
               paragraph1:

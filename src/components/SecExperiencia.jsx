@@ -10,7 +10,7 @@ const SecExperiencia = () => {
     // get data
     const [datos] = data;
     const { empresa: { dropDownMenu: { proyectos: { nameSecction, subTitle } } } } = datos;
-    console.log(nameSecction, subTitle)
+    // console.log(nameSecction, subTitle)
 
 
     return (

@@ -27,6 +27,7 @@ import NavBar from "./pages/Navbar";
 import Footer from "./components/Footer";
 import FloatingBtn from "./components/FloatingBtn";
 import ScrollToTop from "./components/ScrollToTop";
+import DetallesServicios from "./pages/DetallesServicios";
 
 
 function App() {
@@ -36,10 +37,10 @@ function App() {
     <div>
         <GlobalStyles />
         <Router>
-          <ScrollToTop />
           <NavBar />
           <FloatingBtn />
 
+          <ScrollToTop />
           <Routes>
             <Route path="*" element={<Navigate to="/Home" />} />
             <Route exact path="/home" element={<Home />} />
@@ -50,7 +51,7 @@ function App() {
               element={<FloatingBtn />}
             />
 
-            <Route path="/servicios/gestion" element={<Gestion />} />
+          <Route path="/servicios/gestion" element={<Gestion />} />
             <Route path="/servicios/producto" element={<Producto />} />
             <Route path="/servicios/industrial" element={<Industrial />} />
             <Route path="/servicios/personas" element={<Personas />} />
@@ -67,7 +68,8 @@ function App() {
           <Route path="/empresa/politicas" element={<Politicas />} />
 
 
-          
+          <Route path="/servicios/gestion/:id" element={<DetallesServicios/>} />
+
           </Routes>
 
           <Footer />
