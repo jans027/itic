@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 // import SwipeableDrawer from '@mui/material/SwipeableDrawer';
 import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
+// import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 // import ListItemIcon from '@mui/material/ListItemIcon';
@@ -13,7 +13,7 @@ import ListItemText from '@mui/material/ListItemText';
 // hamburguer menu
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseSharpIcon from '@mui/icons-material/CloseSharp';
-import { CloseImg, ContMenuMobile, LinkAccordion, LinkMenu, MenuAccordion, Prueba } from '../styles/MenuMobile';
+import { CloseImg, ContMenuMobile, LinkAccordion, LinkMenu, Prueba } from '../styles/MenuMobile';
 // Accordion
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';

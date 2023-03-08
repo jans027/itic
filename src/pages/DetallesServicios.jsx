@@ -1,8 +1,8 @@
-import React from 'react'
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { Link,  useParams } from 'react-router-dom';
 import BannerServicios from '../components/BannerServicios';
 import ContacBar from '../components/ContacBar';
-import NavServicios from '../components/NavServicios';
+// import NavServicios from '../components/NavServicios';
 import { data } from '../data/data';
 import { ContPagesEmpresa } from '../styles/NavEmpresa';
 import { ConNosotros } from '../styles/Nosotros';
@@ -12,17 +12,72 @@ import { ConNosotros } from '../styles/Nosotros';
 const DetallesServicios = () => {
 
     let { id } = useParams();
-    // console.log(id)
+
 
     //get data
     const [datos] = data
-    const { servicios: { dropDownMenu: { gestion: { cards } } } } = datos;
-    const card = Object.values(cards);
-    // console.log(dropDownMenu)
+    const { servicios: { dropDownMenu } } = datos;
+    const rute = Object.values(dropDownMenu);
+    const rute1 = Object.values(dropDownMenu.gestion.cards);
+    const rute2 = Object.values(dropDownMenu.producto.cards);
+    const rute3 = Object.values(dropDownMenu.industriales.cards);
+    const rute4 = Object.values(dropDownMenu.personas.cards);
+    // console.log(rute)
 
-    // we assign path to key active
-    const cardData = card.find(item => item.id === id);
-    // console.log(cardData)
+    // estate of cards...........
+    const [cardDetail, setCardDetail] = useState([])
+    const { text2,
+        paragraph1,
+        paragraph2,
+        paragraph3,
+        paragraph4,
+        paragraph5,
+        paragraph6,
+        paragraph7,
+        paragraph8,
+        paragraph9,
+        paragraph10,
+        paragraph11,
+        paragraph12,
+        paragraph13,
+        paragraph14, 
+        paragraph15, 
+        paragraph16, 
+        paragraph17,
+        btn1 } = cardDetail;
+    // const text = Object.values(paragraph);
+
+    function handleClick(e) {
+        e.preventDefault();
+        window.history.back();
+    }
+
+
+
+
+    useEffect(() => {
+        const url = window.location.pathname;
+
+        if (url.includes("gestion")) {
+            const user1 = rute1.find(item => item.id === id);
+            setCardDetail(user1)
+
+        } else if (url.includes("producto")) {
+            const user2 = rute2.find(item => item.id === id);
+            setCardDetail(user2)
+
+        } else if (url.includes("industrial")) {
+            const user3 = rute3.find(item => item.id === id);
+            setCardDetail(user3)
+
+        } else if (url.includes("personas")) {
+            const user4 = rute4.find(item => item.id === id);
+            setCardDetail(user4)
+        }
+    }, []);
+
+
+
 
 
 
@@ -31,7 +86,12 @@ const DetallesServicios = () => {
             <BannerServicios />
             <ContPagesEmpresa>
                 <div className='ContSectionEm'>
-                    <h1>{ id}</h1>
+                    <h1>{id}</h1>
+                    {
+                        rute.map((item) =>
+                            <Link to={item.url}>{item.nameNav2}</Link>
+                        )
+                    }
                     {/* <NavServicios /> */}
                     <ConNosotros>
 
@@ -53,6 +113,31 @@ const DetallesServicios = () => {
                                 )
                             })}<ArrowDropDownIcon /></p>
                         </MobileTitle> */}
+
+                        <div>
+
+                            <p>{text2}</p>
+                            <br />
+                            <p>{paragraph1}</p>
+                            <p>{paragraph2}</p>
+                            <p>{paragraph3}</p>
+                            <p>{paragraph4}</p>
+                            <p>{paragraph5}</p>
+                            <p>{paragraph6}</p>
+                            <p>{paragraph7}</p>
+                            <p>{paragraph8}</p>
+                            <p>{paragraph9}</p>
+                            <p>{paragraph10}</p>
+                            <p>{paragraph11}</p>
+                            <p>{paragraph12}</p>
+                            <p>{paragraph13}</p>
+                            <p>{paragraph14}</p>
+                            <p>{paragraph15}</p>
+                            <p>{paragraph16}</p>
+                            <p>{paragraph17}</p>
+                            <button onClick={handleClick}>{btn1}</button>
+
+                        </div>
 
                         {/* <ContCard1>
                             <ContCard2>

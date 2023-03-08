@@ -40,6 +40,7 @@ const NavEmpresa = () => {
 
     // we assign path to key active
     const user = empresasSub.find(item => item.url === urlPath);
+    // console.log(user)
 
     const [activeKey, setActiveKey] = useState(user.key);
 

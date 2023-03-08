@@ -68,7 +68,10 @@ function App() {
           <Route path="/empresa/politicas" element={<Politicas />} />
 
 
-          <Route path="/servicios/gestion/:id" element={<DetallesServicios/>} />
+          <Route path="/servicios/gestion/:id" element={<DetallesServicios />} />
+          <Route path="/servicios/producto/:id" element={<DetallesServicios />} />
+          <Route path="/servicios/industrial/:id" element={<DetallesServicios />} />
+          <Route path="/servicios/personas/:id" element={<DetallesServicios />} />
 
           </Routes>
 

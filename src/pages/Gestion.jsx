@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link, useParams } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link  } from 'react-router-dom'
 import ContacBar from '../components/ContacBar'
 import { data } from '../data/data'
 import { ContPagesEmpresa } from '../styles/NavEmpresa'
@@ -15,7 +15,11 @@ import { CardServicios, ContCardServicios, ContImage, ContLink } from '../styles
 
 const Gestion = () => {
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
+  
   //Get data
   const [datos] = data;
   const { servicios: { dropDownMenu: { gestion: { name, cardImg, subTitle2, cards } } } } = datos
@@ -31,12 +35,12 @@ const Gestion = () => {
 
   const itemsFind0 = items.slice(0, indice)
   const itemsUrlUp = Object.values(itemsFind0)
-  // console.log(itemsUrlUp)
 
   const itemsFind1 = items.slice(indice + 1)
   const itemsUrlDown = Object.values(itemsFind1)
-  // console.log(itemsUrl)
   //.......................................................
+
+  
 
 
   return (
