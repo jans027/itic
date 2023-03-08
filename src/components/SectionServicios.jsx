@@ -15,14 +15,21 @@ const SectionServicios = () => {
     const serviciosSub = Object.values(servicios.dropDownMenu);
     // console.log(serviciosSub)
 
+    // search word 
+    const boldtWord = "INSPECCIÓN, CERTIFICACIÓN Y ENSAYOS";
+    const parts = servicios.subTitle.split(boldtWord);
+
 
 
     return (
         <>
             <ConSectionServicios>
                 <TitleSection>{servicios.name}</TitleSection>
-                <SubTitleSection>{servicios.subTitle}</SubTitleSection>
-
+                <SubTitleSection>
+                    {parts[0]}
+                    <span style={{ fontWeight: 'bold' }}>{boldtWord}</span>
+                    {parts[1]}
+                </SubTitleSection>
                 <ContCardsServi>
                     {
                         serviciosSub.map((item) =>

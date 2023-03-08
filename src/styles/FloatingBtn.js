@@ -22,7 +22,7 @@ export const ConBtnFloat = styled.div`
         float: right;
     }
     img{
-        width: 4.5vw;
+        width: 4vw;
         min-width: 38px;
         &:hover{
         transform: scale(1.1);

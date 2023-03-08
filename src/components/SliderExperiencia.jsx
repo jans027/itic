@@ -18,7 +18,7 @@ const SliderExperiencias = () => {
         // dots: true,
         infinite: true,
         autoplay: true,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 2,
         initialSlide: 0,
         speed: 3500,

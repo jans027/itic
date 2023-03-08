@@ -76,14 +76,17 @@ const Nosotros = () => {
               <p className='paragraph_section'>{paragraph2}</p>
               <p className='paragraph_section'>{paragraph3}</p>
             </ContNumber1>
+
             <TitleSection><p>{titleSeccion}</p></TitleSection>
             <ConCards>
               {
                 card.map((item) =>
                   <Cards key={item.id}>
                     <Paragraph>
-                      <p className='title_card'>{item.title}</p>
-                      <p className='p_card'>{item.paragraph}</p>
+                      <div>
+                        <p className='title_card'>{item.title}</p>
+                        <p className='p_card'>{item.paragraph}</p>
+                      </div>
                     </Paragraph>
                     <ConImg>
                       <img src={require(`../images/${item.img}`)} alt={item.id} />

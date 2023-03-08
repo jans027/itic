@@ -4,7 +4,7 @@ import { data } from "../data/data";
 // import Slider from "react-slick";
 import largeImage from '../images/banner-ppal.png';
 import smallImage from '../images/banner_ppa_mobile.png'
-import { ContImgCarousel, ContTextBanner } from "../styles/SliderBanner";
+import { ContCardImg, ContImgCarousel, ContTextBanner } from "../styles/SliderBanner";
 
 // get data
 const [datos] = data;
@@ -54,37 +54,37 @@ export default class SimpleSlider extends Component {
             speed: 1300,
             pauseOnHover: true,
             cssEase: "linear",
-            appendDots: dots => (
-                <div
-                    style={{
-                        borderRadius: "10px",
-                        padding: "0px",
-                        top: "10px",
-                        height: "40px",
-                        // marginTop: "-30px",
-                    }}
-                >
-                    <ul style={{ marginTop: "0px", background: "#ECECEC" }}> {dots} </ul>
-                </div>
-            ),
+            // appendDots: dots => (
+            //     <div
+            //         style={{
+            //             borderRadius: "10px",
+            //             padding: "0px",
+            //             top: "10px",
+            //             height: "40px",
+            //             // marginTop: "-30px",
+            //         }}
+            //     >
+            //         <ul style={{ marginTop: "0px", background: "#ECECEC" }}> {dots} </ul>
+            //     </div>
+            // ),
         };
         return (
             <>
                 <ContImgCarousel {...settings}>
-
                     {
                         card.map((item) =>
-                            <div key={item.id}>
-                                <img src={screenWidth < 768 ? smallImage : largeImage} alt="Imagen" />
-                                <ContTextBanner className="ConTexBanner1">
-                                    <h2>{item.title}</h2>
-                                    <p className="textCarrousel">{item.paragraph}</p>
-                                    <Link to="/"><div className="Btn-Banner1">{item.btn}</div></Link>
-                                </ContTextBanner >
-                            </div>
+                            <ContCardImg>
+                                <div key={item.id}>
+                                    <img src={screenWidth < 768 ? smallImage : largeImage} alt="Imagen" />
+                                    <ContTextBanner className="ConTexBanner1">
+                                        <h2>{item.title}</h2>
+                                        <p className="textCarrousel">{item.paragraph}</p>
+                                        <Link to="/"><div className="Btn-Banner1">{item.btn}</div></Link>
+                                    </ContTextBanner >
+                                </div>
+                            </ContCardImg>
                         )
                     }
-
                 </ContImgCarousel>
             </>
         );

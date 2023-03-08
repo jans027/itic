@@ -17,7 +17,7 @@ export const ContNumber1 = styled.div`
     /* border: 2px solid green;//.................... */
     background-color: var(--color2);
     height: max-content;
-    padding: 5em;
+    padding: 5%;
     @media (max-width:800px) {
         padding: 1em;
         display: flex;
@@ -74,7 +74,9 @@ export const TitleSection = styled.div`
 export const ConCards = styled.div`
     /* border: 1px solid red;//.................. */
     background-color: var(--color2);
+    width: 90%;
     padding: 1.5em 0;
+    margin: auto;
     /* flex-direction: column; */
     align-items: center;
     @media (max-width:568px) {
@@ -125,12 +127,20 @@ export const Paragraph = styled.div`
     /* border: 1px solid blue;//................. */
     width: 53%;
     padding: 2.5vw 2.2vw;
-    .title_card{
-        font-size: clamp(20px,2.4vw, 45px);
+    div{
+        /* border: 1px solid blue;//................. */
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .title_card{
+        font-size: clamp(20px,2.2vw, 45px);
         font-weight: 900;
+        margin-bottom: 1rem;
     }
     .p_card{
         font-size: clamp(14px, 1.3vw, 25px);
+    }
     }
     @media (max-width:568px) {
         padding: 1em;
