@@ -13,10 +13,13 @@ import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined
 //styles
 import { AccordionFooter, AddressFooter, BlockNav, BtnFooter, ConAccordion, ConEmprFooter, ConServFooter, ConsultasFooter, ContFooter, ContUlPoliticas, Copy, EnlaceDesplegable, LinkConsulta1, LinkConsultaMovile, LogoFooter, Redes, TitleAccor } from '../styles/Footer';
 //Documents
-import confidencialidad from '../documents/ITIC-C-NA-DI-003-POLITICA-DE-IMPARCIALIDAD-INDEPENDENCIA-Y-CONFIDENCIALIDAD-V7.doc';
-import personas from '../documents/ITIC-C-NA-DI-009-POLITICA-DE-SEGURIDAD-PROCESO-DE-CERTIFICACION-DE-PERSONAS-V2.doc';
-import suspension from '../documents/ITIC-C-NA-DI-010-POLITICA-DE-SUSPENSION-RETIRO-O-REDUCCION-DEL-ALCANCE-DE-CERTIFICACION-PERSONAS-V2.doc';
-import calidad from '../documents/ITIC-C-NA-PL-001-POLITICA-Y-OBJETIVOS-DE-CALIDAD-002.doc';
+import datos_personales from '../documents/1.-POLITICA-DE-PROTECCION-DE-DATOS-PERSONALES.pdf'; 
+import politica_calidad from '../documents/Politica-de-calidad.pdf'; 
+import politica_seguridad from '../documents/Politica-de-gestion-integral-salud-seguridad-y-ambiente-HSE.pdf'; 
+import politica_confidencialidad from '../documents/ITIC-C-NA-DI-003-POLITICA-DE-IMPARCIALIDAD-INDEPENDENCIA-Y-CONFIDENCIALIDAD-V7.pdf'; 
+
+
+
 // Images
 import LogFooter from '../images/Logo-itic-blanco.svg';
 import ModalForm from './ModalForm';
@@ -102,23 +105,23 @@ const Footer = () => {
                     <ContUlPoliticas>
                         <h3>{politicas.name}</h3>
                         <li>
-                            <a href={confidencialidad} rel="noreferrer">
-                                Política de imparcialidad, independencia y confidencialidad
+                            <a target="_blank"  href={datos_personales} rel="noreferrer">
+                                POLITICA DE PROTECCION DE <br /> DATOS PERSONALES 
                             </a>
                         </li>
                         <li>
-                            <a href={personas} rel="noreferrer">
-                                Política de seguridad proceso de <br /> certificación de personas
+                            <a target="_blank" href={politica_calidad} rel="noreferrer">
+                                POLITICA DE LA CALIDAD <br />(SERVICIOS INDUSTRIALES) 
                             </a>
                         </li>
                         <li>
-                            <a href={suspension} rel="noreferrer">
-                                Política de suspensión, retiro o reducción <br /> del alcance de certificación de personas
+                            <a target="_blank" href={politica_seguridad} rel="noreferrer">
+                                POLITICA DE GESTIÓN INTEGRAL SALUD, <br /> SEGURIDAD Y AMBIENTE (HSE) 
                             </a>
                         </li>
                         <li>
-                            <a href={calidad} rel="noreferrer">
-                                Política de la calidad (servicios industriales)
+                            <a target="_blank" href={politica_confidencialidad} rel="noreferrer">
+                                ITIC-C-NA-DI-003 POLITICA DE IMPARCIALIDAD <br /> INDEPENDENCIA Y CONFIDENCIALIDAD 
                             </a>
                         </li>
                         <br />
@@ -196,23 +199,23 @@ const Footer = () => {
                             <AccordionDetails>
                                 <EnlaceDesplegable>
                                     <li>
-                                        <a href={confidencialidad} rel="noreferrer">
-                                            Política de imparcialidad, independencia y confidencialidad
+                                        <a target="_blank" href={datos_personales} rel="noreferrer">
+                                            POLITICA DE PROTECCION DE <br /> DATOS PERSONALES
                                         </a>
                                     </li>
                                     <li>
-                                        <a href={personas} rel="noreferrer">
-                                            Política de seguridad proceso de <br /> certificación de personas
+                                        <a target="_blank" href={politica_calidad} rel="noreferrer">
+                                            POLITICA DE LA CALIDAD <br />(SERVICIOS INDUSTRIALES)
                                         </a>
                                     </li>
                                     <li>
-                                        <a href={suspension} rel="noreferrer">
-                                            Política de suspensión, retiro o reducción <br /> del alcance de certificación de personas
+                                        <a target="_blank" href={politica_seguridad} rel="noreferrer">
+                                            POLITICA DE GESTIÓN INTEGRAL SALUD, <br /> SEGURIDAD Y AMBIENTE (HSE)
                                         </a>
                                     </li>
                                     <li>
-                                        <a href={calidad} rel="noreferrer">
-                                            Política de la calidad (servicios industriales)
+                                        <a target="_blank" href={politica_confidencialidad} rel="noreferrer">
+                                            ITIC-C-NA-DI-003 POLITICA DE IMPARCIALIDAD <br /> INDEPENDENCIA Y CONFIDENCIALIDAD
                                         </a>
                                     </li>
                                     <li>

@@ -32,6 +32,11 @@ import DetallesServicios from "./pages/DetallesServicios";
 
 function App() {
 
+  const gestion = "gestion";
+  const producto = "producto";
+  const industriales = "industriales";
+  const personas = "personas";
+
 
   return (
     <div>
@@ -42,7 +47,7 @@ function App() {
 
           <ScrollToTop />
           <Routes>
-            <Route path="*" element={<Navigate to="/Home" />} />
+          <Route path="*" element={<Navigate to="/Home" />} />
             <Route exact path="/home" element={<Home />} />
             <Route path="/contacto" element={<Contact />} />
             <Route path="/cotizacion" element={<Cotizacion />} />
@@ -68,10 +73,10 @@ function App() {
           <Route path="/empresa/politicas" element={<Politicas />} />
 
 
-          <Route path="/servicios/gestion/:id" element={<DetallesServicios />} />
-          <Route path="/servicios/producto/:id" element={<DetallesServicios />} />
-          <Route path="/servicios/industrial/:id" element={<DetallesServicios />} />
-          <Route path="/servicios/personas/:id" element={<DetallesServicios />} />
+          <Route path="/servicios/gestion/:id" element={<DetallesServicios gestion={gestion} />} />
+          <Route path="/servicios/producto/:id" element={<DetallesServicios producto={producto} />} />
+          <Route path="/servicios/industrial/:id" element={<DetallesServicios industriales={industriales} />} />
+          <Route path="/servicios/personas/:id" element={<DetallesServicios personas={personas} />} />
 
           </Routes>
 
@@ -81,4 +86,6 @@ function App() {
   );
 }
 
+
 export default App;
+

@@ -44,7 +44,7 @@ const SectionServicios = () => {
                                     </ContTextCard>
                                 </div>
                                 <div>
-                                    <EnlaceBtnS to={item.url}>VER MÁS</EnlaceBtnS>
+                                    <EnlaceBtnS to={item.url}>{item.btn1}</EnlaceBtnS>
                                 </div>
                             </CardServicios>
                         )

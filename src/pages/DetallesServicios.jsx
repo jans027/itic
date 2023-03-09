@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link,  useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import BannerServicios from '../components/BannerServicios';
 import ContacBar from '../components/ContacBar';
 // import NavServicios from '../components/NavServicios';
@@ -9,9 +9,15 @@ import { ConNosotros } from '../styles/Nosotros';
 
 
 
-const DetallesServicios = () => {
+const DetallesServicios = (props) => {
 
-    let { id } = useParams();
+    // force window to load on startup
+    function handleClick(e) {
+        e.preventDefault();
+        window.history.back();
+    }
+
+    const { id } = useParams();
 
 
     //get data
@@ -22,61 +28,30 @@ const DetallesServicios = () => {
     const rute2 = Object.values(dropDownMenu.producto.cards);
     const rute3 = Object.values(dropDownMenu.industriales.cards);
     const rute4 = Object.values(dropDownMenu.personas.cards);
-    // console.log(rute)
 
-    // estate of cards...........
-    const [cardDetail, setCardDetail] = useState([])
-    const { text2,
-        paragraph1,
-        paragraph2,
-        paragraph3,
-        paragraph4,
-        paragraph5,
-        paragraph6,
-        paragraph7,
-        paragraph8,
-        paragraph9,
-        paragraph10,
-        paragraph11,
-        paragraph12,
-        paragraph13,
-        paragraph14, 
-        paragraph15, 
-        paragraph16, 
-        paragraph17,
-        btn1 } = cardDetail;
-    // const text = Object.values(paragraph);
+    // obtaining and deconstructing dynamic data
+    const [nuevoDatos, setNuevoDatos] = useState([]);
+    const cardGet = Object.values(nuevoDatos)
 
-    function handleClick(e) {
-        e.preventDefault();
-        window.history.back();
-    }
-
-
-
-
+    // decision tree and prevent ifinite loop
     useEffect(() => {
-        const url = window.location.pathname;
+        if (props.gestion) {
+            const objetoEncontrado = rute1.find((objeto) => objeto.id === id);
+            setNuevoDatos((prevDatos) => [objetoEncontrado]);
 
-        if (url.includes("gestion")) {
-            const user1 = rute1.find(item => item.id === id);
-            setCardDetail(user1)
+        } else if (props.producto) {
+            const objetoEncontrado = rute2.find((objeto) => objeto.id === id);
+            setNuevoDatos((prevDatos) => [objetoEncontrado]);
 
-        } else if (url.includes("producto")) {
-            const user2 = rute2.find(item => item.id === id);
-            setCardDetail(user2)
+        } else if (props.industriales) {
+            const objetoEncontrado = rute3.find((objeto) => objeto.id === id);
+            setNuevoDatos((prevDatos) => [objetoEncontrado]);
 
-        } else if (url.includes("industrial")) {
-            const user3 = rute3.find(item => item.id === id);
-            setCardDetail(user3)
-
-        } else if (url.includes("personas")) {
-            const user4 = rute4.find(item => item.id === id);
-            setCardDetail(user4)
+        } else if (props.personas) {
+            const objetoEncontrado = rute4.find((objeto) => objeto.id === id);
+            setNuevoDatos((prevDatos) => [objetoEncontrado]);
         }
-    }, []);
-
-
+    }, [])
 
 
 
@@ -86,7 +61,7 @@ const DetallesServicios = () => {
             <BannerServicios />
             <ContPagesEmpresa>
                 <div className='ContSectionEm'>
-                    <h1>{id}</h1>
+
                     {
                         rute.map((item) =>
                             <Link to={item.url}>{item.nameNav2}</Link>
@@ -116,26 +91,25 @@ const DetallesServicios = () => {
 
                         <div>
 
-                            <p>{text2}</p>
-                            <br />
-                            <p>{paragraph1}</p>
-                            <p>{paragraph2}</p>
-                            <p>{paragraph3}</p>
-                            <p>{paragraph4}</p>
-                            <p>{paragraph5}</p>
-                            <p>{paragraph6}</p>
-                            <p>{paragraph7}</p>
-                            <p>{paragraph8}</p>
-                            <p>{paragraph9}</p>
-                            <p>{paragraph10}</p>
-                            <p>{paragraph11}</p>
-                            <p>{paragraph12}</p>
-                            <p>{paragraph13}</p>
-                            <p>{paragraph14}</p>
-                            <p>{paragraph15}</p>
-                            <p>{paragraph16}</p>
-                            <p>{paragraph17}</p>
-                            <button onClick={handleClick}>{btn1}</button>
+                            {
+                                cardGet.map((item) =>
+                                    <div key={item.id}>
+                                        <p>{item.text2}</p>
+                                        <span>
+                                            <p>{item.paragraph1.split('\n').map((line, i) => {
+                                                return (
+                                                    <React.Fragment key={i}>
+                                                        {line}
+                                                        <br />
+                                                    </React.Fragment>
+                                                )
+                                            })}</p>
+                                        </span>
+                                        <button onClick={handleClick}>{item.btn1}</button>
+                                    </div>
+
+                                )
+                            }
 
                         </div>
 

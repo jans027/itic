@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const ContCardPol = styled.div`
@@ -17,8 +18,10 @@ export const ContCardPol = styled.div`
         padding: 2em .5em;
     }
 `
-export const CardPol = styled.div`
+export const CardPol = styled(Link)`
     /* border: 1px solid red;//............... */
+    color: var(--color4);
+    text-decoration: none;
     width: clamp(152px, 16vw, 285px);
     height: auto;
     padding: 1em;
