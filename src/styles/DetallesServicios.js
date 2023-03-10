@@ -21,7 +21,7 @@ export const ContNavigationPc = styled.div`
             border-radius: .8em;
             padding: 1em;
             &:hover{
-                border: 2px solid var(--color1);
+                /* border: 2px solid var(--color1); */
             }
             p{
                 font-size: 1.5em;
@@ -30,9 +30,65 @@ export const ContNavigationPc = styled.div`
         }
     }
 `
-
-
-
+export const ContImgPc = styled.div`
+    /* border: 1px solid red;//.................. */
+    height: 250px;
+    overflow: hidden;
+    @media (max-width:450px) {
+        display: none;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+`
+export const ContImgMobile = styled.div`
+    /* border: 1px solid red;//.................. */
+    display: none;
+    @media (max-width:450px) {
+        display: block;
+    }
+`
+export const TitleSection = styled.h1`
+    /* border: 1px solid red;//.................. */
+    width: 82%;
+    margin: auto;
+    font-size: 57px;
+    font-weight: 900;
+    padding: 45px 0;
+`
+export const ParagraphSection = styled.p`
+    /* border: 1px solid red;//.................. */
+    width: 82%;
+    margin: auto;
+    font-size: 23px;
+`
+export const ButtonSection = styled.div`
+    /* border: 1px solid red;//.................. */
+    width: 82%;
+    margin: auto;
+    padding: 45px 0;
+    div{
+        margin: auto;
+        width: 490px;
+        height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 1em;
+        font-size: 30px;
+        font-weight: 800;
+        background-color: var(--color4);
+        color: var(--color5);
+        &:hover{
+            background-color: var(--color1);
+            color: var(--color4);
+        }
+    }
+`
 
 
 

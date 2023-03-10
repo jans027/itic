@@ -22,8 +22,8 @@ export const CardPol = styled(Link)`
     /* border: 1px solid red;//............... */
     color: var(--color4);
     text-decoration: none;
-    width: clamp(152px, 16vw, 285px);
-    height: auto;
+    width: clamp(130px, 12vw, 220px);
+    height: clamp(170px, 17vw, 280px);
     padding: 1em;
     border-radius: 30px;
     display: flex;
@@ -46,7 +46,7 @@ export const CardPol = styled(Link)`
         /* border: 1px solid blue;//............... */
         p{
             text-align: center;
-            font-size: clamp(13px, 1vw, 16px);
+            font-size: clamp(10px, .9vw, 15px);
         }
     }
 

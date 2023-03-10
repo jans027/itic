@@ -6,7 +6,7 @@ import BannerServicios from '../components/BannerServicios';
 import ContacBar from '../components/ContacBar';
 // import NavServicios from '../components/NavServicios';
 import { data } from '../data/data';
-import { ContNavigationPc } from '../styles/DetallesServicios';
+import { ButtonSection, ContImgMobile, ContImgPc, ContNavigationPc, ParagraphSection, TitleSection } from '../styles/DetallesServicios';
 import { ContPagesEmpresa } from '../styles/NavEmpresa';
 import { ConNosotros } from '../styles/Nosotros';
 
@@ -126,22 +126,24 @@ const DetallesServicios = (props) => {
 
                         <div>
 
-                            {
+                            { 
                                 cardGet.map((item) =>
-                                    <div key={item.id}>
-                                        <p>{item.text2}</p>
+                                    <div key={item.id}  >
                                         <Helmet><title>{`${item.helmet} – ITIC Colombia`}</title></Helmet>
+                                        <ContImgPc><img src={require(`../images/${item.imgPc}`)} alt={item.id} /></ContImgPc>
+                                        <ContImgMobile><img src={require(`../images/${item.imgMobile}`)} alt={item.id} /></ContImgMobile>
+                                        <TitleSection>{item.text2}</TitleSection>
                                         <span>
-                                            <p>{item.paragraph1.split('\n').map((line, i) => {
+                                            <ParagraphSection>{item.paragraph1.split('\n').map((line, i) => {
                                                 return (
                                                     <React.Fragment key={i}>
                                                         {line}
                                                         <br />
                                                     </React.Fragment>
                                                 )
-                                            })}</p>
+                                            })}</ParagraphSection>
                                         </span>
-                                        <button onClick={handleClick}>{item.btn1}</button>
+                                        <ButtonSection ><div onClick={handleClick}>{item.btn1}</div></ButtonSection>
                                     </div>
 
                                 )

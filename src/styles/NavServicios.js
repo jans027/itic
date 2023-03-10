@@ -52,7 +52,7 @@ export const ContNavServicios = styled.div`
             border-radius: .8em;
             padding: 1em;
             &:hover{
-                border: 2px solid var(--color1);
+                /* border: 2px solid var(--color1); */
             }
             p{
                 font-size: 1.5em;

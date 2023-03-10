@@ -23,48 +23,83 @@ export const ContPilares1 = styled.div`
         align-items: center;
     }
 `
-export const Cards01 = styled.div`
-    /* border: 1px solid red;//..................... */
-    width: clamp(312px, 25vw, 500px);
-    height: auto;
-    border-radius: 1.5rem;
-    text-align: center;
-    padding: 1.3em;
-    -webkit-box-shadow: 2px 2px 7px 3px rgba(0,0,0,0.33); 
-    box-shadow: 2px 2px 7px 3px rgba(0,0,0,0.33);
-    background-color: var(--color5);
-    @media (max-width:990px) {
-        display: none;
+export const ConCardsPi = styled.div`
+    /* border: 1px solid red;//.................. */
+    background-color: var(--color2);
+    width: 90%;
+    padding: 1em 0;
+    margin: auto;
+    /* flex-direction: column; */
+    align-items: center;
+    @media (max-width:568px) {
+        display: flex;
+        flex-direction:column;
     }
-    @media (max-width:1685px) {
-        /* width: 95%!important; */
-        /* height: 484px; */
-        margin: 20px;
-    }
-    img{
-        border-radius: 50%;
-        width: clamp(150px, 11vw, 200px);
-        height: auto;
-        border: 10px solid var(--color1);
-    }
-    .title_p01{
-        font-size: 1.5em;
-        font-weight: 900;
-        margin: 1rem 0;
-    }
-    .paragraph_p01{
-        /* border: 1px solid red;//.................. */
-        font-size: clamp(14px, 1.1vw, 20px);
-        text-align: left;
+    @media (max-width:1270px) {
+        width: 90%;
+        margin: auto;
     }
 `
-export const Contcards1 = styled.div`
-    /* border: 1px solid red;//................. */
+export const CardsPi = styled.div`
+    /* border: 1px solid blue;//.................. */
+    width: 100%;
+    height: clamp(380px, 30vw, 450px);
+    /* max-height: 420px;
+    min-height: 250px; */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    background-color: var(--color2);
+    background-color: var(--color3);
+    margin-bottom: 2rem;
+    @media (max-width:568px) {
+        flex-wrap:wrap;
+        height: 600px;
+        width: 318px;
+    }
+    &:nth-child(even){
+        flex-direction: row-reverse;
+        background-color: var(--color1);
+    }
+    
+
+`
+export const ConImgPi = styled.div`
+    /* border: 1px solid red;//................. */
+    width: 47%;
+    overflow: hidden;
+    @media (max-width:568px) {
+        height:50%;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position:center center;
+    }
+`
+export const ParagraphPi = styled.div`
+    /* border: 1px solid blue;//................. */
+    width: 53%;
+    padding: 2.5vw 2.2vw;
+    div{
+    /* border: 1px solid blue;//................. */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .title_card{
+        font-size: clamp(16px, 1.8vw, 40px);
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+    .p_card{
+        font-size: clamp(14px, .9vw, 25px);
+    }
+    }
+    @media (max-width:568px) {
+        padding: 1em;
+        width: 100%;
+        height:50%;
+    }
 `
 export const ContCards2 = styled.div`
     /* border: 1px solid red;//.................... */
@@ -115,10 +150,11 @@ export const ConImgP = styled.div`
     }
 `
 export const ConParagraphP =styled.div`
+    /* border: 1px solid red;//.................... */
     width: 37rem;
     height: 25rem;
     text-align: justify;
-    padding: 2.7vw;
+    padding: 1vw;
     @media (max-width:740px) {
             width: 100%;
             height: 50%;
@@ -129,11 +165,14 @@ export const ConParagraphP =styled.div`
         height: auto;
     }
     .title_p02{
+        /* border: 1px solid red;//.................... */
         font-size: clamp(30px, 2.5vw, 57px);
         font-weight:900;
+        padding-bottom: 1em;
     }
     .paragraph_p02{
-        font-size: clamp(14px, 2.5vw, 23px);
+        /* border: 1px solid blue;//.................... */
+        font-size: clamp(14px, 1.2vw, 23px);
         text-align: left;
 
     }

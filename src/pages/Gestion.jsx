@@ -23,7 +23,7 @@ const Gestion = () => {
   
   //Get data
   const [datos] = data;
-  const { servicios: { dropDownMenu: { gestion: { name, cardImg, subTitle2, cards } } } } = datos
+  const { servicios: { dropDownMenu: { gestion: {helmet, name, cardImg, subTitle2, cards } } } } = datos
 
   // extract values of cards
   const card = Object.values(cards);
@@ -46,7 +46,7 @@ const Gestion = () => {
 
   return (
     <>
-      <Helmet><title>Sistemas de Gestión – ITIC Colombia</title></Helmet>
+      <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
       <BannerServicios />
       <ContPagesEmpresa>
         <div className='ContSectionEm'>

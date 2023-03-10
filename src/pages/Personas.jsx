@@ -11,6 +11,7 @@ import BannerServicios from '../components/BannerServicios'
 import { ContCard1, ContCard2, ContImg1, ContText1 } from '../styles/Gestion'
 import { CardServicios, ContCardServicios, ContImage, ContLink } from '../styles/CardsServicios';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
+import { Helmet } from 'react-helmet'
 
 
 const Personas = () => {
@@ -22,7 +23,7 @@ const Personas = () => {
   
   //Get data
   const [datos] = data;
-  const { servicios: { dropDownMenu: { personas: { name, cardImg, subTitle2, cards } } } } = datos
+  const { servicios: { dropDownMenu: { personas: { helmet, name, cardImg, subTitle2, cards } } } } = datos
 
   // extract values of cards
   const card = Object.values(cards);
@@ -47,6 +48,8 @@ const Personas = () => {
 
   return (
     <>
+      <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
+
       <BannerServicios />
       <ContPagesEmpresa>
         <div className='ContSectionEm'>

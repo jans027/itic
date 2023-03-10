@@ -11,6 +11,7 @@ import BannerServicios from '../components/BannerServicios'
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { ContCard1, ContCard2, ContImg1, ContText1 } from '../styles/Gestion'
 import { CardServicios, ContCardServicios, ContImage, ContLink } from '../styles/CardsServicios'
+import { Helmet } from 'react-helmet'
 
 const Producto = () => {
 
@@ -21,7 +22,7 @@ const Producto = () => {
     
     //Get data
     const [datos] = data;
-    const { servicios: { dropDownMenu: { producto: { name, cardImg, subTitle2, cards } } } } = datos
+    const { servicios: { dropDownMenu: { producto: {helmet, name, cardImg, subTitle2, cards } } } } = datos
 
 
     // extract values of cards
@@ -47,6 +48,7 @@ const Producto = () => {
 
     return (
         <>
+            <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
             <BannerServicios />
             <ContPagesEmpresa>
                 <div className='ContSectionEm'>

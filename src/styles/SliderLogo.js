@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ContSlideLogo = styled.div`
     /* border: 1px solid red;//.................. */
-    padding:1rem 0;
+    margin-bottom:3rem;
     .slideCont2{
         /* border: 1px solid red;//............... */
         width: 90%;

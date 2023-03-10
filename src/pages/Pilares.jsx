@@ -5,8 +5,8 @@ import ContacBar from '../components/ContacBar'
 import NavEmpresa from '../components/NavEmpresa'
 import { data } from '../data/data'
 import { ContPagesEmpresa } from '../styles/NavEmpresa'
-import { ConNosotros, MenuMobileNos, MobileTitle } from '../styles/Nosotros'
-import { Cards01, Cards02, ConImgP, ConParagraphP, Contcards1, ContCards2, ContPilares1 } from '../styles/Pilares'
+import { Cards, ConCards, ConImg, ConNosotros, MenuMobileNos, MobileTitle, Paragraph } from '../styles/Nosotros'
+import { Cards01, Cards02, CardsPi, ConCardsPi, ConImgP, ConImgPi, ConParagraphP, Contcards1, ContCards2, ContPilares1, ParagraphPi } from '../styles/Pilares'
 import CarouselPilares from '../components/CarouselPilares'
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -75,19 +75,23 @@ const Pilares = () => {
             <ContPilares1>
               <div className='titleP'>{title}</div>
 
-              <Contcards1>
+              <ConCardsPi>
                 {
                   card1.map((item) =>
-                    <Cards01 key={item.id}>
-                      <img src={require(`../images/${item.img}`)} alt={item.id} />
-                      <p className='title_p01'>{item.title}</p>
-                      <p className='paragraph_p01'>{item.text}</p>
-                    </Cards01>
+                    <CardsPi key={item.id}>
+                      <ParagraphPi>
+                        <div>
+                          <p className='title_card'>{item.title}</p>
+                          <p className='p_card'>{item.text}</p>
+                        </div>
+                      </ParagraphPi>
+                      <ConImgPi>
+                        <img src={require(`../images/${item.img}`)} alt={item.id} />
+                      </ConImgPi>
+                    </CardsPi >
                   )
                 }
-              </Contcards1>
-
-              <CarouselPilares/>
+              </ConCardsPi>
 
             </ContPilares1>
             <ContCards2>

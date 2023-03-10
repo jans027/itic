@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import { data } from '../data/data';
 import { ContSliderAcr } from '../styles/SecAcreditaciones';
 import { CardExperiencia2, ConSliderExp2, ContCardExperiencia2 } from '../styles/SliderExperiencia';
@@ -8,9 +9,11 @@ const SliderExperiencias = () => {
 
     // get data
     const [datos] = data;
-    const { empresa: { dropDownMenu: { proyectos: { cards } } } } = datos;
+    const { empresa: { dropDownMenu: { proyectos: { url, cards } } } } = datos;
     const card = Object.values(cards);
-    // console.log(card)
+
+
+
 
 
     // silder......
@@ -52,15 +55,19 @@ const SliderExperiencias = () => {
                             <div className='sub_cont_card2'>
                                 <ContCardExperiencia2 className='global-card-slider' key={item.id}>
                                     <CardExperiencia2 className='cardExperiencia'>
-                                        <div>
-                                            <img src={require(`../images/${item.img}`)} alt={item.name} />
-                                        </div>
-                                        <span className='cardTitle'>
-                                            <p>{item.title}</p>
-                                        </span>
-                                        <span className='cardText'>
-                                            <p>{item.text}</p>
-                                        </span>
+                                        <Link to={url}>
+                                            <div>
+                                                <img src={require(`../images/${item.img}`)} alt={item.name} />
+                                            </div>
+                                            <span className='cardTitle'>
+                                                <p>{item.title}</p>
+                                            </span>
+                                            <span className='cardText'>
+                                                {/*limit the numbers of words on a card */}
+                                                <p>{item.text.split(' ').slice(0, 10).join(' ')}{item.text.split(' ').length > 10 ? '' : ''}</p>
+                                                <p>. . . VER MÁS</p>
+                                            </span>
+                                        </Link>
                                     </CardExperiencia2>
                                 </ContCardExperiencia2>
                             </div>
