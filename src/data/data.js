@@ -52,7 +52,7 @@ export const data = [
           nameNav2: "Acerca de nosotros",
           nameFooter: "Acerca de nosotros",
           url: "/empresa/nosotros",
-          img: "PRODUCTO.png",
+          img: "Nosotros/img-empresa.png",
           paragraph1:
             "Somos una empresa con Orientación social, buscamos profesionales comprometidos con nuestros valores empresariales en búsqueda de EXCELENCIA OPERACIONAL E INTEGRIDAD en nuestros servicios.",
           paragraph2:
@@ -63,28 +63,28 @@ export const data = [
           cards: {
             card0: {
               id: "card0",
-              img: "img-empresa-prueba.png",
+              img: "Nosotros/Acerca-1.png",
               title: "TRANSFORMACIÓN DIGITAL",
               paragraph:
                 "Construimos soluciones digitales personalizadas para mejorar la eficiencia de los procesos, con el fin de ahorrar recursos y facilitar la toma de decisiones, basadas en datos.",
             },
             card1: {
               id: "card1",
-              img: "img-empresa-prueba.png",
+              img: "Nosotros/Acerca-2.png",
               title: "INTEGRIDAD",
               paragraph:
                 "La excelencia operacional, el desarrollo de soluciones a la medida y el ahorro de recursos son clave para el éxito. Estamos constantemente buscando maneras de mejorar y optimizar nuestros procesos con el fin de superar continuamente nuestras metas.",
             },
             card2: {
               id: "card2",
-              img: "img-empresa-prueba.png",
+              img: "Nosotros/Acerca-3.png",
               title: "EXCELENCIA OPERACIONAL",
               paragraph:
                 "La excelencia operacional, el desarrollo de soluciones a la medida y el ahorro de recursos son clave para el éxito. Estamos constantemente buscando maneras de mejorar y optimizar nuestros procesos con el fin de superar continuamente nuestras metas.",
             },
             card3: {
               id: "card3",
-              img: "img-empresa-prueba.png",
+              img: "Nosotros/Acerca-4.png",
               title: "EXPERIENCIA TÉCNICA",
               paragraph:
                 "Nacimos hace 12 años como empresa filial de un grupo Alemán, en el 2023 como empresa nacional contamos con un equipo altamente calificado y experimentado, con presencia en varios países de Latinoamérica.",
@@ -129,13 +129,13 @@ export const data = [
           cards1: {
             card0: {
               id: "card1-0",
-              img: "modal-certificado.jpg",
+              img: "Nosotros/Mision.png",
               title: "MISIÓN",
               text: "Nuestra misión es proporcionar servicios de inspección, certificación y ensayos con los más altos estándares de calidad para garantizar la seguridad, calidad y cumplimiento de las normas en diversos sectores, transformando la industria, brindando agilidad, protección y valor agregado a nuestros clientes.",
             },
             card1: {
               id: "card1-1",
-              img: "modal-certificado.jpg",
+              img: "Nosotros/Vision.png",
               title: "VISIÓN",
               text: "Para el 2025 seremos reconocidos como transformadores de la industria de certificación, inspección y ensayos a través de la innovación y el desarrollo de tecnologías avanzadas para brindar soluciones personalizadas y agregar valor a nuestros clientes, siendo una empresa ética y socialmente responsable que contribuye al desarrollo sostenible de la región. ",
             },
@@ -351,7 +351,7 @@ export const data = [
           cards: {
             card1: {
               id: "proyect1",
-              img: "Experiencia/alcanos_industrial.png", 
+              img: "Experiencia/Proyecto7.png", 
               title: "ALCANOS",
               text: "Prestamos el servicio de interventoría en construcción de redes de construcciones de distribución de gas natural, servicios asociados ...MAS",
             },
@@ -375,7 +375,7 @@ export const data = [
             },
             card5: {
               id: "proyect5",
-              img: "Experiencia/gases_del _oriente.png",
+              img: "Experiencia/Proyecto5.png",
               title: "GASES DEL ORIENTE",
               text: "Servicio de Interventoría a obras Civiles y Mecánicas para la construcción de 3600 m de red primaria y facilidades en el tramo de Patillales – Cerrito del Municipio de Cúcuta.",
             },
@@ -405,7 +405,7 @@ export const data = [
             },
             card10: {
               id: "proyect10",
-              img: "Experiencia/uptc.jpeg",
+              img: "Experiencia/Proyecto8.png",
               title: "UPTC",
               text: "Certificada bajo las normas ISO 9001:2015, ISO 14001:2015, ISO 45001:2018, ISO 27001, ISO 20000-1:2018",
             },
@@ -423,13 +423,13 @@ export const data = [
             },
             card13: {
               id: "proyect13",
-              img: "Experiencia/alcanos_personas.png",
+              img: "Experiencia/Proyecto6.png",
               title: "ALCANOS",
               text: "Procesos de certificación de personas en evaluación de competencias laborales para instaladores e inspectores de gas natural residencial y comercial en:Cundinamarca, Tolima, Huila, Nariño, Cauca,Antioquia Caldas",
             },
             card14: {
               id: "proyect14",
-              img: "Experiencia/llanogas.png",
+              img: "Experiencia/Proyecto4.png",
               title: "LLANOGAS",
               text: "Procesos de certificación en evaluación de competencias laborales para instaladores e inspectores de gas natural residencial y comercial en la región del Meta.",
             },
@@ -502,7 +502,7 @@ export const data = [
         politicas: {
           key: 7,
           id: "politicas",
-          name: "POLÍTICAS, CÓDIGOS \nY REGLAMENTOS",
+          name: "POLÍTICAS, CÓDIGOS Y REGLAMENTOS",
           nameNav2: "Políticas, códigos \ny reglamentos",
           url: "/empresa/politicas",
           banner1: "",

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom';
+import styled from 'styled-components';
 import BannerServicios from '../components/BannerServicios';
 import ContacBar from '../components/ContacBar';
 // import NavServicios from '../components/NavServicios';
 import { data } from '../data/data';
+import { ContNavigationPc } from '../styles/DetallesServicios';
 import { ContPagesEmpresa } from '../styles/NavEmpresa';
 import { ConNosotros } from '../styles/Nosotros';
 
@@ -16,9 +18,8 @@ const DetallesServicios = (props) => {
         e.preventDefault();
         window.history.back();
     }
-
+    // import prop from app.js
     const { id } = useParams();
-
 
     //get data
     const [datos] = data
@@ -33,25 +34,37 @@ const DetallesServicios = (props) => {
     const [nuevoDatos, setNuevoDatos] = useState([]);
     const cardGet = Object.values(nuevoDatos)
 
+    const [idProp, setIdProp] = useState()
+    // console.log(idProp)
+
     // decision tree and prevent ifinite loop
     useEffect(() => {
         if (props.gestion) {
             const objetoEncontrado = rute1.find((objeto) => objeto.id === id);
             setNuevoDatos((prevDatos) => [objetoEncontrado]);
+            setIdProp(props.gestion);
 
         } else if (props.producto) {
             const objetoEncontrado = rute2.find((objeto) => objeto.id === id);
             setNuevoDatos((prevDatos) => [objetoEncontrado]);
+            setIdProp(props.producto);
 
         } else if (props.industriales) {
             const objetoEncontrado = rute3.find((objeto) => objeto.id === id);
             setNuevoDatos((prevDatos) => [objetoEncontrado]);
+            setIdProp(props.industriales);
 
         } else if (props.personas) {
             const objetoEncontrado = rute4.find((objeto) => objeto.id === id);
             setNuevoDatos((prevDatos) => [objetoEncontrado]);
+            setIdProp(props.personas);
+
         }
     }, [])
+
+    // we assign path to key active
+    const user = rute.find(item => item.id === idProp);
+
 
 
 
@@ -62,11 +75,33 @@ const DetallesServicios = (props) => {
             <ContPagesEmpresa>
                 <div className='ContSectionEm'>
 
-                    {
-                        rute.map((item) =>
-                            <Link to={item.url}>{item.nameNav2}</Link>
-                        )
-                    }
+
+                    <ContNavigationPc>
+                        {
+                            rute.map((item) =>
+                                <Link
+                                    to={item.url}
+                                    key={item.key}
+                                    id={item.id}
+                                    >
+                                
+                                    
+                                    <div style={{ backgroundColor: idProp === item.id ? '#9cff2d' : '#ffffff' }}>
+                                        <p>
+                                            {item.nameNav2.split('\n').map((line, i) => {
+                                                return (
+                                                    <React.Fragment key={i}>
+                                                        {line}
+                                                        <br />
+                                                    </React.Fragment>
+                                                )
+                                            })}
+                                        </p>
+                                    </div>
+                                </Link>
+                            )
+                        }
+                    </ContNavigationPc>
                     {/* <NavServicios /> */}
                     <ConNosotros>
 

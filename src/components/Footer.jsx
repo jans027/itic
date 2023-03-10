@@ -121,7 +121,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <a target="_blank" href={politica_confidencialidad} rel="noreferrer">
-                                ITIC-C-NA-DI-003 POLITICA DE IMPARCIALIDAD <br /> INDEPENDENCIA Y CONFIDENCIALIDAD 
+                                ITIC-C-NA-DI-003 POLITICA DE IMPARCIALIDAD INDEPENDENCIA Y CONFIDENCIALIDAD 
                             </a>
                         </li>
                         <br />

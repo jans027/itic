@@ -162,6 +162,7 @@ export const MenuMobileNos = styled.div`
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                font-weight: 800;
             }
         }
         @media (max-width:1270px) {
@@ -174,7 +175,7 @@ export const MobileTitle = styled.div`
     color: var(--color4);
     display: none;
     p{
-        font-weight: 600;
+        font-weight: 800;
         height: 100%;
         display: flex;
         justify-content: center;

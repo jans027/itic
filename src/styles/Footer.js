@@ -97,7 +97,7 @@ export const ConEmprFooter = styled.div`
             border-bottom: var(--color1) ;
             a{
                 text-decoration:none;
-                font-size: 1.1rem;
+                font-size: .9rem;
                 font-weight: 500;
                 line-height: 1.8rem;
                 &:hover{
@@ -124,7 +124,7 @@ export const ConServFooter = styled.div`
             border-bottom: var(--color1) ;
             a{
                 text-decoration:none;
-                font-size: 1.1rem;
+                font-size: .9rem;
                 font-weight: 500;
                 line-height: 1.8rem;
                 &:hover{
@@ -148,6 +148,7 @@ export const LogoFooter = styled.div`
     }
 `
 export const AddressFooter = styled.span`
+            /* border: 1px solid white;//................... */
         display: flex;
         flex-direction: column;
         @media (max-width:1070px) {
@@ -178,7 +179,7 @@ export const AddressFooter = styled.span`
         .address{
             width: 100%;
             margin-bottom: 0;
-            font-size: 18px;
+            font-size: .9rem;
             @media (max-width:768px) {
                 padding-bottom:.7em;
                 font-size: 16px;
@@ -189,7 +190,7 @@ export const AddressFooter = styled.span`
         }
         .building{
             padding-left:3em;
-            font-size: 18px;
+            font-size: .9rem;
             @media (max-width:768px) {
                 font-size: 15px;
                 padding-bottom:21PX;
@@ -207,7 +208,7 @@ export const ConsultasFooter = styled.div`
             width: max-content;
         }
         p{
-            font-size: 1.1em;
+            font-size: .9em;
             font-weight: 600;
             padding: 1rem 0;
             @media (max-width:768px) {
@@ -217,8 +218,10 @@ export const ConsultasFooter = styled.div`
         }
         a{
             text-decoration:none;
-            font-size: clamp(22px, 1.1vw, 30px);
-            /* border: 1px solid red;//............... */
+            font-size: clamp(22px, 1vw, 30px);
+            &:nth-child(2){
+                font-size: .9rem;
+            }
             &:hover{
                 color: var(--color1);
             }
@@ -241,10 +244,10 @@ export const ContUlPoliticas = styled.ul`
         padding: .5em 0;
         transition: 3ms;
         border-bottom: var(--color1) ;
-        padding: .6rem 0;
+        padding: .6rem;
         a{
             text-decoration:none;
-            font-size:1.1rem;
+            font-size:.9rem;
             font-weight: 400;
             &:hover{
                 color: var(--color1);
@@ -317,7 +320,7 @@ export const BtnFooter = styled(Link)`
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        font-weight: 700!important;
+        font-weight: 900!important;
         border-radius: 1.5rem;
         text-align: center;
         @media (max-width:1490px) {
@@ -325,7 +328,7 @@ export const BtnFooter = styled(Link)`
             font-size: 14px;
             font-weight: 400;
             width: 100%;
-            margin: 10px 0;
+            /* margin: 5px 0; */
         }
         &:active{
         background-color:var(--color8);

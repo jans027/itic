@@ -12,7 +12,7 @@ export const ContCardServicios = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     @media (max-width:1270px) {
-        max-width:670px;
+        max-width:660px;
         width: 100%;
     }
 `
@@ -31,7 +31,7 @@ export const CardServicios = styled.div`
 `
 export const ContImage = styled.div`
     /* border: 1px solid red;//................... */
-    height: 80%;
+    height: 70%;
     border-radius: 30px 30px 0 0;
     overflow: hidden;
     img{
@@ -45,7 +45,7 @@ export const ContLink = styled(Link)`
     text-decoration:none;
     
 div{
-    height: 20%;
+    height: 30%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,9 +60,10 @@ div{
     }
 }
 p{
-    font-size: clamp(10px,1.5vw,27px);
+    font-size: clamp(10px,1.5vw,26px);
     font-weight: 700;
     color: var(--color5);
+    text-align: center;
 }
     
 svg{
