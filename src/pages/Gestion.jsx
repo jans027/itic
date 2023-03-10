@@ -11,6 +11,7 @@ import BannerServicios from '../components/BannerServicios'
 import {  ContCard1, ContCard2, ContImg1, ContText1 } from '../styles/Gestion'
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 import { CardServicios, ContCardServicios, ContImage, ContLink } from '../styles/CardsServicios'
+import { Helmet } from 'react-helmet'
 
 
 const Gestion = () => {
@@ -45,6 +46,7 @@ const Gestion = () => {
 
   return (
     <>
+      <Helmet><title>Sistemas de Gestión – ITIC Colombia</title></Helmet>
       <BannerServicios />
       <ContPagesEmpresa>
         <div className='ContSectionEm'>

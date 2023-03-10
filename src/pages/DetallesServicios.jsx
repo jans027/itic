@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Helmet } from 'react-helmet';
 import { Link, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import BannerServicios from '../components/BannerServicios';
@@ -35,7 +36,7 @@ const DetallesServicios = (props) => {
     const cardGet = Object.values(nuevoDatos)
 
     const [idProp, setIdProp] = useState()
-    // console.log(idProp)
+
 
     // decision tree and prevent ifinite loop
     useEffect(() => {
@@ -64,13 +65,14 @@ const DetallesServicios = (props) => {
 
     // we assign path to key active
     const user = rute.find(item => item.id === idProp);
-
+    console.log(cardGet)
 
 
 
 
     return (
         <>
+            <Helmet><title>{`${idProp} – ITIC Colombia`}</title></Helmet>
             <BannerServicios />
             <ContPagesEmpresa>
                 <div className='ContSectionEm'>

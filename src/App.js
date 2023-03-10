@@ -37,30 +37,31 @@ function App() {
   const industriales = "industriales";
   const personas = "personas";
 
-
   return (
     <div>
-        <GlobalStyles />
-        <Router>
-          <NavBar />
-          <FloatingBtn />
+      
 
-          <ScrollToTop />
-          <Routes>
+      <GlobalStyles />
+      <Router>
+        <NavBar />
+        <FloatingBtn />
+
+        <ScrollToTop />
+        <Routes>
           <Route path="*" element={<Navigate to="/Home" />} />
-            <Route exact path="/home" element={<Home />} />
-            <Route path="/contacto" element={<Contact />} />
-            <Route path="/cotizacion" element={<Cotizacion />} />
-            <Route
-              path="https//api.whatsapp.com/send?phone=573186396096"
-              element={<FloatingBtn />}
-            />
+          <Route exact path="/home" element={<Home />} />
+          <Route path="/contacto" element={<Contact />} />
+          <Route path="/cotizacion" element={<Cotizacion />} />
+          <Route
+            path="https//api.whatsapp.com/send?phone=573186396096"
+            element={<FloatingBtn />}
+          />
 
           <Route path="/servicios/gestion" element={<Gestion />} />
-            <Route path="/servicios/producto" element={<Producto />} />
-            <Route path="/servicios/industrial" element={<Industrial />} />
-            <Route path="/servicios/personas" element={<Personas />} />
-            <Route path="/servicios/documentos" element={<Documentos />} />
+          <Route path="/servicios/producto" element={<Producto />} />
+          <Route path="/servicios/industrial" element={<Industrial />} />
+          <Route path="/servicios/personas" element={<Personas />} />
+          <Route path="/servicios/documentos" element={<Documentos />} />
 
           <Route path="/empresa/nosotros" element={<Nosotros />} />
           <Route path="/empresa/documentos" element={<Documentos />} />
@@ -78,10 +79,10 @@ function App() {
           <Route path="/servicios/industrial/:id" element={<DetallesServicios industriales={industriales} />} />
           <Route path="/servicios/personas/:id" element={<DetallesServicios personas={personas} />} />
 
-          </Routes>
+        </Routes>
 
-          <Footer />
-        </Router>
+        <Footer />
+      </Router>
     </div>
   );
 }
