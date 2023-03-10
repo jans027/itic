@@ -4,7 +4,7 @@ import BannerEmpresa from '../components/BannerEmpresa'
 import ContacBar from '../components/ContacBar'
 import NavEmpresa from '../components/NavEmpresa'
 import SliderLogoExperiencia from '../components/SliderLogoExperiencia'
-import SliderTestimonio1 from '../components/SliderTestimonio1'
+// import SliderTestimonio1 from '../components/SliderTestimonio1'
 import { data } from '../data/data'
 import { ContPagesEmpresa } from '../styles/NavEmpresa'
 import { ConNosotros, MenuMobileNos, MobileTitle } from '../styles/Nosotros'
@@ -12,6 +12,7 @@ import { CardProyect, ContCardProyect, TitleSectionPro } from '../styles/Proyect
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import SliderExperiencias from '../components/SliderExperiencia'
+import { Helmet } from 'react-helmet'
 
 
 
@@ -19,7 +20,7 @@ const Proyectos = () => {
 
   //get data
   const [datos] = data;
-  const { empresa: { dropDownMenu: { proyectos: { name, nameSecction, proyecto } } } } = datos;
+  const { empresa: { dropDownMenu: { proyectos: { helmet, name, nameSecction, proyecto } } } } = datos;
   const cardProyecto = Object.values(proyecto);
 
   //.......................................................
@@ -41,6 +42,7 @@ const Proyectos = () => {
 
   return (
     <>
+      <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
       <BannerEmpresa />
       <ContPagesEmpresa>
         <div className='ContSectionEm'>
@@ -71,7 +73,7 @@ const Proyectos = () => {
 
             <div><SliderLogoExperiencia /></div>
 
-            <div><SliderTestimonio1 /></div>
+            {/* <div><SliderTestimonio1 /></div> */}
 
             <ContCardProyect>
               {
@@ -79,7 +81,7 @@ const Proyectos = () => {
                   <CardProyect key={item.id}>
                     <div className='Cont_card_Proyecto'>
                       <div className='ConImgCardP'>
-                        {/* <img src="" alt="" /> */}
+                        <img src="" alt="" />
                       </div>
                       <div className='ContTextP'>
                         <p className='text_card_1'>{item.title}</p>

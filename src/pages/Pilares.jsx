@@ -10,6 +10,7 @@ import { Cards01, Cards02, ConImgP, ConParagraphP, Contcards1, ContCards2, ContP
 import CarouselPilares from '../components/CarouselPilares'
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { Helmet } from 'react-helmet'
 
 
 
@@ -18,7 +19,7 @@ const Pilares = () => {
 
   // get data
   const [datos] = data;
-  const { empresa: { dropDownMenu: { pilares: { name, title, cards0, cards1 } } } } = datos;
+  const { empresa: { dropDownMenu: { pilares: { helmet, name, title, cards0, cards1 } } } } = datos;
   const card1 = Object.values(cards0);
   const card2 = Object.values(cards1);
   // console.log(card1)
@@ -45,6 +46,7 @@ const Pilares = () => {
 
   return (
     <>
+      <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
       <BannerEmpresa />
       <ContPagesEmpresa>
         <div className='ContSectionEm'>

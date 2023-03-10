@@ -8,6 +8,7 @@ import { ContPagesEmpresa } from '../styles/NavEmpresa'
 import { Cards, ConCards, ConImg, ConNosotros, ContNumber1, MenuMobileNos, MobileTitle, Paragraph, TitleSection } from '../styles/Nosotros'
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { Helmet } from 'react-helmet'
 
 
 
@@ -16,7 +17,7 @@ const Nosotros = () => {
 
   //Get data
   const [datos] = data;
-  const { empresa: { dropDownMenu: { nosotros: { name, paragraph1, paragraph2, paragraph3, img, titleSeccion, cards } } } } = datos
+  const { empresa: { dropDownMenu: { nosotros: { helmet,name, paragraph1, paragraph2, paragraph3, img, titleSeccion, cards } } } } = datos
 
   // extract values of cards
   const card = Object.values(cards);
@@ -42,6 +43,8 @@ const Nosotros = () => {
 
   return (
     <>
+      <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
+
       <BannerEmpresa />
       <ContPagesEmpresa>
         <div className='ContSectionEm'>

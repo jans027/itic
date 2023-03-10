@@ -29,6 +29,7 @@ import info_general from '../documents/informacion-general-certificacion-de-pers
 import gestion_salud from '../documents/Politica-de-gestion-integral-salud-seguridad-y-ambiente-HSE.pdf';
 import conflictos from '../documents/Directiva-para-evitar-conflictos-de-intereses-y-corrupcion-.pdf';
 import independiencia from '../documents/ITIC-C-NA-DI-003-POLITICA-DE-IMPARCIALIDAD-INDEPENDENCIA-Y-CONFIDENCIALIDAD-V7.pdf';
+import { Helmet } from 'react-helmet'
 
 
 
@@ -38,7 +39,7 @@ const Politicas = () => {
 
   //get data
   const [datos] = data;
-  const { empresa: { dropDownMenu: { politicas: { name, cards } } } } = datos;
+  const { empresa: { dropDownMenu: { politicas: { helmet, name, cards } } } } = datos;
   const card = Object.values(cards);
   console.log(card)
 
@@ -60,6 +61,7 @@ const Politicas = () => {
 
   return (
     <>
+      <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
       <BannerEmpresa />
       <ContPagesEmpresa>
         <div className='ContSectionEm'>

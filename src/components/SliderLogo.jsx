@@ -18,7 +18,7 @@ export default class SliderLogo extends Component {
         const settings = {
             infinite: true,
             slidesToShow: 7,
-            // slidesToScroll: 1,
+            pauseOnHover: false,
             autoplay: true,
             speed: 2000,
             autoplaySpeed: 2000,

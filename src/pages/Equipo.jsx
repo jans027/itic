@@ -10,13 +10,14 @@ import { Link } from 'react-router-dom'
 // icon
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+import { Helmet } from 'react-helmet'
 
 
 const Equipo = () => {
 
   // get data
   const [datos] = data;
-  const { empresa: { dropDownMenu: { equipo: { name, cards0, cards1 } } } } = datos;
+  const { empresa: { dropDownMenu: { equipo: { helmet,  name, cards0, cards1 } } } } = datos;
   const cardCEO = Object.values(cards0)
   const cardCol = Object.values(cards1)
 
@@ -40,6 +41,7 @@ const Equipo = () => {
 
   return (
     <>
+      <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
       <BannerEmpresa />
       <ContPagesEmpresa>
         <div className='ContSectionEm'>

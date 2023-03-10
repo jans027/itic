@@ -6,7 +6,7 @@ export const data = [
       url: "/home",
       logoNav: "Logo-itic.svg",
       email: "contacto@iticco.com",
-      phone: "314 3553180",
+      phone: "+57 314 3553180",
       whatsappUrl: "https://api.whatsapp.com/send?phone=573183913990",
       whatsappImg: "boton.png",
       addressItic: "Of. Calle 108 #45-27 \nEd. ITICCOL - Bogotá Colombia",
@@ -51,6 +51,7 @@ export const data = [
           name: "ACERCA DE NOSOTROS",
           nameNav2: "Acerca de nosotros",
           nameFooter: "Acerca de nosotros",
+          helmet:'Acerca de nosotros',
           url: "/empresa/nosotros",
           img: "Nosotros/img-empresa.png",
           paragraph1:
@@ -96,6 +97,7 @@ export const data = [
           id: "pilares",
           name: "PILARES, MISIÓN, VISIÓN",
           nameNav2: "Pilares, Misión, Visión",
+          helmet: 'Pilares, Misión, Visión',
           nameFooter: "Pilares, Misión, Visión",
           url: "/empresa/pilares",
           title: "NUESTROS PILARES",
@@ -146,6 +148,7 @@ export const data = [
           id: "acreditaciones",
           name: "ACREDITACIONES",
           nameNav2: "Acreditaciones",
+          helmet: 'Acreditaciones',
           nameFooter: "Acreditaciones",
           url: "/empresa/acreditaciones",
           banner1: "",
@@ -201,6 +204,7 @@ export const data = [
           id: "certificaciones",
           name: "CERTIFICACIONES",
           nameNav2: "Certificaciones",
+          helmet:'Certificaciones',
           nameFooter: "Certificaciones",
           url: "/empresa/certificaciones",
           banner1: "",
@@ -245,6 +249,7 @@ export const data = [
           name: "NUESTRO EQUIPO",
           nameNav2: "Nuestro Equipo",
           nameFooter: "Nuestro equipo",
+          helmet: "Nuestro equipo",
           url: "/empresa/equipo",
           banner1: "",
           cards0: {
@@ -343,6 +348,7 @@ export const data = [
           name: "NUESTRA EXPERIENCIA",
           nameNav2: "Nuestra Experiencia",
           nameFooter: "Nuestras Experiencias",
+          helmet: "Nuestras Experiencias",
           nameSecction: "NUESTRA EXPERIENCIA",
           url: "/empresa/proyectos",
           banner1: "",
@@ -504,6 +510,7 @@ export const data = [
           id: "politicas",
           name: "POLÍTICAS, CÓDIGOS Y REGLAMENTOS",
           nameNav2: "Políticas, códigos \ny reglamentos",
+          helmet: "Políticas, códigos y reglamentos",
           url: "/empresa/politicas",
           banner1: "",
           cards: {
@@ -580,6 +587,285 @@ export const data = [
       subTitle:
         "Nuestra experiencia en proyectos de gran envergadura a nivel nacional e internacional nos permite ofrecer confianza, agilidad, integridad y seguridad en servicios de INSPECCIÓN, CERTIFICACIÓN Y ENSAYOS.",
       dropDownMenu: {
+        industriales: {
+          key: 3,
+          id: "industriales",
+          name: "SERVICIOS INDUSTRIALES",
+          nameNav2: "Servicios Industriales",
+          nameFooter: "Servicios industriales",
+          url: "/servicios/industrial",
+          btn1: 'MÁS SERVICIOS',
+          subTitle2:
+            "Nuestros procesos de certificación son rigurosos y agiles. Nos esforzamos por asegurar que todos los productos que certificamos cumplan con los más altos estándares de calidad y seguridad.",
+          banner1: "",
+          nameBtn: "MÁS SERVICIOS",
+          cardImg: "PERSONAS.png",
+          cardText:
+            "-Servicios de Interventoría. \n-Evaluación de Integridad. \n-Servicios de Inspección. \n-Ensayos No Destructivos NDT. \n-Certificación Instalaciones RETIE/RETILAP",
+          cards: {
+            card0: {
+              id: "certificacion-sistemas-retie-retilap",
+              img: "Proyecto2.png",
+              text1: "CERTIFICACIÓN \nSISTEMAS \nRETIE/RETILAP",
+              text2: "CERTIFICACIÓN SISTEMAS \nRETIE/RETILAP",
+              helmet: 'Certificación sistemas retie/retilap',
+              paragraph1:
+                'A través de nuestros dictámenes de inspección, las instalaciones eléctricas a nivel nacional pueden ser entregadas al Operador de Red para ser energizadas de forma permanente.\nOfrecemos servicios de certificación de instalación eléctricas y de iluminación, emitiendo Dictámenes acreditados con las Resoluciones 90708 y 180540 del Ministerio de Minas y Energía',
+              btn1: "REGRESAR",
+            },
+            card1: {
+              id: "certificación-redes-gas",
+              img: "Proyecto2.png",
+              text1: "CERTIFICACIÓN \nREDES GAS",
+              text2: "CERTIFICACIÓN REDES GAS",
+              helmet: 'Certificación redes gas',
+              paragraph1:
+                "Inspección de los requisitos para evaluar la conformidad de las instalaciones para suministro de gas combustible en edificaciones industriales.",
+              btn1: "REGRESAR",
+            },
+            card2: {
+              id: "certificacion-estaciones-de-servicio",
+              img: "Proyecto2.png",
+              text1: "CERTIFICACIÓN \nESTACIONES \nDE SERVICIO",
+              text2: "CERTIFICACIÓN ESTACIONES \nDE SERVICIO",
+              helmet: 'Certificación estaciones de servicio',
+              paragraph1: 'Certificación de estaciones de servicios.",\n– Líquidos \n– Gas Natural Vehicular',
+              btn1: "REGRESAR",
+            },
+            card3: {
+              id: "servicios-de-inspeccion",
+              img: "Proyecto2.png",
+              text1: "SERVICIOS \nDE INSPECCIÓN",
+              text2: "SERVICIOS DE INSPECCIÓN",
+              helmet: 'Servicios de inspección',
+              paragraph1:
+                "Ofrecemos servicios de inspección de alta calidad para garantizar que los proyectos de nuestros clientes cumplen con los estándares de calidad y seguridad requeridos.",
+              btn1: "REGRESAR",
+            },
+            card4: {
+              id: "servicios-de-interventoria",
+              img: "Proyecto2.png",
+              text1: "SERVICIOS DE \nINTERVENTORÍA",
+              text2: "SERVICIOS DE INTERVENTORÍA",
+              helmet: 'Servicios de interventoría',
+              paragraph1:
+                "Reglamento Técnico Refrigeración (Costa Rica) \nCertificación del desempeño de refrigeradores y congeladores electrodomésticos operados por motocompresor hermético con relación a los valores máximos de consumo de energía eléctrica bajo RTCR 482 de 2015.",
+              btn1: "REGRESAR",
+            },
+            card5: {
+              id: "supervision-tecnica-independiente",
+              img: "Proyecto2.png",
+              text1: "SUPERVISIÓN \nTÉCNICA \nINDEPENDIENTE",
+              text2: "SUPERVISIÓN TÉCNICA \nINDEPENDIENTE",
+              helmet: 'Supervisión técnica independiente',
+              paragraph1:
+                'Ofrecemos servicios de apoyo técnico en la planificación ejecución, comisionamiento, operación y mantenimiento de proyectos eléctricos, mecánicos y civiles.\nPor medio de nuestros expertos técnicos orientamos al cliente en la toma de decisiones, analizando cada etapa de un proyecto, identificando riesgos y oportunidades.',
+              btn1: "REGRESAR",
+            },
+            card6: {
+              id: "reglamento-de-seguridad-gasodomesticos",
+              img: "Proyecto2.png",
+              text1: "EVALUACION DE \nINTEGRIDAD",
+              text2: "REGLAMENTO DE SEGURIDAD \nGASODOMÉSTICOS",
+              helmet: 'Reglamento de seguridad gasodomésticos',
+              paragraph1:
+                'Reglamento Técnico de Seguridad Gasodomésticos (Colombia)\nCertificación de requisitos de seguridad para gasodomésticos bajo Resolución 899 de 2021 del Ministerio de Comercio, Industria y Turismo y sus modificaciones, aplicable a equipos para la cocción de alimentos, hornos y calentadores de agua.',
+              btn1: "REGRESAR",
+            },
+            card7: {
+              id: "gerencia-de-proyectos",
+              img: "Proyecto2.png",
+              text1: "GERENCIA DE \nPROYECTOS",
+              text2: "GERENCIA DE PROYECTOS",
+              helmet: 'Gerencia de proyectos',
+              paragraph1:
+                'La gerencia de proyectos es esencial para el éxito de cualquier proyecto, trabajamos para asegurar el cumplimiento de las necesidades y objetivos\n– Supervisión e Interventoría de proyectos\n– Supervisión Técnica Independiente (Ley 1796/2016)\n– Control y aseguramiento de calidad QA/QC\n– Gestión de activos (ISO 55001)\n– Inspección basada en riesgo RBI\n– Integridad mecánica\n– Metodologías de evaluación de riesgos (HAZOP,\n– FMECA, RCM, RAM, LOPA) \n– Certificación e inspección voluntaria de equipos y elementos de izaje \n– Supervisión Técnica de edificaciones \n– Inspección de parques de diversiones',
+              btn1: "REGRESAR",
+            },
+            card8: {
+              id: "homologacion-de-proveedores",
+              img: "Proyecto2.png",
+              text1: "HOMOLOGACIÓN DE \nPROVEEDORES",
+              text2: "HOMOLOGACIÓN DE \nPROVEEDORES",
+              helmet: 'Homologación de proveedores',
+              paragraph1:
+                'Ofrecemos servicios para garantizar la calidad de los proveedores de nuestros clientes.\nAcompañamos a nuestros clientes en auditorías técnicas a sus futuros proveedores a través de la red Mundial de las oficinas de nuestro grupo.',
+              btn1: "REGRESAR",
+            },
+            card9: {
+              id: "ensayos-no-destructivos",
+              img: "Proyecto2.png",
+              text1: "ENSAYOS NO \nDESTRUCTIVOS",
+              text2: "ENSAYOS NO DESTRUCTIVOS",
+              helmet: 'Ensayos no destructivos',
+              paragraph1:
+                'Contamos con servicios de ensayos no destructivos para evaluar la integridad estructural de los edificios y estructuras, garantizando la seguridad y la calidad del proyecto\n– Inspección Visual VT Directa – Remota\n– Líquidos Penetrantes PT \n– Partículas Magnéticas MT\n– Medición de espesores UT \n– Mapeo de Corrosión Scan C- PAUT\n– Defectología UT Convencional – PAUT\n– Fuga de flujo magnético MFL\n– Perfil de Durezas\n– Termografía infrarroja\n– Metalografías IN SITU\n– Identificación positiva de materiales PMI\n– Inspección de recubrimientos',
+              btn1: "REGRESAR",
+            },
+            card10: {
+              id: "supply-chain-&-expediting",
+              img: "Proyecto2.png",
+              text1: "SUPPLY CHAIN \n& EXPEDITING",
+              text2: "SUPPLY CHAIN & EXPEDITING",
+              helmet: 'Supply chain & expediting',
+              paragraph1:
+                'A través del Expediting, se busca garantizar el cumplimiento de las condiciones estipuladas en los contratos. \nAsegurando la disponibilidad del producto cuando sea necesario mediante el monitoreo de los cronogramas y tomando acciones correctivas si es necesario para cumplir con las expectativas de las adquisiciones',
+              btn1: "REGRESAR",
+            },
+          },
+          documents: {
+            document0: {
+              id: "doc_n0",
+              text: "- Documento 1 (descargar)",
+              url: "",
+            },
+            document1: {
+              id: "doc_n1",
+              text: "- Documento 2 (descargar)",
+              url: "",
+            },
+            document2: {
+              id: "doc_n2",
+              text: "- Documento 3 (descargar)",
+              url: "",
+            },
+            document3: {
+              id: "doc_n3",
+              text: "- Documento 4 (descargar)",
+              url: "",
+            },
+          },
+        },
+        producto: {
+          key: 2,
+          id: "producto",
+          name: "CERTIFICACIÓN DE PRODUCTO",
+          nameNav2: "Certificación de Producto",
+          nameFooter: "Certificación de producto",
+          url: "/servicios/producto",
+          btn1: 'MÁS SERVICIOS',
+          subTitle2:
+            "Nuestros procesos de certificación son rigurosos y agiles. Nos esforzamos por asegurar que todos los productos que certificamos cumplan con los más altos estándares de calidad y seguridad.",
+          banner1: "",
+          nameBtn: "MÁS SERVICIOS",
+          cardImg: "PRODUCTO.png",
+          cardText:
+            "- Certificación RETIE/RETILAP/RETIQ. \n- Certificación de Pilas. \n- Certificación de Gasodomésticos. \n- Certificación Autopartes. \n- TCA ENEL",
+          cards: {
+            card0: {
+              id: "reglamento-refrigeracion-costa-rica",
+              img: "Proyecto2.png",
+              text1: "REGLAMENTO \nREFRIGERACIÓN \nCOSTA RICA",
+              text2: "REGLAMENTO REFRIGERACIÓN \nCOSTA RICA",
+              helmet: 'Reglamento refrigeración costa rica',
+              paragraph1:
+                'Reglamento Técnico Refrigeración (Costa Rica)\nCertificación del desempeño de refrigeradores y congeladores electrodomésticos operados por motocompresor hermético con relación a los valores máximos de consumo de energía eléctrica bajo RTCR 482 de 2015.',
+              btn1: "REGRESAR",
+            },
+            card1: {
+              id: "reglamento-barras-corrugadas",
+              img: "Proyecto2.png",
+              text1: "REGLAMENTO BARRAS \nCORRUGADAS",
+              text2: "REGLAMENTO BARRAS \nCORRUGADAS",
+              helmet: 'Reglamento barras corrugadas',
+              paragraph1:
+                'Reglamento Técnico Barras Corrugadas (Colombia)\nCertificación de requisitos de desempeño y seguridad para barras corrugadas para refuerzo de concreto en construcciones sismo resistentes bajo Resolución 1856 de 2017 del Ministerio de Comercio, Industria y Turismo.',
+              btn1: "REGRESAR",
+            },
+            card2: {
+              id: "retilap",
+              img: "Proyecto2.png",
+              text1: "RETILAP",
+              text2: "RETILAP",
+              helmet: 'Retilap',
+              paragraph1:
+                'RETILAP:2010 (Colombia)\nCertificación de productos de iluminación bajo Resolución 180540 de 2010 y sus modificaciones del Ministerio de Minas y Energía. Con alcance y experiencia en los sectores de retail y alumbrado público, tanto en tecnologías convencionales como LED y aplicaciones solares.',
+              btn1: "REGRESAR",
+            },
+            card3: {
+              id: "retie",
+              img: "Proyecto2.png",
+              text1: "RETIE",
+              text2: "RETIE",
+              helmet: 'Retie',
+              paragraph1:
+                'RETIE:2013 (Colombia)\nCertificación de productos eléctricos bajo Resolución 90708 de 2013 y sus modificaciones del Ministerio de Minas y Energía. Con alcance y experiencia en todos los productos objeto de este reglamento, incluyendo Paneles solares, Cargadores de vehículos eléctricos, cables, transformadores, dispositivos de corte y seccionamiento, entre otros.',
+              btn1: "REGRESAR",
+            },
+            card4: {
+              id: "retiq",
+              img: "Proyecto2.png",
+              text1: "RETIQ",
+              text2: "RETIQ",
+              helmet: 'Retiq',
+              paragraph1:
+                'RETIQ:2015 (Colombia)\nCertificación de etiquetado de eficiencia energética bajo Resolución 41012 de 2015 y sus modificaciones, para electrodomésticos, gasodomésticos y motores incluidos en su alcance.',
+              btn1: "REGRESAR",
+            },
+            card5: {
+              id: "reglamento-de-pilas",
+              img: "Proyecto2.png",
+              text1: "PILAS",
+              text2: "Reglamento de pilas",
+              helmet: 'Retiq',
+              paragraph1:
+                'Reglamento Técnico de Pilas (Colombia)\nCertificación de pilas de tecnología Zinc – Carbón y alcalinas, bajo Resolución 0721 de 2018 del Ministerio de Comercio, Industria y Turismo y sus modificaciones, en los diferentes tipos y medidas incluidos en el alcance del reglamento.',
+              btn1: "REGRESAR",
+            },
+            card6: {
+              id: "reglamento-de-seguridad-gasodomestico",
+              img: "Proyecto2.png",
+              text1: "REGLAMENTO \nDE SEGURIDAD \nGASODOMÉSTICOS",
+              text2: "REGLAMENTO DE SEGURIDAD \nGASODOMÉSTICOS",
+              helmet: 'Reglamento de seguridad gasodomésticos',
+              paragraph1:
+                'Reglamento Técnico de Seguridad Gasodomésticos (Colombia)\nCertificación de requisitos de seguridad para gasodomésticos bajo Resolución 899 de 2021 del Ministerio de Comercio, Industria y Turismo y sus modificaciones, aplicable a equipos para la cocción de alimentos, hornos y calentadores de agua.',
+              btn1: "REGRESAR",
+            },
+            card7: {
+              id: "eficiencia-energetica-peru",
+              img: "Proyecto2.png",
+              text1: "EFICIENCIA \nENERGETICA PERÚ",
+              text2: "EFICIENCIA ENERGETICA PERÚ",
+              helmet: 'Eficiencia energetica perú',
+              paragraph1:
+                'Reglamento Técnico Eficiencia Energética (Perú)\nCertificación de etiquetado de eficiencia energética bajo Decreto Supremo 009 de 2017 aplicable a lámparas, motores, electrodomésticos y gasodomésticos.',
+              btn1: "REGRESAR",
+            },
+            card8: {
+              id: "tca-enel",
+              img: "Proyecto2.png",
+              text1: "TCA ENEL",
+              text2: "TCA ENEL",
+              helmet: 'Tca enel',
+              paragraph1:
+                'TCA ENEL\nTechnical Conformity Assessment – Certificación de tercera parte de productos eléctricos de acuerdo con los estándares y lineamientos requeridos por ENEL para la aprobación de sus proveedores.',
+              btn1: "REGRESAR",
+            },
+          },
+          documents: {
+            document0: {
+              id: "doc_n0",
+              text: "- Documento 1 (descargar)",
+              url: "",
+            },
+            document1: {
+              id: "doc_n1",
+              text: "- Documento 2 (descargar)",
+              url: "",
+            },
+            document2: {
+              id: "doc_n2",
+              text: "- Documento 3 (descargar)",
+              url: "",
+            },
+            document3: {
+              id: "doc_n3",
+              text: "- Documento 4 (descargar)",
+              url: "",
+            },
+          },
+        },
         gestion: {
           key: 1,
           id: "gestion",
@@ -658,265 +944,6 @@ export const data = [
             },
           },
         },
-        producto: {
-          key: 2,
-          id: "producto",
-          name: "CERTIFICACIÓN DE PRODUCTO",
-          nameNav2: "Certificación de Producto",
-          nameFooter: "Certificación de producto",
-          url: "/servicios/producto",
-          btn1: 'MÁS SERVICIOS',
-          subTitle2:
-            "Nuestros procesos de certificación son rigurosos y agiles. Nos esforzamos por asegurar que todos los productos que certificamos cumplan con los más altos estándares de calidad y seguridad.",
-          banner1: "",
-          nameBtn: "MÁS SERVICIOS",
-          cardImg: "PRODUCTO.png",
-          cardText:
-            "- Certificación RETIE/RETILAP/RETIQ. \n- Certificación de Pilas. \n- Certificación de Gasodomésticos. \n- Certificación Autopartes. \n- TCA ENEL",
-          cards: {
-            card0: {
-              id: "reglamento-refrigeracion-costa-rica",
-              img: "Proyecto2.png",
-              text1: "REGLAMENTO \nREFRIGERACIÓN \nCOSTA RICA",
-              text2: "REGLAMENTO REFRIGERACIÓN \nCOSTA RICA",
-              paragraph1:
-                'Reglamento Técnico Refrigeración (Costa Rica)\nCertificación del desempeño de refrigeradores y congeladores electrodomésticos operados por motocompresor hermético con relación a los valores máximos de consumo de energía eléctrica bajo RTCR 482 de 2015.',
-              btn1: "REGRESAR",
-            },
-            card1: {
-              id: "reglamento-barras-corrugadas",
-              img: "Proyecto2.png",
-              text1: "REGLAMENTO BARRAS \nCORRUGADAS",
-              text2: "REGLAMENTO BARRAS \nCORRUGADAS",
-              paragraph1:
-                'Reglamento Técnico Barras Corrugadas (Colombia)\nCertificación de requisitos de desempeño y seguridad para barras corrugadas para refuerzo de concreto en construcciones sismo resistentes bajo Resolución 1856 de 2017 del Ministerio de Comercio, Industria y Turismo.',
-              btn1: "REGRESAR",
-            },
-            card2: {
-              id: "retilap",
-              img: "Proyecto2.png",
-              text1: "RETILAP",
-              text2: "RETILAP",
-              paragraph1:
-                'RETILAP:2010 (Colombia)\nCertificación de productos de iluminación bajo Resolución 180540 de 2010 y sus modificaciones del Ministerio de Minas y Energía. Con alcance y experiencia en los sectores de retail y alumbrado público, tanto en tecnologías convencionales como LED y aplicaciones solares.',
-              btn1: "REGRESAR",
-            },
-            card3: {
-              id: "retie",
-              img: "Proyecto2.png",
-              text1: "RETIE",
-              text2: "RETIE",
-              paragraph1:
-                'RETIE:2013 (Colombia)\nCertificación de productos eléctricos bajo Resolución 90708 de 2013 y sus modificaciones del Ministerio de Minas y Energía. Con alcance y experiencia en todos los productos objeto de este reglamento, incluyendo Paneles solares, Cargadores de vehículos eléctricos, cables, transformadores, dispositivos de corte y seccionamiento, entre otros.',
-              btn1: "REGRESAR",
-            },
-            card4: {
-              id: "retiq",
-              img: "Proyecto2.png",
-              text1: "RETIQ",
-              text2: "RETIQ",
-              paragraph1:
-                'RETIQ:2015 (Colombia)\nCertificación de etiquetado de eficiencia energética bajo Resolución 41012 de 2015 y sus modificaciones, para electrodomésticos, gasodomésticos y motores incluidos en su alcance.',
-              btn1: "REGRESAR",
-            },
-            card5: {
-              id: "reglamento-de-pilas",
-              img: "Proyecto2.png",
-              text1: "PILAS",
-              text2: "REGLAMENTO DE PILAS",
-              paragraph1:
-                'Reglamento Técnico de Pilas (Colombia)\nCertificación de pilas de tecnología Zinc – Carbón y alcalinas, bajo Resolución 0721 de 2018 del Ministerio de Comercio, Industria y Turismo y sus modificaciones, en los diferentes tipos y medidas incluidos en el alcance del reglamento.',
-              btn1: "REGRESAR",
-            },
-            card6: {
-              id: "reglamento-de-seguridad-gasodomestico",
-              img: "Proyecto2.png",
-              text1: "REGLAMENTO \nDE SEGURIDAD \nGASODOMÉSTICOS",
-              text2: "REGLAMENTO DE SEGURIDAD \nGASODOMÉSTICOS",
-              paragraph1:
-                'Reglamento Técnico de Seguridad Gasodomésticos (Colombia)\nCertificación de requisitos de seguridad para gasodomésticos bajo Resolución 899 de 2021 del Ministerio de Comercio, Industria y Turismo y sus modificaciones, aplicable a equipos para la cocción de alimentos, hornos y calentadores de agua.',
-              btn1: "REGRESAR",
-            },
-            card7: {
-              id: "eficiencia-energetica-peru",
-              img: "Proyecto2.png",
-              text1: "EFICIENCIA \nENERGETICA PERÚ",
-              text2: "EFICIENCIA ENERGETICA PERÚ",
-              paragraph1:
-                'Reglamento Técnico Eficiencia Energética (Perú)\nCertificación de etiquetado de eficiencia energética bajo Decreto Supremo 009 de 2017 aplicable a lámparas, motores, electrodomésticos y gasodomésticos.',
-              btn1: "REGRESAR",
-            },
-            card8: {
-              id: "tca-enel",
-              img: "Proyecto2.png",
-              text1: "TCA ENEL",
-              text2: "TCA ENEL",
-              paragraph1:
-                'TCA ENEL\nTechnical Conformity Assessment – Certificación de tercera parte de productos eléctricos de acuerdo con los estándares y lineamientos requeridos por ENEL para la aprobación de sus proveedores.',
-              btn1: "REGRESAR",
-            },
-          },
-          documents: {
-            document0: {
-              id: "doc_n0",
-              text: "- Documento 1 (descargar)",
-              url: "",
-            },
-            document1: {
-              id: "doc_n1",
-              text: "- Documento 2 (descargar)",
-              url: "",
-            },
-            document2: {
-              id: "doc_n2",
-              text: "- Documento 3 (descargar)",
-              url: "",
-            },
-            document3: {
-              id: "doc_n3",
-              text: "- Documento 4 (descargar)",
-              url: "",
-            },
-          },
-        },
-        industriales: {
-          key: 3,
-          id: "industriales",
-          name: "SERVICIOS INDUSTRIALES",
-          nameNav2: "Servicios Industriales",
-          nameFooter: "Servicios industriales",
-          url: "/servicios/industrial",
-          btn1: 'MÁS SERVICIOS',
-          subTitle2:
-            "Nuestros procesos de certificación son rigurosos y agiles. Nos esforzamos por asegurar que todos los productos que certificamos cumplan con los más altos estándares de calidad y seguridad.",
-          banner1: "",
-          nameBtn: "MÁS SERVICIOS",
-          cardImg: "PERSONAS.png",
-          cardText:
-            "- Servicios de Interventoría. \n- Evaluación de Integridad. \n- Servicios de Inspección. \n- Ensayos No Destructivos NDT. \n- Certificación Instalaciones RETIE/RETILAP",
-          cards: {
-            card0: {
-              id: "certificacion-sistemas-retie-retilap",
-              img: "Proyecto2.png",
-              text1: "CERTIFICACIÓN \nSISTEMAS \nRETIE/RETILAP",
-              text2: "CERTIFICACIÓN SISTEMAS \nRETIE/RETILAP",
-              paragraph1:
-                'A través de nuestros dictámenes de inspección, las instalaciones eléctricas a nivel nacional pueden ser entregadas al Operador de Red para ser energizadas de forma permanente.\nOfrecemos servicios de certificación de instalación eléctricas y de iluminación, emitiendo Dictámenes acreditados con las Resoluciones 90708 y 180540 del Ministerio de Minas y Energía',
-              btn1: "REGRESAR",
-            },
-            card1: {
-              id: "certificación-redes-gas",
-              img: "Proyecto2.png",
-              text1: "CERTIFICACIÓN \nREDES GAS",
-              text2: "CERTIFICACIÓN REDES GAS",
-              paragraph1:
-                "Inspección de los requisitos para evaluar la conformidad de las instalaciones para suministro de gas combustible en edificaciones industriales.",
-              btn1: "REGRESAR",
-            },
-            card2: {
-              id: "certificacion-estaciones-de-servicio",
-              img: "Proyecto2.png",
-              text1: "CERTIFICACIÓN \nESTACIONES \nDE SERVICIO",
-              text2: "CERTIFICACIÓN ESTACIONES \nDE SERVICIO",
-              paragraph1:'Certificación de estaciones de servicios.",\n– Líquidos \n– Gas Natural Vehicular',
-              btn1: "REGRESAR",
-            },
-            card3: {
-              id: "servicios-de-inspeccion",
-              img: "Proyecto2.png",
-              text1: "SERVICIOS \nDE INSPECCIÓN",
-              text2: "SERVICIOS DE INSPECCIÓN",
-              paragraph1:
-                "Ofrecemos servicios de inspección de alta calidad para garantizar que los proyectos de nuestros clientes cumplen con los estándares de calidad y seguridad requeridos.",
-              btn1: "REGRESAR",
-            },
-            card4: {
-              id: "servicios-de-interventoria",
-              img: "Proyecto2.png",
-              text1: "SERVICIOS DE \nINTERVENTORÍA",
-              text2: "SERVICIOS DE INTERVENTORÍA",
-              paragraph1:
-                "Reglamento Técnico Refrigeración (Costa Rica) \nCertificación del desempeño de refrigeradores y congeladores electrodomésticos operados por motocompresor hermético con relación a los valores máximos de consumo de energía eléctrica bajo RTCR 482 de 2015.",
-              btn1: "REGRESAR",
-            },
-            card5: {
-              id: "supervision-tecnica-independiente",
-              img: "Proyecto2.png",
-              text1: "SUPERVISIÓN \nTÉCNICA \nINDEPENDIENTE",
-              text2: "SUPERVISIÓN TÉCNICA \nINDEPENDIENTE",
-              paragraph1:
-                'Ofrecemos servicios de apoyo técnico en la planificación ejecución, comisionamiento, operación y mantenimiento de proyectos eléctricos, mecánicos y civiles.\nPor medio de nuestros expertos técnicos orientamos al cliente en la toma de decisiones, analizando cada etapa de un proyecto, identificando riesgos y oportunidades.',
-              btn1: "REGRESAR",
-            },
-            card6: {
-              id: "reglamento-de-seguridad-gasodomesticos",
-              img: "Proyecto2.png",
-              text1: "EVALUACION DE \nINTEGRIDAD",
-              text2: "REGLAMENTO DE SEGURIDAD \nGASODOMÉSTICOS",
-              paragraph1:
-                'Reglamento Técnico de Seguridad Gasodomésticos (Colombia)\nCertificación de requisitos de seguridad para gasodomésticos bajo Resolución 899 de 2021 del Ministerio de Comercio, Industria y Turismo y sus modificaciones, aplicable a equipos para la cocción de alimentos, hornos y calentadores de agua.',
-              btn1: "REGRESAR",
-            },
-            card7: {
-              id: "gerencia-de-proyectos",
-              img: "Proyecto2.png",
-              text1: "GERENCIA DE \nPROYECTOS",
-              text2: "GERENCIA DE PROYECTOS",
-              paragraph1:
-                'La gerencia de proyectos es esencial para el éxito de cualquier proyecto, trabajamos para asegurar el cumplimiento de las necesidades y objetivos\n– Supervisión e Interventoría de proyectos\n– Supervisión Técnica Independiente (Ley 1796/2016)\n– Control y aseguramiento de calidad QA/QC\n– Gestión de activos (ISO 55001)\n– Inspección basada en riesgo RBI\n– Integridad mecánica\n– Metodologías de evaluación de riesgos (HAZOP,\n– FMECA, RCM, RAM, LOPA) \n– Certificación e inspección voluntaria de equipos y elementos de izaje \n– Supervisión Técnica de edificaciones \n– Inspección de parques de diversiones',
-              btn1: "REGRESAR",
-            },
-            card8: {
-              id: "homologacion-de-proveedores",
-              img: "Proyecto2.png",
-              text1: "HOMOLOGACIÓN DE \nPROVEEDORES",
-              text2: "HOMOLOGACIÓN DE \nPROVEEDORES",
-              paragraph1:
-                'Ofrecemos servicios para garantizar la calidad de los proveedores de nuestros clientes.\nAcompañamos a nuestros clientes en auditorías técnicas a sus futuros proveedores a través de la red Mundial de las oficinas de nuestro grupo.',
-              btn1: "REGRESAR",
-            },
-            card9: {
-              id: "ensayos-no-destructivos",
-              img: "Proyecto2.png",
-              text1: "ENSAYOS NO \nDESTRUCTIVOS",
-              text2: "ENSAYOS NO DESTRUCTIVOS",
-              paragraph1:
-                'Contamos con servicios de ensayos no destructivos para evaluar la integridad estructural de los edificios y estructuras, garantizando la seguridad y la calidad del proyecto\n– Inspección Visual VT Directa – Remota\n– Líquidos Penetrantes PT \n– Partículas Magnéticas MT\n– Medición de espesores UT \n– Mapeo de Corrosión Scan C- PAUT\n– Defectología UT Convencional – PAUT\n– Fuga de flujo magnético MFL\n– Perfil de Durezas\n– Termografía infrarroja\n– Metalografías IN SITU\n– Identificación positiva de materiales PMI\n– Inspección de recubrimientos',
-              btn1: "REGRESAR",
-            },
-            card10: {
-              id: "supply-chain-&-expediting",
-              img: "Proyecto2.png",
-              text1: "SUPPLY CHAIN \n& EXPEDITING",
-              text2: "SUPPLY CHAIN & EXPEDITING",
-              paragraph1:
-                'A través del Expediting, se busca garantizar el cumplimiento de las condiciones estipuladas en los contratos. \nAsegurando la disponibilidad del producto cuando sea necesario mediante el monitoreo de los cronogramas y tomando acciones correctivas si es necesario para cumplir con las expectativas de las adquisiciones',
-              btn1: "REGRESAR",
-            },
-          },
-          documents: {
-            document0: {
-              id: "doc_n0",
-              text: "- Documento 1 (descargar)",
-              url: "",
-            },
-            document1: {
-              id: "doc_n1",
-              text: "- Documento 2 (descargar)",
-              url: "",
-            },
-            document2: {
-              id: "doc_n2",
-              text: "- Documento 3 (descargar)",
-              url: "",
-            },
-            document3: {
-              id: "doc_n3",
-              text: "- Documento 4 (descargar)",
-              url: "",
-            },
-          },
-        },
         personas: {
           key: 4,
           id: "personas",
@@ -938,6 +965,7 @@ export const data = [
               img: "Proyecto2.png",
               text1: "GAS NATURAL \nCOMPRIMIDO \nVEHICULAR",
               text2: "GAS NATURAL COMPRIMIDO \nVEHICULAR",
+              helmet: 'Gas natural comprimido vehicular',
               paragraph1: 'GAS NATURAL VEHICULAR «GNCV»\n• Operador para suministrar gas natural comprimido vehicular en estaciones de servicio \nNSCL 290302027 SENA V1 \nNSCL 210601020 SENA V1 \nNSCL 280202099 SENA V1\nOperador para mantenimiento de equipos en estaciones de servicio para el suministro de GNCV\nNSCL 290302025 SENA V1\nMecánico instalador de equipos de conversión a GNCV en vehículos automotores\nNSCL 280601093 SENA V1 \nNSCL 280601096 SENA V1 \nNSCL 280601117 SENA V1',
               btn1: "REGRESAR",
             },
@@ -946,6 +974,7 @@ export const data = [
               img: "Proyecto2.png",
               text1: "GAS NATURAL \nRESIDENCIAL \nY COMERCIAL",
               text2: "GAS NATURAL RESIDENCIAL Y \nCOMERCIAL",
+              helmet: 'Gas natural residencial y comercial',
               paragraph1:"GAS NATURAL RESIDENCIAL Y COMERCIAL • Instalador de sistemas para el suministro de Gas combustible en edificaciones residenciales y comerciales- construccion mediante uniones roscadas \n• Instalador de sistemas para el suministro de Gas combustible en edificaciones residenciales y comerciales - construccion mediante uniones soldadas \nInstalador de sistemas para el suministrp de Gas combustible en edificaciones residenciales y comerciales - construccion mediante uniones abocinadas y / o anillo de compresión \nNSCL 280202104 SENA V1 \nNSCL 280202105 SENA V1 \nNSCL 280202106 SENA V1 \nNSCL 280202107 SENA V1 \nNSCL 280202108 SENA V1 \nNSCL 290202083 SENA V1 \nNSCL 280202110 SENA V1 \nNSCL 280202096 SENA V2 \nNSCL 280202092 SENA V2 \n• Reparador de artefactos a gas de uso residencial y comercial \nNSCL 280202086 SENA V2 \nNSCL 280202086 SENA V2 \n• Inspector de instalaciones para suministro de gas a usuarios residenciales y comerciales \nNSCL 280202086 SENA V2 \nNSCL 280202090 SENA V2",
               btn1: "REGRESAR", 
                           },
@@ -1044,6 +1073,7 @@ export const data = [
         contactanos: {
         id: "page_contacto",
           title: "¡CONTÁCTANOS!",
+          helmet: "Contactanos",
             subTitle:
         "CONOCE MÁS SOBRE NUESTROS SERVICIOS \nLLEVA TU EMPRESA AL SIGUIENTE NIVEL",
           labelName: "Nombre Completo",

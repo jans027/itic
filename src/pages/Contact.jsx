@@ -6,6 +6,7 @@ import { data } from '../data/data';
 import ImgBannerPc from '../images/shutterstock_150293498---copia.png';
 import ImgBannerMobile from '../images/contacto_mobile.png';
 import { ContContact, ContContactForm, ContImgComtact } from '../styles/Contact';
+import { Helmet } from 'react-helmet';
 
 
 // get data
@@ -13,6 +14,7 @@ const [datos] = data;
 const { contacto: { contactanos:{ 
     id,
     title, 
+    helmet,
     subTitle, 
     } } } = datos;
 
@@ -46,6 +48,8 @@ export default class SecContactanos extends Component {
 
         return (
             <>
+                <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
+
                 <ContContact>
                     <ContImgComtact>
                         <img src={screenWidth < 768 ? ImgBannerMobile : ImgBannerPc} alt={id} />

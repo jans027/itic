@@ -40,7 +40,16 @@ const SectionServicios = () => {
                                     </EnlaceImg>
                                     <ContTextCard>
                                         <h4>{item.name}</h4>
-                                        <p>{item.cardText}</p>
+                                        <span>
+                                            <p>{item.cardText.split('\n').map((line, i) => {
+                                                return (
+                                                    <React.Fragment key={i}>
+                                                        {line}
+                                                        <br />
+                                                    </React.Fragment>
+                                                )
+                                            })}</p>
+                                        </span>
                                     </ContTextCard>
                                 </div>
                                 <div>

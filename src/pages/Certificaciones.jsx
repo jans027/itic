@@ -11,6 +11,7 @@ import { ConNosotros, MenuMobileNos, MobileTitle } from '../styles/Nosotros'
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Slider from 'react-slick'
+import { Helmet } from 'react-helmet'
 
 
 
@@ -18,7 +19,7 @@ const Certificaciones = () => {
 
   // get data
   const [datos] = data;
-  const { empresa: { dropDownMenu: { certificaciones: { name, cards } } } } = datos;
+  const { empresa: { dropDownMenu: { certificaciones: { helmet, name, cards } } } } = datos;
   const card = Object.values(cards);
 
   //.......................................................
@@ -66,7 +67,8 @@ const Certificaciones = () => {
 
 
   return (
-    <div>
+    <>
+      <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
       <BannerEmpresa />
       <ContPagesEmpresa>
         <div className='ContSectionEm'>
@@ -188,7 +190,7 @@ const Certificaciones = () => {
         </div>
         <ContacBar />
       </ContPagesEmpresa>
-    </div>
+    </>
   )
 }
 

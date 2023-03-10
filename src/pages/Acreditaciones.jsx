@@ -12,6 +12,7 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import Slider from 'react-slick'
+import { Helmet } from 'react-helmet'
 
 
 
@@ -20,7 +21,7 @@ const Contact = () => {
 
     // get data
     const [datos] = data;
-    const { empresa: { dropDownMenu: { acreditaciones: { name, documentOnac: { title, subTitle, cards } } } } } = datos;
+    const { empresa: { dropDownMenu: { acreditaciones: { helmet, name, documentOnac: { title, subTitle, cards } } } } } = datos;
     const card = Object.values(cards);
     // console.log(name)
 
@@ -75,6 +76,7 @@ const Contact = () => {
 
     return (
         <>
+            <Helmet><title>{helmet} – ITIC Colombia</title></Helmet>
             <BannerEmpresa />
             <ContPagesEmpresa>
                 <div className='ContSectionEm'>

@@ -24,6 +24,7 @@ export default class SliderLogoExperiencia extends Component {
             autoplay: true,
             speed: 2000,
             autoplaySpeed: 2000,
+            pauseOnHover: false,
             responsive: [
                 {
                     breakpoint: 1024,

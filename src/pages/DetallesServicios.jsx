@@ -65,14 +65,12 @@ const DetallesServicios = (props) => {
 
     // we assign path to key active
     const user = rute.find(item => item.id === idProp);
-    console.log(cardGet)
 
 
 
 
     return (
         <>
-            <Helmet><title>{`${idProp} – ITIC Colombia`}</title></Helmet>
             <BannerServicios />
             <ContPagesEmpresa>
                 <div className='ContSectionEm'>
@@ -132,6 +130,7 @@ const DetallesServicios = (props) => {
                                 cardGet.map((item) =>
                                     <div key={item.id}>
                                         <p>{item.text2}</p>
+                                        <Helmet><title>{`${item.helmet} – ITIC Colombia`}</title></Helmet>
                                         <span>
                                             <p>{item.paragraph1.split('\n').map((line, i) => {
                                                 return (
