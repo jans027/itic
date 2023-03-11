@@ -49,7 +49,7 @@ export const CardCertificaciones = styled.div`
             background-color: var(--color7);
         } */
         @media(max-width:700px){
-        font-size: 16px;
+            font-size: 16px;
         }
     }
     /* svg{
@@ -159,16 +159,16 @@ export const CardCertifMobile = styled.div`
         background-color: var(--color4);
         border-radius: 0 0 30px 30px;
         color: var(--color5);
-        /* transition: 30ms; */
-        /* &:hover{
+        /* transition: 30ms;
+        &:hover{
         color: var(--color1);
         }
         &:active{
             background-color: var(--color7);
-        }
-        @media(max-width:700px){
-        font-size: 16px;
         } */
+        @media(max-width:700px){
+            font-size: 16px;
+        }
     }
     /* svg{
         font-size: 3vw;
