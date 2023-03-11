@@ -25,7 +25,7 @@ export const ContNavigationPc = styled.div`
             }
             p{
                 font-size: 1.5em;
-                font-weight: 600;
+                font-weight: 800;
             }
         }
     }
@@ -55,7 +55,7 @@ export const TitleSection = styled.h1`
     /* border: 1px solid red;//.................. */
     width: 82%;
     margin: auto;
-    font-size: 57px;
+    font-size: 50px;
     font-weight: 900;
     padding: 45px 0;
 `

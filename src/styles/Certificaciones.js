@@ -22,58 +22,54 @@ export const CardCertificaciones = styled.div`
     border-radius: 30px;
     padding-top: 1.3rem;
     background-color: var(--color5);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
     -webkit-box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6); 
     box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6);
-    @media (max-width:1400px) {
-        
-    }
-    span{
-        p{
-        font-size: 1.3vw;
-        line-height: 1.3em;
-        text-align: center;
-        /* border: 1px solid red;//............... */
-        @media(max-width:950px){
-            font-size: 14px;
-            }
-        }
-    }
-    img{
-        width: 85%;
-        /* border: 1px solid red;//............... */
-    }
-    
+
     a{
-        height: 5vw;
+        width: 100%;
+        height: 15%;
         min-height: 40px;
         font-size: 1.5vw;
         font-weight: 700;
         text-decoration:none;
         display: flex;
+        cursor: initial;
         align-items: center;
         justify-content: center;
         background-color: var(--color4);
         border-radius: 0 0 30px 30px;
         color: var(--color5);
-        transition: 30ms;
-        &:hover{
+        /* transition: 30ms; */
+        /* &:hover{
         color: var(--color1);
         }
         &:active{
             background-color: var(--color7);
-        }
+        } */
         @media(max-width:700px){
         font-size: 16px;
         }
     }
-    svg{
+    /* svg{
         font-size: 3vw;
         color: var(--color1);
         margin-left: 1rem;
         @media(max-width:700px){
             font-size: 20px;
         }
+    } */
+`
+export const ContImgCard = styled.div`
+        /* border: 1px solid red;//............... */
+        width: 100%;
+        height: 85%;
+        padding-bottom: 1em;
+        display: flex;
+        justify-content: center!important;
+    img{
+        width: 90%;
     }
 `
 export const ContCardsCertiMobile = styled.div`
@@ -134,6 +130,8 @@ export const CardCertifMobile = styled.div`
     width: 25vw!important;
     min-width: 250px;
     height: auto;
+    display: flex;
+    flex-direction: column;
     border-radius: 30px;
     padding-top: 1.3rem;
     .cardExperiencia{
@@ -143,24 +141,14 @@ export const CardCertifMobile = styled.div`
     -webkit-box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2); 
     box-shadow: 15px 14px 3px -8px rgba(0,0,0,0.2);
     background-color: var(--color5);
-    span{
-        p{
-        font-size: 1.2vw;
-        line-height: 1.2em;
-        padding:.5em;
-        text-align: center;
-        /* border: 1px solid red;//............... */
-        @media(max-width:950px){
-            font-size: 14px;
-            }
-        }
-    }
     img{
-        width: 100%;
+        /* border: 1px solid red;//............... */
+        margin: 0 auto;
+        width: 90%;
     }
     
     a{
-        height: 5vw;
+        height: 15%;
         min-height: 40px;
         font-size: 1.5vw;
         font-weight: 700;
@@ -171,8 +159,8 @@ export const CardCertifMobile = styled.div`
         background-color: var(--color4);
         border-radius: 0 0 30px 30px;
         color: var(--color5);
-        transition: 30ms;
-        &:hover{
+        /* transition: 30ms; */
+        /* &:hover{
         color: var(--color1);
         }
         &:active{
@@ -180,16 +168,16 @@ export const CardCertifMobile = styled.div`
         }
         @media(max-width:700px){
         font-size: 16px;
-        }
+        } */
     }
-    svg{
+    /* svg{
         font-size: 3vw;
         color: var(--color1);
         margin-left: 1rem;
         @media(max-width:700px){
             font-size: 20px;
         }
-    }
+    } */
 `
 
 

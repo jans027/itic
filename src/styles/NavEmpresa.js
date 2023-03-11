@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BannerPathEmpresa = styled.div`
     /* border: 1px solid red;//......................... */
-    height: 15rem;
+    height: 12rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -10,6 +10,7 @@ export const BannerPathEmpresa = styled.div`
     margin-top: 130px;
     @media (max-width:1100px) {
         margin-top:88px;
+        height: 10rem;
     }
     img{
         width: 100%;
@@ -56,7 +57,7 @@ export const ContNavEmpresa = styled.div`
             }
             p{
                 font-size: 1.5em;
-                font-weight: 600;
+                font-weight: 800;
             }
         }
     }

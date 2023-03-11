@@ -46,7 +46,7 @@ export const CardPol = styled(Link)`
         /* border: 1px solid blue;//............... */
         p{
             text-align: center;
-            font-size: clamp(10px, .9vw, 15px);
+            font-size: clamp(10px, 1.1vw, 20px);
         }
     }
 

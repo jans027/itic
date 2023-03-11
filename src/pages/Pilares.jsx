@@ -6,7 +6,7 @@ import NavEmpresa from '../components/NavEmpresa'
 import { data } from '../data/data'
 import { ContPagesEmpresa } from '../styles/NavEmpresa'
 import { Cards, ConCards, ConImg, ConNosotros, MenuMobileNos, MobileTitle, Paragraph } from '../styles/Nosotros'
-import { Cards01, Cards02, CardsPi, ConCardsPi, ConImgP, ConImgPi, ConParagraphP, Contcards1, ContCards2, ContPilares1, ParagraphPi } from '../styles/Pilares'
+import { Cards01, Cards02, CardsPi, ConCardsPi, ConImgP, ConImgPi, ConParagraphP, Contcards1, ContCards2, ContPilares1, ParagraphPi, TitleP } from '../styles/Pilares'
 import CarouselPilares from '../components/CarouselPilares'
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -53,7 +53,7 @@ const Pilares = () => {
           <NavEmpresa />
           <ConNosotros>
 
-          <MenuMobileNos>
+            <MenuMobileNos>
               {
                 itemsUrlUp.map((item) =>
                   <Link to={item.url} key={item.name}><div>{item.name}<ArrowDropDownIcon /></div></Link>
@@ -72,37 +72,33 @@ const Pilares = () => {
               })}<ArrowDropDownIcon /></p>
             </MobileTitle>
 
-            <ContPilares1>
-              <div className='titleP'>{title}</div>
+            <TitleP>{title}</TitleP>
 
-              <ConCardsPi>
-                {
-                  card1.map((item) =>
-                    <CardsPi key={item.id}>
-                      <ParagraphPi>
-                        <div>
-                          <p className='title_card'>{item.title}</p>
-                          <p className='p_card'>{item.text}</p>
-                        </div>
-                      </ParagraphPi>
-                      <ConImgPi>
-                        <img src={require(`../images/${item.img}`)} alt={item.id} />
-                      </ConImgPi>
-                    </CardsPi >
-                  )
-                }
-              </ConCardsPi>
+            <ConCardsPi>
+              {
+                card1.map((item) =>
+                  <CardsPi key={item.id}>
+                    <ParagraphPi>
+                      <div>
+                        <p className='title_card'>{item.title}</p>
+                        <p className='p_card'>{item.text}</p>
+                      </div>
+                    </ParagraphPi>
+                    <ConImgPi>
+                      <img src={require(`../images/${item.img}`)} alt={item.id} />
+                    </ConImgPi>
+                  </CardsPi >
+                )
+              }
+            </ConCardsPi>
 
-            </ContPilares1>
             <ContCards2>
               {
                 card2.map((item) =>
                   <Cards02>
                     <ConParagraphP>
-                      <p
-                        className='title_p02'>{item.title}</p>
-                      <p
-                        className='paragraph_p02'>{item.text}</p>
+                      <p className='title_p02'>{item.title}</p>
+                      <p className='paragraph_p02'>{item.text}</p>
                     </ConParagraphP>
                     <ConImgP>
                       <img src={require(`../images/${item.img}`)} alt={item.id} />

@@ -5,7 +5,7 @@ import ContacBar from '../components/ContacBar'
 import NavEmpresa from '../components/NavEmpresa'
 import { data } from '../data/data'
 import { ContCardsAcred } from '../styles/Acreditaciones'
-import { CardCertif, CardCertificaciones, CardCertifMobile, ContCardsCertiMobile, TitleCertf } from '../styles/Certificaciones'
+import { CardCertif, CardCertificaciones, CardCertifMobile, ContCardsCertiMobile, ContImgCard, TitleCertf } from '../styles/Certificaciones'
 import { ContPagesEmpresa } from '../styles/NavEmpresa'
 import { ConNosotros, MenuMobileNos, MobileTitle } from '../styles/Nosotros'
 // Icons
@@ -46,23 +46,23 @@ const Certificaciones = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     responsive: [
-        {
-            breakpoint: 850,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
-            }
-        },
-        {
-            breakpoint: 640,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
         }
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
     ]
-};
+  };
 
 
 
@@ -75,7 +75,7 @@ const Certificaciones = () => {
           <NavEmpresa />
           <ConNosotros>
 
-          <MenuMobileNos>
+            <MenuMobileNos>
               {
                 itemsUrlUp.map((item) =>
                   <Link to={item.url} key={item.name}><div>{item.name}<ArrowDropDownIcon /></div></Link>
@@ -97,77 +97,43 @@ const Certificaciones = () => {
             <TitleCertf>{name}</TitleCertf>
 
             <ContCardsAcred>
-                            {
-                                card.map((item) =>
-                                    <CardCertificaciones key={item.id}>
-                                        <span>
-                                            <p>{item.textP.split('\n').map((line, i) => {
-                                                return (
-                                                    <React.Fragment key={i}>
-                                                        {line}
-                                                        <br />
-                                                    </React.Fragment>
-                                                )
-                                            })}</p>
-                                        </span>
+              {
+                card.map((item) =>
+                  <CardCertificaciones key={item.id}>
 
-                                        <span>
-                                            <img src={require(`../images/${item.img}`)} alt={item.name} />
-                                        </span>
+                    <ContImgCard>
+                      <img src={require(`../images/${item.img}`)} alt={item.name} />
+                    </ContImgCard>
 
-                                        <Link to={item.url} target='_blank' >
-                                            {item.name.split('\n').map((line, i) => {
-                                                return (
-                                                    <React.Fragment key={i}>
-                                                        {line}
-                                                        <br />
-                                                    </React.Fragment>
-                                                )
-                                            })}
-                                        </Link>
-                                    </CardCertificaciones>
-                                )
-                            }
-                        </ContCardsAcred>
-                        <ContCardsCertiMobile>
-                            <Slider {...settings}>
+                    <Link>
+                      {item.name}
+                    </Link>
+                  </CardCertificaciones>
+                )
+              }
+            </ContCardsAcred>
+            <ContCardsCertiMobile>
+              <Slider {...settings}>
 
-                                {
-                                    card.map((item) =>
-                                        <div className='cont_card_mobile_acred'>
-                                            <CardCertifMobile key={item.id}>
-                                                <span>
-                                                    <p>{item.textP.split('\n').map((line, i) => {
-                                                        return (
-                                                            <React.Fragment key={i}>
-                                                                {line}
-                                                                <br />
-                                                            </React.Fragment>
-                                                        )
-                                                    })}</p>
-                                                </span>
+                {
+                  card.map((item) =>
+                    <div className='cont_card_mobile_acred'>
+                      <CardCertifMobile key={item.id}>
 
-                                                <span>
-                                                    <img src={require(`../images/${item.img}`)} alt={item.name} />
-                                                </span>
+                        <ContImgCard>
+                          <img src={require(`../images/${item.img}`)} alt={item.name} />
+                        </ContImgCard>
 
-                                                <Link to={item.url} target='_blank' >
-                                                    {item.name.split('\n').map((line, i) => {
-                                                        return (
-                                                            <React.Fragment key={i}>
-                                                                {line}
-                                                                <br />
-                                                            </React.Fragment>
-                                                        )
-                                                    })}
-                                                </Link>
-                                            </CardCertifMobile>
-                                        </div>
-                                    )
-                                }
+                        <Link>
+                          {item.name}
+                        </Link>
+                      </CardCertifMobile>
+                    </div>
+                  )
+                }
 
-                            </Slider>
-                        </ContCardsCertiMobile>
+              </Slider>
+            </ContCardsCertiMobile>
 
             <MenuMobileNos>
               {

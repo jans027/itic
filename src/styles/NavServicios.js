@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BannerPathServicios = styled.div`
     /* border: 1px solid red;//......................... */
-    height: 15rem;
+    height: 12rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -10,6 +10,7 @@ export const BannerPathServicios = styled.div`
     margin-top: 130px;
     @media (max-width:1100px) {
         margin-top:88px;
+        height: 10rem;
     }
     img{
         width: 100%;
@@ -20,7 +21,7 @@ export const BannerPathServicios = styled.div`
     h2{
         /* border: 1px solid red;//................... */
         width: 90%;
-        font-size: clamp(26px, 4.8vw, 80px);
+        font-size: clamp(60px, 4.8vw, 80px);
         font-weight: 900;
         margin:0 auto;
         height: auto;
@@ -56,7 +57,7 @@ export const ContNavServicios = styled.div`
             }
             p{
                 font-size: 1.5em;
-                font-weight: 600;
+                font-weight: 800;
             }
         }
     }

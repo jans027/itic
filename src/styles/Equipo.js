@@ -18,63 +18,54 @@ export const ContCardCEO = styled.div`
     .ContainerCardC{
         /* border: 1px solid red;//................. */
         display: flex;
-        flex-direction:row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        max-width: 935px;
         width: 92%;
-        @media (max-width:1610px) {
-            justify-content: space-between;
-        }
+        padding: 1em;
         @media (max-width:1270px) {
-            justify-content: space-around;
             width: 85%;
         }
-        
         @media (max-width:785px) {
             width: 100%;
-            flex-direction:column;
         }
 
     }
 `
 export const ContImgCeo = styled.div`
-    /* border: 1px solid red;//................. */
-    width: clamp(164px, 18vw, 360px);
-    height:clamp(198px, 28vw, 570px);
-    border-radius: 3rem;
-    background-color: white;
+    float: left;
+    padding:  0 1em 1em 0;
+    img{
+        /* border: 1px solid red;//................. */
+        border-radius: 3rem;
+        width: clamp(198px, 20vw, 370px);
+        height:clamp(198px, 20vw, 370px);
+    }
 
 `
 export const ContInfoCeo = styled.div`
     /* border: 1px solid blue;//................. */
-    width: clamp(164px, 32vw, 576px);
-    height:clamp(198px, 30vw, 590px);
-    @media (max-width:1279px) {
-        width:70%;
-        padding-left:10px;
-    }
-    @media (max-width:918px) {
-        width:72%;
-    }
-    @media (max-width:785px) {
-        width:89%;
-        height:auto;
+    @media (max-width:515px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .title_ceo{
-        font-size: clamp(25px, 3.1vw, 55px);
+        font-size: clamp(25px, 2.4vw, 55px);
         font-weight: 700;
     }
     .sub_title_ceo{
-        font-size: clamp(20px, 1.1vw, 25px);
+        font-size: clamp(20px, 1vw, 25px);
         font-weight: 700;
+        padding-bottom:1em;
     }
     .paragraph{
         /* border: 1px solid blue;//................. */
-        font-size: clamp(13px, 1vw, 22px);
-        margin: 1rem 0;
+        font-size: 16px;
         font-weight: 500;
         @media (max-width:1000px) {
-            margin: .8em 0;
+            font-size:14px;
         }
     }
 `
@@ -113,7 +104,7 @@ export const CardEmployeeE = styled.div`
     padding: 1.5em;
     -webkit-box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6); 
     box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6);
-`
+    `
 export const ContInfoEmpl = styled.div`
     /* border: 1px solid red;//.......................... */
     width: 250px;
@@ -123,11 +114,12 @@ export const ContInfoEmpl = styled.div`
     align-items: center;
     img{
         /* border: 1px solid blue;//....................... */
+        margin: 1em;
         width: clamp(141px, 14vw, 250px);
         height: clamp(141px, 14vw, 250px);
     }
     .name_Empl{
-        font-size:clamp(8px, 1vw, 20px);
+        font-size:clamp(8px, 1.5vw, 20px);
         font-weight: 800;
     }
     .cargo_empl{

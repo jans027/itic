@@ -73,13 +73,13 @@ const Equipo = () => {
                 cardCEO.map((item) =>
                   <div className='ContainerCardC' key={item.id}>
 
-                    <ContImgCeo><img src="" alt="img_CEO" /></ContImgCeo>
                     <ContInfoCeo>
+                    <ContImgCeo><img src={require(`../images/${item.img}`)} alt={item.id} /></ContImgCeo>
                       <p className='title_ceo'>{item.title}</p>
                       <p className='sub_title_ceo'>{item.subTitle}</p>
-                      <p className='paragraph'>{item.paragraph0}</p>
-                      <p className='paragraph'>{item.paragraph1}</p>
-                      <p className='paragraph'>{item.paragraph2}</p>
+                      <p className='paragraph'>{item.paragraph0}</p><br />
+                      <p className='paragraph'>{item.paragraph1}</p><br />
+                      <p className='paragraph'>{item.paragraph2}</p><br />
                     </ContInfoCeo>
 
                   </div>
@@ -105,7 +105,7 @@ const Equipo = () => {
                             </React.Fragment>
                           )
                         })}</p>
-                        <Link> <LinkedInIcon /> </Link>
+                        <Link target={'_blank'} to={item.linkedInn}> <LinkedInIcon /> </Link>
                         <p className='mail_empl'>{item.email}</p>
                       </ContInfoEmpl>
 

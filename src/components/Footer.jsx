@@ -227,7 +227,7 @@ const Footer = () => {
                         
                         <LinkConsultaMovile>
                             <div><Link to={consulta.url}><ModalForm /></Link></div>
-                            <div><Link to={cotizacion.url}>{cotizacion.name}</Link></div>
+                            {/* <div><Link to={cotizacion.url}>{cotizacion.name}</Link></div> */}
                         </LinkConsultaMovile>
                     </ConAccordion>
 
@@ -236,7 +236,7 @@ const Footer = () => {
                     <ConsultasFooter>
                         <LinkConsulta1>
                             <div><Link to={consulta.url}><ModalForm /></Link></div>
-                            <div><Link to={cotizacion.url}>{cotizacion.name}</Link></div>
+                            {/* <div><Link to={cotizacion.url}>{cotizacion.name}</Link></div> */}
                         </LinkConsulta1>
                         <AddressFooter>
                             <p>{contacto.name}</p>

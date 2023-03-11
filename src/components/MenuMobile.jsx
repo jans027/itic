@@ -169,9 +169,9 @@ export default function MenuMobile() {
                 </AccordionDetails>
             </Prueba>
 
-            <LinkMenu>
+            {/* <LinkMenu>
                 <Link onClick={toggleDrawer(anchor, false)} to={cotizacion.url}>{cotizacion.name}</Link>
-            </LinkMenu>
+            </LinkMenu> */}
             
             <LinkMenu>
                 <Link onClick={toggleDrawer(anchor, false)} to={consulta.url}><ModalForm/></Link>

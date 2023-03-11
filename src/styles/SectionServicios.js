@@ -79,7 +79,7 @@ export const ContTextCard =styled.div`
     /* border: 1px solid blue;//............ */
     h4{
         font-size: 1.5rem;
-
+        font-weight: 800;
     }
     p{
         font-size: clamp(14px, 1.1vw, 18px);
