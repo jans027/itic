@@ -34,7 +34,8 @@ export const BannerPathServicios = styled.div`
 `
 export const ContNavServicios = styled.div`
     /* border: 1px solid red;//......................... */
-    width: 29rem;
+    max-width: 300px;
+    width: 26%;
     height: fit-content;
     @media (max-width:1270px) {
         display: none;
@@ -46,35 +47,16 @@ export const ContNavServicios = styled.div`
         vertical-align: middle;
         div{
             color: var(--color4);
-            width: 24.8rem;
+            width: 100%;
             height: 67px;
             display: flex;
             align-items: center;
             border-radius: .8em;
             padding: 1em;
-            &:hover{
-                /* border: 2px solid var(--color1); */
-            }
             p{
-                font-size: 1.5em;
+                font-size: 1.1em;
                 font-weight: 800;
             }
-        }
-    }
-`
-export const ContPagesEmpresa = styled.div`
-    border: 1px solid blue;//.........................
-    background-color: var(--color5);
-    padding-top: 4em;
-    @media (max-width:1270px) {
-        padding-top: 0;
-    }
-    .ContSectionEm{
-        display: flex;
-        width: 90%;
-        margin: auto;
-        @media (max-width:1270px) {
-            width: 100%;
         }
     }
 `

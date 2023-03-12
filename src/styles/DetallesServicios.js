@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const ContNavigationPc = styled.div`
     /* border: 1px solid red;//.................. */
-    width: 29rem;
+    max-width: 300px;
+    width: 26%;
     height: fit-content;
     @media (max-width:1270px) {
         display: none;
@@ -14,20 +15,38 @@ export const ContNavigationPc = styled.div`
         vertical-align: middle;
         div{
             color: var(--color4);
-            width: 24.8rem;
+            width: 100%;
             height: 67px;
             display: flex;
             align-items: center;
             border-radius: .8em;
             padding: 1em;
-            &:hover{
-                /* border: 2px solid var(--color1); */
-            }
             p{
-                font-size: 1.5em;
+                font-size: 1.1em;
                 font-weight: 800;
             }
         }
+    }
+`
+export const ContCardDeta = styled.div`
+    /* border: 1px solid red;//..................... */
+`
+export const CardDetalles = styled.div`
+    /* border: 1px solid red;//..................... */
+    display: flex;
+    flex-direction: column;
+    @media (max-width:1270px) {
+        margin: auto;
+        max-width: 900px;
+        width: 80%;
+        margin-top: 3.6em;
+    }
+    @media (max-width:650px) {
+        max-width: 485px;
+        width: 100%;
+        margin: auto;
+        margin-top: 3.6em;
+        flex-direction: column-reverse;
     }
 `
 export const ContImgPc = styled.div`
@@ -47,6 +66,9 @@ export const ContImgPc = styled.div`
 export const ContImgMobile = styled.div`
     /* border: 1px solid red;//.................. */
     display: none;
+    img{
+        width: 100%;
+    }
     @media (max-width:450px) {
         display: block;
     }
@@ -55,25 +77,26 @@ export const TitleSection = styled.h1`
     /* border: 1px solid red;//.................. */
     width: 82%;
     margin: auto;
-    font-size: 50px;
+    font-size: clamp(25px,3vw, 57px);
     font-weight: 900;
-    padding: 45px 0;
+    padding: 2.2vw 0;
 `
 export const ParagraphSection = styled.p`
     /* border: 1px solid red;//.................. */
     width: 82%;
     margin: auto;
-    font-size: 23px;
+    font-size: clamp(14px, 1.3vw, 25px);
 `
 export const ButtonSection = styled.div`
     /* border: 1px solid red;//.................. */
     width: 82%;
     margin: auto;
-    padding: 45px 0;
+    padding: 2.8em 0;
     div{
         margin: auto;
-        width: 490px;
-        height: 74px;
+        max-width: 490px;
+        width: 70%;
+        height: 54px;
         display: flex;
         align-items: center;
         justify-content: center;

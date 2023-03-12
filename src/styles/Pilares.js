@@ -65,7 +65,9 @@ export const ConImgPi = styled.div`
 export const ParagraphPi = styled.div`
     /* border: 1px solid blue;//................. */
     width: 50%;
-    padding: 2.5vw 2.2vw;
+    display: flex;
+    align-items: center;
+    padding: 0 2.2vw;
     div{
     /* border: 1px solid blue;//................. */
     height: auto;
@@ -78,7 +80,7 @@ export const ParagraphPi = styled.div`
         margin-bottom: 1rem;
     }
     .p_card{
-        font-size: clamp(14px, .9vw, 25px);
+        font-size: clamp(14px, 1.3vw, 27px);
     }
     }
     @media (max-width:568px) {

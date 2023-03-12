@@ -23,7 +23,6 @@ const NavServicios = () => {
 
     // show actual path................
     const [urlPath, setUrlPath] = useState(window.location.pathname);
-    // console.log(typeof(urlPath))
 
     useEffect(() => {
         const handleLocationChange = () => {
@@ -39,7 +38,6 @@ const NavServicios = () => {
 
     // we assign path to key active
     const user = serviciosSub.find(item => item.url === urlPath);
-    // console.log(user)
 
     const [activeKey, setActiveKey] = useState(user.key);
 

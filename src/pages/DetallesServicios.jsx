@@ -6,7 +6,7 @@ import BannerServicios from '../components/BannerServicios';
 import ContacBar from '../components/ContacBar';
 // import NavServicios from '../components/NavServicios';
 import { data } from '../data/data';
-import { ButtonSection, ContImgMobile, ContImgPc, ContNavigationPc, ParagraphSection, TitleSection } from '../styles/DetallesServicios';
+import { ButtonSection, CardDetalles, ContCardDeta, ContImgMobile, ContImgPc, ContNavigationPc, ParagraphSection, TitleSection } from '../styles/DetallesServicios';
 import { ContPagesEmpresa } from '../styles/NavEmpresa';
 import { ConNosotros } from '../styles/Nosotros';
 
@@ -75,8 +75,6 @@ const DetallesServicios = (props) => {
             <BannerServicios />
             <ContPagesEmpresa>
                 <div className='ContSectionEm'>
-
-
                     <ContNavigationPc>
                         {
                             rute.map((item) =>
@@ -84,9 +82,9 @@ const DetallesServicios = (props) => {
                                     to={item.url}
                                     key={item.key}
                                     id={item.id}
-                                    >
-                                
-                                    
+                                >
+
+
                                     <div style={{ backgroundColor: idProp === item.id ? '#9cff2d' : '#ffffff' }}>
                                         <p>
                                             {item.nameNav2.split('\n').map((line, i) => {
@@ -125,73 +123,33 @@ const DetallesServicios = (props) => {
                             })}<ArrowDropDownIcon /></p>
                         </MobileTitle> */}
 
-                        <div>
-
-                            { 
+                        <ContCardDeta>
+                            {
                                 cardGet.map((item) =>
-                                    <div key={item.id}  >
+                                    <CardDetalles key={item.id}  >
                                         <Helmet><title>{`${item.helmet} – ITIC Colombia`}</title></Helmet>
                                         <ContImgPc><img src={require(`../images/${item.imgPc}`)} alt={item.id} /></ContImgPc>
                                         <ContImgMobile><img src={require(`../images/${item.imgMobile}`)} alt={item.id} /></ContImgMobile>
-                                        <TitleSection>{item.text2}</TitleSection>
-                                        <span>
-                                            <ParagraphSection>{item.paragraph1.split('\n').map((line, i) => {
-                                                return (
-                                                    <React.Fragment key={i}>
-                                                        {line}
-                                                        <br />
-                                                    </React.Fragment>
-                                                )
-                                            })}</ParagraphSection>
-                                        </span>
-                                        <ButtonSection ><div onClick={handleClick}>{item.btn1}</div></ButtonSection>
-                                    </div>
-
+                                        
+                                        <div>
+                                            <TitleSection>{item.text2}</TitleSection>
+                                            <span>
+                                                <ParagraphSection>{item.paragraph1.split('\n').map((line, i) => {
+                                                    return (
+                                                        <React.Fragment key={i}>
+                                                            {line}
+                                                            <br />
+                                                        </React.Fragment>
+                                                    )
+                                                })}</ParagraphSection>
+                                            </span>
+                                            <ButtonSection ><div onClick={handleClick}>{item.btn1}</div></ButtonSection>
+                                        </div>
+                                        
+                                    </CardDetalles>
                                 )
                             }
-
-                        </div>
-
-                        {/* <ContCard1>
-                            <ContCard2>
-                                <ContImg1>
-                                    <img src={require(`../images/${cardImg}`)} alt={cardImg} />
-                                </ContImg1>
-                                <ContText1>
-                                    <p className='title_section'>{name}</p>
-                                    <p className='paragraph_section'>{subTitle2}</p>
-                                </ContText1>
-                            </ContCard2>
-                        </ContCard1> */}
-
-                        {/* <ContCardServicios>
-                            {
-                                card.map((item) =>
-                                    <CardServicios key={item.id}>
-
-                                        <ContImage>
-                                            <img src={require(`../images/${item.img}`)} alt={item.text1} />
-                                        </ContImage>
-
-                                        <ContLink to={item.id}>
-                                            <div>
-                                                <p>
-                                                    {item.text1.split('\n').map((line, i) => {
-                                                        return (
-                                                            <React.Fragment key={i}>
-                                                                {line}
-                                                                <br />
-                                                            </React.Fragment>
-                                                        )
-                                                    })}
-                                                </p>
-                                                <AddCircleIcon />
-                                            </div>
-                                        </ContLink>
-                                    </CardServicios>
-                                )
-                            }
-                        </ContCardServicios> */}
+                        </ContCardDeta>
 
                         {/* <MenuMobileNos>
                             {
@@ -209,7 +167,6 @@ const DetallesServicios = (props) => {
                                 )
                             }
                         </MenuMobileNos> */}
-
                     </ConNosotros>
                 </div>
                 <ContacBar />

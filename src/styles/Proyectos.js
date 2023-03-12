@@ -53,12 +53,16 @@ export const ContCardProyecto = styled.div`
 export const ContTextP = styled.div`
     /* border: 1px solid red;//.................... */
     width: 50%;
-    padding: 1rem;
-    height:18em;
+    padding:  0 1rem;
+    height:auto;
     background-color: var(--color5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     .text_card_1{
         font-size: 2em;
         font-weight: 800;
+        margin-bottom: .5em;
     }
     .text_card_2{
         font-size: 1.2em;
@@ -67,6 +71,7 @@ export const ContTextP = styled.div`
         height:auto;
         width: 100%;
         text-align: center;
+        padding: 1rem;
     }
 `
 export const ContImgCardP = styled.div`
