@@ -379,7 +379,9 @@ export const EnlaceDesplegable = styled(Typography)`
         list-style: none;
         margin-bottom: 1em;
         a{
+            /* border: 1px solid white;//.................. */
             text-decoration: none;
+            font-weight: 300!important;
         }
     }
 `

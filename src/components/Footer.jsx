@@ -106,22 +106,22 @@ const Footer = () => {
                         <h3>{politicas.name}</h3>
                         <li>
                             <a target="_blank"  href={datos_personales} rel="noreferrer">
-                                POLITICA DE PROTECCION DE <br /> DATOS PERSONALES 
+                                Política de protección <br /> de datos personales
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href={politica_calidad} rel="noreferrer">
-                                POLITICA DE LA CALIDAD <br />(SERVICIOS INDUSTRIALES) 
+                                Política de la calidad <br /> (servicios industriales)
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href={politica_seguridad} rel="noreferrer">
-                                POLITICA DE GESTIÓN INTEGRAL SALUD, <br /> SEGURIDAD Y AMBIENTE (HSE) 
+                                Política de gestión integral salud, <br /> seguridad y ambiente (HSE)
                             </a>
                         </li>
                         <li>
                             <a target="_blank" href={politica_confidencialidad} rel="noreferrer">
-                                ITIC-C-NA-DI-003 POLITICA DE IMPARCIALIDAD INDEPENDENCIA Y CONFIDENCIALIDAD 
+                                ITIC-C-NA-DI-003 política de imparcialidad <br /> independencia y confidencialidad 
                             </a>
                         </li>
                         <br />
@@ -200,22 +200,22 @@ const Footer = () => {
                                 <EnlaceDesplegable>
                                     <li>
                                         <a target="_blank" href={datos_personales} rel="noreferrer">
-                                            POLITICA DE PROTECCION DE <br /> DATOS PERSONALES
+                                            Política de protección <br />de datos personales
                                         </a>
                                     </li>
                                     <li>
                                         <a target="_blank" href={politica_calidad} rel="noreferrer">
-                                            POLITICA DE LA CALIDAD <br />(SERVICIOS INDUSTRIALES)
+                                            Política de la calidad <br />(servicios industriales)
                                         </a>
                                     </li>
                                     <li>
                                         <a target="_blank" href={politica_seguridad} rel="noreferrer">
-                                            POLITICA DE GESTIÓN INTEGRAL SALUD, <br /> SEGURIDAD Y AMBIENTE (HSE)
+                                            Política de gestión integral salud, <br />seguridad y ambiente (HSE)
                                         </a>
                                     </li>
                                     <li>
                                         <a target="_blank" href={politica_confidencialidad} rel="noreferrer">
-                                            ITIC-C-NA-DI-003 POLITICA DE IMPARCIALIDAD <br /> INDEPENDENCIA Y CONFIDENCIALIDAD
+                                            ITIC-C-NA-DI-003 política de imparcialidad <br /> independencia y confidencialidad
                                         </a>
                                     </li>
                                     <li>

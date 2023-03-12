@@ -5,7 +5,7 @@ import { ContPagesEmpresa } from '../styles/NavEmpresa'
 import ContacBar from '../components/ContacBar'
 import { ConNosotros, MenuMobileNos, MobileTitle } from '../styles/Nosotros'
 import { data } from '../data/data'
-import { CardEmployeeE, ContCardCEO, ContCardEmployes, ContImgCeo, ContInfoCeo, ContInfoEmpl } from '../styles/Equipo'
+import { CardEmployeeE, ContCardCEO, ContCardEmployes, ContImgCeo, ContInfoCeo, ContInfoEmpl, FirstConEmployes } from '../styles/Equipo'
 import { Link } from 'react-router-dom'
 // icon
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -74,7 +74,7 @@ const Equipo = () => {
                   <div className='ContainerCardC' key={item.id}>
 
                     <ContInfoCeo>
-                    <ContImgCeo><img src={require(`../images/${item.img}`)} alt={item.id} /></ContImgCeo>
+                      <ContImgCeo><img src={require(`../images/${item.img}`)} alt={item.id} /></ContImgCeo>
                       <p className='title_ceo'>{item.title}</p>
                       <p className='sub_title_ceo'>{item.subTitle}</p>
                       <p className='paragraph'>{item.paragraph0}</p><br />
@@ -92,24 +92,26 @@ const Equipo = () => {
               <div className='ConCardsEm'>
                 {
                   cardCol.map((item) =>
-                    <CardEmployeeE key={item.id}>
-
-                      <ContInfoEmpl>
-                        <img src={require(`../images/${item.img}`)} alt={item.id} />
-                        <p className='name_Empl'>{item.name}</p>
-                        <p className='cargo_empl'>{item.cargo.split('\n').map((line, i) => {
-                          return (
-                            <React.Fragment key={i}>
-                              {line}
-                              <br />
-                            </React.Fragment>
-                          )
-                        })}</p>
-                        <Link target={'_blank'} to={item.linkedInn}> <LinkedInIcon /> </Link>
-                        <p className='mail_empl'>{item.email}</p>
-                      </ContInfoEmpl>
-
-                    </CardEmployeeE>
+                    
+                    <FirstConEmployes>
+                      <CardEmployeeE key={item.id}>
+                        <ContInfoEmpl>
+                          <img src={require(`../images/${item.img}`)} alt={item.id} />
+                          <p className='name_Empl'>{item.name}</p>
+                          <p className='cargo_empl'>{item.cargo.split('\n').map((line, i) => {
+                            return (
+                              <React.Fragment key={i}>
+                                {line}
+                                <br />
+                              </React.Fragment>
+                            )
+                          })}</p>
+                          <Link target={'_blank'} to={item.linkedInn}> <LinkedInIcon /> </Link>
+                          <p className='mail_empl'>{item.email}</p>
+                        </ContInfoEmpl>
+                      </CardEmployeeE>
+                    </FirstConEmployes>
+                    
                   )
                 }
               </div>

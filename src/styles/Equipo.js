@@ -88,42 +88,64 @@ export const ContCardEmployes = styled.div`
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 2.5em 1.2em;
+
     }
 
 `
+export const FirstConEmployes = styled.div`
+    /* border: 1px solid blue;//...................... */
+    width: 50%;
+    padding: 1em 0;
+    display: flex;
+    justify-content: center;
+    @media (min-width:1700px){
+        width: 33%;
+    }
+    @media (min-width:830px) and (max-width:1270px){
+        width: 33%;
+    }
+    @media (max-width:555px){
+        width: 100%;
+    }
+`
 export const CardEmployeeE = styled.div`
     /* border: 1px solid red;//....................... */
-    width: auto;
+    /* width: 320px;
+    max-width: 80%; */
     height: auto;
     background-color: var(--color5);
     border-radius: 2.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1.5em;
+    padding: 1em;
     -webkit-box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6); 
     box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6);
     `
 export const ContInfoEmpl = styled.div`
     /* border: 1px solid red;//.......................... */
-    width: 250px;
+    /* width: 80%; */
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     img{
         /* border: 1px solid blue;//....................... */
-        margin: 1em;
+        width: 180px!important;
+        height: 180px!important;
         width: clamp(141px, 14vw, 250px);
         height: clamp(141px, 14vw, 250px);
+        @media (min-width:1271px) {
+            width: 280px!important;
+            height: 280px!important;
+        }
     }
     .name_Empl{
-        font-size:clamp(8px, 1.5vw, 20px);
+        font-size:clamp(12px, 1.5vw, 20px);
         font-weight: 800;
     }
     .cargo_empl{
-        font-size:clamp(8px, 1vw, 18px);
+        font-size:clamp(10px, 1vw, 18px);
         text-align: center;
         font-weight: 500;
     }
@@ -132,7 +154,7 @@ export const ContInfoEmpl = styled.div`
         color: var(--color4);
     }
     .mail_empl{
-        font-size: clamp(8px, 1vw, 15px);
+        font-size: clamp(10px, 1vw, 15px);
         font-weight: 700;
     }
 `
