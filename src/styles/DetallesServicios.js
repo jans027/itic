@@ -45,7 +45,7 @@ export const CardDetalles = styled.div`
         max-width: 485px;
         width: 100%;
         margin: auto;
-        margin-top: 3.6em;
+        margin-top: 1.6em;
         flex-direction: column-reverse;
     }
 `
@@ -85,7 +85,7 @@ export const ParagraphSection = styled.p`
     /* border: 1px solid red;//.................. */
     width: 82%;
     margin: auto;
-    font-size: clamp(14px, 1.3vw, 25px);
+    font-size: clamp(17px, 1.5vw, 25px);
 `
 export const ButtonSection = styled.div`
     /* border: 1px solid red;//.................. */
@@ -96,13 +96,14 @@ export const ButtonSection = styled.div`
         margin: auto;
         max-width: 490px;
         width: 70%;
-        height: 54px;
+        height: max-content;
+        padding: .5em;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
         border-radius: 1em;
-        font-size: 30px;
+        font-size: clamp(17px, 1.5vw, 30px);
         font-weight: 800;
         background-color: var(--color4);
         color: var(--color5);

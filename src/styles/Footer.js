@@ -291,7 +291,7 @@ export const LinkConsultaMovile = styled.div`
         display:none;
     }
     @media (max-width:600px) {
-        width: 90%;
+        width: 100%;
     }
     a{
         text-decoration: none;
@@ -370,7 +370,7 @@ export const AccordionFooter = styled(Accordion)`
         display: block;
     }
     @media (max-width:600px) {
-        width: 90%;
+        width: 100%;
     }
 
 `
