@@ -36,6 +36,7 @@ const DetallesServicios = (props) => {
     const cardGet = Object.values(nuevoDatos)
 
     const [idProp, setIdProp] = useState()
+    // console.log(id)
 
 
     // decision tree and prevent ifinite loop

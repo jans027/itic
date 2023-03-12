@@ -37,7 +37,7 @@ export const ContImgCeo = styled.div`
     padding:  0 1em 1em 0;
     img{
         /* border: 1px solid red;//................. */
-        border-radius: 3rem;
+        border-radius: 50%;
         width: clamp(198px, 20vw, 370px);
         height:clamp(198px, 20vw, 370px);
     }
