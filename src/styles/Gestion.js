@@ -3,10 +3,11 @@ import styled from "styled-components";
 export const ContCard1 = styled.div`
   /* border: 2px solid blue; //.................... */
   background-color: var(--color2);
-  height: 400px;
+  height: auto;
   display: flex;
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0;
   @media (max-width: 1270px) {
     max-width: 800px;
     width: 100%;
@@ -52,6 +53,7 @@ export const ContImg1 = styled.div`
 export const ContText1 = styled.div`
     /* border: 2px solid green; //.................... */
     width: 60%;
+    height: auto;
     padding-left: 20px;
     @media (max-width: 1270px) {
       display: flex;

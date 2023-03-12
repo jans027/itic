@@ -95,26 +95,26 @@ export const ContTextCard =styled.div`
     }
 `
 export const EnlaceBtnS = styled(Link)`
-            margin: 10px 0;
-            padding: .5vw 2vw;
-            font-size: 20px;
-            top: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            color: var(--color5);
-            background-color:var(--color4);
-            border: 2px solid var(--color4);
-            border-radius: 1rem;
-            @media(max-width:1200px){
-                    position: relative;
-                    top: 0px;
-            }
-            &:hover{
-                color: var(--color1);
-            }
-            &:active{
-            background-color: var(--color7);
-            
-            }
-            
+    margin: 10px 0;
+    padding: .5vw 2vw;
+    font-size: 20px;
+    top: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--color5);
+    background-color:var(--color4);
+    border: 2px solid var(--color4);
+    border-radius: 1rem;
+    @media(max-width:1200px){
+        position: relative;
+        top: 0px;
+        font-size: 15px;
+    }
+    &:hover{
+        color: var(--color1);
+    }
+    &:active{
+    background-color: var(--color7);
+    
+    }
 `

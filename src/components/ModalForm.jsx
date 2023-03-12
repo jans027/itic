@@ -31,7 +31,6 @@ const ModalForm = (props) => {
         setOpen(false);
     };
 
-
     //...send props to children .....
     const cerrarModal = () => {
         setOpen(false);
