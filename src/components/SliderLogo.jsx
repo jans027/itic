@@ -54,7 +54,7 @@ export default class SliderLogo extends Component {
                     <Slider {...settings}>
                         {
                             card.map((item) =>
-                                <CardLogo>
+                                <CardLogo key={item.id}>
                                     <CardCarouselLogo>
                                         <img src={require(`../images/${item.img}`)} alt={item.id} />
                                     </CardCarouselLogo>

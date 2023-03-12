@@ -52,8 +52,8 @@ const SliderExperiencias = () => {
 
                     {
                         card.map((item) =>
-                            <div className='sub_cont_card2'>
-                                <ContCardExperiencia2 className='global-card-slider' key={item.id}>
+                            <div key={item.id} className='sub_cont_card2'>
+                                <ContCardExperiencia2 className='global-card-slider'>
                                     <CardExperiencia2 className='cardExperiencia'>
                                         <Link to={url}>
                                             <div>

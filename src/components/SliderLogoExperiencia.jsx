@@ -55,7 +55,7 @@ export default class SliderLogoExperiencia extends Component {
                 <Slider {...settings}>
                         {
                             card.map((item) =>
-                                <CardLogoExp>
+                                <CardLogoExp key={item.id}>
                                     <CardCarouselLogoExp>
                                         <img src={require(`../images/${item.img}`)} alt={item.id} />
                                     </CardCarouselLogoExp>

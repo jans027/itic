@@ -31,10 +31,10 @@ export const ConCardsPi = styled.div`
 export const CardsPi = styled.div`
     /* border: 1px solid blue;//.................. */
     width: 100%;
-    height: clamp(380px, 30vw, 450px);
+    height: auto;
     display: flex;
     background-color: var(--color3);
-    /* margin-bottom: 2rem; */
+    margin-bottom: 2rem;
     @media (max-width:568px) {
         flex-wrap:wrap;
         height: 600px;
@@ -49,7 +49,7 @@ export const CardsPi = styled.div`
 `
 export const ConImgPi = styled.div`
     /* border: 1px solid red;//................. */
-    width: 47%;
+    width: 50%;
     overflow: hidden;
     @media (max-width:568px) {
         height:50%;
@@ -64,7 +64,7 @@ export const ConImgPi = styled.div`
 `
 export const ParagraphPi = styled.div`
     /* border: 1px solid blue;//................. */
-    width: 53%;
+    width: 50%;
     padding: 2.5vw 2.2vw;
     div{
     /* border: 1px solid blue;//................. */
@@ -124,7 +124,7 @@ export const Cards02 = styled.div`
 `
 export const ConImgP = styled.div`
     /* border: 1px solid blue;//.................... */
-    width: 52%;
+    width: 50%;
     /* height: 25rem; */
     overflow: hidden;
     @media (max-width:740px) {
@@ -140,7 +140,7 @@ export const ConImgP = styled.div`
 `
 export const ConParagraphP =styled.div`
     /* border: 1px solid red;//.................... */
-    width:48%;
+    width:50%;
     /* height: 25rem; */
     text-align: justify;
     padding: 1.5vw;

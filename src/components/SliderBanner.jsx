@@ -28,7 +28,7 @@ export default class SimpleSlider extends Component {
                 <ContImgCarousel {...settings}>
                     {
                         card.map((item) =>
-                            <ContCardImg>
+                            <ContCardImg key={item.id}>
                                 <div key={item.id}>
                                     <img className="imgDk" src={require(`../images/${item.imgDk}`)} alt={item.id} />
                                     <img className="imgTb" src={require(`../images/${item.imgTb}`)} alt={item.id} />

@@ -126,7 +126,6 @@ const SendMail = (props) => {
         <div className='cont_form_mail'>
             <form ref={formRef} onSubmit={sendEmail}>
 
-
                 <label className='form_label'>Categoría del certificado <span>*</span></label>
                 <select name="seleccion" required>
                     <option value="" hidden>Categoría de servicio</option>
@@ -135,7 +134,6 @@ const SendMail = (props) => {
                     <option value="Servicios Industriales">Servicios Industriales</option>
                     <option value="Certificación de Personas">Certificación de Personas</option>
                 </select>
-
 
                 <LabelMail className='form_label'>{isErrorMail === true ? 'E-mail No Coincide' : 'E-mail'}<span>*</span></LabelMail>
                 <input
@@ -164,7 +162,6 @@ const SendMail = (props) => {
                     id="email2"
                     required
                 />
-
 
                 <LabelNumber className='form_label'>{isErrorNumber === true ? 'Digita un número' : 'Digita tu número de certificado'}<span>*</span></LabelNumber>
                 <input

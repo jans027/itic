@@ -198,29 +198,31 @@ const Footer = () => {
                             </AccordionSummary>
                             <AccordionDetails>
                                 <EnlaceDesplegable>
-                                    <li>
-                                        <a target="_blank" href={datos_personales} rel="noreferrer">
-                                            Política de protección <br />de datos personales
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href={politica_calidad} rel="noreferrer">
-                                            Política de la calidad <br />(servicios industriales)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href={politica_seguridad} rel="noreferrer">
-                                            Política de gestión integral salud, <br />seguridad y ambiente (HSE)
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a target="_blank" href={politica_confidencialidad} rel="noreferrer">
-                                            ITIC-C-NA-DI-003 política de imparcialidad <br /> independencia y confidencialidad
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <BtnFooter to={politicas.url}><div>{politicas.btn}</div></BtnFooter>
-                                    </li>
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" href={datos_personales} rel="noreferrer">
+                                                Política de protección <br />de datos personales
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href={politica_calidad} rel="noreferrer">
+                                                Política de la calidad <br />(servicios industriales)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href={politica_seguridad} rel="noreferrer">
+                                                Política de gestión integral salud, <br />seguridad y ambiente (HSE)
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" href={politica_confidencialidad} rel="noreferrer">
+                                                ITIC-C-NA-DI-003 política de imparcialidad <br /> independencia y confidencialidad
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <BtnFooter to={politicas.url}><div>{politicas.btn}</div></BtnFooter>
+                                        </li>
+                                    </ul>
                                 </EnlaceDesplegable>
                             </AccordionDetails>
                         </AccordionFooter>
