@@ -9,17 +9,12 @@ export const ContImgCarousel = styled(Slider)`
     /* border: 2px solid red;//................. */
     top: 130px;
     width: 100%;
-    height:31vw;
+    height:auto;
     margin-bottom: 8em;
     @media (max-width:1100px) {
-        height:350px;
         top: 88px;
-        /* margin-bottom: 68px; */
     }
-    @media (max-width:641px) {
-        height: 400px;
-    }
-    
+
     .slick-arrow{
         /* border: 1px solid red; */
         display: none!important;
@@ -27,38 +22,41 @@ export const ContImgCarousel = styled(Slider)`
 
 `
 export const ContCardImg = styled.div`
-        width: 100%;
-        height:31vw;
-        @media (max-width:1100px) {
-        height:350px;
-        top: 88px;
-        /* margin-bottom: 68px; */
-        }
-        @media (max-width:641px) {
-        height: 400px;
-        }
-        div{
-        /* border: 1px solid red;//............... */
-        height:100%;
-        overflow: hidden;
-        position: static;
-        @media(max-width:768px){
-            /* height: 500px; */
-        }
-        @media (max-width:641px) {
-        height: 400px;
-        }
-        img{
-            width: 100%;
-            height: max-content;
-            object-fit:cover;
-            object-position: center center;
-            @media(max-width:768px){
-            height: 500px;
-            }
-        }
-        
+    /* border: 1px solid red;//............... */
+    width: 100%;
+    height:auto;
+    @media (max-width:1100px) {
+    top: 88px;
     }
+    @media (max-width:641px) {
+    }
+    div{
+    /* border: 1px solid blue;//............... */
+    width: 100%;
+    height:auto;
+    img{
+        width: 100%;
+
+    }
+    .imgDk{
+        display: block;
+        @media (max-width:960px) {
+            display: none;
+        }
+    }
+    .imgTb{
+        display: none;
+        @media (min-width:481px) and (max-width:960px) {
+            display: block;
+        }
+    }
+    .imgMb{
+        display: none;
+        @media (max-width:481px) {
+            display: block;
+        }
+    }
+}
 `
 export const ContTextBanner = styled.span`
     /* border: 1px solid blue;//............ */

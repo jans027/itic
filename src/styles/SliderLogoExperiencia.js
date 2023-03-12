@@ -8,6 +8,7 @@ export const ContSlideLogoExp = styled(Slider)`
     width: 90%;
     margin: auto;
     margin-top: 1.2em;
+    margin-bottom:2em;
     .slideCont2{
         /* border: 1px solid red;//............... */
         width: 90%;
@@ -54,8 +55,8 @@ export const CardLogoExp = styled.div`
 `
 export const CardCarouselLogoExp = styled.div`
     /* border: 1px solid red;//..................... */
-    width: clamp(66px, 8.3vw, 150px);
-    height: clamp(66px, 8.3vw, 150px);
+    width: 150px;
+    height: auto;
     display: flex!important;
     justify-content: center!important;
     align-items: center!important;

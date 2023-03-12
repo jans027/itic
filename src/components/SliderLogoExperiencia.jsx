@@ -19,7 +19,7 @@ export default class SliderLogoExperiencia extends Component {
     render() {
         const settings = {
             infinite: true,
-            slidesToShow: 4,
+            slidesToShow: 5,
             slidesToScroll: 1,
             autoplay: true,
             speed: 2000,
@@ -27,13 +27,27 @@ export default class SliderLogoExperiencia extends Component {
             pauseOnHover: false,
             responsive: [
                 {
-                    breakpoint: 1024,
+                    breakpoint: 1379,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                         slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 4,
                         infinite: true,
                     }
                 },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3,
+                        centerMode: false,
+                        slidesToScroll: 1
+                    }
+                }
             ]
         };
         return (

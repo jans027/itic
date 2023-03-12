@@ -91,11 +91,12 @@ export const ContEnfoque3 = styled.div`
                 margin-bottom: 1.4em;
             }
             span{
+                /* border:2px solid red;//.................. */
                 font-size:clamp(80px, 6vw, 150px);
                 font-weight: 900;
             }
             svg{
-                font-size:clamp(88px, 6vw, 150px);
+                /* font-size:clamp(88px, 6vw, 150px); */
             }
             .cardText1{
                 
@@ -116,14 +117,20 @@ export const ContEnfoque3 = styled.div`
                 }
             }
             .cardText3{
-                /* border:2px solid red;//.................. */
                 font-size:clamp(20px, 1.5vw, 32px);
                 font-weight: 900;
             }
         }
     }
 `
-
+export const ImgCard = styled.img`
+    /* border: 1px solid red;//........... */
+    width: 7.2vw;
+    @media (max-width:1200px) {
+        width: 7.2em;
+        
+    }
+`
 export const BtnEnfoque1 = styled(Link)`
     text-decoration: none;
     font-size: clamp(20px, 1.4vw, 35px);

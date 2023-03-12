@@ -8,7 +8,7 @@ import SliderLogoExperiencia from '../components/SliderLogoExperiencia'
 import { data } from '../data/data'
 import { ContPagesEmpresa } from '../styles/NavEmpresa'
 import { ConNosotros, MenuMobileNos, MobileTitle } from '../styles/Nosotros'
-import { CardProyect, ContCardProyect, TitleSectionPro } from '../styles/Proyectos'
+import { CardProyect, ContCardProyect, ContCardProyecto, ContImgCardP, ContTextP, TitleSectionPro } from '../styles/Proyectos'
 // Icons
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import SliderExperiencias from '../components/SliderExperiencia'
@@ -20,8 +20,8 @@ const Proyectos = () => {
 
   //get data
   const [datos] = data;
-  const { empresa: { dropDownMenu: { proyectos: { helmet, name, nameSecction, proyecto } } } } = datos;
-  const cardProyecto = Object.values(proyecto);
+  const { empresa: { dropDownMenu: { proyectos: { helmet, name, nameSecction, proyecto, cards } } } } = datos;
+  const cardProyecto = Object.values(cards);
 
   //.......................................................
   // extract values of dropDownMenu
@@ -78,20 +78,15 @@ const Proyectos = () => {
             <ContCardProyect>
               {
                 cardProyecto.map((item) =>
-                  <CardProyect key={item.id}>
-                    <div className='Cont_card_Proyecto'>
-                      <div className='ConImgCardP'>
-                        <img src="" alt="" />
-                      </div>
-                      <div className='ContTextP'>
-                        <p className='text_card_1'>{item.title}</p>
-                        <p className='text_card_2'>{item.text}</p>
-                      </div>
-                    </div>
-                  </CardProyect>
+                  <ContCardProyecto>
+                    <ContTextP>
+                      <p className='text_card_1'>{item.title}</p>
+                      <p className='text_card_2'>{item.text}</p>
+                    </ContTextP>
+                    <ContImgCardP><img src={require(`../images/${item.img}`)} alt="" /></ContImgCardP>
+                  </ContCardProyecto>
                 )
               }
-              <span className='Cont_slider_proyects'><SliderExperiencias /></span>
             </ContCardProyect>
 
             <MenuMobileNos>

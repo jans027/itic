@@ -14,7 +14,7 @@ export const TitleSectionPro = styled.div`
 `
 export const ContCardProyect = styled.div`
     /* border: 1px solid red;//.................... */
-    width: 88%;
+    /* width: 88%; */
     margin: auto;
     .Cont_slider_proyects{
         display: none;
@@ -32,43 +32,58 @@ export const ContCardProyect = styled.div`
         width:100%
     }
 `
-export const  CardProyect = styled.div`
+export const ContCardProyecto = styled.div`
     /* border: 1px solid red;//.................... */
-    background-color: var(--color5);
     display: flex;
-    padding: 2em;
-    justify-content:center;
-    border-radius: 47px;
+    margin: auto;
+    width: 90%;
     margin-bottom: 30px;
-    @media (max-width:890px) {
-        display: none;
-    }
-    .Cont_card_Proyecto{
-        /* border: 1px solid red;//.................... */
-        display: flex;
-        width: 100%;
-        .ConImgCardP{
-        width: 40%;
-        height: 280px;
-        border: 1px solid black;
-    }
-    .ContTextP{
-        width: 66%;
-        /* border: 1px solid red;//.................... */
-        .text_card_1{
-            padding: 1.2rem;
-            font-size: 1.8em;
-            font-weight: 600;
+    &:nth-child(even){
+        flex-direction: row-reverse;
+        @media (max-width:726px) {
+        flex-direction: column;
+        
         }
-        .text_card_2{
-            /* border: 1px solid red;//.................... */
-            padding-left: 1.2rem;
-            font-size: 18px;
-        }
+    }
+    @media (max-width:726px) {
+        flex-direction: column;
         
     }
+`
+export const ContTextP = styled.div`
+    /* border: 1px solid red;//.................... */
+    width: 50%;
+    padding: 1rem;
+    height:18em;
+    background-color: var(--color5);
+    .text_card_1{
+        font-size: 2em;
+        font-weight: 800;
     }
-    
+    .text_card_2{
+        font-size: 1.2em;
+    }
+    @media (max-width:726px) {
+        height:auto;
+        width: 100%;
+        text-align: center;
+    }
+`
+export const ContImgCardP = styled.div`
+    /* border: 1px solid red;//.................... */
+    width: 50%;
+    height:18em;
+    overflow: hidden;
+    img{
+        height:auto;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    @media (max-width:726px) {
+        width: 100%;
+        
+    }
 `
 
 

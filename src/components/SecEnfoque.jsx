@@ -3,10 +3,9 @@ import CountUp from 'react-countup';
 import { Link } from 'react-router-dom';
 import VisibilitySensor from 'react-visibility-sensor';
 import { data } from '../data/data';
-import ImgBanner from '../images/banner_2_desktop.png'
-import { BtnEnfoque1, BtnEnfoque2, ContEnfoque, ContEnfoque3, ContTextEnfoque } from '../styles/SecEnfoque';
+import ImgSoporte from '../images/soporte.png'
+import { BtnEnfoque1, BtnEnfoque2, ContEnfoque, ContEnfoque3, ContTextEnfoque, ImgCard } from '../styles/SecEnfoque';
 import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
-
 
 
 const SecEnfoque = () => {
@@ -76,7 +75,7 @@ const SecEnfoque = () => {
                                                     }
                                                 </CountUp>
                                                 :
-                                                <HeadsetMicIcon />
+                                                <ImgCard src={ImgSoporte} alt={item.text1} />
                                         }
                                         <p className={item.text1 !== 'SOPORTE' ? 'cardText1' : 'cardText3'}>{item.text1}</p>
                                         <Link className='cardText2' to={item.url}>{item.text2}</Link>

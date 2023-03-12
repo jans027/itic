@@ -17,7 +17,7 @@ export default class SliderLogo extends Component {
     render() {
         const settings = {
             infinite: true,
-            slidesToShow: 7,
+            slidesToShow: 6,
             pauseOnHover: false,
             autoplay: true,
             speed: 2000,
@@ -27,7 +27,7 @@ export default class SliderLogo extends Component {
                 {
                     breakpoint: 1379,
                     settings: {
-                        slidesToShow: 6,
+                        slidesToShow: 5,
                         slidesToScroll: 1,
                     }
                 },

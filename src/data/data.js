@@ -20,6 +20,9 @@ export const data = [
         card0: {
           id: "card-Banner1",
           title: "INSPECCIÓN",
+          imgDk:'banners-ppales/Banner-ppal-dk-itic.png',
+          imgTb:'banners-ppales/Banner-ppal-tb-itic.png',
+          imgMb:'banners-ppales/Banner-ppal-mb-itic.png',
           paragraph:
             "A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.",
           btn: "SOLICITAR INFORMACIÓN",
@@ -27,13 +30,9 @@ export const data = [
         card1: {
           id: "card-Banner2",
           title: "INSPECCIÓN",
-          paragraph:
-            "A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.",
-          btn: "SOLICITAR INFORMACIÓN",
-        },
-        card2: {
-          id: "card-Banner3",
-          title: "INSPECCIÓN",
+          imgDk: 'banners-ppales/Banner-ppal-dk-granjas.png',
+          imgTb: 'banners-ppales/Banner-ppal-tb-granjas.png',
+          imgMb: 'banners-ppales/Banner-ppal-mb-granjas.png',
           paragraph:
             "A través de nuestros servicios de inspección, ponemos a disposición de los clientes toda nuestra experticia y experiencia técnica para ser sus ojos en el lugar del mundo que lo requieran y de esta manera garantizar la calidad en sus procesos y evitar pérdidas de tiempo y dinero.",
           btn: "SOLICITAR INFORMACIÓN",
