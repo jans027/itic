@@ -49,8 +49,11 @@ export const ContContacto = styled.div`
         }
         .contEnfoque2{
             /* border:2px solid red;//.................. */
-            text-align: center;
+            @media (max-width:770px) {
+                text-align: center;
+            }
             @media (max-width:600px) {
+                text-align: center;
                 padding: .5em 0;
                 margin-top: 1em;
             }

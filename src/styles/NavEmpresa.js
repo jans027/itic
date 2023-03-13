@@ -74,7 +74,7 @@ export const ContPagesEmpresa = styled.div`
         width: 90%;
         margin: auto;
         @media (min-width:1270px) {
-            justify-content: center;
+            justify-content: space-around;
         }
         @media (max-width:1270px) {
             width: 100%;
