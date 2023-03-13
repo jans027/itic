@@ -4,8 +4,7 @@ import BannerEmpresa from '../components/BannerEmpresa'
 import ContacBar from '../components/ContacBar'
 import NavEmpresa from '../components/NavEmpresa'
 import { data } from '../data/data'
-import { ContCardsAcred } from '../styles/Acreditaciones'
-import { CardCertif, CardCertificaciones, CardCertifMobile, ContCardsCertiMobile, ContImgCard, TitleCertf } from '../styles/Certificaciones'
+import { CardCertificaciones, CardCertifMobile, ContCardsCerti, ContCardsCertiMobile, ContImgCard, TitleCertf } from '../styles/Certificaciones'
 import { ContPagesEmpresa } from '../styles/NavEmpresa'
 import { ConNosotros, MenuMobileNos, MobileTitle } from '../styles/Nosotros'
 // Icons
@@ -96,22 +95,24 @@ const Certificaciones = () => {
 
             <TitleCertf>{name}</TitleCertf>
 
-            <ContCardsAcred>
+            <ContCardsCerti>
               {
                 card.map((item) =>
-                  <CardCertificaciones key={item.id}>
+                  <div className='ContCardsPrincipal'>
+                    <CardCertificaciones key={item.id}>
 
-                    <ContImgCard>
-                      <img src={require(`../images/${item.img}`)} alt={item.name} />
-                    </ContImgCard>
+                      <ContImgCard>
+                        <img src={require(`../images/${item.img}`)} alt={item.name} />
+                      </ContImgCard>
 
-                    <Link>
-                      {item.name}
-                    </Link>
-                  </CardCertificaciones>
+                      <Link>
+                        {item.name}
+                      </Link>
+                    </CardCertificaciones>
+                  </div>
                 )
               }
-            </ContCardsAcred>
+            </ContCardsCerti>
             <ContCardsCertiMobile>
               <Slider {...settings}>
 

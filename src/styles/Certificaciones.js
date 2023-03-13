@@ -11,14 +11,30 @@ export const TitleCertf = styled.div`
             display: none;
         }
 `
-export const CardCertif = styled(CardAcredt)`
-    /* border: 1px solid red;//....................... */
-    -webkit-box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6); 
-    box-shadow: 5px 10px 20px -1px rgba(0,0,0,0.6);
+export const ContCardsCerti = styled.div`
+    /* border: 1px solid blue;//....................... */
+    display: flex;
+    @media (max-width:1270px) {
+        max-width: 833px;
+        width: 80%;
+        margin: auto;
+        padding: 2em 0;
+    }
+    @media (max-width:910px) {
+        display: none;
+    }
+
+    .ContCardsPrincipal{
+        /* border: 1px solid blue;//....................... */
+        width: 33.33%;
+        display: flex;
+        justify-content: center;
+    }
+
 `
 export const CardCertificaciones = styled.div`
     /* border: 1px solid blue;//....................... */
-    width: clamp(293px, 21vw, 330px);
+    width: 80%;
     border-radius: 30px;
     padding-top: 1.3rem;
     background-color: var(--color5);
@@ -41,25 +57,10 @@ export const CardCertificaciones = styled.div`
         background-color: var(--color4);
         border-radius: 0 0 30px 30px;
         color: var(--color5);
-        /* transition: 30ms; */
-        /* &:hover{
-        color: var(--color1);
-        }
-        &:active{
-            background-color: var(--color7);
-        } */
         @media(max-width:700px){
             font-size: 16px;
         }
     }
-    /* svg{
-        font-size: 3vw;
-        color: var(--color1);
-        margin-left: 1rem;
-        @media(max-width:700px){
-            font-size: 20px;
-        }
-    } */
 `
 export const ContImgCard = styled.div`
         /* border: 1px solid red;//............... */
@@ -159,25 +160,10 @@ export const CardCertifMobile = styled.div`
         background-color: var(--color4);
         border-radius: 0 0 30px 30px;
         color: var(--color5);
-        /* transition: 30ms;
-        &:hover{
-        color: var(--color1);
-        }
-        &:active{
-            background-color: var(--color7);
-        } */
         @media(max-width:700px){
             font-size: 16px;
         }
     }
-    /* svg{
-        font-size: 3vw;
-        color: var(--color1);
-        margin-left: 1rem;
-        @media(max-width:700px){
-            font-size: 20px;
-        }
-    } */
 `
 
 

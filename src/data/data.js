@@ -599,7 +599,7 @@ export const data = [
               img: "servicios-industriales/si-retie-retilap.png",
               imgPc: "servicios-industriales/si-retie-retilap-dk.png",
               imgMobile: "servicios-industriales/si-retie-retilap-mb.png",
-              text1: "CERTIFICACIÓN \nSISTEMAS \nRETIE/RETILAP",
+              text1: "CERTIFICACIÓN \nINSTALACIONES \nRETIE/RETILAP",
               text2: "CERTIFICACIÓN SISTEMAS RETIE/RETILAP",
               helmet: 'Certificación sistemas retie/retilap',
               paragraph1:
@@ -611,7 +611,7 @@ export const data = [
               img: "servicios-industriales/si-retie-redes-gas.png",
               imgPc: "servicios-industriales/si-retie-redes-gas-dk.png",
               imgMobile: "servicios-industriales/si-retie-redes-gas-mb.png",
-              text1: "CERTIFICACIÓN \nREDES GAS",
+              text1: "CERTIFICACIÓN \nINSTALACIONES \nREDES GAS",
               text2: "CERTIFICACIÓN REDES GAS",
               helmet: 'Certificación redes gas',
               paragraph1:

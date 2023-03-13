@@ -162,6 +162,8 @@ export const ContInfoEmpl = styled.div`
     .mail_empl{
         font-size: clamp(10px, 1vw, 15px);
         font-weight: 700;
+        color: var(--color4);
+        text-decoration: none;
     }
 `
 

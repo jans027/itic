@@ -107,7 +107,7 @@ const Equipo = () => {
                             )
                           })}</p>
                           <Link target={'_blank'} to={item.linkedInn}> <LinkedInIcon /> </Link>
-                          <p className='mail_empl'>{item.email}</p>
+                          <Link to={`mailto:${item.email}`} className='mail_empl'>{item.email}</Link>
                         </ContInfoEmpl>
                       </CardEmployeeE>
                     </FirstConEmployes>
