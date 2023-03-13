@@ -49,8 +49,9 @@ export const ContContacto = styled.div`
         }
         .contEnfoque2{
             /* border:2px solid red;//.................. */
+            text-align: center;
             @media (max-width:600px) {
-                padding: 1em 0;
+                padding: .5em 0;
                 margin-top: 1em;
             }
             .title{
@@ -65,12 +66,11 @@ export const ContContacto = styled.div`
                 font-weight: 600;
                 margin: 3.5rem 0;
                 @media (max-width:769px) {
-                    margin: 2rem 0;
+                    margin: 1rem 0;
                     font-size:1.3em;
                 }
             }
             a{
-                
                 text-decoration: none;
                 font-size: 2rem;
                 font-weight: 600;
@@ -82,6 +82,10 @@ export const ContContacto = styled.div`
                     padding: .5em;
                     border-radius: 1em;
                     font-weight: 600;
+                    @media(max-width:769px){
+                        margin: auto;
+                        margin-bottom: 1em;
+                    }
                     &:hover{
                     color: var(--color1);
                     };
@@ -92,6 +96,7 @@ export const ContContacto = styled.div`
                 @media(max-width:769px){
                     font-size: 3.4vw;
                     font-weight: 100;
+                    
                 }
                 
                 
