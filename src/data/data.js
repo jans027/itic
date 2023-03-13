@@ -272,7 +272,7 @@ export const data = [
               name: "Sergio Ayala",
               cargo: "Gerente Producto\n \n",
               linkedInn: "https://www.linkedin.com/company/itic-colombia/",
-              email: "Sergio.ayala@iticco.com",
+              email: "sergio.ayala@iticco.com",
             },
             card3: {
               id: "card_equip_3",
@@ -592,7 +592,7 @@ export const data = [
           nameBtn: "MÁS SERVICIOS",
           cardImg: "INDUSTRIALES.png",
           cardText:
-            "-Servicios de Interventoría. \n-Evaluación de Integridad. \n-Servicios de Inspección. \n-Ensayos No Destructivos NDT. \n-Certificación Instalaciones RETIE/RETILAP",
+            " ▸ Servicios de Interventoría. \n▸ Evaluación de Integridad. \n▸ Servicios de Inspección. \n▸ Ensayos No Destructivos NDT. \n▸ Certificación Instalaciones RETIE/RETILAP",
           cards: {
             card0: {
               id: "certificacion-sistemas-retie-retilap",
@@ -764,7 +764,7 @@ export const data = [
           nameBtn: "MÁS SERVICIOS",
           cardImg: "PRODUCTO.png",
           cardText:
-            "- Certificación RETIE/RETILAP/RETIQ. \n- Certificación de Pilas. \n- Certificación de Gasodomésticos. \n- Certificación Autopartes. \n- TCA ENEL",
+            "▸ Certificación RETIE/RETILAP/RETIQ. \n▸ Certificación de Pilas. \n▸ Certificación de Gasodomésticos. \n- Certificación Autopartes. \n▸ TCA ENEL",
           cards: {
             card0: {
               id: "reglamento-refrigeracion-costa-rica",
@@ -913,7 +913,7 @@ export const data = [
           nameBtn: "VER MÁS",
           cardImg: "GESTION.png",
           cardText:
-            "- Certificación Sistemas de Gestión. \n- GAP Análisis. \n- Auditoria Interna. \n- Evaluación de Proveedores.",
+            "▸ Certificación Sistemas de Gestión. \n▸ GAP Análisis. \n▸ Auditoria Interna. \n▸ Evaluación de Proveedores",
           cards: {
             card0: {
               id: "certificacion",
@@ -1000,7 +1000,7 @@ export const data = [
           nameBtn: "VER MÁS",
           cardImg: "PERSONAS.png",
           cardText:
-            "- Certificación Instalador / Inspector / Reparador. \nGas Natural Residencial y Comercial. \n- Certificación Suministro / Mantenimiento / Instalador.\nGas Natural Comprimido Vehicular.",
+            "▸ Certificación Instalador / Inspector / Reparador. \nGas Natural Residencial y Comercial. \n▸ Certificación Suministro / Mantenimiento / Instalador.\nGas Natural Comprimido Vehicular.",
           cards: {
             card0: {
               id: "gas-natural-comprimido-vehicular",
@@ -1345,7 +1345,7 @@ export const data = [
         card3: {
           id: 'Politica_3',
           text1:'4. PUEDO DESHABILITAR LA INSTALACIÓN Y USO DE COOKIES POR PARTE DE  INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S ',
-          text2:'El usuario puede deshabilitar tanto la instalación de las cookies como el uso de las mismas  por parte de INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A  S Para deshabilitar la instalación y uso de cookies el usuario deberá realizar el procedimiento  por navegador tal como se indica a continuación:\n \n✔ Internet Explorer: Herramientas -> Opciones de Internet -> Privacidad ->  Configuración. \n \nPara más información, puede consultar el Soporte de Microsoft o la Ayuda del  navegador. \n \n✔ Firefox: Herramientas -> Opciones -> Privacidad -> Historial -> Configuración  Personalizada. \n \n✔ Para más información, puede consultar el Soporte de Mozilla o la Ayuda del  navegador. \n \n✔ Chrome: Configuración -> Mostrar opciones avanzadas -> Privacidad -> Configuración  de contenido. Para más información, puede consultar el Soporte de Google o la Ayuda  del navegador. \n \n✔ Safari: Preferencias -> Seguridad. \n \nPara más información, puede consultar el Soporte de Apple o la Ayuda del navegador. \n \nLos sistemas de opt-out indicados anteriormente pueden conllevar que se instale en su  equipo una cookie «de rechazo» para que funcione su elección de desactivación. \n \nAdicionalmente, existen otras herramientas de terceros, disponibles on line, que permiten a  los usuarios detectar las cookies en cada sitio web que visita y gestionar su desactivación,  por ejemplo: \n \n• Ghostery: http://www.ghostery.com/faq \n \n• Vanilla Cookie Manager , \n ',
+          text2:'El usuario puede deshabilitar tanto la instalación de las cookies como el uso de las mismas  por parte de INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A  S Para deshabilitar la instalación y uso de cookies el usuario deberá realizar el procedimiento  por navegador tal como se indica a continuación:\n \n✔ Internet Explorer: Herramientas -> Opciones de Internet -> Privacidad ->  Configuración. \n \nPara más información, puede consultar el Soporte de Microsoft o la Ayuda del  navegador. \n \n✔ Firefox: Herramientas -> Opciones -> Privacidad -> Historial -> Configuración  Personalizada. \n \n✔ Para más información, puede consultar el Soporte de Mozilla o la Ayuda del  navegador. \n \n✔Chrome: Configuración -> Mostrar opciones avanzadas -> Privacidad -> Configuración  de contenido. Para más información, puede consultar el Soporte de Google o la Ayuda  del navegador. \n \n✔ Safari: Preferencias -> Seguridad. \n \nPara más información, puede consultar el Soporte de Apple o la Ayuda del navegador. \n \nLos sistemas de opt-out indicados anteriormente pueden conllevar que se instale en su  equipo una cookie «de rechazo» para que funcione su elección de desactivación. \n \nAdicionalmente, existen otras herramientas de terceros, disponibles on line, que permiten a  los usuarios detectar las cookies en cada sitio web que visita y gestionar su desactivación,  por ejemplo: \n \n• Ghostery: http://www.ghostery.com/faq \n \n• Vanilla Cookie Manager , \n ',
         },
         card4: {
           id: 'Politica_4',

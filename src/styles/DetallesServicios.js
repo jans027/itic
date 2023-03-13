@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContNavigationPc = styled.div`
     /* border: 1px solid red;//.................. */
+    
     max-width: 300px;
     width: 26%;
     height: fit-content;

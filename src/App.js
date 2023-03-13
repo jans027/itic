@@ -1,4 +1,4 @@
-import React, { Component, createContext, useEffect, useState } from "react";
+import React, { Component, useEffect, useState } from "react";
 import {
   BrowserRouter as Router,
   Navigate,
@@ -30,6 +30,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import DetallesServicios from "./pages/DetallesServicios";
 import PoliticasNavegacion from "./pages/PoliticasNavegacion";
 import ButtonToTop from "./components/ButtonToTop";
+import Cookie from "./components/Cookie";
+import Cookies from "js-cookie";
 
 
 function App() {
@@ -61,18 +63,32 @@ function App() {
   }, []);
   //Button scroll to top........................
 
+  //Check if the cookie exist...................
+  const [getCookie, setGetCookie] = useState(false)
+
+  useEffect(() => {
+    const cookieValue = Cookies.get('itic');
+    if (cookieValue) {
+      setGetCookie(true)
+    } else {
+      setGetCookie(false)
+    }
+  }, []);
+  //Check if the cookie exist..................
+
+
 
   return (
     <>
-      
-
       <GlobalStyles />
       <Router>
+
 
         <NavBar />
         <FloatingBtn />
         <ScrollToTop />
         {showButton && <ButtonToTop />}
+        {getCookie === true ? '' : showButton && <Cookie />} 
 
         <Routes>
           <Route path="*" element={<Navigate to="/Home" />} />
