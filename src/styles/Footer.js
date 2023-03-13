@@ -5,9 +5,7 @@ import styled from "styled-components";
 
 
 export const ContFooter = styled.div`
-    /* position:fixed; */
-    /* height: 43.7rem!important; */
-    bottom: 0;
+    margin-top: auto;
     width:100%;
     color: var(--color5);
     background-color: var(--color4);
@@ -35,18 +33,27 @@ export const BlockNav = styled.div`
 `
 export const Copy = styled.div`
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 3vw;
     min-height: 47px;
-    font-weight: 300;
+    font-weight: 500;
     background-color: var(--color1);
     color: var(--color4);
+    bottom: 0;
+    a{
+        font-size: 15px;
+        color: var(--color4);
+        text-decoration: none;
+        font-weight: 500;
+    }
     @media (max-width:600px) {
         padding: 1.3em;
+        font-size: 13px;
+        flex-direction: column;
         p{
-            font-size: 13px;
-            font-weight: 500;
+            font-size: 12px;
         }
     }
 `

@@ -259,7 +259,7 @@ const Footer = () => {
                     <Link target="_blank" to={inicio.linkedInUrl}><LinkedInIcon /> </Link>
                 </Redes>
 
-                <Copy><p>&copy; 2023 ITIC. Todos los derechos reservados.</p></Copy>
+                <Copy><p>&copy; 2023 ITIC. Todos los derechos reservados. - </p> <Link to='/Politicas de Navegacion'> Políticas de navegación</Link></Copy>
 
             </ContFooter>
 

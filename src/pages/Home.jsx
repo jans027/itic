@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import ButtonToTop from '../components/ButtonToTop'
 import SecAcreditaciones from '../components/SecAcreditaciones'
 import SecContactanos from '../components/SecContactanos'
 import SecEnfoque from '../components/SecEnfoque'
@@ -22,7 +23,7 @@ const Home = () => {
             <SecEnfoque/>
             <SecExperiencia />
             <SliderLogo/>
-            <SecContactanos/>
+            <SecContactanos />
         </div>
     )
 }

@@ -239,8 +239,8 @@ export const data = [
               name: "NUESTRO EQUIPO",
               id: "card_equipo_0",
               img: "Equipo/Equipo-Melby.png",
-              title: "Nombre Presidente",
-              subTitle: "CEO ITIC",
+              title: "Ing. Melvy Rocío Díaz Hernández",
+              subTitle: "Country Manager",
               paragraph0:
                 "Soy Ingeniera Metalúrgica, especialista en Alta Gerencia y Gestión de la Calidad, con una amplia experiencia en empresas multinacionales líderes en servicios de Inspección, Certificación y Ensayos, enfocados en los sectores de Oil & Gas, Minero e Infraestructura.",
               paragraph1:
@@ -271,7 +271,7 @@ export const data = [
               img: "Equipo/Equipo-Sergio.png",
               name: "Sergio Ayala",
               cargo: "Gerente Producto\n \n",
-              linkedInn: "https://www.linkedin.com/",
+              linkedInn: "https://www.linkedin.com/company/itic-colombia/",
               email: "Sergio.ayala@iticco.com",
             },
             card3: {
@@ -349,7 +349,7 @@ export const data = [
               id: "proyect1",
               img: "Experiencia/Proyecto7.png", 
               title: "ALCANOS",
-              text: "Procesos de certificación de personas en evaluación de competencias laborales para instaladores e inspectores de gas natural residencial y comercial en:Cundinamarca, Tolima, Huila, Nariño, Cauca, Antioquia, Caldas",
+              text: "Prestamos el servicio de interventoría en construcción de redes de construcciones de distribución de gas natural, servicios asociados( traslados de centro de medición, acometidas y optimización), construcciones de acometidas y montajes de centros de medición y recepción de redes de gas natural por parte de terceros en los 9 centros operativos",
             },
             // card2: {
             //   id: "proyect2",
@@ -384,20 +384,20 @@ export const data = [
             card7: {
               id: "proyect7",
               img: "Experiencia/Proyecto_gensa.png",
-              title: "GENSA INIRIDA",
-              text: "ITICCOL Supervisó la construcción de la mayor planta fotovoltaica de las zonas no conectadas",
+              title: "GENSA",
+              text: "ITICCOL Supervisó la construcción de la mayor planta fotovoltaica de las zonas no conectadas en INIRIDA",
             },
             card8: {
               id: "proyect8",
               img: "Experiencia/Proyecto_celsia.png",
-              title: "CELSIA SOLAR ESPINAL",
-              text: "ITICCOL Supervisó la construcción de la Planta PV CSE",
+              title: "CELSIA",
+              text: "ITICCOL Supervisó la construcción de la Planta PV CSE en ESPINAL",
             },
             card9: {
               id: "proyect9",
               img: "Experiencia/Proyecto_Planeta_Rica.png",
-              title: "Planeta Rica- Pétalos de Córdoba - línea de evacuación",
-              text: "interventoría de la línea de medía tensión y servicio de termografía",
+              title: " Green Yellow y Ventus",
+              text: "interventoría de la línea de media tensión y servicio de termografía en Planeta Rica - Pétalos de Córdoba - línea de evacuación",
             },
             card10: {
               id: "proyect10",
@@ -421,13 +421,13 @@ export const data = [
               id: "proyect13",
               img: "Experiencia/Proyecto6.png",
               title: "ALCANOS",
-              text: "Procesos de certificación de personas en evaluación de competencias laborales para instaladores e inspectores de gas natural residencial y comercial en:Cundinamarca, Tolima, Huila, Nariño, Cauca,Antioquia Caldas",
+              text: "Procesos de certificación de personas en evaluación de competencias laborales para instaladores e inspectores de gas natural residencial y comercial en: Cundinamarca, Tolima, Huila, Nariño, Cauca, Antioquia, Caldas",
             },
             card14: {
               id: "proyect14",
               img: "Experiencia/Proyecto4.png",
               title: "LLANOGAS",
-              text: "Procesos de certificación en evaluación de competencias laborales para instaladores e inspectores de gas natural residencial y comercial en la región del Meta.",
+              text: "Procesos de certificación en evaluación de competencias laborales para instaladores e inspectores de gas natural residencial y comercial en la región del Meta",
             },
           },
           testimonios: {
@@ -1321,6 +1321,53 @@ export const data = [
             img: "Logos_Clientes/Logo_TrinaSolar-100.jpg",
             },
       },
+    },
+    PoliticasNavegacion: {
+      id: 'politicas_navegacion',
+      helmet: 'Politicas de Navegacion',
+      text1: 'Políticas de navegación',
+      cards: {
+        card0: {
+          id: 'Politica_0',
+          text1:'1. ¿QUÉ SON Y QUE NO SON LAS COOKIES/DATOS DE NAVEGACIÓN? ',
+          text2:'Las cookies/datos de navegación son pequeños archivos de información o fragmentos de  texto enviados por un Portal o Aplicación tecnológica de propiedad de INTERNATIONAL  TESTING INSPECTION & CERTIFICATION COLOMBIA S A S o alguna de sus sociedades  controladas o que se encuentren bajo el mismo nivel de control (en adelante Portales y  Aplicaciones de INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S  A S) y que se almacenan en el navegador o dispositivo del usuario. A través de las cookies,  los Portales recuerdan información sobre la visita de los usuarios, lo que permite que se  proporcione una mejor y más segura experiencia de navegación en el mismo. Las cookies se  asocian tanto a usuarios anónimos, es decir, aquellos que visitan los Portales sin identificarse  o registrarse, como aquellos que si lo hacen.\n \nPor otro lado, las cookies no son un virus o cualquier otro tipo de programa malicioso que  pueda dañar dispositivos de los usuarios. Adicionalmente las cookies no pueden borrar ni  leer información del computador o dispositivo de los usuarios. \n',
+        },
+        card1: {
+          id: 'Politica_1',
+          text1:'2. ¿CÓMO OBTIENE ESTIBOL SAS, LAS COOKIES? ',
+          text2:'Las cookies se crean y/o actualizan en el computador o dispositivo del usuario de manera  automática, cuando éste accede a un Portal de INTERNATIONAL TESTING INSPECTION &  CERTIFICATION COLOMBIA S A S, lo cual permite a INTERNATIONAL TESTING  INSPECTION & CERTIFICATION COLOMBIA S A S o a las terceras personas que este  contrate, realizar seguimiento a las cookies del usuario y por ende a la información que estas  cookies contienen u obtienen del usuario. Es importante aclarar que las cookies solo son  leídas por el sitio web que las creó.\n',
+        },
+        card2: {
+          id: 'Politica_2',
+          text1:'3 ¿QUÉ CLASE DE COOKIES UTILIZA INTERNATIONAL TESTING INSPECTION &  CERTIFICATION COLOMBIA S A S Y PARA QUÉ LAS UTILIZA? ',
+          text2:'1. Cookies Esenciales. \n \nEstas cookies son esenciales para el Uso del Portal, en el sentido de facilitar el proceso de  registro en el mismo, así como permitir a los usuarios un acceso más rápido y seguro a los  servicios seleccionados dentro del Portal. Sin estas cookies, es posible que  INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S no les  pueda ofrecer a los usuarios ciertos servicios dentro del Portal y éste puede que no funcione  con normalidad. \n \n2. Cookies Funcionales. \n \nMediante el uso de las cookies funcionales, es posible para INTERNATIONAL TESTING  INSPECTION & CERTIFICATION COLOMBIA S A S o el tercero que este contrate,  personalizar los servicios que se ofrecen en el Portal, facilitando a cada usuario información  que es o puede ser de su interés, en atención al uso que realiza de los servicios y a las  páginas específicas que visita dentro del Portal. A través de estas cookies, INTERNATIONAL  TESTING INSPECTION & CERTIFICATION COLOMBIA S A S o las terceras personas que  contrate, podrán ofrecer a los usuarios una mejor experiencia y mejor rendimiento en la  navegación dentro del Portal. \n \n3.Cookies de Publicidad. \n \nINTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S o el tercero  que este contrate, mediante el uso de estas cookies, podrá entregarle al usuario publicidad  que considere que puede llegar a ser de su interés, según las preferencias y  comportamientos que el usuario tiene o ha tenido dentro de la red de Portales de  INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S a través de \n \nestas cookies, se podrá optimizar la publicidad que el usuario ve en el Portal. Las cookies de  publicidad, podrán ser entregadas a anunciantes de INTERNATIONAL TESTING  INSPECTION & CERTIFICATION COLOMBIA S A S, para que sean utilizadas por estos para  sus campañas de mercadeo y publicidad. \n \n4.Cookies de Análisis o Desempeño. \n \nA través de las cookies de análisis o desempeño, INTERNATIONAL TESTING INSPECTION  & CERTIFICATION COLOMBIA S A S o el tercero que éste contrate, puede realizar distintos  análisis y estudios de la información recolectada, con el fin de mejorar los productos y  servicios que INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A  S ofrece a los usuarios. \n \nINTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S y los  terceros con los que contrate servicios para el uso de cookies, son los únicos que podrán  acceder a la información almacenada en las cookies que se han instalado dentro del equipo  del usuario. La información almacenada en las cookies no puede ser leída por otros usuarios,  ni estos podrán acceder a la misma. \n',
+        },
+        card3: {
+          id: 'Politica_3',
+          text1:'4. PUEDO DESHABILITAR LA INSTALACIÓN Y USO DE COOKIES POR PARTE DE  INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S ',
+          text2:'El usuario puede deshabilitar tanto la instalación de las cookies como el uso de las mismas  por parte de INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A  S Para deshabilitar la instalación y uso de cookies el usuario deberá realizar el procedimiento  por navegador tal como se indica a continuación:\n \n✔ Internet Explorer: Herramientas -> Opciones de Internet -> Privacidad ->  Configuración. \n \nPara más información, puede consultar el Soporte de Microsoft o la Ayuda del  navegador. \n \n✔ Firefox: Herramientas -> Opciones -> Privacidad -> Historial -> Configuración  Personalizada. \n \n✔ Para más información, puede consultar el Soporte de Mozilla o la Ayuda del  navegador. \n \n✔ Chrome: Configuración -> Mostrar opciones avanzadas -> Privacidad -> Configuración  de contenido. Para más información, puede consultar el Soporte de Google o la Ayuda  del navegador. \n \n✔ Safari: Preferencias -> Seguridad. \n \nPara más información, puede consultar el Soporte de Apple o la Ayuda del navegador. \n \nLos sistemas de opt-out indicados anteriormente pueden conllevar que se instale en su  equipo una cookie «de rechazo» para que funcione su elección de desactivación. \n \nAdicionalmente, existen otras herramientas de terceros, disponibles on line, que permiten a  los usuarios detectar las cookies en cada sitio web que visita y gestionar su desactivación,  por ejemplo: \n \n• Ghostery: http://www.ghostery.com/faq \n \n• Vanilla Cookie Manager , \n ',
+        },
+        card4: {
+          id: 'Politica_4',
+          text1:'5 ¿QUÉ OCURRE SI SE DESHABILITAN LAS COOKIES? ',
+          text2:'Si el usuario deshabilita la instalación o el uso de las cookies para los Portales, podrá perder  o afectar algunas funcionalidades del sitio, como por ejemplo: \n \n1. Poder ingresar a los Portales sin necesidad de indicar en cada ocasión su usuario y  contraseña, esto le ahorrará tiempo y le permitirá utilizar funcionalidades como boletines,  alertas, noticias guardadas, entre otros. \n \n 2. Publicación de comentarios dentro de los Portales. \n \n3. Acceso al contenido sin restricción dentro de los Portales. \n \n4. Seguridad en el uso de la información que se ingresa en los Portales. 5. Rapidez en el uso de algún servicio dentro de los Portales. \n',
+        },
+        card5: {
+          id: 'Politica_5',
+          text1:'6. ¿INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S  COMPARTE LA INFORMACIÓN OBTENIDA A TRAVÉS DE LAS COOKIES CON  TERCERAS PERSONAS? ',
+          text2:'INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S, podrá  compartir información obtenida a través de las cookies con personas externas o terceros  (aliados, clientes, proveedores o empresas vinculadas a INTERNATIONAL TESTING  INSPECTION & CERTIFICATION COLOMBIA S A S), con el fin de mejorar la usabilidad y  servicios al usuario. Así mismo, la información que se recibe a través de las cookies será  utilizada por INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A  S y los anteriores terceros.\n',
+        },
+        card6: {
+          id: 'Politica_6',
+          text1:'7. ¿DÓNDE ESTA ALMACENADA LA INFORMACIÓN OBTENIDA A TRAVÉS DE LAS  COOKIES? ',
+          text2:'INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S, podrá  contratar terceras personas encargadas de almacenar y obtener la información a través de  las cookies, o que incluyan cookies dentro de los portales de INTERNATIONAL TESTING  INSPECTION & CERTIFICATION COLOMBIA S A S, personas que podrán estar localizadas  dentro de Colombia o en el exterior. Así mismo, INTERNATIONAL TESTING INSPECTION &  CERTIFICATION COLOMBIA S A S, podrá entregar a terceros, la información que se  obtenga de las cookies para crear perfiles de usuarios, ofrecer campañas personalizadas, sin  que lo anterior, implique entrega de información personal. \n \nLo invitamos a revisar las políticas de privacidad de los terceros contratados por  INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S, para los  fines de la esta Política. \n \nLa información obtenida a través de estas cookies, referida al equipo del usuario, podrá ser  combinada con sus datos personales sólo si usted está registrado en un Portal de  INTERNATIONAL TESTING INSPECTION & CERTIFICATION COLOMBIA S A S.\n',
+        },
+        card7: {
+          id: 'Politica_7',
+          text1:'8. ¿QUÉ DEBO TENER EN CUENTA SOBRE LA POLÍTICA DE USO DE COOKIES Y  DÓNDE ME PUEDO CONTACTAR EN CASO DE DUDAS? ',
+          text2:'La presente Política contiene la información necesaria que debe conocer todo usuario de los  Portales sobre el uso de las cookies que realiza INTERNATIONAL TESTING INSPECTION &  CERTIFICATION COLOMBIA S A S, los terceros que este contrate. INTERNATIONAL  TESTING INSPECTION & CERTIFICATION COLOMBIA S A S, podrá modificar el presente  documento en cualquier momento y sin previo aviso para mantenerlos vigentes y\n \nactualizados. Por lo anterior, recomendamos a los usuarios revisar la fecha de elaboración o  actualización de los mismos, la cual se establece al final del presente documento. En caso de dudas o inquietudes acerca del uso de cookies o sobre cualquiera de los puntos  detallados en esta Política, por favor escriba al siguiente correo electrónico:  quejasreclamosapelaciones@iticco.com.\n',
+        },
+      }
     },
   },
 ];

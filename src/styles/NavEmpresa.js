@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BannerPathEmpresa = styled.div`
     /* border: 1px solid red;//......................... */
-    height: 12rem;
+    height: 18rem;
     overflow: hidden;
     display: flex;
     justify-content: center;
