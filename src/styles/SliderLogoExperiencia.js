@@ -55,13 +55,16 @@ export const CardLogoExp = styled.div`
 `
 export const CardCarouselLogoExp = styled.div`
     /* border: 1px solid red;//..................... */
-    width: 150px;
+    width: 140px;
     height: auto;
     display: flex!important;
     justify-content: center!important;
     align-items: center!important;
     border-radius:50%;
     overflow: hidden;
+    @media (max-width:500px) {
+        width: 100px;
+    }
     img{
         width: 100%;
         height: 100%;

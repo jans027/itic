@@ -41,7 +41,7 @@ export default class SliderLogoExperiencia extends Component {
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 650,
                     settings: {
                         slidesToShow: 3,
                         centerMode: false,
