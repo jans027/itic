@@ -57,6 +57,9 @@ export const ContInfoCeo = styled.div`
     .title_ceo{
         font-size: clamp(25px, 2.4vw, 55px);
         font-weight: 700;
+        @media (max-width:500px) {
+            text-align: center;
+        }
     }
     .sub_title_ceo{
         font-size: clamp(20px, 1vw, 25px);
