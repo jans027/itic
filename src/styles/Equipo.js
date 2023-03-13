@@ -11,6 +11,9 @@ export const ContCardCEO = styled.div`
     flex-direction:row;
     justify-content: center;
     align-items: center;
+    @media (max-width:785px) {
+            padding: 0;
+        }
     @media (min-width: 786px) and (max-width: 945px) {
             padding-bottom: 4.4rem;
         }
@@ -22,7 +25,7 @@ export const ContCardCEO = styled.div`
         align-items: center;
         max-width: 935px;
         width: 92%;
-        padding: 1em;
+        padding: 1em 1.5em 0 1.5em;
         @media (max-width:1270px) {
             width: 85%;
         }
@@ -141,11 +144,11 @@ export const ContInfoEmpl = styled.div`
         }
     }
     .name_Empl{
-        font-size:clamp(12px, 1.5vw, 20px);
+        font-size:clamp(18px, 1.5vw, 20px);
         font-weight: 800;
     }
     .cargo_empl{
-        font-size:clamp(10px, 1vw, 18px);
+        font-size:clamp(12px, 1vw, 18px);
         text-align: center;
         font-weight: 500;
     }
