@@ -7,12 +7,12 @@ import styled from "styled-components";
 
 export const ContImgCarousel = styled(Slider)`
     /* border: 2px solid red;//................. */
-    top: 150px;
+    top: 135px;
     width: 100%;
     height:auto;
     margin-bottom: 8em;
     @media (max-width:1100px) {
-        top: 88px;
+        top: 82px;
     }
 
     .slick-arrow{
