@@ -600,8 +600,8 @@ export const data = [
               imgPc: "servicios-industriales/si-retie-retilap-dk.png",
               imgMobile: "servicios-industriales/si-retie-retilap-mb.png",
               text1: "CERTIFICACIÓN \nINSTALACIONES \nRETIE/RETILAP",
-              text2: "CERTIFICACIÓN SISTEMAS RETIE/RETILAP",
-              helmet: 'Certificación sistemas retie/retilap',
+              text2:  "CERTIFICACIÓN INSTALACIONES RETIE/RETILAP",
+              helmet: 'Certificación instalaciones retie/retilap',
               paragraph1:
                 'A través de nuestros dictámenes de inspección, las instalaciones eléctricas a nivel nacional pueden ser entregadas al Operador de Red para ser energizadas de forma permanente.\n \nOfrecemos servicios de certificación de instalación eléctricas y de iluminación, emitiendo Dictámenes acreditados con las Resoluciones 90708 y 180540 del Ministerio de Minas y Energía',
               btn1: "REGRESAR",
@@ -611,9 +611,9 @@ export const data = [
               img: "servicios-industriales/si-retie-redes-gas.png",
               imgPc: "servicios-industriales/si-retie-redes-gas-dk.png",
               imgMobile: "servicios-industriales/si-retie-redes-gas-mb.png",
-              text1: "CERTIFICACIÓN \nINSTALACIONES \nREDES GAS",
-              text2: "CERTIFICACIÓN REDES GAS",
-              helmet: 'Certificación redes gas',
+              text1:  "CERTIFICACIÓN \nINSTALACIONES \nREDES GAS",
+              text2:  "CERTIFICACIÓN  INSTALACIONES  REDES GAS",
+              helmet: 'Certificación  instalaciones  redes gas',
               paragraph1:
                 "Inspección de los requisitos para evaluar la conformidad de las instalaciones para suministro de gas combustible en edificaciones industriales.",
               btn1: "REGRESAR",
@@ -1140,18 +1140,18 @@ export const data = [
           },
     },
     countries: {
-      colombia: {
-        id: "colombia",
-          name: "COL",
-            url: "https://www.iticco.com/",
-              img: "Bandera-col.png",
-          },
+      // colombia: {
+      //   id: "colombia",
+      //     name: "COL",
+      //       url: "https://www.iticco.com/",
+      //         img: "Bandera-col.png",
+      //     },
       peru: {
-        id: "peru",
+          id: "peru",
           name: "PER",
-            url: "https://www.iticpe.com/",
-              img: "Bandera-Per.png",
-          },
+          url: "https://xd.adobe.com/view/9b481622-0745-4457-b772-4cb1961cf04d-ce1b/?fullscreen",
+          img: "Bandera-Per.png",
+        },
     },
     home: {
       bannerHome1: "",

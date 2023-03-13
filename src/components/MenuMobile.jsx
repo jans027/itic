@@ -13,7 +13,7 @@ import ListItemText from '@mui/material/ListItemText';
 // hamburguer menu
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseSharpIcon from '@mui/icons-material/CloseSharp';
-import { CloseImg, ContMenuMobile, LinkAccordion, LinkMenu, Prueba } from '../styles/MenuMobile';
+import { CloseImg, ContMenuMobile, ImgCountres, LinkAccordion, LinkMenu, Prueba } from '../styles/MenuMobile';
 // Accordion
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
@@ -25,6 +25,7 @@ import { styled } from '@mui/material/styles';
 import { data } from '../data/data';
 // Image
 import ImgCol from '../images/Bandera-col.png';
+import ImgPer from '../images/Bandera-Per.png';
 // import SignalCellularAlt1BarIcon from '@mui/icons-material/SignalCellularAlt1Bar';
 import ModalForm from './ModalForm';
 //Icons
@@ -184,13 +185,14 @@ export default function MenuMobile() {
 
             <Prueba expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
                 <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-                    <img src={ImgCol} alt="" />
-                    <Typography sx={{ fontWeight:700, width:'auto' }}>Col</Typography>
+                    <ImgCountres src={ImgCol} alt="imagen colombia" />
+                    <Typography sx={{ fontWeight:700, width:'auto' }}>COL</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     {
                         countriesSub.map((item) =>
-                            <LinkAccordion key={item.id}>
+                        <LinkAccordion key={item.id}>
+                            <ImgCountres src={ImgPer} alt={item.id} />
                                 <Link
                                     onClick={toggleDrawer(anchor, false)}
                                     to={item.url}>{item.name}</Link>

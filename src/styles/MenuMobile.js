@@ -62,7 +62,9 @@ export const Prueba = styled(Accordion)`
             
         }
 `
-
+export const ImgCountres = styled.img`
+    margin-right: 1em;
+`
 
 
 
