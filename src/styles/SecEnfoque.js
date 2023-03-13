@@ -65,7 +65,7 @@ export const ContEnfoque3 = styled.div`
         width: 100%;
     }
     .ContParr{
-        font-size: clamp(14px, 1.5vw, 30px);
+        font-size: clamp(16px, 1.6vw, 30px);
         @media (max-width:1160px) {
             margin: 1em 0;
         }

@@ -153,7 +153,6 @@ export const AddressFooter = styled.span`
         flex-direction: column;
         @media (max-width:1070px) {
             border-bottom: 1px solid white;//...................
-            border-bottom: 1px solid white;
             margin-bottom: 4px;
         }
         a{
@@ -201,7 +200,8 @@ export const ConsultasFooter = styled.div`
         /* border: 1px solid green;//............ */
         width: 26.5%;
         @media (max-width:768px) {
-            width: 90%;
+            max-width: 355px;
+            width: 100%;
             height: auto!important;
         }
         @media (min-width:767px) and (max-width:1069px) {
